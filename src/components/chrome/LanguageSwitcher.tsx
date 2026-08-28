@@ -19,17 +19,25 @@ export function LanguageSwitcher({
   pageKey,
   objectId,
 }: LanguageSwitcherProps) {
+  const messages = getMessages(locale);
+
   return (
     <div
       className="language-switcher"
       role="group"
-      aria-label={getMessages(locale).accessibility.languageSelector}
+      aria-label={messages.accessibility.languageSelector}
       data-object-id={objectId}
     >
       {(["pl", "en"] as Locale[]).map((language) => (
         <a
           key={language}
           href={pathFor(pageKey, language)}
+          hrefLang={language}
+          aria-label={
+            language === "pl"
+              ? messages.accessibility.languagePl
+              : messages.accessibility.languageEn
+          }
           aria-current={locale === language ? "page" : undefined}
         >
           {language.toUpperCase()}

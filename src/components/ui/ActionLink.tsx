@@ -21,6 +21,8 @@ interface ActionLinkProps {
   onClick?: () => void;
   /** Włącza natywne pobieranie zasobu. */
   download?: boolean;
+  /** Ogłasza zmianę etykiety czytnikom ekranu, gdy link zmienia treść po akcji. */
+  live?: boolean;
 }
 
 /**
@@ -36,6 +38,7 @@ export function ActionLink({
   className = "",
   onClick,
   download = false,
+  live = false,
 }: ActionLinkProps) {
   return (
     <a
@@ -45,6 +48,7 @@ export function ActionLink({
       data-object-id={objectId}
       onClick={onClick}
       download={download}
+      aria-live={live ? "polite" : undefined}
     >
       <span>{children}</span>
       {withArrow ? <Arrow /> : null}

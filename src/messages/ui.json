@@ -12,6 +12,8 @@
     "accessibility": {
       "skipContent": "Przejdź do treści",
       "languageSelector": "Wybór języka",
+      "languagePl": "Polski",
+      "languageEn": "English",
       "mainNavigation": "Główna nawigacja",
       "mobileNavigation": "Menu mobilne",
       "homeAria": "Dawid Gacek, strona główna",
@@ -144,6 +146,8 @@
     "accessibility": {
       "skipContent": "Skip to content",
       "languageSelector": "Language selector",
+      "languagePl": "Polski",
+      "languageEn": "English",
       "mainNavigation": "Main navigation",
       "mobileNavigation": "Mobile navigation",
       "homeAria": "Dawid Gacek, home",

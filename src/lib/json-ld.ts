@@ -73,7 +73,9 @@ function breadcrumbSchema(
         "@type": "ListItem",
         position: "1",
         name: homeLabel,
-        item: siteConfig.siteUrl || pathFor("home", locale),
+        item: siteConfig.siteUrl
+          ? new URL(pathFor("home", locale), siteConfig.siteUrl).toString()
+          : pathFor("home", locale),
       },
       {
         "@type": "ListItem",

@@ -45,7 +45,12 @@ export function ShareButton({
   };
 
   return (
-    <button className="share-button" type="button" onClick={handleShare}>
+    <button
+      className="share-button"
+      type="button"
+      aria-live="polite"
+      onClick={handleShare}
+    >
       {status === "copied" ? copiedLabel : status === "error" ? errorLabel : label}
     </button>
   );

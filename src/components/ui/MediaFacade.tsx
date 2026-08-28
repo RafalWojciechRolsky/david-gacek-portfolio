@@ -72,26 +72,38 @@ export function MediaFacade({
   }
 
   return (
-    <button
-      className="media-facade"
-      type="button"
-      aria-label={playLabel}
-      data-object-id={objectId}
-      onClick={() => setIsActivated(true)}
-    >
-      <Image
-        className="media-facade-image"
-        src={video.placeholderImage.src}
-        alt={video.placeholderImage.alt}
-        width={video.placeholderImage.width}
-        height={video.placeholderImage.height}
-        loading="lazy"
-        sizes="(max-width: 760px) 100vw, 60vw"
-      />
-      <span className="play-control" aria-hidden="true">
-        <span />
-      </span>
-      <span className="media-label">{video.title}</span>
-    </button>
+    <>
+      <button
+        className="media-facade"
+        type="button"
+        aria-label={playLabel}
+        data-object-id={objectId}
+        onClick={() => setIsActivated(true)}
+      >
+        <Image
+          className="media-facade-image"
+          src={video.placeholderImage.src}
+          alt={video.placeholderImage.alt}
+          width={video.placeholderImage.width}
+          height={video.placeholderImage.height}
+          loading="lazy"
+          sizes="(max-width: 760px) 100vw, 60vw"
+        />
+        <span className="play-control" aria-hidden="true">
+          <svg viewBox="0 0 19 26" width="19" height="26" focusable="false">
+            <path d="M0 0 L19 13 L0 26 Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span className="media-label">{video.title}</span>
+      </button>
+      <noscript>
+        <a
+          className="media-facade-noscript"
+          href={`https://www.youtube.com/watch?v=${video.videoId}`}
+        >
+          {messages.media.fallback}
+        </a>
+      </noscript>
+    </>
   );
 }

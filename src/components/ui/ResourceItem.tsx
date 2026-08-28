@@ -46,6 +46,7 @@ export function ResourceItem({ resource, locale }: ResourceItemProps) {
           className="resource-action"
           onClick={() => setDownloadStarted(true)}
           download
+          live
         >
           {downloadStarted
             ? messages.resources.downloadStarted

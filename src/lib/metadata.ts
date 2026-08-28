@@ -48,7 +48,7 @@ export function buildMetadata(
       url: absoluteUrl(currentPath),
       siteName: messages.brandName,
       locale: locale === "pl" ? "pl_PL" : "en_GB",
-      type: pageKey === "insights" ? "website" : "website",
+      type: "website",
       images: siteConfig.siteUrl
         ? [
             {
