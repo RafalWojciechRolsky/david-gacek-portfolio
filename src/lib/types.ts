@@ -204,6 +204,8 @@ export interface PageData {
   proof?: string;
   /** Główna akcja hero. */
   cta?: LinkItem;
+  /** Materiał wideo właściwy dla tej strony, gdy istnieje. */
+  video?: VideoData;
   /** Sekcje strony. */
   sections: PageSection[];
   /** Widoczne pytania i odpowiedzi. */

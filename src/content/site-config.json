@@ -5,8 +5,8 @@
   "whatsappHref": "https://wa.me/48000000000",
   "email": "kontakt@example.com",
   "phoneHoursByLocale": {
-    "pl": "Godziny odbierania: do ustalenia",
-    "en": "Phone hours: to be confirmed"
+    "pl": "Odbieram w dni robocze 9-17.",
+    "en": "I answer calls on weekdays from 9 am to 5 pm."
   },
   "externalLinks": {
     "linkedin": {

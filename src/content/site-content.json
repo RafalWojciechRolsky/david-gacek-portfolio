@@ -68,7 +68,7 @@
           "label": "04",
           "title": "MaxiDISC",
           "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie, 2023. Dokument wystawiono 10 maja 2023 roku.",
-          "status": "pending"
+          "status": "confirmed"
         }
       ],
       "video": {
@@ -86,7 +86,7 @@
           "href": "https://youtu.be/fqVVmwXLuoY",
           "external": true
         },
-        "status": "pending"
+        "status": "confirmed"
       },
       "contexts": [
         {
@@ -179,7 +179,7 @@
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Obszar Komunikacja i DISC.",
-          "status": "pending",
+          "status": "confirmed",
           "source": {
             "label": "Źródło: Akademia Przywództwa",
             "href": "https://akademiaprzywodztwa.pl/",
@@ -279,7 +279,7 @@
           "label": "04",
           "title": "MaxiDISC",
           "body": "Consultant certificate after training, a mentoring session, and an exam, 2023. The document was issued on 10 May 2023.",
-          "status": "pending"
+          "status": "confirmed"
         }
       ],
       "video": {
@@ -297,7 +297,7 @@
           "href": "https://youtu.be/fqVVmwXLuoY",
           "external": true
         },
-        "status": "pending"
+        "status": "confirmed"
       },
       "contexts": [
         {
@@ -390,7 +390,7 @@
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Communication and DISC area.",
-          "status": "pending",
+          "status": "confirmed",
           "source": {
             "label": "Source: Akademia Przywództwa",
             "href": "https://akademiaprzywodztwa.pl/",
@@ -506,7 +506,7 @@
                 "id": "2023",
                 "title": "2023",
                 "body": "Certyfikat konsultanta MaxiDISC z 10 maja 2023 roku.",
-                "status": "pending"
+                "status": "confirmed"
               }
             ]
           },
@@ -530,8 +530,8 @@
               {
                 "id": "profile-proof-disc",
                 "title": "MaxiDISC",
-                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie, zakres do potwierdzenia.",
-                "status": "pending"
+                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie.",
+                "status": "confirmed"
               }
             ]
           },
@@ -563,8 +563,8 @@
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
-                "body": "Obszar Komunikacja i DISC, dokładny zakres roli do doprecyzowania.",
-                "status": "pending",
+                "body": "Obszar Komunikacja i DISC.",
+                "status": "confirmed",
                 "source": {
                   "label": "Oficjalna strona",
                   "href": "https://akademiaprzywodztwa.pl/",
@@ -691,7 +691,7 @@
                 "id": "2023",
                 "title": "2023",
                 "body": "MaxiDISC consultant certificate issued on 10 May 2023.",
-                "status": "pending"
+                "status": "confirmed"
               }
             ]
           },
@@ -715,8 +715,8 @@
               {
                 "id": "profile-proof-disc",
                 "title": "MaxiDISC",
-                "body": "Consultant certificate after training, mentoring, and an exam, scope pending confirmation.",
-                "status": "pending"
+                "body": "Consultant certificate after training, mentoring, and an exam.",
+                "status": "confirmed"
               }
             ]
           },
@@ -748,8 +748,8 @@
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
-                "body": "Communication and DISC area, exact role still being clarified.",
-                "status": "pending",
+                "body": "Communication and DISC area.",
+                "status": "confirmed",
                 "source": {
                   "label": "Official website",
                   "href": "https://akademiaprzywodztwa.pl/",
@@ -813,23 +813,50 @@
           "label": "Sprawdź szkolenie",
           "href": "#materialy-dla-dyrektorki"
         },
+        "video": {
+          "videoId": "fqVVmwXLuoY",
+          "title": "Szkolenie w praktyce",
+          "alt": "Dawid Gacek podczas pracy, podgląd materiału wideo",
+          "placeholderImage": {
+            "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+            "alt": "Portret Dawida Gacka na jasnym tle",
+            "width": 1024,
+            "height": 683
+          },
+          "fallback": {
+            "label": "Otwórz film w YouTube",
+            "href": "https://youtu.be/fqVVmwXLuoY",
+            "external": true
+          },
+          "status": "confirmed"
+        },
         "sections": [
           {
             "id": "dla-kogo",
-            "heading": "Dla kogo i po co",
-            "intro": "Dla nauczycieli, którzy chcą prowadzić aktywne zajęcia z większą swobodą.",
+            "heading": "Dla kogo jest to szkolenie?",
+            "intro": "Dla nauczycieli i osób prowadzących zajęcia, które chcą korzystać z Bum Bum Rurek nie tylko podczas jednego występu, ale także w codziennej pracy z grupą.",
             "items": [
               {
                 "id": "audience",
-                "title": "Dla nauczycieli i rad pedagogicznych",
-                "body": "Format pomaga przełożyć muzykę, ruch i wspólne działanie na codzienną pracę z grupą."
+                "title": "Nauczyciele i osoby prowadzące zajęcia",
+                "body": "Dla osób, które szukają nowych sposobów pracy z rytmem, ruchem i uwagą grupy."
+              },
+              {
+                "id": "educators",
+                "title": "Zajęcia muzyczne, edukacyjne i integracyjne",
+                "body": "Program pomaga łączyć słuchanie, koordynację i wspólne działanie w różnych typach zajęć."
+              },
+              {
+                "id": "schools",
+                "title": "Szkoły i rady pedagogiczne",
+                "body": "Dla placówek, które chcą dostać praktyczne narzędzia do dalszej pracy, a nie tylko jednorazowy pokaz."
               }
             ]
           },
           {
             "id": "program",
             "heading": "Co wydarzy się podczas szkolenia",
-            "intro": "Od prostych zasad do własnego scenariusza.",
+            "intro": "Zaczynamy od prostych zasad i rytmu, a kończymy pomysłami, które można wykorzystać z własną grupą.",
             "items": [
               {
                 "id": "start-stop",
@@ -856,17 +883,17 @@
           {
             "id": "wyniesiesz",
             "heading": "Co nauczyciele wyniosą",
-            "intro": "Konkretne umiejętności do wykorzystania po spotkaniu.",
+            "intro": "Po szkoleniu uczestnicy mają więcej pomysłów, narzędzi i odwagi, żeby samodzielnie pracować z rurkami.",
             "items": [
               {
                 "id": "attention",
                 "title": "Utrzymanie uwagi grupy",
-                "body": "Proste reguły i rytuały pomagają prowadzić aktywne zajęcia."
+                "body": "Uczestnicy poznają zasady i atrakcyjne aktywności, które pomagają utrzymać uwagę bez podnoszenia głosu."
               },
               {
                 "id": "own-scenarios",
                 "title": "Własne scenariusze",
-                "body": "Materiały i inspiracje dają punkt wyjścia do planowania."
+                "body": "Ćwiczenia pokazują, jak łączyć rytm, ruch, wyobraźnię i zabawę we własnym planie zajęć."
               },
               {
                 "id": "transfer",
@@ -878,25 +905,35 @@
           },
           {
             "id": "sposob-pracy",
-            "heading": "Dowody i sposób pracy Dawida",
-            "intro": "Szkolenie opiera się na doświadczeniu i jasnym prowadzeniu grupy.",
+            "heading": "Metoda, którą można zabrać do swojej pracy",
+            "intro": "Bum Bum Rurki są proste. To, co można z nimi zrobić w grupie, wymaga pomysłu, struktury i dobrego prowadzenia.",
             "items": [
               {
                 "id": "teacher-proof",
                 "title": "4000 przeszkolonych nauczycieli",
-                "body": "Potwierdzony dowód skali pracy Dawida."
+                "body": "Skala doświadczenia z nauczycielami pomaga pracować z realnymi potrzebami sali i grupy."
+              },
+              {
+                "id": "since-2010",
+                "title": "Praca z Bum Bum Rurkami od 2010 roku",
+                "body": "Wieloletnia praktyka łączy muzykę i ruch z prowadzeniem grup o różnym poziomie doświadczenia."
               },
               {
                 "id": "teacher-method",
-                "title": "Od zasad do działania",
-                "body": "Uczestnicy najpierw doświadczają ćwiczeń, a potem przekładają je na własne zajęcia."
+                "title": "Od doświadczenia do własnej metody",
+                "body": "Uczestnicy najpierw przechodzą przez ćwiczenia, a potem rozkładają je na zasady możliwe do użycia we własnych zajęciach."
+              },
+              {
+                "id": "teacher-disc",
+                "title": "Potwierdzony certyfikat MaxiDISC",
+                "body": "Formalne przygotowanie wspiera świadomą pracę z komunikacją i różnicami widocznymi w grupie."
               }
             ]
           },
           {
             "id": "transfer",
             "heading": "Co zostaje po szkoleniu",
-            "intro": "Materiały mają wspierać samodzielne planowanie kolejnych zajęć.",
+            "intro": "Szkolenie nie kończy się w chwili wyjścia z sali. Uczestnicy dostają materiały, do których mogą wrócić przy planowaniu kolejnych zajęć.",
             "items": [
               {
                 "id": "outline",
@@ -915,7 +952,7 @@
           {
             "id": "oferta",
             "heading": "Format, cena, czas i logistyka",
-            "intro": "Dane organizacyjne pozostają edytowalne i są potwierdzane przed realizacją.",
+            "intro": "Szkolenie jest przeznaczone dla nauczycieli i osób prowadzących zajęcia. Szczegóły organizacyjne potwierdzamy z uwzględnieniem grupy i miejsca.",
             "items": [
               {
                 "id": "format",
@@ -944,7 +981,7 @@
           {
             "id": "materialy-dla-dyrektorki",
             "heading": "Materiały dla dyrektorki",
-            "intro": "Jeden pakiet argumentów do przekazania dalej.",
+            "intro": "Przekaż dyrekcji jeden kompletny adres. Znajdzie tu sens szkolenia, program, materiały, dowody i warunki do ustalenia.",
             "items": [
               {
                 "id": "offer-pdf",
@@ -1000,23 +1037,50 @@
           "label": "Explore the training",
           "href": "#director-materials"
         },
+        "video": {
+          "videoId": "fqVVmwXLuoY",
+          "title": "The training in practice",
+          "alt": "Dawid Gacek at work, video preview",
+          "placeholderImage": {
+            "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+            "alt": "Portrait of Dawid Gacek against a light background",
+            "width": 1024,
+            "height": 683
+          },
+          "fallback": {
+            "label": "Open the video on YouTube",
+            "href": "https://youtu.be/fqVVmwXLuoY",
+            "external": true
+          },
+          "status": "confirmed"
+        },
         "sections": [
           {
             "id": "who-for",
-            "heading": "Who it is for",
-            "intro": "For teachers who want to lead active sessions with more confidence.",
+            "heading": "Who is this training for?",
+            "intro": "For teachers and educators who want to use boomwhackers not only for a single performance, but also in everyday work with a group.",
             "items": [
               {
                 "id": "audience",
-                "title": "Teachers and staff teams",
-                "body": "The format translates music, movement, and shared action into everyday group work."
+                "title": "Teachers and educators",
+                "body": "For people looking for new ways to work with rhythm, movement, and group attention."
+              },
+              {
+                "id": "educators",
+                "title": "Music, educational, and group activities",
+                "body": "The programme helps combine listening, coordination, and shared action across different types of sessions."
+              },
+              {
+                "id": "schools",
+                "title": "Schools and staff teams",
+                "body": "For schools that need practical tools for continued work, not just a one-off demonstration."
               }
             ]
           },
           {
             "id": "programme",
             "heading": "What happens during the training",
-            "intro": "From simple rules to your own session plan.",
+            "intro": "We start with simple rules and rhythm, then move towards ideas you can use with your own group.",
             "items": [
               {
                 "id": "start-stop",
@@ -1043,17 +1107,17 @@
           {
             "id": "takeaways",
             "heading": "What teachers take away",
-            "intro": "Concrete skills to use after the session.",
+            "intro": "After the training, participants have more ideas, tools, and confidence to work with boomwhackers independently.",
             "items": [
               {
                 "id": "attention",
                 "title": "Holding a group's attention",
-                "body": "Simple rules and rituals support active sessions."
+                "body": "Participants learn structures and engaging activities that help hold attention without raising their voice."
               },
               {
                 "id": "own-scenarios",
                 "title": "Your own session plans",
-                "body": "Materials and ideas give you a starting point for planning."
+                "body": "Exercises show how to combine rhythm, movement, imagination, and play in your own session plan."
               },
               {
                 "id": "transfer",
@@ -1065,25 +1129,35 @@
           },
           {
             "id": "how",
-            "heading": "Evidence and Dawid's approach",
-            "intro": "The training combines experience with clear facilitation.",
+            "heading": "A method you can take into your work",
+            "intro": "Boomwhackers are simple. Using them with a group takes ideas, structure, and thoughtful facilitation.",
             "items": [
               {
                 "id": "teacher-proof",
                 "title": "4,000 teachers trained",
-                "body": "A confirmed proof point showing the scale of Dawid's work."
+                "body": "This scale of teacher training supports work with the real needs of a room and its group."
+              },
+              {
+                "id": "since-2010",
+                "title": "Working with boomwhackers since 2010",
+                "body": "Long-term practice connects music and movement with groups at different levels of experience."
               },
               {
                 "id": "teacher-method",
-                "title": "From rules to action",
-                "body": "Participants experience the exercises, then translate them into their own sessions."
+                "title": "From experience to your own method",
+                "body": "Participants first experience the exercises, then break them down into principles they can use in their own sessions."
+              },
+              {
+                "id": "teacher-disc",
+                "title": "Confirmed MaxiDISC certificate",
+                "body": "Formal preparation supports thoughtful work with communication and differences visible in a group."
               }
             ]
           },
           {
             "id": "follow-up",
             "heading": "What remains after training",
-            "intro": "Materials support independent planning after the session.",
+            "intro": "The training does not end when you leave the room. Participants receive materials they can return to when planning future activities.",
             "items": [
               {
                 "id": "outline",
@@ -1102,7 +1176,7 @@
           {
             "id": "offer",
             "heading": "Format, price, timing, and logistics",
-            "intro": "Practical details remain editable and are confirmed before delivery.",
+            "intro": "The training is for teachers and educators. We confirm practical details with the group and location in mind.",
             "items": [
               {
                 "id": "format",
@@ -1131,7 +1205,7 @@
           {
             "id": "director-materials",
             "heading": "Materials for a school leader",
-            "intro": "One argument pack to pass on.",
+            "intro": "Send your school leader one complete link. It brings together the purpose, programme, materials, evidence, and practical details.",
             "items": [
               {
                 "id": "offer-pdf",
@@ -1189,28 +1263,45 @@
           "label": "Sprawdź formaty",
           "href": "#formaty"
         },
+        "video": {
+          "videoId": "goTqiC2tf3M",
+          "title": "Muzyczny team building w akcji",
+          "alt": "Dawid Gacek podczas integracji muzycznej z firmą, podgląd materiału wideo",
+          "placeholderImage": {
+            "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+            "alt": "Portret Dawida Gacka na jasnym tle",
+            "width": 1024,
+            "height": 683
+          },
+          "fallback": {
+            "label": "Otwórz film w YouTube",
+            "href": "https://youtu.be/goTqiC2tf3M",
+            "external": true
+          },
+          "status": "confirmed"
+        },
         "sections": [
           {
             "id": "triaż",
             "heading": "Szybki triaż",
-            "intro": "W dwie minuty sprawdzisz, czy Dawid pasuje do Twojego wydarzenia.",
+            "intro": "W dwie minuty sprawdzisz, czy format pasuje do celu wydarzenia, profilu uczestników i tonu marki.",
             "items": [
               {
                 "id": "fit",
                 "title": "Dla firm, agencji i zespołów",
-                "body": "Wybierz format, który odpowiada grupie, czasowi i tonowi wydarzenia."
+                "body": "Format może działać na konferencji, spotkaniu zespołu albo evencie, jeśli ma jasny cel i warunki udziału."
               },
               {
                 "id": "experience",
                 "title": "Doświadczenie bez marketingowego hałasu",
-                "body": "Historyczny GWR z 661 osobami i praca od 2010 roku mają jawny kontekst."
+                "body": "Historyczny GWR z 661 osobami i praca od 2010 roku pokazują skalę, a przy każdym dowodzie podajemy datę i rolę Dawida."
               }
             ]
           },
           {
             "id": "formaty",
             "heading": "Formaty wydarzeń",
-            "intro": "Od krótkiego wejścia po pełny warsztat.",
+            "intro": "Od krótkiego wejścia po pełny warsztat. Skalę i przebieg dobieramy do celu, liczby osób, miejsca i dostępnego czasu.",
             "items": [
               {
                 "id": "icebreaker",
@@ -1232,7 +1323,7 @@
           {
             "id": "sposob",
             "heading": "Współpraca i sposób prowadzenia",
-            "intro": "Od briefu do wspólnego grania i refleksji.",
+            "intro": "Najpierw ustalamy cel i ograniczenia wydarzenia. Potem Dawid buduje wspólny rytm, prowadzi grupę i domyka doświadczenie krótką refleksją.",
             "items": [
               {
                 "id": "brief",
@@ -1254,7 +1345,7 @@
           {
             "id": "dowody",
             "heading": "Dowody i kontekst",
-            "intro": "Doświadczenie Dawida pokazujemy razem z datą i rolą.",
+            "intro": "Doświadczenie Dawida pokazujemy razem z datą, rolą i kontekstem, bez sugerowania bieżącej współpracy z markami.",
             "items": [
               {
                 "id": "since-2010",
@@ -1273,7 +1364,7 @@
           {
             "id": "oferta",
             "heading": "Oferta, logistyka i materiały",
-            "intro": "Szczegóły są ustalane po rozmowie, a nie ukryte w pakiecie.",
+            "intro": "Wycena opisuje uzgodniony zakres, przygotowanie, prowadzenie, czas, liczbę osób, logistykę i dojazd. Dodatkowe elementy omawiamy przed potwierdzeniem.",
             "items": [
               {
                 "id": "format",
@@ -1351,28 +1442,45 @@
           "label": "Explore the formats",
           "href": "#formats"
         },
+        "video": {
+          "videoId": "goTqiC2tf3M",
+          "title": "Corporate music team building in action",
+          "alt": "Dawid Gacek leading a corporate music session, video preview",
+          "placeholderImage": {
+            "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+            "alt": "Portrait of Dawid Gacek against a light background",
+            "width": 1024,
+            "height": 683
+          },
+          "fallback": {
+            "label": "Open the video on YouTube",
+            "href": "https://youtu.be/goTqiC2tf3M",
+            "external": true
+          },
+          "status": "confirmed"
+        },
         "sections": [
           {
             "id": "triage",
             "heading": "A quick fit check",
-            "intro": "In two minutes, check whether Dawid fits your event.",
+            "intro": "In two minutes, check whether the format fits the event goal, participant profile, and brand tone.",
             "items": [
               {
                 "id": "fit",
                 "title": "For companies, agencies, and teams",
-                "body": "Choose a format that matches the group, timing, and tone of the event."
+                "body": "The format can work at a conference, team meeting, or event when it has a clear goal and conditions for participation."
               },
               {
                 "id": "experience",
                 "title": "Experience without marketing noise",
-                "body": "The 661-person historical GWR event and work since 2010 are clearly contextualised."
+                "body": "The historical 661-person GWR event and work since 2010 show scale, with Dawid's date and role stated for every proof point."
               }
             ]
           },
           {
             "id": "formats",
             "heading": "Event formats",
-            "intro": "From a short opening to a full workshop.",
+            "intro": "From a short opening to a full workshop. Scale and flow are matched to the goal, group size, venue, and available time.",
             "items": [
               {
                 "id": "icebreaker",
@@ -1394,7 +1502,7 @@
           {
             "id": "how",
             "heading": "How the collaboration works",
-            "intro": "From a brief to shared playing and reflection.",
+            "intro": "We first agree the goal and constraints. Dawid then builds a shared rhythm, leads the group, and closes the experience with a short reflection.",
             "items": [
               {
                 "id": "brief",
@@ -1416,7 +1524,7 @@
           {
             "id": "evidence",
             "heading": "Evidence and context",
-            "intro": "Dawid's experience is shown with a date and a clear role.",
+            "intro": "Dawid's experience is shown with a date, role, and context, without implying current cooperation with a brand.",
             "items": [
               {
                 "id": "since-2010",
@@ -1435,7 +1543,7 @@
           {
             "id": "offer",
             "heading": "Offer, logistics, and materials",
-            "intro": "Details are agreed in conversation, not hidden in a package.",
+            "intro": "The quote covers the agreed scope, preparation, facilitation, timing, group size, logistics, and travel. Additional elements are discussed before confirmation.",
             "items": [
               {
                 "id": "format",
@@ -1507,19 +1615,36 @@
           "title": "Warsztaty muzyczne dla dzieci | Dawid Gacek",
           "description": "Warsztaty muzyczne dla dzieci z Bum Bum Rurkami. Sprawdź grupy wiekowe, program, zasady, doświadczenie i warunki organizacji spotkania dla Twojej grupy."
         },
-        "title": "Warsztaty muzyczne dla dzieci z Bum Bum Rurkami",
+        "title": "Warsztaty dla dzieci z Bum Bum Rurkami",
         "eyebrow": "Rytm, ruch i wspólne granie dopasowane do wieku oraz możliwości grupy.",
-        "intro": "Prowadzę warsztaty, w których dzieci mogą słuchać siebie nawzajem, działać razem i odkrywać muzykę przez ruch oraz zabawę.",
+        "intro": "Prowadzę warsztaty muzyczne, w których dzieci mogą słuchać siebie nawzajem, działać razem i odkrywać muzykę przez ruch oraz zabawę.",
         "proof": "Pracuję z Bum Bum Rurkami od 2010 roku.",
         "cta": {
           "label": "Dobierz warsztat do wieku",
           "href": "#wiek"
         },
+        "video": {
+          "videoId": "U0f4uQje2NE",
+          "title": "Warsztaty muzyczne dla dzieci",
+          "alt": "Dawid Gacek prowadzący warsztat muzyczny z dziećmi, podgląd materiału wideo",
+          "placeholderImage": {
+            "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+            "alt": "Portret Dawida Gacka na jasnym tle",
+            "width": 1024,
+            "height": 683
+          },
+          "fallback": {
+            "label": "Otwórz film w YouTube",
+            "href": "https://youtu.be/U0f4uQje2NE",
+            "external": true
+          },
+          "status": "confirmed"
+        },
         "sections": [
           {
             "id": "wiek",
             "heading": "Wybierz grupę wiekową",
-            "intro": "Punkt wyjścia do dopasowania poziomu i energii.",
+            "intro": "Warsztat dobieramy do wieku, liczby dzieci i możliwości grupy, żeby tempo, zasady i aktywności były dla niej zrozumiałe.",
             "items": [
               {
                 "id": "wiek-3-6",
@@ -1544,27 +1669,27 @@
           {
             "id": "program",
             "heading": "Program dopasowany do wieku",
-            "intro": "Muzyka i ruch są drogą do wspólnego działania.",
+            "intro": "Nie prowadzę jednego scenariusza dla wszystkich. Dobieram aktywności do wieku, liczby dzieci, czasu i miejsca.",
             "items": [
               {
                 "id": "rhythm",
                 "title": "Rytm i słuchanie",
-                "body": "Uczestnicy odkrywają, jak słuchać siebie oraz całej grupy."
+                "body": "Proste zadania uczą reagowania na wspólny puls, słuchania własnego dźwięku i miejsca innych osób w grupie."
               },
               {
                 "id": "movement",
                 "title": "Ruch i koordynacja",
-                "body": "Zadania łączą dźwięk z ruchem i przestrzenią."
+                "body": "Ruch pomaga poczuć tempo i porządek utworu, a poziom koordynacji dopasowujemy do wieku dzieci."
               },
               {
                 "id": "playing",
                 "title": "Wspólne granie",
-                "body": "Każdy ma miejsce w prostym, wspólnym wykonaniu."
+                "body": "Każde dziecko dostaje czytelną rolę, dzięki czemu grupa może zbudować wspólny finał bez wcześniejszego przygotowania muzycznego."
               },
               {
                 "id": "imagination",
                 "title": "Wyobraźnia i własny pomysł",
-                "body": "Grupa może przekształcić ćwiczenie w swoją wersję."
+                "body": "Po poznaniu zasad grupa może zmieniać rytm, ruch albo kolejność i stworzyć własną wersję ćwiczenia."
               }
             ]
           },
@@ -1632,7 +1757,7 @@
           {
             "id": "dowody",
             "heading": "Dowody, doświadczenie i skala",
-            "intro": "Materiały dziecięce pokazujemy wyłącznie przy potwierdzonych prawach.",
+            "intro": "Film pokazuje warsztat w kontekście dziecięcym, a doświadczenie od 2010 roku i skala pracy z nauczycielami uzupełniają obraz metody.",
             "items": [
               {
                 "id": "since-2010",
@@ -1651,7 +1776,7 @@
           {
             "id": "warunki",
             "heading": "Koszt i warunki",
-            "intro": "Brakujące dane pokazujemy uczciwie jako do ustalenia.",
+            "intro": "Czas, liczba grup, miejsce, dojazd i cena zależą od uzgodnionego zakresu. Wszystkie warunki omawiamy przed potwierdzeniem realizacji.",
             "items": [
               {
                 "id": "duration",
@@ -1708,7 +1833,7 @@
           "title": "Music workshops for children | Dawid Gacek",
           "description": "Music workshops for children with boomwhackers. Explore age groups, programme, facilitation, experience, and practical details for organizers in Poland."
         },
-        "title": "Music workshops for children with boomwhackers",
+        "title": "Workshops for children with boomwhackers",
         "eyebrow": "Rhythm, movement, and shared playing matched to the age and abilities of the group.",
         "intro": "I lead workshops where children can listen to one another, act together, and discover music through movement and play.",
         "proof": "I have worked with boomwhackers since 2010.",
@@ -1716,11 +1841,28 @@
           "label": "Choose a workshop by age",
           "href": "#age"
         },
+        "video": {
+          "videoId": "U0f4uQje2NE",
+          "title": "Music workshops for children",
+          "alt": "Dawid Gacek leading a music workshop with children, video preview",
+          "placeholderImage": {
+            "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+            "alt": "Portrait of Dawid Gacek against a light background",
+            "width": 1024,
+            "height": 683
+          },
+          "fallback": {
+            "label": "Open the video on YouTube",
+            "href": "https://youtu.be/U0f4uQje2NE",
+            "external": true
+          },
+          "status": "confirmed"
+        },
         "sections": [
           {
             "id": "age",
             "heading": "Choose an age group",
-            "intro": "A starting point for matching level and energy.",
+            "intro": "The workshop is matched to the children's age, group size, and abilities so the pace, rules, and activities are clear.",
             "items": [
               {
                 "id": "age-3-6",
@@ -1745,27 +1887,27 @@
           {
             "id": "programme",
             "heading": "A programme matched to age",
-            "intro": "Music and movement are a way into shared action.",
+            "intro": "I do not use one script for every group. Activities are adapted to age, group size, available time, and venue.",
             "items": [
               {
                 "id": "rhythm",
                 "title": "Rhythm and listening",
-                "body": "Participants discover how to listen to themselves and the group."
+                "body": "Simple tasks teach children to respond to a shared pulse, hear their own sound, and notice other people in the group."
               },
               {
                 "id": "movement",
                 "title": "Movement and coordination",
-                "body": "Tasks connect sound with movement and space."
+                "body": "Movement helps children feel tempo and musical structure, with coordination matched to their age."
               },
               {
                 "id": "playing",
                 "title": "Playing together",
-                "body": "Everyone has a place in a simple shared performance."
+                "body": "Each child receives a clear role so the group can build a shared finale without previous musical training."
               },
               {
                 "id": "imagination",
                 "title": "Imagination and original ideas",
-                "body": "The group can turn an exercise into its own version."
+                "body": "Once the rules are clear, the group can change the rhythm, movement, or order and create its own version."
               }
             ]
           },
@@ -1833,7 +1975,7 @@
           {
             "id": "evidence",
             "heading": "Evidence, experience, and scale",
-            "intro": "Children's materials are shown only with confirmed rights.",
+            "intro": "The video shows a children's workshop, while experience since 2010 and the scale of teacher training provide wider context for the method.",
             "items": [
               {
                 "id": "since-2010",
@@ -1852,7 +1994,7 @@
           {
             "id": "terms",
             "heading": "Cost and terms",
-            "intro": "Missing details are shown honestly as to be agreed.",
+            "intro": "Timing, number of groups, venue, travel, and price depend on the agreed scope. All terms are discussed before confirmation.",
             "items": [
               {
                 "id": "duration",
@@ -1935,24 +2077,34 @@
           {
             "id": "dla-kogo",
             "heading": "Dla kogo i jakie problemy",
-            "intro": "Dla zespołów, które chcą rozmawiać o różnicach bez uproszczeń.",
+            "intro": "Szkolenie jest dla zespołów, które chcą lepiej rozumieć swoje sposoby działania i rozmawiać o współpracy konkretniej.",
             "items": [
               {
                 "id": "misunderstanding",
-                "title": "Nieporozumienia i informacja zwrotna",
-                "body": "Wspólny język ułatwia rozmowę o tym, co dzieje się w codziennej współpracy."
+                "title": "Różne style komunikacji",
+                "body": "Wspólny język pomaga rozpoznać, skąd biorą się nieporozumienia w codziennej współpracy."
               },
               {
                 "id": "decisions",
                 "title": "Tempo, decyzje i odpowiedzialność",
-                "body": "Różne preferencje mogą stać się przedmiotem konstruktywnej rozmowy."
+                "body": "Różne preferencje mogą stać się przedmiotem konstruktywnej rozmowy zamiast źródłem szybkich ocen."
+              },
+              {
+                "id": "feedback",
+                "title": "Informacja zwrotna",
+                "body": "Uczestnicy przyglądają się temu, jak jasno mówić o potrzebach oraz jak słuchać osób reagujących inaczej."
+              },
+              {
+                "id": "shared-language",
+                "title": "Wspólny język współpracy",
+                "body": "Model daje zespołowi pojęcia do rozmowy o zachowaniach, bez sprowadzania ludzi do jednego typu."
               }
             ]
           },
           {
             "id": "zastosowanie",
             "heading": "Co szkolenie może wesprzeć",
-            "intro": "Model służy obserwacji i rozmowie, nie przypinaniu etykiet.",
+            "intro": "Szkolenie nie zmienia zespołu za uczestników. Daje język, obserwacje i ćwiczenia, które mogą pomóc przełożyć rozmowę na codzienną współpracę.",
             "items": [
               {
                 "id": "preferences",
@@ -1974,7 +2126,7 @@
           {
             "id": "przebieg",
             "heading": "Jak wygląda szkolenie",
-            "intro": "Od celu zespołu do przełożenia na codzienną pracę.",
+            "intro": "Zaczynamy od celu zespołu, a nie od gotowej etykiety. Potem przechodzimy przez model, przykłady i rozmowę o praktyce.",
             "items": [
               {
                 "id": "goal",
@@ -2001,7 +2153,7 @@
           {
             "id": "wariant-muzyczny",
             "heading": "Muzyka, Bum Bum Rurki i DISC",
-            "intro": "Opcjonalny wariant tylko wtedy, gdy wspiera cel zespołu.",
+            "intro": "Jeśli cel zespołu tego potrzebuje, muzyka i Bum Bum Rurki stają się doświadczeniem, które otwiera rozmowę o słuchaniu, reakcji i współpracy.",
             "items": [
               {
                 "id": "music-variant",
@@ -2014,13 +2166,13 @@
           {
             "id": "kwalifikacje",
             "heading": "Kwalifikacje i dowody",
-            "intro": "Certyfikat oraz zakres pracy są pokazywane bez nadinterpretacji.",
+            "intro": "Potwierdzony certyfikat MaxiDISC uzupełnia doświadczenie Dawida w pracy z ludźmi przez muzykę, ruch i komunikację.",
             "items": [
               {
                 "id": "maxidisc",
                 "title": "MaxiDISC",
-                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie, zakres do potwierdzenia.",
-                "status": "pending"
+                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie.",
+                "status": "confirmed"
               },
               {
                 "id": "practice",
@@ -2033,17 +2185,27 @@
           {
             "id": "oferta",
             "heading": "Format, czas i warunki",
-            "intro": "Zakres szkolenia i wycena zależą od potrzeb zespołu.",
+            "intro": "Format, czas, liczebność i wycena zależą od celu zespołu. Szczegóły ustalamy po krótkiej rozmowie.",
             "items": [
+              {
+                "id": "format",
+                "title": "Format",
+                "body": "Szkolenie DISC dla zespołów, z opcjonalnym wariantem muzycznym."
+              },
               {
                 "id": "audience",
                 "title": "Zespoły, liderzy, HR i L&D",
-                "body": "Zakres dopasowany do sytuacji zespołu."
+                "body": "Zakres dopasowujemy do sytuacji zespołu i celu, z którym przychodzą uczestnicy."
+              },
+              {
+                "id": "scope",
+                "title": "Zakres",
+                "body": "Model, przykłady, ćwiczenia oraz rozmowa o przełożeniu wniosków na codzienną współpracę."
               },
               {
                 "id": "terms",
                 "title": "Czas i wycena",
-                "body": "Ustalane indywidualnie po rozmowie.",
+                "body": "Ustalane indywidualnie z uwzględnieniem programu, liczebności, miejsca i logistyki.",
                 "status": "pending"
               }
             ]
@@ -2109,24 +2271,34 @@
           {
             "id": "who-for",
             "heading": "Who it is for and which problems it helps",
-            "intro": "For teams that want to discuss differences without reducing people to types.",
+            "intro": "The training is for teams that want to understand how they work and talk about collaboration more clearly.",
             "items": [
               {
                 "id": "misunderstanding",
-                "title": "Misunderstandings and feedback",
-                "body": "A shared language supports conversations about everyday cooperation."
+                "title": "Different communication styles",
+                "body": "A shared language helps identify where misunderstandings in everyday cooperation come from."
               },
               {
                 "id": "decisions",
                 "title": "Pace, decisions, and responsibility",
-                "body": "Different preferences can become a constructive topic for the team."
+                "body": "Different preferences can become a constructive topic instead of a source of quick judgement."
+              },
+              {
+                "id": "feedback",
+                "title": "Feedback",
+                "body": "Participants examine how to express needs clearly and listen to people who respond differently."
+              },
+              {
+                "id": "shared-language",
+                "title": "A shared language for cooperation",
+                "body": "The model gives a team language for discussing behaviour without reducing people to one type."
               }
             ]
           },
           {
             "id": "uses",
             "heading": "What the training can support",
-            "intro": "The model is for observation and conversation, not labelling.",
+            "intro": "Training does not change a team for its participants. It offers language, observations, and exercises that can support everyday collaboration.",
             "items": [
               {
                 "id": "preferences",
@@ -2148,7 +2320,7 @@
           {
             "id": "process",
             "heading": "What the training looks like",
-            "intro": "From the team's goal to everyday cooperation.",
+            "intro": "We start with the team's goal, not with a ready-made label. Then we work through the model, examples, and practical reflection.",
             "items": [
               {
                 "id": "goal",
@@ -2175,7 +2347,7 @@
           {
             "id": "music-variant",
             "heading": "Music, boomwhackers, and DISC",
-            "intro": "An optional variant only when it supports the team's goal.",
+            "intro": "When the team's goal calls for it, music and boomwhackers create an experience that opens a conversation about listening, response, and collaboration.",
             "items": [
               {
                 "id": "music-variant",
@@ -2188,13 +2360,13 @@
           {
             "id": "qualifications",
             "heading": "Qualifications and evidence",
-            "intro": "The certificate and scope of work are shown without overclaiming.",
+            "intro": "The confirmed MaxiDISC certificate complements Dawid's experience working with people through music, movement, and communication.",
             "items": [
               {
                 "id": "maxidisc",
                 "title": "MaxiDISC",
-                "body": "Consultant certificate after training, mentoring, and an exam, scope pending confirmation.",
-                "status": "pending"
+                "body": "Consultant certificate after training, mentoring, and an exam.",
+                "status": "confirmed"
               },
               {
                 "id": "practice",
@@ -2207,17 +2379,27 @@
           {
             "id": "offer",
             "heading": "Format, timing, and terms",
-            "intro": "Training scope and quote depend on the team's needs.",
+            "intro": "Format, duration, group size, and pricing depend on the team's goal. We agree the details after a short conversation.",
             "items": [
+              {
+                "id": "format",
+                "title": "Format",
+                "body": "DISC team training with an optional music-based variant."
+              },
               {
                 "id": "audience",
                 "title": "Teams, leaders, HR, and L&D",
-                "body": "Scope matched to the team's situation."
+                "body": "The scope is matched to the team's situation and the goal participants bring to the session."
+              },
+              {
+                "id": "scope",
+                "title": "Scope",
+                "body": "The model, examples, exercises, and a conversation about applying insights to everyday cooperation."
               },
               {
                 "id": "terms",
                 "title": "Timing and quote",
-                "body": "Agreed individually after a conversation.",
+                "body": "Agreed individually with the programme, group size, venue, and logistics in mind.",
                 "status": "pending"
               }
             ]

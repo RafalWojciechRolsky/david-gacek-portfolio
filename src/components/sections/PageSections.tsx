@@ -50,7 +50,7 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
               {isContactChannels ? (
                 <ContactChannels
                   locale={locale}
-                  light
+                  light={tone === "paper" || tone === "white"}
                   objectId={`${pageSection.id}-contact-channels`}
                 />
               ) : pageSection.items?.length ? (

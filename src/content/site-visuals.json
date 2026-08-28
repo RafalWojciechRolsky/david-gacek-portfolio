@@ -22,16 +22,16 @@
     },
     "toneBySection": {
       "pl": {
-        "kim-jestem": "white",
-        "jak-pracuje": "paper",
+        "kim-jestem": "paper",
+        "jak-pracuje": "white",
         "os-czasu": "ink",
         "dowody": "cobalt",
         "srodowiska": "paper",
         "referencje": "white"
       },
       "en": {
-        "who-i-am": "white",
-        "how-i-work": "paper",
+        "who-i-am": "paper",
+        "how-i-work": "white",
         "timeline": "ink",
         "evidence": "cobalt",
         "contexts": "paper",
@@ -100,16 +100,16 @@
     "signal": "coral",
     "heroImage": {
       "pl": {
-        "src": "/images/gacek-3.jpg",
-        "alt": "Dawid Gacek z kolorowymi rurkami podczas występu",
-        "width": 800,
-        "height": 533
+        "src": "/images/gacek-4.jpg",
+        "alt": "Dawid Gacek podczas muzycznej integracji z zespołem",
+        "width": 1179,
+        "height": 660
       },
       "en": {
-        "src": "/images/gacek-3.jpg",
-        "alt": "Dawid Gacek with colourful tubes during a performance",
-        "width": 800,
-        "height": 533
+        "src": "/images/gacek-4.jpg",
+        "alt": "Dawid Gacek leading a musical team session",
+        "width": 1179,
+        "height": 660
       }
     },
     "heroCaption": {
@@ -132,7 +132,7 @@
     },
     "toneBySection": {
       "pl": {
-        "triaż": "coral",
+        "triaż": "paper",
         "formaty": "white",
         "sposob": "paper",
         "dowody": "ink",
@@ -140,7 +140,7 @@
         "realizacje": "coral"
       },
       "en": {
-        "triage": "coral",
+        "triage": "paper",
         "formats": "white",
         "how": "paper",
         "evidence": "ink",
@@ -186,22 +186,22 @@
     },
     "toneBySection": {
       "pl": {
-        "wiek": "ochre",
+        "wiek": "green",
         "program": "white",
         "bezpieczenstwo": "paper",
         "przebieg": "ink",
         "organizacja": "green",
         "dowody": "white",
-        "warunki": "paper"
+        "warunki": "green"
       },
       "en": {
-        "age": "ochre",
+        "age": "green",
         "programme": "white",
         "safety": "paper",
         "process": "ink",
         "organization": "green",
         "evidence": "white",
-        "terms": "paper"
+        "terms": "green"
       }
     }
   },
@@ -228,7 +228,7 @@
     },
     "toneBySection": {
       "pl": {
-        "definicja-disc": "green",
+        "definicja-disc": "paper",
         "dla-kogo": "white",
         "zastosowanie": "ink",
         "przebieg": "green",
@@ -237,7 +237,7 @@
         "oferta": "cobalt"
       },
       "en": {
-        "disc-definition": "green",
+        "disc-definition": "paper",
         "who-for": "white",
         "uses": "ink",
         "process": "green",
@@ -249,7 +249,7 @@
   },
   "projects": {
     "variant": "projects",
-    "signal": "coral",
+    "signal": "cobalt",
     "heroImage": {
       "pl": {
         "src": "/images/guiness.jpg",
@@ -286,16 +286,16 @@
     "signal": "ochre",
     "heroImage": {
       "pl": {
-        "src": "/images/rurki-2.jpg",
-        "alt": "Kolorowe Bum Bum Rurki przygotowane do transportu",
-        "width": 1631,
-        "height": 1223
+        "src": "/images/gacek-3.jpg",
+        "alt": "Dawid Gacek otoczony kolorowymi rurkami podczas pracy",
+        "width": 800,
+        "height": 533
       },
       "en": {
-        "src": "/images/rurki-2.jpg",
-        "alt": "Colourful boomwhackers prepared for transport",
-        "width": 1631,
-        "height": 1223
+        "src": "/images/gacek-3.jpg",
+        "alt": "Dawid Gacek surrounded by colourful tubes during a session",
+        "width": 800,
+        "height": 533
       }
     },
     "heroCaption": {

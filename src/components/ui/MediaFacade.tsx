@@ -31,7 +31,10 @@ export function MediaFacade({
   const [isActivated, setIsActivated] = useState(false);
   const messages = getMessages(locale);
 
-  if (video.status !== "available" && !isActivated) {
+  const isAvailable =
+    video.status === "available" || video.status === "confirmed";
+
+  if (!isAvailable && !isActivated) {
     return (
       <div className="media-facade media-facade--unavailable" data-object-id={objectId}>
         <Image

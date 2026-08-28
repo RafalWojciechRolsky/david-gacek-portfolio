@@ -28,10 +28,10 @@ export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
     pageKey === "teacherTraining" ||
     pageKey === "corporateEvents" ||
     pageKey === "childrenWorkshops";
-  const homepageVideo = getHomepage(locale).video;
+  const pageVideo = page.video ?? getHomepage(locale).video;
   const video: VideoData = {
-    ...homepageVideo,
-    placeholderImage: visual.mediaImage ?? homepageVideo.placeholderImage,
+    ...pageVideo,
+    placeholderImage: visual.mediaImage ?? pageVideo.placeholderImage,
   };
   const videoAfterSection =
     pageKey === "teacherTraining"

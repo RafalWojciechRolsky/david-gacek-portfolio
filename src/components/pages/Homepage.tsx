@@ -155,7 +155,7 @@ export function Homepage({ page }: HomepageProps) {
           <div className="context-grid" data-object-id="homepage-invitation-contexts-grid">
             {page.contexts.map((context, index) => (
               <TrackedLink
-                className="context-card"
+                className={`context-card context-card--${context.id}`}
                 href={context.href}
                 key={context.id}
                 eventName="select_invitation_context"
