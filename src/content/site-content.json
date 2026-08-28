@@ -127,31 +127,28 @@
           "id": "what-are-boomwhackers",
           "type": "Przewodnik",
           "title": "Bum Bum Rurki: czym są i co można z nimi zrobić?",
-          "body": "Punkt wyjścia do świadomej pracy z rytmem, słuchaniem, ruchem i grupą.",
+          "body": "Punkt wyjścia do świadomej pracy z rytmem, słuchaniem, ruchem i grupą. Poznaj zasady, które zamieniają kolorowe tuby w angażujące narzędzie edukacyjne.",
           "href": "/wiedza/bum-bum-rurki-czym-sa",
           "actionLabel": "Czytaj artykuł",
-          "readTime": "5 minut",
-          "status": "available"
+          "readTime": "5 minut"
         },
         {
           "id": "group-attention",
           "type": "Pomysł do użycia",
           "title": "Jak utrzymać uwagę grupy bez podnoszenia głosu?",
-          "body": "Proste zasady i rytuały, które pomagają prowadzić aktywne zajęcia.",
+          "body": "Proste zasady, rytuały i sygnały dźwiękowe, które pomagają prowadzić aktywne zajęcia. Zobacz, jak zapanować nad dynamiką sali bez niepotrzebnego napięcia.",
           "href": "/wiedza/uwaga-grupy",
           "actionLabel": "Czytaj artykuł",
-          "readTime": "4 minuty",
-          "status": "available"
+          "readTime": "4 minuty"
         },
         {
           "id": "music-cooperation",
           "type": "Metoda",
           "title": "Muzyka jako język współpracy",
-          "body": "Co dzieje się w grupie, gdy każdy słucha swojego rytmu i rytmu innych?",
+          "body": "Co dzieje się w zespole, gdy każdy słucha swojego rytmu i reaguje na innych? Doświadczenie wspólnego grania jako bezpośredni model komunikacji.",
           "href": "/wiedza/muzyka-jezyk-wspolpracy",
           "actionLabel": "Czytaj artykuł",
-          "readTime": "6 minut",
-          "status": "available"
+          "readTime": "6 minut"
         }
       ],
       "environments": [
@@ -179,7 +176,6 @@
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Obszar Komunikacja i DISC.",
-          "status": "confirmed",
           "source": {
             "label": "Źródło: Akademia Przywództwa",
             "href": "https://akademiaprzywodztwa.pl/",
@@ -338,31 +334,28 @@
           "id": "what-are-boomwhackers",
           "type": "Guide",
           "title": "Boomwhackers: what are they and what can you do with them?",
-          "body": "A starting point for thoughtful work with rhythm, listening, movement, and groups.",
+          "body": "A starting point for working with rhythm, listening, movement, and group dynamics. Learn the core principles that turn colourful tubes into an engaging educational tool.",
           "href": "/en/insights/what-are-boomwhackers",
           "actionLabel": "Read the article",
-          "readTime": "5 min read",
-          "status": "available"
+          "readTime": "5 min read"
         },
         {
           "id": "group-attention",
           "type": "Practical idea",
           "title": "How can you hold a group's attention without raising your voice?",
-          "body": "Simple rules and rituals that help you lead active sessions.",
+          "body": "Clear sound cues, rhythmic rituals, and proven methods for active workshops. Discover how to manage room dynamics calmly and effectively.",
           "href": "/en/insights/group-attention",
           "actionLabel": "Read the article",
-          "readTime": "4 min read",
-          "status": "available"
+          "readTime": "4 min read"
         },
         {
           "id": "music-cooperation",
           "type": "Method",
           "title": "Music as a language of cooperation",
-          "body": "What happens when everyone listens to their own rhythm and the rhythm of others?",
+          "body": "What happens in a team when everyone listens to their own pulse and responds to others? Group music-making as a practical framework for everyday communication.",
           "href": "/en/insights/music-cooperation",
           "actionLabel": "Read the article",
-          "readTime": "6 min read",
-          "status": "available"
+          "readTime": "6 min read"
         }
       ],
       "environments": [
@@ -390,7 +383,6 @@
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Communication and DISC area.",
-          "status": "confirmed",
           "source": {
             "label": "Source: Akademia Przywództwa",
             "href": "https://akademiaprzywodztwa.pl/",
@@ -901,7 +893,11 @@
                 "body": "Konspekt, linki do narzędzi, materiały wideo, muzyka i dodatkowe zasoby.",
                 "status": "available"
               }
-            ]
+            ],
+            "action": {
+              "label": "Zadzwoń i zapytaj o wolny termin dla swojej placówki",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "sposob-pracy",
@@ -979,8 +975,8 @@
             ]
           },
           {
-            "id": "materialy-dla-dyrektorki",
-            "heading": "Materiały dla dyrektorki",
+            "id": "materialy-dla-dyrekcji",
+            "heading": "Materiały dla dyrekcji",
             "intro": "Przekaż dyrekcji jeden kompletny adres. Znajdzie tu sens szkolenia, program, materiały, dowody i warunki do ustalenia.",
             "items": [
               {
@@ -1125,7 +1121,11 @@
                 "body": "An outline, tool links, video, music, and additional resources.",
                 "status": "available"
               }
-            ]
+            ],
+            "action": {
+              "label": "Call to check available dates for your school",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "how",
@@ -1203,9 +1203,9 @@
             ]
           },
           {
-            "id": "director-materials",
-            "heading": "Materials for a school leader",
-            "intro": "Send your school leader one complete link. It brings together the purpose, programme, materials, evidence, and practical details.",
+            "id": "leadership-materials",
+            "heading": "Materials for school leadership",
+            "intro": "Send your school leadership one complete link. It brings together the training purpose, programme, materials, evidence, and practical details.",
             "items": [
               {
                 "id": "offer-pdf",
@@ -1252,10 +1252,10 @@
         "locale": "pl",
         "slug": "muzyczny-team-building",
         "seo": {
-          "title": "Muzyczny team building dla firm | Dawid Gacek",
+          "title": "Team building dla firm | Dawid Gacek",
           "description": "Muzyczny team building, icebreakery i warsztaty z Bum Bum Rurkami dla firm, zespołów i konferencji. Sprawdź formaty i realizacje, porozmawiaj o wydarzeniu."
         },
-        "title": "Muzyczny team building dla firm",
+        "title": "Team building dla firm",
         "eyebrow": "Muzyka, ruch i współpraca na konferencjach, eventach i spotkaniach zespołów.",
         "intro": "Prowadzę muzyczne aktywności, które uruchamiają grupę i dają uczestnikom wspólne doświadczenie, nie tylko kolejną atrakcję.",
         "proof": "Pracuję z ludźmi przez muzykę, ruch i współpracę od 2010 roku.",
@@ -1318,7 +1318,11 @@
                 "title": "Warsztat firmowy",
                 "body": "Format dopasowany do celu zespołu, miejsca i czasu."
               }
-            ]
+            ],
+            "action": {
+              "label": "Porozmawiajmy o dopasowaniu formatu do Twojego wydarzenia",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "sposob",
@@ -1431,10 +1435,10 @@
         "locale": "en",
         "slug": "music-team-building",
         "seo": {
-          "title": "Music-based team building for companies | Dawid Gacek",
+          "title": "Team building for companies | Dawid Gacek",
           "description": "Music-based team building, icebreakers, and boomwhacker workshops for companies, teams, and conferences. Explore formats, proof, and practical details."
         },
-        "title": "Music team building for companies",
+        "title": "Team building for companies",
         "eyebrow": "Music, movement, and cooperation for conferences, events, and team sessions.",
         "intro": "I lead musical activities that activate a group and create a shared experience, not just another attraction.",
         "proof": "I have worked with people through music, movement, and cooperation since 2010.",
@@ -1497,7 +1501,11 @@
                 "title": "Company workshop",
                 "body": "A format shaped around the team's goal, venue, and schedule."
               }
-            ]
+            ],
+            "action": {
+              "label": "Let's discuss matching the format to your event",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "how",
@@ -1691,7 +1699,11 @@
                 "title": "Wyobraźnia i własny pomysł",
                 "body": "Po poznaniu zasad grupa może zmieniać rytm, ruch albo kolejność i stworzyć własną wersję ćwiczenia."
               }
-            ]
+            ],
+            "action": {
+              "label": "Porozmawiajmy o warsztatach dla Twojej grupy",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "bezpieczenstwo",
@@ -1909,7 +1921,11 @@
                 "title": "Imagination and original ideas",
                 "body": "Once the rules are clear, the group can change the rhythm, movement, or order and create its own version."
               }
-            ]
+            ],
+            "action": {
+              "label": "Let's discuss workshops for your group",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "safety",
@@ -2121,7 +2137,11 @@
                 "title": "Wspólny język współpracy",
                 "body": "Różnice można omawiać bez oceny i diagnozowania."
               }
-            ]
+            ],
+            "action": {
+              "label": "Porozmawiajmy o wyzwaniach komunikacyjnych Twojego zespołu",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "przebieg",
@@ -2315,7 +2335,11 @@
                 "title": "A shared language for cooperation",
                 "body": "Differences can be discussed without judgement or diagnosis."
               }
-            ]
+            ],
+            "action": {
+              "label": "Let's discuss your team's communication challenges",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "process",
@@ -2728,32 +2752,42 @@
           {
             "id": "kategorie",
             "heading": "Kategorie wiedzy",
-            "intro": "Wybierz temat, który jest Ci teraz potrzebny.",
+            "intro": "Wybierz obszar tematyczny, aby przejść do dedykowanych artykułów, scenariuszy i materiałów.",
             "items": [
               {
                 "id": "boomwhackers",
                 "title": "Bum Bum Rurki",
-                "body": "Instrument, rytm i wspólne działanie."
+                "body": "Podstawy metody, technika gry, podział na głosy i scenariusze zajęć edukacyjnych.",
+                "href": "/wiedza/bum-bum-rurki-czym-sa",
+                "actionLabel": "Zobacz artykuł o rurkach"
               },
               {
                 "id": "music",
                 "title": "Muzyka",
-                "body": "Słuchanie, granie i ruch."
+                "body": "Rytm, słuchanie, dynamika i koordynacja ruchowa jako uniwersalny język grupy.",
+                "href": "/wiedza/muzyka-jezyk-wspolpracy",
+                "actionLabel": "Zobacz artykuł o muzyce"
               },
               {
                 "id": "group-work",
                 "title": "Praca z grupą",
-                "body": "Uwaga, zasady i prowadzenie."
+                "body": "Utrzymanie uwagi bez podnoszenia głosu, zasady START / STOP i bezpieczne prowadzenie sali.",
+                "href": "/wiedza/uwaga-grupy",
+                "actionLabel": "Zobacz artykuł o uwadze"
               },
               {
                 "id": "relationships",
-                "title": "Relacje",
-                "body": "Kontakt, bezpieczeństwo i współpraca."
+                "title": "Relacje i integracja",
+                "body": "Budowanie zaufania, współpraca w zespole i otwieranie uczestników na wspólne działanie.",
+                "href": "/muzyczny-team-building",
+                "actionLabel": "Zobacz ofertę team buildingu"
               },
               {
                 "id": "disc",
                 "title": "Komunikacja i DISC",
-                "body": "Style zachowania i wspólny język."
+                "body": "Cztery style zachowań, rozpoznawanie potrzeb innych i dopasowanie języka w zespole.",
+                "href": "/szkolenia-disc-dla-zespolow",
+                "actionLabel": "Zobacz szkolenia DISC"
               }
             ]
           },
@@ -2801,12 +2835,14 @@
             "items": [
               {
                 "id": "song-sheet",
+                "type": "Nuty i karty",
                 "title": "Karty i nuty",
                 "body": "W przygotowaniu.",
                 "status": "preparing"
               },
               {
                 "id": "session-plan",
+                "type": "Konspekt PDF",
                 "title": "Scenariusze do użycia",
                 "body": "Dostępność i zakres użycia zostaną opisane przy pliku.",
                 "status": "preparing"
@@ -2888,32 +2924,42 @@
           {
             "id": "categories",
             "heading": "Knowledge categories",
-            "intro": "Choose the topic you need right now.",
+            "intro": "Choose a topic area to explore dedicated articles, guides, and workshop materials.",
             "items": [
               {
                 "id": "boomwhackers",
                 "title": "Boomwhackers",
-                "body": "Instrument, rhythm, and shared action."
+                "body": "Method fundamentals, playing techniques, part assignments, and educational session plans.",
+                "href": "/en/insights/what-are-boomwhackers",
+                "actionLabel": "Read boomwhackers guide"
               },
               {
                 "id": "music",
                 "title": "Music",
-                "body": "Listening, playing, and movement."
+                "body": "Rhythm, active listening, tempo, and movement coordination as a shared team language.",
+                "href": "/en/insights/music-cooperation",
+                "actionLabel": "Read music cooperation guide"
               },
               {
                 "id": "group-work",
-                "title": "Group work",
-                "body": "Attention, rules, and facilitation."
+                "title": "Group facilitation",
+                "body": "Holding attention without raising your voice, START / STOP cues, and safe room management.",
+                "href": "/en/insights/group-attention",
+                "actionLabel": "Read attention guide"
               },
               {
                 "id": "relationships",
-                "title": "Relationships",
-                "body": "Connection, safety, and cooperation."
+                "title": "Team relationships",
+                "body": "Building trust, mutual listening, and opening participants up to shared collaboration.",
+                "href": "/en/music-team-building",
+                "actionLabel": "Explore team building"
               },
               {
                 "id": "disc",
                 "title": "Communication and DISC",
-                "body": "Behavioural styles and a shared language."
+                "body": "Four behavioural styles, understanding colleague needs, and adapting communication in teams.",
+                "href": "/en/disc-team-training",
+                "actionLabel": "Explore DISC training"
               }
             ]
           },
@@ -2961,12 +3007,14 @@
             "items": [
               {
                 "id": "song-sheet",
+                "type": "Sheet music",
                 "title": "Cards and notes",
                 "body": "In preparation.",
                 "status": "preparing"
               },
               {
                 "id": "session-plan",
+                "type": "PDF Outline",
                 "title": "Session plans to use",
                 "body": "Availability and scope will be stated with the file.",
                 "status": "preparing"
@@ -3007,7 +3055,7 @@
           "title": "Kontakt | Dawid Gacek",
           "description": "Skontaktuj się z Dawidem Gackiem. Zadzwoń, napisz na WhatsAppie albo wyślij e-mail, aby ustalić termin, zakres, logistykę i warunki współpracy bez formularza."
         },
-        "title": "Kontakt z Dawidem Gackiem",
+        "title": "Kontakt z Dawidem",
         "eyebrow": "Porozmawiajmy o terminie, zakresie i warunkach współpracy.",
         "intro": "Nie musisz mieć gotowego briefu. Wystarczy pomysł, grupa i to, co chcesz osiągnąć.",
         "proof": "Odbieram w dni robocze 9-17.",
@@ -3071,22 +3119,22 @@
           {
             "id": "rozmowa",
             "heading": "Co ustalimy w rozmowie",
-            "intro": "Rozmowa służy sprawdzeniu dopasowania.",
+            "intro": "Krótka rozmowa służy sprawdzeniu dopasowania i ustaleniu konkretnych szczegółów.",
             "items": [
               {
                 "id": "availability",
-                "title": "Dostępność",
-                "body": "Termin, miejsce i czas."
+                "title": "Grupa i cel spotkania",
+                "body": "Liczba uczestników, wiek, specyfika zespołu oraz to, czy celem jest integracja, rozgrzewka, czy praca z komunikacją."
               },
               {
                 "id": "format",
-                "title": "Format i zakres",
-                "body": "Najlepszy sposób pracy z grupą."
+                "title": "Przestrzeń i format",
+                "body": "Miejsce wydarzenia, układ sali, warunki dźwiękowe, dostępny czas oraz dobór programu do warunków."
               },
               {
                 "id": "logistics",
                 "title": "Logistyka i wycena",
-                "body": "Dojazd, skład, warunki i dalszy krok."
+                "body": "Dojazd w dowolne miejsce w Polsce, komplet rurek dla wszystkich uczestników, przejrzysta wycena i formalności."
               }
             ]
           },
@@ -3161,7 +3209,7 @@
           "title": "Contact | Dawid Gacek",
           "description": "Contact Dawid Gacek by phone, WhatsApp, or email to discuss timing, scope, logistics, and practical details before you invite him to your event without a form."
         },
-        "title": "Contact Dawid Gacek",
+        "title": "Contact Dawid",
         "eyebrow": "Let's talk about timing, scope, and practical details.",
         "intro": "You do not need a finished brief. An idea, a group, and a goal are enough to begin.",
         "proof": "I answer calls on working days, 9 am-5 pm.",
@@ -3224,23 +3272,23 @@
           },
           {
             "id": "conversation",
-            "heading": "What we will agree",
-            "intro": "The conversation is there to check the fit.",
+            "heading": "What we agree on the call",
+            "intro": "A short call helps check fit and confirm practical details.",
             "items": [
               {
                 "id": "availability",
-                "title": "Availability",
-                "body": "Date, venue, and timing."
+                "title": "Group and purpose",
+                "body": "Group size, age, team dynamics, and whether the goal is an energiser, team building, or deep communication work."
               },
               {
                 "id": "format",
-                "title": "Format and scope",
-                "body": "The right way to work with the group."
+                "title": "Space and format",
+                "body": "Venue layout, room acoustics, available time, and tailoring the programme to your setting."
               },
               {
                 "id": "logistics",
                 "title": "Logistics and quote",
-                "body": "Travel, line-up, terms, and next step."
+                "body": "Travel across Poland and Europe, complete instrument sets for all participants, transparent pricing, and simple terms."
               }
             ]
           },

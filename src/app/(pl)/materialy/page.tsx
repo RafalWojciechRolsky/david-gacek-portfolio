@@ -31,7 +31,7 @@ export default function PolishMaterialsPage() {
           </p>
           <div className="resource-list">
             {page.sections
-              .find((item) => item.id === "materialy-dla-dyrektorki")
+              .find((item) => item.id === "materialy-dla-dyrekcji" || item.id === "materialy-dla-dyrektorki")
               ?.items?.map((resource) => (
                 <ResourceItem key={resource.id} resource={resource} locale="pl" />
               ))}

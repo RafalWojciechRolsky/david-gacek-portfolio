@@ -9,7 +9,6 @@ import { ContentCard } from "@/components/ui/ContentCard";
 import { DisclosureFaq } from "@/components/ui/DisclosureFaq";
 import { EvidenceBlock } from "@/components/ui/EvidenceBlock";
 import { MediaFacade } from "@/components/ui/MediaFacade";
-import { getStatusLabel } from "@/lib/content-labels";
 import { pathWithAnchor } from "@/lib/routes";
 import { siteConfig } from "@/lib/site-config";
 import type { HomepageData } from "@/lib/types";
@@ -54,7 +53,7 @@ export function Homepage({ page }: HomepageProps) {
           <p className="hero-hours">{siteConfig.phoneHoursByLocale[page.locale]}</p>
           {page.cta ? (
             <ActionLink
-              href={page.cta.href}
+              href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
               variant="primary"
               withArrow
               objectId="homepage-hero-primary-cta"
@@ -80,7 +79,6 @@ export function Homepage({ page }: HomepageProps) {
               <EvidenceBlock
                 key={evidence.id}
                 evidence={evidence}
-                statusLabel={getStatusLabel(evidence.status, page.locale)}
                 objectId={`homepage-proof-${evidence.id}`}
               />
             ))}
@@ -100,11 +98,6 @@ export function Homepage({ page }: HomepageProps) {
                         <ActionLink href={environment.source.href} variant="source">
                           {environment.source.label}
                         </ActionLink>
-                      ) : null}
-                      {environment.status ? (
-                        <span className="proof-status">
-                          {getStatusLabel(environment.status, page.locale)}
-                        </span>
                       ) : null}
                     </div>
                   ))}
@@ -190,7 +183,6 @@ export function Homepage({ page }: HomepageProps) {
                 index={index}
                 objectId="homepage-knowledge-article-card"
                 linkWholeCard
-                statusLabel={article.status ? getStatusLabel(article.status, page.locale) : undefined}
               />
             ))}
           </div>

@@ -34,7 +34,7 @@ export function ResourceItem({ resource, locale }: ResourceItemProps) {
   return (
     <article className="resource-item">
       <div>
-        <span className="card-label">{messages.resources.label}</span>
+        <span className="card-label">{resource.type ?? messages.resources.label}</span>
         <h3>{resource.title}</h3>
         <p>{resource.body}</p>
       </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { siteConfig } from "@/lib/site-config";
 import type { PageData, PageVisual } from "@/lib/types";
 
 import { ActionLink } from "@/components/ui/ActionLink";
@@ -31,7 +32,11 @@ export function PageHero({ page, visual, proof, ctaLabel }: PageHeroProps) {
           <p className="page-hero-intro">{page.intro}</p>
           {proof ? <p className="page-hero-proof">{proof}</p> : null}
           {page.cta ? (
-            <ActionLink href={page.cta.href} variant="primary" withArrow>
+            <ActionLink
+              href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
+              variant="primary"
+              withArrow
+            >
               {ctaLabel}
             </ActionLink>
           ) : null}

@@ -1,6 +1,8 @@
+import { siteConfig } from "@/lib/site-config";
 import { getStatusLabel } from "@/lib/content-labels";
 import type { Locale, PageSection, PageVisual } from "@/lib/types";
 
+import { ActionLink } from "@/components/ui/ActionLink";
 import { ContentCard } from "@/components/ui/ContentCard";
 import { ResourceItem } from "@/components/ui/ResourceItem";
 import { SectionHeader } from "@/components/sections/SectionHeader";
@@ -25,7 +27,9 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
         const isResources =
           pageSection.id === "materialy" ||
           pageSection.id === "resources" ||
+          pageSection.id === "materialy-dla-dyrekcji" ||
           pageSection.id === "materialy-dla-dyrektorki" ||
+          pageSection.id === "leadership-materials" ||
           pageSection.id === "director-materials";
         const isContactChannels =
           pageSection.id === "kanaly" || pageSection.id === "channels";
@@ -82,12 +86,16 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                 </div>
               ) : null}
               {pageSection.action ? (
-                <a
-                  className="text-link section-action"
-                  href={pageSection.action.href}
-                >
-                  {pageSection.action.label}
-                </a>
+                <div className="section-action-wrap">
+                  <ActionLink
+                    href={pageSection.action.href.startsWith("tel:") ? siteConfig.phoneHref : pageSection.action.href}
+                    variant="text"
+                    withArrow
+                    className="section-action"
+                  >
+                    {pageSection.action.label}
+                  </ActionLink>
+                </div>
               ) : null}
             </div>
           </section>

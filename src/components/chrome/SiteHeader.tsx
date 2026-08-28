@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState, useRef } from "react";
 import { pathFor } from "@/lib/routes";
 import type { Locale, PageKey } from "@/lib/types";
 
@@ -5,6 +8,19 @@ import { LanguageSwitcher } from "@/components/chrome/LanguageSwitcher";
 import { MobileMenu } from "@/components/chrome/MobileMenu";
 import { DesktopCollaborationMenu } from "@/components/chrome/DesktopCollaborationMenu";
 import { getMessages } from "@/messages/ui";
+
+const HERO_THEMES: Record<PageKey, string> = {
+  home: "paper",
+  profile: "white",
+  teacherTraining: "cobalt",
+  corporateEvents: "coral",
+  childrenWorkshops: "ochre",
+  disc: "green",
+  projects: "paper",
+  insights: "ink",
+  contact: "dark-cobalt",
+  materials: "paper",
+};
 
 interface SiteHeaderProps {
   /** Bieżąca lokalizacja. */
@@ -22,7 +38,7 @@ interface SiteHeaderProps {
 }
 
 /**
- * Renderuje wspólny, nieprzyklejony Header dla desktopu i mobile.
+ * Renderuje inteligentny Header dla desktopu i mobile z dopasowaniem barwnym do Hero i auto-ukrywaniem.
  */
 export function SiteHeader({
   locale,
@@ -33,9 +49,47 @@ export function SiteHeader({
   phoneHours,
 }: SiteHeaderProps) {
   const messages = getMessages(locale);
+  const theme = HERO_THEMES[currentPage] ?? "paper";
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const lastScrollYRef = useRef(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      const prevScrollY = lastScrollYRef.current;
+
+      if (currentScrollY > 30) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
+      if (currentScrollY > 100 && currentScrollY > prevScrollY) {
+        setIsHidden(true);
+      } else if (currentScrollY < prevScrollY || currentScrollY <= 30) {
+        setIsHidden(false);
+      }
+
+      lastScrollYRef.current = currentScrollY;
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const headerClasses = [
+    "site-header",
+    `site-header--theme-${theme}`,
+    isScrolled ? "site-header--scrolled" : "site-header--at-top",
+    isHidden ? "site-header--hidden" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
-    <header className="site-header">
+    <header className={headerClasses}>
       <div className="container header-inner">
         <a
           className="brand"
@@ -46,12 +100,12 @@ export function SiteHeader({
           {messages.brandName}
         </a>
         <nav className="desktop-nav" aria-label={messages.accessibility.mainNavigation}>
-          <a href={pathFor("profile", locale)} aria-current={currentPage === "profile" ? "page" : undefined}>
-            {messages.header.dawid}
-          </a>
           <DesktopCollaborationMenu locale={locale} currentPage={currentPage} />
           <a href={pathFor("insights", locale)} aria-current={currentPage === "insights" ? "page" : undefined}>
             {messages.header.insights}
+          </a>
+          <a href={pathFor("profile", locale)} aria-current={currentPage === "profile" ? "page" : undefined}>
+            {messages.header.dawid}
           </a>
           <a href={pathFor("contact", locale)} aria-current={currentPage === "contact" ? "page" : undefined}>
             {messages.header.contact}

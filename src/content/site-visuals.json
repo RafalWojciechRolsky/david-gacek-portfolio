@@ -82,6 +82,7 @@
         "sposob-pracy": "ink",
         "transfer": "cobalt",
         "oferta": "white",
+        "materialy-dla-dyrekcji": "ochre",
         "materialy-dla-dyrektorki": "ochre"
       },
       "en": {
@@ -91,6 +92,7 @@
         "how": "ink",
         "follow-up": "cobalt",
         "offer": "white",
+        "leadership-materials": "ochre",
         "director-materials": "ochre"
       }
     }
