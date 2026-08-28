@@ -44,6 +44,36 @@ Strona najpierw pokazuje człowieka, jego historię i dowody, a dopiero potem po
 
 Next.js 16, React 19, TypeScript, Tailwind CSS, Strapi 5 oraz PostgreSQL 16.
 
+## Development
+
+Frontend jest obecnie renderowany z lokalnych, typowanych plików JSON.
+
+Treści stron znajdują się w `src/content/site-content.json`.
+
+Treści artykułów znajdują się w `src/content/articles.json`.
+
+Konfiguracja kontaktu i linków znajduje się w `src/content/site-config.json`.
+
+Copy interfejsu PL/EN znajduje się w `src/messages/ui.json`.
+
+Uruchomienie lokalne:
+
+```bash
+npm install
+npm run dev
+```
+
+Kontrole jakości:
+
+```bash
+npm test
+npm run lint
+npm run typecheck
+npm run build
+```
+
+Integracja ze Strapi 5 pozostaje kolejnym etapem developmentu.
+
 ## Struktura projektu
 
 ## Prawa

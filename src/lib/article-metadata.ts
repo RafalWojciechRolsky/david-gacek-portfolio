@@ -1,0 +1,52 @@
+import type { Metadata } from "next";
+
+import { getArticles } from "@/lib/articles";
+import { absoluteUrl } from "@/lib/metadata";
+import type { ArticleDetail, Locale } from "@/lib/types";
+import { siteConfig } from "@/lib/site-config";
+import { getMessages } from "@/messages/ui";
+
+/**
+ * Buduje metadata artykułu bez udawania daty publikacji, której jeszcze nie ma.
+ */
+export function buildArticleMetadata(
+  article: ArticleDetail,
+  locale: Locale,
+): Metadata {
+  const alternateArticle = getArticles(locale === "pl" ? "en" : "pl").find(
+    (candidate) => candidate.id === article.id,
+  );
+  const polishPath = locale === "pl" ? article.href ?? "/" : alternateArticle?.href ?? "/";
+  const englishPath = locale === "en" ? article.href ?? "/" : alternateArticle?.href ?? "/";
+  const messages = getMessages(locale);
+
+  return {
+    title: article.seoTitle,
+    description: article.seoDescription,
+    alternates: {
+      canonical: article.href,
+      languages: {
+        pl: polishPath,
+        en: englishPath,
+        "x-default": polishPath,
+      },
+    },
+    openGraph: {
+      title: `${article.title} | Dawid Gacek`,
+      description: article.seoDescription,
+      url: absoluteUrl(article.href ?? "/"),
+      type: "article",
+      images: siteConfig.siteUrl
+        ? [
+            {
+              url: absoluteUrl("/images/dawid-gacek-portret-czarne-polo.jpeg"),
+              width: 1024,
+              height: 683,
+              alt:
+                messages.seo.imageAlt,
+            },
+          ]
+        : undefined,
+    },
+  };
+}

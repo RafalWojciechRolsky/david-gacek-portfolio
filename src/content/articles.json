@@ -1,0 +1,188 @@
+{
+  "articles": {
+    "pl": [
+      {
+        "id": "what-are-boomwhackers",
+        "type": "Przewodnik",
+        "title": "Bum Bum Rurki: czym są i co można z nimi zrobić?",
+        "body": "Punkt wyjścia do świadomej pracy z rytmem, słuchaniem, ruchem i grupą.",
+        "href": "/wiedza/bum-bum-rurki-czym-sa",
+        "actionLabel": "Czytaj artykuł",
+        "readTime": "5 minut",
+        "status": "available",
+        "sourceLabel": "Wywiad z Dawidem i materiały metodyczne projektu",
+        "seoTitle": "Bum Bum Rurki: czym są? | Dawid Gacek",
+        "seoDescription": "Bum Bum Rurki pomagają pracować z rytmem, słuchaniem, ruchem i grupą. Poznaj ich zastosowanie w edukacji, warsztatach i świadomym prowadzeniu zajęć od razu.",
+        "faq": [
+          {
+            "id": "article-use",
+            "question": "Czy Bum Bum Rurki wymagają doświadczenia muzycznego?",
+            "answer": "Nie. Ćwiczenia zaczynają się od prostych sygnałów, słuchania i wspólnego działania."
+          },
+          {
+            "id": "article-context",
+            "question": "W jakim kontekście można ich użyć?",
+            "answer": "W edukacji, warsztatach, pracy z grupą i wydarzeniach, gdy format jest dopasowany do celu."
+          }
+        ],
+        "paragraphs": [
+          "Bum Bum Rurki są prostymi instrumentami, ale ich wartość nie kończy się na wydobyciu dźwięku. Najciekawsze dzieje się wtedy, gdy grupa musi słuchać siebie nawzajem i znaleźć wspólny rytm.",
+          "W pracy z grupą rurki pomagają połączyć muzykę, ruch i jasne zasady. Uczestnik nie musi wcześniej znać nut ani grać na instrumencie. Wystarczy sygnał, uważność i gotowość do wspólnego działania.",
+          "Dobre ćwiczenie ma prosty początek, czytelny sygnał STOP i przestrzeń na własny pomysł. To dlatego rurki mogą być narzędziem pracy nauczyciela, trenera i prowadzącego wydarzenie."
+        ]
+      },
+      {
+        "id": "group-attention",
+        "type": "Pomysł do użycia",
+        "title": "Jak utrzymać uwagę grupy bez podnoszenia głosu?",
+        "body": "Proste zasady i rytuały, które pomagają prowadzić aktywne zajęcia.",
+        "href": "/wiedza/uwaga-grupy",
+        "actionLabel": "Czytaj artykuł",
+        "readTime": "4 minuty",
+        "status": "available",
+        "sourceLabel": "Roboczy materiał metodyczny projektu",
+        "seoTitle": "Uwaga grupy bez podnoszenia głosu | Dawid Gacek",
+        "seoDescription": "Poznaj proste sygnały, zasady i rytuały, które pomagają utrzymać uwagę grupy bez podnoszenia głosu podczas aktywnych zajęć i warsztatów od pierwszej minuty.",
+        "faq": [
+          {
+            "id": "article-signal",
+            "question": "Od czego zacząć pracę z uwagą grupy?",
+            "answer": "Od jednego powtarzalnego sygnału START / STOP i krótkiej, zrozumiałej zasady."
+          },
+          {
+            "id": "article-voice",
+            "question": "Czy głośniejszy głos zawsze pomaga?",
+            "answer": "Nie. Powtarzalność sygnału i jasny rytm działania często dają grupie więcej bezpieczeństwa."
+          }
+        ],
+        "paragraphs": [
+          "Uwaga grupy nie musi być wymuszana głośniejszym głosem. Częściej pomaga powtarzalny sygnał, który uczestnicy poznają i rozumieją.",
+          "Zacznij od krótkiej zasady START / STOP. Potem dodaj jedno zadanie, jeden rytm i jasny moment zakończenia. Im mniej instrukcji konkuruje ze sobą, tym łatwiej grupie wejść w działanie.",
+          "Po ćwiczeniu zostaw chwilę na sprawdzenie, co zadziałało. Taka pauza nie zabiera energii, lecz pomaga przełożyć doświadczenie na następne zadanie."
+        ]
+      },
+      {
+        "id": "music-cooperation",
+        "type": "Metoda",
+        "title": "Muzyka jako język współpracy",
+        "body": "Co dzieje się w grupie, gdy każdy słucha swojego rytmu i rytmu innych?",
+        "href": "/wiedza/muzyka-jezyk-wspolpracy",
+        "actionLabel": "Czytaj artykuł",
+        "readTime": "6 minut",
+        "status": "available",
+        "sourceLabel": "Praktyka pracy z grupami i materiały projektu",
+        "seoTitle": "Muzyka jako język współpracy | Dawid Gacek",
+        "seoDescription": "Wspólne granie pokazuje, jak słuchamy siebie i innych. Przeczytaj o rytmie, komunikacji, różnicach i refleksji, które wspierają pracę grupy w praktyce.",
+        "faq": [
+          {
+            "id": "article-listening",
+            "question": "Czego uczy wspólne granie?",
+            "answer": "Pokazuje, jak słuchamy siebie i innych, reagujemy na sygnał i robimy miejsce na różne tempo."
+          },
+          {
+            "id": "article-reflection",
+            "question": "Po co rozmawiać po ćwiczeniu?",
+            "answer": "Rozmowa pomaga przełożyć doświadczenie muzyczne na wnioski o komunikacji i współpracy."
+          }
+        ],
+        "paragraphs": [
+          "Wspólne granie szybko pokazuje, że indywidualny pomysł ma wpływ na całą grupę. Nie trzeba tego długo tłumaczyć, bo uczestnicy słyszą konsekwencje w czasie rzeczywistym.",
+          "Rytm jest prostym językiem współpracy. Pozwala zauważyć tempo, reakcję na sygnał, miejsce na innych i moment, w którym warto odpuścić własny pomysł.",
+          "Rozmowa po ćwiczeniu jest równie ważna jak samo granie. To w niej doświadczenie może stać się wnioskiem o komunikacji i codziennej pracy zespołu."
+        ]
+      }
+    ],
+    "en": [
+      {
+        "id": "what-are-boomwhackers",
+        "type": "Guide",
+        "title": "Boomwhackers: what are they and what can you do with them?",
+        "body": "A starting point for thoughtful work with rhythm, listening, movement, and groups.",
+        "href": "/en/insights/what-are-boomwhackers",
+        "actionLabel": "Read the article",
+        "readTime": "5 min read",
+        "status": "available",
+        "sourceLabel": "Dawid's interview and the project's method materials",
+        "seoTitle": "Boomwhackers: what can you do with them? | Dawid Gacek",
+        "seoDescription": "Boomwhackers support work with rhythm, listening, movement, and groups. Explore how they can be used in education, workshops, and thoughtful facilitation.",
+        "faq": [
+          {
+            "id": "article-use",
+            "question": "Do boomwhackers require musical experience?",
+            "answer": "No. Exercises begin with simple signals, listening, and shared action."
+          },
+          {
+            "id": "article-context",
+            "question": "Where can they be used?",
+            "answer": "In education, workshops, group work, and events when the format matches the goal."
+          }
+        ],
+        "paragraphs": [
+          "Boomwhackers are simple instruments, but their value goes beyond making a sound. The most interesting part begins when a group has to listen to one another and find a shared rhythm.",
+          "In group work, the tubes connect music, movement, and clear rules. Participants do not need to read music or play an instrument. A signal, attention, and willingness to act together are enough.",
+          "A good exercise has a simple beginning, a clear STOP signal, and room for an original idea. That is why boomwhackers can support teachers, trainers, and event facilitators."
+        ]
+      },
+      {
+        "id": "group-attention",
+        "type": "Practical idea",
+        "title": "How can you hold a group's attention without raising your voice?",
+        "body": "Simple rules and rituals that help you lead active sessions.",
+        "href": "/en/insights/group-attention",
+        "actionLabel": "Read the article",
+        "readTime": "4 min read",
+        "status": "available",
+        "sourceLabel": "Working method material from the project",
+        "seoTitle": "Group attention without raising your voice | Dawid Gacek",
+        "seoDescription": "Explore simple signals, rules, and rituals that help you hold a group's attention without raising your voice during active sessions and workshops in practice.",
+        "faq": [
+          {
+            "id": "article-signal",
+            "question": "How can you begin working with group attention?",
+            "answer": "Start with one repeatable START / STOP signal and one short, clear rule."
+          },
+          {
+            "id": "article-voice",
+            "question": "Does speaking louder always help?",
+            "answer": "No. A repeatable signal and a clear rhythm often give the group more safety."
+          }
+        ],
+        "paragraphs": [
+          "A group's attention does not have to be forced by speaking louder. More often, a repeatable signal helps, because participants learn what it means.",
+          "Start with one short START / STOP rule. Add one task, one rhythm, and a clear ending. The fewer instructions compete with one another, the easier it is for the group to act.",
+          "After the exercise, leave a moment to notice what worked. The pause does not take energy away. It helps transfer the experience into the next task."
+        ]
+      },
+      {
+        "id": "music-cooperation",
+        "type": "Method",
+        "title": "Music as a language of cooperation",
+        "body": "What happens when everyone listens to their own rhythm and the rhythm of others?",
+        "href": "/en/insights/music-cooperation",
+        "actionLabel": "Read the article",
+        "readTime": "6 min read",
+        "status": "available",
+        "sourceLabel": "Group-work practice and project materials",
+        "seoTitle": "Music as a language of cooperation | Dawid Gacek",
+        "seoDescription": "Playing together shows how we listen to ourselves and others. Read about rhythm, communication, difference, and reflection as tools for group work in practice.",
+        "faq": [
+          {
+            "id": "article-listening",
+            "question": "What does playing together teach?",
+            "answer": "It shows how we listen to ourselves and others, respond to a signal, and make room for different tempos."
+          },
+          {
+            "id": "article-reflection",
+            "question": "Why talk after an exercise?",
+            "answer": "Reflection turns a musical experience into an insight about communication and cooperation."
+          }
+        ],
+        "paragraphs": [
+          "Playing together quickly shows that an individual idea affects the whole group. There is no need to explain it for long, because participants hear the consequences in real time.",
+          "Rhythm is a simple language of cooperation. It makes pace, response to a signal, room for others, and the moment to let go of an idea visible.",
+          "The conversation after an exercise matters as much as the playing itself. It is where experience can become an insight about communication and everyday teamwork."
+        ]
+      }
+    ]
+  }
+}

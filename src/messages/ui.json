@@ -1,0 +1,266 @@
+{
+  "pl": {
+    "brandName": "Dawid Gacek",
+    "brandFirstName": "Dawid",
+    "brandLastName": "Gacek",
+    "siteDescription": "Dawid Gacek, muzyka, ruch i komunikacja.",
+    "jobTitle": "Trener i edukator muzyczny",
+    "seo": {
+      "home": "Strona główna",
+      "imageAlt": "Portret Dawida Gacka"
+    },
+    "accessibility": {
+      "skipContent": "Przejdź do treści",
+      "languageSelector": "Wybór języka",
+      "mainNavigation": "Główna nawigacja",
+      "mobileNavigation": "Menu mobilne",
+      "homeAria": "Dawid Gacek, strona główna",
+      "callAria": "Zadzwoń do Dawida",
+      "openMenu": "Otwórz menu",
+      "closeMenu": "Zamknij menu"
+    },
+    "header": {
+      "dawid": "Dawid",
+      "workWith": "Współpraca",
+      "teacherTraining": "Szkolenia dla nauczycieli",
+      "childrenWorkshops": "Warsztaty dla dzieci",
+      "corporateEvents": "Firmy i eventy",
+      "disc": "DISC i komunikacja",
+      "insights": "Wiedza i inspiracje",
+      "contact": "Kontakt",
+      "callShort": "Zadzwoń",
+      "menu": "Menu",
+      "close": "Zamknij",
+      "mobileWorkWith": "Współpraca",
+      "call": "Zadzwoń do Dawida",
+      "whatsapp": "Napisz na WhatsApp"
+    },
+    "footer": {
+      "brandLine": "Zapraszasz Dawida, nie kupujesz pakietu.",
+      "workWith": "Współpraca",
+      "materials": "Materiały",
+      "elsewhere": "Poza stroną",
+      "projects": "Realizacje",
+      "insights": "Wiedza i inspiracje",
+      "blog": "Blog",
+      "postTraining": "Materiały po szkoleniu",
+      "contact": "Kontakt",
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "creator": "Rafał Majewski",
+      "musicStore": "skladmuzyczny.pl",
+      "copyright": "© Dawid Gacek"
+    },
+    "contact": {
+      "phone": "Zadzwoń do Dawida",
+      "whatsapp": "Napisz na WhatsApp",
+      "whatsappMeta": "bez formularza",
+      "email": "Napisz e-mail",
+      "heading": "Masz pomysł? Porozmawiajmy.",
+      "intro": "Opowiesz, czego potrzebujesz. Wspólnie ustalimy format, termin i warunki."
+    },
+    "homepage": {
+      "heroNote": "Rozmowa o formacie, terminie i warunkach, bez gotowego briefu.",
+      "proofHeading": "Doświadczenie, które widać w działaniu",
+      "proofIntro": "Nie proszę, żeby wierzyć na słowo. Zobacz fakty, role i środowiska, w których pracuję.",
+      "environmentsHeading": "Środowiska, w których działa",
+      "environmentsIntro": "Różne konteksty, jedna metoda pracy z ludźmi. Każdy wpis opisuje środowisko, nie osobną markę ani kompletną bazę case studies.",
+      "videoHeading": "Dawid w działaniu",
+      "videoIntro": "Zobacz sposób prowadzenia warsztatów dla nauczycieli z wykorzystaniem Bum Bum Rurek.",
+      "videoNote": "To wizualna facada. Materiał zewnętrzny zostanie podłączony po potwierdzeniu źródła i praw.",
+      "videoPlayLabel": "Odtwórz wideo: Dawid w działaniu",
+      "contextsHeading": "Gdzie chcesz zaprosić Dawida?",
+      "contextsIntro": "Jedna osoba, cztery możliwe konteksty. Wybierz ten, od którego chcesz zacząć.",
+      "knowledgeHeading": "Wiedza i inspiracje",
+      "allArticles": "Zobacz wszystkie artykuły",
+      "faqHeading": "Zanim zaprosisz Dawida",
+      "faqIntro": "Kilka odpowiedzi na pytania, które warto zadać przed pierwszą rozmową."
+    },
+    "page": {
+      "faqHeading": "Najczęstsze pytania",
+      "faqIntro": "Odpowiedzi pomagają sprawdzić dopasowanie przed rozmową.",
+      "videoHeading": "Dawid w działaniu",
+      "videoIntro": "Materiał zostanie podłączony po potwierdzeniu źródła i praw.",
+      "videoPlayLabel": "Odtwórz wideo"
+    },
+    "resources": {
+      "label": "Materiał",
+      "preparing": "W przygotowaniu",
+      "unavailable": "Niedostępny",
+      "download": "Pobierz materiał",
+      "downloadStarted": "Pobieranie rozpoczęte",
+      "downloadAria": "Pobierz",
+      "share": "Udostępnij materiał",
+      "copied": "Link skopiowany",
+      "copyError": "Skopiuj adres ręcznie"
+    },
+    "article": {
+      "sourceHeading": "Źródło i kontekst",
+      "back": "Wróć do Wiedzy i inspiracji",
+      "faqHeading": "Pytania do tego materiału"
+    },
+    "status": {
+      "confirmed": "Potwierdzone",
+      "available": "Dostępne",
+      "preparing": "W przygotowaniu",
+      "unavailable": "Niedostępne",
+      "pending": "Do weryfikacji"
+    },
+    "media": {
+      "pendingStatus": "Materiał w przygotowaniu",
+      "pendingBody": "Film zostanie podłączony po potwierdzeniu źródła i praw.",
+      "fallback": "Otwórz film w YouTube"
+    },
+    "notFound": {
+      "title": "Tej strony nie ma",
+      "intro": "Wróć do strony głównej albo wybierz właściwy kontekst zaproszenia Dawida.",
+      "body": "Użyj nawigacji, aby przejść do profilu, oferty, Wiedzy lub kontaktu."
+    },
+    "materials": {
+      "title": "Materiały po szkoleniu",
+      "intro": "Ta ścieżka jest przeznaczona dla uczestników szkolenia.",
+      "description": "Materiały po szkoleniu dla uczestników warsztatów Dawida Gacka."
+    },
+    "legal": {
+      "privacyTitle": "Polityka prywatności",
+      "termsTitle": "Regulamin",
+      "privacyDescription": "Informacje dotyczące prywatności i danych w serwisie Dawida Gacka.",
+      "termsDescription": "Regulamin serwisu Dawida Gacka.",
+      "intro": "Dokument zostanie uzupełniony przed publikacją serwisu.",
+      "privacyBody": "Na etapie developmentu strona korzysta z placeholderów i nie przyjmuje danych przez formularz.",
+      "termsBody": "Na etapie developmentu strona pokazuje wyłącznie informację o przygotowywanym dokumencie."
+    }
+  },
+  "en": {
+    "brandName": "Dawid Gacek",
+    "brandFirstName": "Dawid",
+    "brandLastName": "Gacek",
+    "siteDescription": "Dawid Gacek, music, movement, and communication.",
+    "jobTitle": "Trainer and music educator",
+    "seo": {
+      "home": "Home",
+      "imageAlt": "Portrait of Dawid Gacek"
+    },
+    "accessibility": {
+      "skipContent": "Skip to content",
+      "languageSelector": "Language selector",
+      "mainNavigation": "Main navigation",
+      "mobileNavigation": "Mobile navigation",
+      "homeAria": "Dawid Gacek, home",
+      "callAria": "Call Dawid",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "header": {
+      "dawid": "Dawid",
+      "workWith": "Work with Dawid",
+      "teacherTraining": "Teacher training",
+      "childrenWorkshops": "Children's workshops",
+      "corporateEvents": "Corporate events",
+      "disc": "DISC and communication",
+      "insights": "Insights and inspiration",
+      "contact": "Contact",
+      "callShort": "Call",
+      "menu": "Menu",
+      "close": "Close",
+      "mobileWorkWith": "Work with Dawid",
+      "call": "Call Dawid",
+      "whatsapp": "Message Dawid on WhatsApp"
+    },
+    "footer": {
+      "brandLine": "You invite Dawid, you do not buy a package.",
+      "workWith": "Work with Dawid",
+      "materials": "Materials",
+      "elsewhere": "Elsewhere",
+      "projects": "Projects",
+      "insights": "Insights and inspiration",
+      "blog": "Blog",
+      "postTraining": "Post-training materials",
+      "contact": "Contact",
+      "privacy": "Privacy policy",
+      "terms": "Terms and conditions",
+      "creator": "Rafał Majewski",
+      "musicStore": "skladmuzyczny.pl",
+      "copyright": "© Dawid Gacek"
+    },
+    "contact": {
+      "phone": "Call Dawid",
+      "whatsapp": "Message on WhatsApp",
+      "whatsappMeta": "no form required",
+      "email": "Email Dawid",
+      "heading": "Have an idea? Let's talk.",
+      "intro": "Tell me what you need. Together, we will work out the format, date, and practical details."
+    },
+    "homepage": {
+      "heroNote": "A conversation about format, timing, and practical details, without a finished brief.",
+      "proofHeading": "Experience you can see in action",
+      "proofIntro": "You do not have to take my word for it. See the facts, roles, and contexts in which I work.",
+      "environmentsHeading": "Where Dawid works",
+      "environmentsIntro": "Different contexts, one way of working with people. Each entry describes a context, not a separate brand or complete case-study database.",
+      "videoHeading": "Dawid in action",
+      "videoIntro": "See how Dawid leads teacher training with boomwhackers.",
+      "videoNote": "This is a visual facade. External media will be connected after its source and rights are confirmed.",
+      "videoPlayLabel": "Play the video: Dawid in action",
+      "contextsHeading": "Where would you like to invite Dawid?",
+      "contextsIntro": "One person, four possible contexts. Choose the one you want to start with.",
+      "knowledgeHeading": "Insights and inspiration",
+      "allArticles": "See all articles",
+      "faqHeading": "Before you invite Dawid",
+      "faqIntro": "A few answers to questions worth asking before the first conversation."
+    },
+    "page": {
+      "faqHeading": "Frequently asked questions",
+      "faqIntro": "These answers help you check the fit before getting in touch.",
+      "videoHeading": "Dawid in action",
+      "videoIntro": "The media will be connected after its source and rights are confirmed.",
+      "videoPlayLabel": "Play the video"
+    },
+    "resources": {
+      "label": "Resource",
+      "preparing": "In preparation",
+      "unavailable": "Unavailable",
+      "download": "Download resource",
+      "downloadStarted": "Download started",
+      "downloadAria": "Download",
+      "share": "Share resource",
+      "copied": "Link copied",
+      "copyError": "Copy the address manually"
+    },
+    "article": {
+      "sourceHeading": "Source and context",
+      "back": "Back to insights and inspiration",
+      "faqHeading": "Questions about this material"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "available": "Available",
+      "preparing": "In preparation",
+      "unavailable": "Unavailable",
+      "pending": "Pending verification"
+    },
+    "media": {
+      "pendingStatus": "Media in preparation",
+      "pendingBody": "The video will be connected after its source and rights are confirmed.",
+      "fallback": "Open the video on YouTube"
+    },
+    "notFound": {
+      "title": "This page is not here",
+      "intro": "Return home or choose the right context for inviting Dawid.",
+      "body": "Use the navigation to open the profile, an offer, Insights, or Contact."
+    },
+    "materials": {
+      "title": "Post-training materials",
+      "intro": "This path is intended for training participants.",
+      "description": "Post-training materials for Dawid Gacek workshop participants."
+    },
+    "legal": {
+      "privacyTitle": "Privacy policy",
+      "termsTitle": "Terms and conditions",
+      "privacyDescription": "Privacy and data information for Dawid Gacek's website.",
+      "termsDescription": "Terms and conditions for Dawid Gacek's website.",
+      "intro": "This document will be completed before the website is published.",
+      "privacyBody": "During development, the site uses placeholders and does not collect data through a form.",
+      "termsBody": "During development, this page only notes that the document is being prepared."
+    }
+  }
+}

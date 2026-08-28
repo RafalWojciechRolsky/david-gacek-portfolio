@@ -1,0 +1,356 @@
+{
+  "profile": {
+    "variant": "profile",
+    "signal": "cobalt",
+    "heroImage": {
+      "pl": {
+        "src": "/images/david-gacek-2.jpg",
+        "alt": "Dawid Gacek podczas prowadzenia wydarzenia na scenie",
+        "width": 688,
+        "height": 681
+      },
+      "en": {
+        "src": "/images/david-gacek-2.jpg",
+        "alt": "Dawid Gacek leading an event on stage",
+        "width": 688,
+        "height": 681
+      }
+    },
+    "heroCaption": {
+      "pl": "Dawid Gacek podczas prowadzenia wydarzenia.",
+      "en": "Dawid Gacek during an event."
+    },
+    "toneBySection": {
+      "pl": {
+        "kim-jestem": "white",
+        "jak-pracuje": "paper",
+        "os-czasu": "ink",
+        "dowody": "cobalt",
+        "srodowiska": "paper",
+        "referencje": "white"
+      },
+      "en": {
+        "who-i-am": "white",
+        "how-i-work": "paper",
+        "timeline": "ink",
+        "evidence": "cobalt",
+        "contexts": "paper",
+        "references": "white"
+      }
+    }
+  },
+  "teacherTraining": {
+    "variant": "teacher",
+    "signal": "cobalt",
+    "heroImage": {
+      "pl": {
+        "src": "/images/gacek-2.jpg",
+        "alt": "Dawid Gacek prowadzący pracę z kolorowymi rurkami",
+        "width": 800,
+        "height": 509
+      },
+      "en": {
+        "src": "/images/gacek-2.jpg",
+        "alt": "Dawid Gacek leading a session with colourful tubes",
+        "width": 800,
+        "height": 509
+      }
+    },
+    "heroCaption": {
+      "pl": "Praca z Bum Bum Rurkami zaczyna się od wspólnego działania.",
+      "en": "Work with boomwhackers starts with shared action."
+    },
+    "mediaImage": {
+      "pl": {
+        "src": "/images/gacek-3.jpg",
+        "alt": "Dawid Gacek otoczony kolorowymi rurkami podczas pracy",
+        "width": 800,
+        "height": 533
+      },
+      "en": {
+        "src": "/images/gacek-3.jpg",
+        "alt": "Dawid Gacek surrounded by colourful tubes during a session",
+        "width": 800,
+        "height": 533
+      }
+    },
+    "toneBySection": {
+      "pl": {
+        "dla-kogo": "ochre",
+        "program": "white",
+        "wyniesiesz": "paper",
+        "sposob-pracy": "ink",
+        "transfer": "cobalt",
+        "oferta": "white",
+        "materialy-dla-dyrektorki": "ochre"
+      },
+      "en": {
+        "who-for": "ochre",
+        "programme": "white",
+        "takeaways": "paper",
+        "how": "ink",
+        "follow-up": "cobalt",
+        "offer": "white",
+        "director-materials": "ochre"
+      }
+    }
+  },
+  "corporateEvents": {
+    "variant": "corporate",
+    "signal": "coral",
+    "heroImage": {
+      "pl": {
+        "src": "/images/gacek-3.jpg",
+        "alt": "Dawid Gacek z kolorowymi rurkami podczas występu",
+        "width": 800,
+        "height": 533
+      },
+      "en": {
+        "src": "/images/gacek-3.jpg",
+        "alt": "Dawid Gacek with colourful tubes during a performance",
+        "width": 800,
+        "height": 533
+      }
+    },
+    "heroCaption": {
+      "pl": "Rytm pomaga grupie wejść w działanie.",
+      "en": "Rhythm helps a group move into action."
+    },
+    "mediaImage": {
+      "pl": {
+        "src": "/images/gacek-2.jpg",
+        "alt": "Dawid Gacek grający na kolorowych rurkach podczas wydarzenia",
+        "width": 800,
+        "height": 509
+      },
+      "en": {
+        "src": "/images/gacek-2.jpg",
+        "alt": "Dawid Gacek playing colourful tubes during an event",
+        "width": 800,
+        "height": 509
+      }
+    },
+    "toneBySection": {
+      "pl": {
+        "triaż": "coral",
+        "formaty": "white",
+        "sposob": "paper",
+        "dowody": "ink",
+        "oferta": "white",
+        "realizacje": "coral"
+      },
+      "en": {
+        "triage": "coral",
+        "formats": "white",
+        "how": "paper",
+        "evidence": "ink",
+        "offer": "white",
+        "projects": "coral"
+      }
+    }
+  },
+  "childrenWorkshops": {
+    "variant": "children",
+    "signal": "ochre",
+    "heroImage": {
+      "pl": {
+        "src": "/images/rurki.jpg",
+        "alt": "Kolorowe Bum Bum Rurki przygotowane do warsztatu",
+        "width": 2048,
+        "height": 1536
+      },
+      "en": {
+        "src": "/images/rurki.jpg",
+        "alt": "Colourful boomwhackers prepared for a workshop",
+        "width": 2048,
+        "height": 1536
+      }
+    },
+    "heroCaption": {
+      "pl": "Kolor, rytm i zasady, które pomagają grupie działać razem.",
+      "en": "Colour, rhythm, and rules that help a group act together."
+    },
+    "mediaImage": {
+      "pl": {
+        "src": "/images/gacek-2.jpg",
+        "alt": "Dawid Gacek prowadzący muzyczne działanie z rurkami",
+        "width": 800,
+        "height": 509
+      },
+      "en": {
+        "src": "/images/gacek-2.jpg",
+        "alt": "Dawid Gacek leading a musical activity with tubes",
+        "width": 800,
+        "height": 509
+      }
+    },
+    "toneBySection": {
+      "pl": {
+        "wiek": "ochre",
+        "program": "white",
+        "bezpieczenstwo": "paper",
+        "przebieg": "ink",
+        "organizacja": "green",
+        "dowody": "white",
+        "warunki": "paper"
+      },
+      "en": {
+        "age": "ochre",
+        "programme": "white",
+        "safety": "paper",
+        "process": "ink",
+        "organization": "green",
+        "evidence": "white",
+        "terms": "paper"
+      }
+    }
+  },
+  "disc": {
+    "variant": "disc",
+    "signal": "green",
+    "heroImage": {
+      "pl": {
+        "src": "/images/david-gacek-3.jpg",
+        "alt": "Portret Dawida Gacka w marynarce",
+        "width": 1024,
+        "height": 683
+      },
+      "en": {
+        "src": "/images/david-gacek-3.jpg",
+        "alt": "Portrait of Dawid Gacek in a jacket",
+        "width": 1024,
+        "height": 683
+      }
+    },
+    "heroCaption": {
+      "pl": "Rozmowa o zachowaniach zaczyna się od obserwacji w działaniu.",
+      "en": "A conversation about behaviour starts with observing it in action."
+    },
+    "toneBySection": {
+      "pl": {
+        "definicja-disc": "green",
+        "dla-kogo": "white",
+        "zastosowanie": "ink",
+        "przebieg": "green",
+        "wariant-muzyczny": "paper",
+        "kwalifikacje": "white",
+        "oferta": "cobalt"
+      },
+      "en": {
+        "disc-definition": "green",
+        "who-for": "white",
+        "uses": "ink",
+        "process": "green",
+        "music-variant": "paper",
+        "qualifications": "white",
+        "offer": "cobalt"
+      }
+    }
+  },
+  "projects": {
+    "variant": "projects",
+    "signal": "coral",
+    "heroImage": {
+      "pl": {
+        "src": "/images/guiness.jpg",
+        "alt": "Dawid Gacek trzymający historyczny certyfikat Guinness World Records",
+        "width": 1536,
+        "height": 2048
+      },
+      "en": {
+        "src": "/images/guiness.jpg",
+        "alt": "Dawid Gacek holding a historic Guinness World Records certificate",
+        "width": 1536,
+        "height": 2048
+      }
+    },
+    "heroCaption": {
+      "pl": "Historyczny rekord GWR z 2016 roku.",
+      "en": "A historic GWR record from 2016."
+    },
+    "toneBySection": {
+      "pl": {
+        "kryteria": "ink",
+        "case-studies": "white",
+        "odsprzedaz": "coral"
+      },
+      "en": {
+        "criteria": "ink",
+        "case-studies": "white",
+        "resell": "coral"
+      }
+    }
+  },
+  "insights": {
+    "variant": "insights",
+    "signal": "ochre",
+    "heroImage": {
+      "pl": {
+        "src": "/images/rurki-2.jpg",
+        "alt": "Kolorowe Bum Bum Rurki przygotowane do transportu",
+        "width": 1631,
+        "height": 1223
+      },
+      "en": {
+        "src": "/images/rurki-2.jpg",
+        "alt": "Colourful boomwhackers prepared for transport",
+        "width": 1631,
+        "height": 1223
+      }
+    },
+    "heroCaption": {
+      "pl": "Narzędzia są gotowe, gdy grupa jest gotowa do działania.",
+      "en": "The tools are ready when the group is ready to act."
+    },
+    "toneBySection": {
+      "pl": {
+        "szybki-start": "white",
+        "kategorie": "ochre",
+        "artykuly": "ink",
+        "materialy": "white"
+      },
+      "en": {
+        "quick-start": "white",
+        "categories": "ochre",
+        "articles": "ink",
+        "resources": "white"
+      }
+    }
+  },
+  "contact": {
+    "variant": "contact",
+    "signal": "cobalt",
+    "heroImage": {
+      "pl": {
+        "src": "/images/gacek-1.jpg",
+        "alt": "Portret Dawida Gacka podczas rozmowy",
+        "width": 2048,
+        "height": 1365
+      },
+      "en": {
+        "src": "/images/gacek-1.jpg",
+        "alt": "Portrait of Dawid Gacek during a conversation",
+        "width": 2048,
+        "height": 1365
+      }
+    },
+    "heroCaption": {
+      "pl": "Najpierw rozmowa, potem właściwy format.",
+      "en": "First the conversation, then the right format."
+    },
+    "toneBySection": {
+      "pl": {
+        "kanaly": "cobalt",
+        "zanim-zadzwonisz": "white",
+        "rozmowa": "paper",
+        "konteksty": "ink"
+      },
+      "en": {
+        "channels": "cobalt",
+        "before-call": "white",
+        "conversation": "paper",
+        "contexts": "ink"
+      }
+    }
+  }
+}

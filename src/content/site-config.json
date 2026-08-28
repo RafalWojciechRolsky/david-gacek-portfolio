@@ -1,0 +1,45 @@
+{
+  "siteUrl": "",
+  "phoneDisplay": "+48 000 000 000",
+  "phoneHref": "tel:+48000000000",
+  "whatsappHref": "https://wa.me/48000000000",
+  "email": "kontakt@example.com",
+  "phoneHoursByLocale": {
+    "pl": "Godziny odbierania: do ustalenia",
+    "en": "Phone hours: to be confirmed"
+  },
+  "externalLinks": {
+    "linkedin": {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/dawid-gacek-9b108831/",
+      "external": true
+    },
+    "instagram": {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/vikowski/",
+      "external": true
+    },
+    "facebook": {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/larry.vikowski",
+      "external": true
+    },
+    "patronite": {
+      "label": "Patronite",
+      "href": "https://patronite.pl/BliskoBrzmi%C4%85cy",
+      "external": true
+    }
+  },
+  "creatorLinks": {
+    "portfolio": {
+      "label": "Rafał Majewski",
+      "href": "https://rafalmajewski.dev",
+      "external": true
+    },
+    "musicStore": {
+      "label": "skladmuzyczny.pl",
+      "href": "https://skladmuzyczny.pl",
+      "external": true
+    }
+  }
+}
