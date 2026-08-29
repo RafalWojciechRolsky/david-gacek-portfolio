@@ -125,9 +125,8 @@
     },
     "notFound": {
       "title": "Tej strony nie ma",
-      "intro": "Wróć do strony głównej albo wybierz właściwy kontekst zaproszenia Dawida.",
-      "body": "Użyj nawigacji, aby przejść do profilu, oferty, Wiedzy lub kontaktu.",
-      "homeAction": "Strona główna",
+      "intro": "Adres mógł się zmienić albo materiał nie jest już dostępny.",
+      "homeAction": "Wróć na stronę główną",
       "contactAction": "Kontakt"
     },
     "materials": {
@@ -271,9 +270,8 @@
     },
     "notFound": {
       "title": "This page is not here",
-      "intro": "Return home or choose the right context for inviting Dawid.",
-      "body": "Use the navigation to open the profile, an offer, Insights, or Contact.",
-      "homeAction": "Home",
+      "intro": "The address may have changed or this material is no longer available.",
+      "homeAction": "Back to home",
       "contactAction": "Contact"
     },
     "materials": {
