@@ -24,13 +24,6 @@ export function ContentCard({
   objectId,
 }: ContentCardProps) {
   const cardNumber = index === undefined ? undefined : String(index + 1).padStart(2, "0");
-  const cardClassName = [
-    "content-card",
-    `content-card--${item.kind}`,
-    item.featured ? "content-card--featured" : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
   const hasTop = Boolean(cardNumber || item.type || item.label);
   const hasFooter = Boolean(
     item.meta ||
@@ -39,40 +32,56 @@ export function ContentCard({
       item.kind === "evidence" ||
       item.kind === "navigation"
   );
+  const cardClassName = [
+    "content-card",
+    `content-card--${item.kind}`,
+    hasTop ? "" : "content-card--without-top",
+    item.featured ? "content-card--featured" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   const cardContent = (
     <>
-      <div className={`card-top ${hasTop ? "" : "card-top--empty"}`}>
-        {cardNumber ? <span className="card-number">{cardNumber}</span> : null}
-        {item.type ?? item.label ? (
-          <span className="card-label">{item.type ?? item.label}</span>
-        ) : null}
-      </div>
+      {hasTop ? (
+        <div className="card-top">
+          {cardNumber ? (
+            <span className="card-number" aria-hidden="true">
+              {cardNumber}
+            </span>
+          ) : null}
+          {item.type ?? item.label ? (
+            <span className="card-label">{item.type ?? item.label}</span>
+          ) : null}
+        </div>
+      ) : null}
       <h3>{item.title}</h3>
       <p>{item.body}</p>
-      <div className={`card-footer ${hasFooter ? "" : "card-footer--empty"}`}>
-        {item.meta ?? item.readTime ? (
-          <span className="card-meta">{item.meta ?? item.readTime}</span>
-        ) : null}
-        {statusLabel ? <span className="card-status">{statusLabel}</span> : null}
-        {item.kind === "evidence" ? (
-          <ActionLink
-            href={item.source.href}
-            variant="source"
-            ariaLabel={item.source.ariaLabel}
-            download={item.source.href.endsWith(".pdf")}
-            withArrow
-          >
-            {item.source.label}
-          </ActionLink>
-        ) : null}
-        {item.kind === "navigation" ? (
-          <span className="card-action">
-            {item.actionLabel ?? item.title}
-            <Arrow />
-          </span>
-        ) : null}
-      </div>
+      {hasFooter ? (
+        <div className="card-footer">
+          {item.meta ?? item.readTime ? (
+            <span className="card-meta">{item.meta ?? item.readTime}</span>
+          ) : null}
+          {statusLabel ? <span className="card-status">{statusLabel}</span> : null}
+          {item.kind === "evidence" ? (
+            <ActionLink
+              href={item.source.href}
+              variant="source"
+              ariaLabel={item.source.ariaLabel}
+              download={item.source.href.endsWith(".pdf")}
+              withArrow
+            >
+              {item.source.label}
+            </ActionLink>
+          ) : null}
+          {item.kind === "navigation" ? (
+            <span className="card-action">
+              {item.actionLabel ?? item.title}
+              <Arrow />
+            </span>
+          ) : null}
+        </div>
+      ) : null}
     </>
   );
 

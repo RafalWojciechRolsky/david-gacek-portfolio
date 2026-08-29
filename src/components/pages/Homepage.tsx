@@ -5,6 +5,7 @@ import { SectionHeader } from "@/components/sections/SectionHeader";
 import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { Arrow } from "@/components/ui/Arrow";
+import { CardGrid } from "@/components/ui/CardGrid";
 import { ContentCard } from "@/components/ui/ContentCard";
 import { DisclosureFaq } from "@/components/ui/DisclosureFaq";
 import { EvidenceBlock } from "@/components/ui/EvidenceBlock";
@@ -189,16 +190,21 @@ export function Homepage({ page }: HomepageProps) {
             heading={messages.homepage.knowledgeHeading}
             headingId="knowledge-heading"
           />
-          <div className="article-grid" id={isPolish ? "artykuly" : "articles"}>
+          <CardGrid
+            columns={page.articles.length}
+            id={isPolish ? "artykuly" : "articles"}
+            layout="editorial"
+          >
             {page.articles.map((article, index) => (
-              <ContentCard
-                key={article.id}
-                item={article}
-                index={index}
-                objectId="homepage-knowledge-article-card"
-              />
+              <li className="card-grid__item" key={article.id}>
+                <ContentCard
+                  item={article}
+                  index={index}
+                  objectId="homepage-knowledge-article-card"
+                />
+              </li>
             ))}
-          </div>
+          </CardGrid>
           <div className="knowledge-footer">
             <ActionLink
               href={pathWithAnchor(

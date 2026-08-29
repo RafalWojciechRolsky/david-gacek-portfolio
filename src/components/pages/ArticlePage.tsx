@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { SectionHeader } from "@/components/sections/SectionHeader";
 import { ActionLink } from "@/components/ui/ActionLink";
+import { CardGrid } from "@/components/ui/CardGrid";
 import { ContentCard } from "@/components/ui/ContentCard";
 import { DisclosureFaq } from "@/components/ui/DisclosureFaq";
 import type { ArticleDetail, ArticleSection, Locale } from "@/lib/types";
@@ -158,16 +159,17 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
                 headingId="article-related-heading"
                 signal={article.category.signal}
               />
-              <div className={`content-grid content-grid--${related.length}`}>
+              <CardGrid columns={related.length}>
                 {related.map((relatedArticle, index) => (
-                  <ContentCard
-                    key={relatedArticle.id}
-                    item={articleToCardItem(relatedArticle)}
-                    index={index}
-                    objectId={`related-${relatedArticle.id}`}
-                  />
+                  <li className="card-grid__item" key={relatedArticle.id}>
+                    <ContentCard
+                      item={articleToCardItem(relatedArticle)}
+                      index={index}
+                      objectId={`related-${relatedArticle.id}`}
+                    />
+                  </li>
                 ))}
-              </div>
+              </CardGrid>
             </section>
           ) : null}
           <ActionLink

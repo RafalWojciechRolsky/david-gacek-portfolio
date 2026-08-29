@@ -5,6 +5,7 @@ import { isContentCardItem } from "@/lib/types";
 import type { Locale, PageSection, PageVisual } from "@/lib/types";
 
 import { ActionLink } from "@/components/ui/ActionLink";
+import { CardGrid } from "@/components/ui/CardGrid";
 import { ContentCard } from "@/components/ui/ContentCard";
 import { ResourceItem } from "@/components/ui/ResourceItem";
 import { SectionHeader } from "@/components/sections/SectionHeader";
@@ -62,21 +63,16 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                   objectId={`${pageSection.id}-contact-channels`}
                 />
               ) : pageSection.items?.length ? (
-                <div
-                  className={
-                    isArticleLibrary
-                      ? "article-grid"
-                      : `content-grid content-grid--${pageSection.items.length}`
-                  }
+                <CardGrid
+                  columns={pageSection.items.length}
+                  layout={isArticleLibrary ? "editorial" : "standard"}
                 >
                   {pageSection.items.map((contentItem, index) => {
                     if (isResources) {
                       return "title" in contentItem ? (
-                        <ResourceItem
-                          key={contentItem.id}
-                          resource={contentItem}
-                          locale={locale}
-                        />
+                        <li className="card-grid__item" key={contentItem.id}>
+                          <ResourceItem resource={contentItem} locale={locale} />
+                        </li>
                       ) : null;
                     }
 
@@ -89,38 +85,41 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                           : undefined);
 
                       return article ? (
-                        <ContentCard
-                          key={contentItem.id}
-                          item={articleToCardItem(article)}
-                          index={index}
-                          objectId={contentItem.id}
-                        />
+                        <li className="card-grid__item" key={contentItem.id}>
+                          <ContentCard
+                            item={articleToCardItem(article)}
+                            index={index}
+                            objectId={contentItem.id}
+                          />
+                        </li>
                       ) : "title" in contentItem && isContentCardItem(contentItem) ? (
-                        <ContentCard
-                          key={contentItem.id}
-                          item={contentItem}
-                          index={index}
-                          objectId={contentItem.id}
-                        />
+                        <li className="card-grid__item" key={contentItem.id}>
+                          <ContentCard
+                            item={contentItem}
+                            index={index}
+                            objectId={contentItem.id}
+                          />
+                        </li>
                       ) : null;
                     }
 
                     return "title" in contentItem && isContentCardItem(contentItem) ? (
-                      <ContentCard
-                        key={contentItem.id}
-                        item={contentItem}
-                        index={index}
-                        objectId={contentItem.id}
-                        statusLabel={
-                          contentItem.status === "preparing" ||
-                          contentItem.status === "unavailable"
-                            ? getStatusLabel(contentItem.status, locale)
-                            : undefined
-                        }
-                      />
+                      <li className="card-grid__item" key={contentItem.id}>
+                        <ContentCard
+                          item={contentItem}
+                          index={index}
+                          objectId={contentItem.id}
+                          statusLabel={
+                            contentItem.status === "preparing" ||
+                            contentItem.status === "unavailable"
+                              ? getStatusLabel(contentItem.status, locale)
+                              : undefined
+                          }
+                        />
+                      </li>
                     ) : null;
                   })}
-                </div>
+                </CardGrid>
               ) : null}
               {pageSection.action ? (
                 <div className="section-action-wrap">

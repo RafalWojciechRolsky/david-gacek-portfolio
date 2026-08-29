@@ -33,39 +33,39 @@ export function ResourceItem({ resource, locale }: ResourceItemProps) {
 
   return (
     <article className="resource-item">
-      <div>
-        <span className="card-label">{resource.type ?? messages.resources.label}</span>
-        <h3>{resource.title}</h3>
-        <p>{resource.body}</p>
+      <span className="card-label">{resource.type ?? messages.resources.label}</span>
+      <h3>{resource.title}</h3>
+      <p>{resource.body}</p>
+      <div className="card-footer resource-footer">
+        {isAvailable && resource.href ? (
+          <>
+            <ActionLink
+              href={resource.href}
+              variant="text"
+              ariaLabel={`${messages.resources.downloadAria} ${resource.title}`}
+              className="resource-action"
+              onClick={() => setDownloadStarted(true)}
+              download
+              live
+            >
+              {downloadStarted
+                ? messages.resources.downloadStarted
+                : messages.resources.download}
+            </ActionLink>
+            <div className="resource-sharing">
+              <ShareButton
+                href={resource.href}
+                label={messages.resources.share}
+                copiedLabel={messages.resources.copied}
+                errorLabel={messages.resources.copyError}
+              />
+              <span className="resource-url">{resource.href}</span>
+            </div>
+          </>
+        ) : (
+          <span className={`card-status ${unavailableStatus}`}>{unavailableLabel}</span>
+        )}
       </div>
-      {isAvailable && resource.href ? (
-        <ActionLink
-          href={resource.href}
-          variant="text"
-          ariaLabel={`${messages.resources.downloadAria} ${resource.title}`}
-          className="resource-action"
-          onClick={() => setDownloadStarted(true)}
-          download
-          live
-        >
-          {downloadStarted
-            ? messages.resources.downloadStarted
-            : messages.resources.download}
-        </ActionLink>
-      ) : (
-        <span className={`card-status ${unavailableStatus}`}>{unavailableLabel}</span>
-      )}
-      {isAvailable && resource.href ? (
-        <div className="resource-sharing">
-          <ShareButton
-            href={resource.href}
-            label={messages.resources.share}
-            copiedLabel={messages.resources.copied}
-            errorLabel={messages.resources.copyError}
-          />
-          <span className="resource-url">{resource.href}</span>
-        </div>
-      ) : null}
     </article>
   );
 }
