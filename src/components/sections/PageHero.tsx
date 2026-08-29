@@ -5,6 +5,7 @@ import type { Locale, PageData, PageVisual } from "@/lib/types";
 import { getMessages } from "@/messages/ui";
 
 import { ActionLink } from "@/components/ui/ActionLink";
+import { Arrow } from "@/components/ui/Arrow";
 
 interface PageHeroProps {
   /** Dane zlokalizowanej strony. */
@@ -51,7 +52,8 @@ export function PageHero({ page, visual, proof, ctaLabel, locale }: PageHeroProp
             rel="noopener noreferrer"
             data-object-id="page-hero-preferred-source"
           >
-            {messages.page.preferredSourceCta}
+            <span>{messages.page.preferredSourceCta}</span>
+            <Arrow />
           </a>
         </div>
         {heroImage ? (

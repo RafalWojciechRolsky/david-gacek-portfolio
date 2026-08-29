@@ -540,7 +540,7 @@ img {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
-  min-height: min(760px, calc(100vh - 83px));
+  min-height: calc(100vh - 83px);
 }
 
 .hero-media {
@@ -651,6 +651,26 @@ img {
   text-underline-offset: 4px;
 }
 
+.action-link .arrow {
+  transition: transform var(--ease);
+}
+
+.action-link:hover .arrow,
+.action-link:focus-visible .arrow {
+  transform: translateX(5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .action-link .arrow {
+    transition: none;
+  }
+
+  .action-link:hover .arrow,
+  .action-link:focus-visible .arrow {
+    transform: none;
+  }
+}
+
 .action-link--primary {
   min-width: 205px;
   min-height: 56px;
@@ -685,24 +705,63 @@ img {
 /* Preferred Sources: drugi CTA w hero, dyskretny tekstowy link pod primary.
    Na ciemnych hero czytelny przez dziedziczenie color z sekcji. */
 .hero-preferred-source {
-  display: block;
+  display: flex;
+  align-items: center;
   width: fit-content;
   min-height: 44px;
   margin-top: 4px;
-  color: var(--surface-ink-soft);
-  font-size: 0.78rem;
-  font-weight: 400;
+  color: var(--signal-cobalt);
+  font-size: 0.82rem;
+  font-weight: 700;
   line-height: 1.3;
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: var(--border-subtle);
   transition: color var(--ease), text-decoration-color var(--ease);
 }
 
-.hero-preferred-source:hover,
-.hero-preferred-source:focus-visible {
-  color: var(--signal-cobalt);
-  text-decoration-color: var(--signal-cobalt);
+/* Hover: mocniejszy sygnał strony */
+.page-hero--children .hero-preferred-source:hover,
+.page-hero--children .hero-preferred-source:focus-visible {
+  color: var(--signal-ochre);
+}
+
+.page-hero--corporate .hero-preferred-source:hover,
+.page-hero--corporate .hero-preferred-source:focus-visible {
+  color: var(--signal-coral);
+}
+
+.page-hero--disc .hero-preferred-source:hover,
+.page-hero--disc .hero-preferred-source:focus-visible {
+  color: var(--signal-green);
+}
+
+.page-hero--teacher .hero-preferred-source:hover,
+.page-hero--teacher .hero-preferred-source:focus-visible,
+.page-hero--insights .hero-preferred-source:hover,
+.page-hero--insights .hero-preferred-source:focus-visible,
+.page-hero--contact .hero-preferred-source:hover,
+.page-hero--contact .hero-preferred-source:focus-visible {
+  color: var(--surface-white);
+}
+
+.hero-preferred-source .arrow {
+  transition: transform var(--ease);
+}
+
+.hero-preferred-source:hover .arrow,
+.hero-preferred-source:focus-visible .arrow {
+  transform: translateX(5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-preferred-source .arrow {
+    transition: none;
+  }
+
+  .hero-preferred-source:hover .arrow,
+  .hero-preferred-source:focus-visible .arrow {
+    transform: none;
+  }
 }
 
 /* Proof passage */
@@ -1319,20 +1378,30 @@ img {
   color: var(--signal-green-ink);
 }
 
-/* Ciemne sekcje: linki akcji czytelne na ink i kobalcie, spójne z card-action.
-   Hover przechodzi w jasną ochrę, jak marker i hover h3. */
+/* Ciemne sekcje: linki akcji czytelne na ink i kobalcie, w kolorze sygnału strony. */
 .content-section.content-section--ink .action-link,
 .content-section.content-section--cobalt .action-link,
 .contact-section.contact-section--signal .action-link {
   color: var(--surface-white);
 }
 
-.content-section.content-section--ink .action-link:hover,
-.content-section.content-section--ink .action-link:focus-visible,
-.content-section.content-section--cobalt .action-link:hover,
-.content-section.content-section--cobalt .action-link:focus-visible,
-.contact-section.contact-section--signal .action-link:hover,
-.contact-section.contact-section--signal .action-link:focus-visible {
+.page-section-signal--ochre.content-section--ink .action-link,
+.page-section-signal--ochre.content-section--cobalt .action-link {
+  color: var(--signal-ochre-bright);
+}
+
+.page-section-signal--coral.content-section--ink .action-link,
+.page-section-signal--coral.content-section--cobalt .action-link {
+  color: var(--signal-coral);
+}
+
+.page-section-signal--green.content-section--ink .action-link,
+.page-section-signal--green.content-section--cobalt .action-link {
+  color: var(--signal-green);
+}
+
+.page-section-signal--cobalt.content-section--ink .action-link,
+.page-section-signal--cobalt.content-section--cobalt .action-link {
   color: var(--signal-ochre-bright);
 }
 
@@ -1490,6 +1559,10 @@ img {
   border-right: 0;
 }
 
+.content-grid--2 .resource-item:nth-child(2n) {
+  border-right: 0;
+}
+
 .content-grid--3 .content-card:nth-child(3n) {
   border-right: 0;
 }
@@ -1578,6 +1651,26 @@ img {
   display: inline-flex;
 }
 
+.section-action .arrow {
+  transition: transform var(--ease);
+}
+
+.section-action:hover .arrow,
+.section-action:focus-visible .arrow {
+  transform: translateX(5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-action .arrow {
+    transition: none;
+  }
+
+  .section-action:hover .arrow,
+  .section-action:focus-visible .arrow {
+    transform: none;
+  }
+}
+
 .article-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
@@ -1655,6 +1748,7 @@ img {
 
 /* Generic page hero */
 .page-hero {
+  min-height: calc(100vh - 82px);
   padding-block: clamp(48px, 6vw, 84px);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -1701,6 +1795,19 @@ img {
   color: var(--signal-ochre-bright);
 }
 
+/* Jasne hero: eyebrow w kolorze sygnału strony */
+.page-hero--children .eyebrow {
+  color: var(--signal-ochre-ink);
+}
+
+.page-hero--corporate .eyebrow {
+  color: var(--signal-coral-ink);
+}
+
+.page-hero--disc .eyebrow {
+  color: var(--signal-green-ink);
+}
+
 .page-hero--teacher .page-hero-intro,
 .page-hero--insights .page-hero-intro,
 .page-hero--contact .page-hero-intro {
@@ -1708,26 +1815,53 @@ img {
 }
 
 .page-hero--teacher .page-hero-proof,
-.page-hero--insights .page-hero-proof,
 .page-hero--contact .page-hero-proof {
   border-color: var(--on-dark-border);
   color: var(--signal-ochre-bright);
+}
+
+.page-hero--insights .page-hero-proof {
+  border-color: var(--on-dark-border);
+  color: var(--surface-ivory);
+}
+
+/* Jasne hero: proof w kolorze ink jak H1, border w kolorze sygnału */
+.page-hero--children .page-hero-proof {
+  border-color: var(--signal-ochre);
+  color: var(--surface-ink);
+}
+
+.page-hero--corporate .page-hero-proof {
+  border-color: var(--signal-coral);
+  color: var(--surface-ink);
+}
+
+.page-hero--disc .page-hero-proof {
+  border-color: var(--signal-green);
+  color: var(--surface-ink);
 }
 
 /* Ciemne hero: drugi CTA czytelny na ciemnym tle, hover w ochre-bright */
 .page-hero--teacher .hero-preferred-source,
 .page-hero--insights .hero-preferred-source,
 .page-hero--contact .hero-preferred-source {
-  color: var(--on-cobalt-muted);
+  color: var(--signal-ochre-bright);
 }
 
-.page-hero--teacher .hero-preferred-source:hover,
-.page-hero--teacher .hero-preferred-source:focus-visible,
-.page-hero--insights .hero-preferred-source:hover,
-.page-hero--insights .hero-preferred-source:focus-visible,
-.page-hero--contact .hero-preferred-source:hover,
-.page-hero--contact .hero-preferred-source:focus-visible {
-  color: var(--signal-ochre-bright);
+/* Jasne hero: drugi CTA w kolorze sygnału jak eyebrow, mocniejszy font */
+.page-hero--children .hero-preferred-source {
+  color: var(--signal-ochre-ink);
+  font-weight: 700;
+}
+
+.page-hero--corporate .hero-preferred-source {
+  color: var(--signal-coral-ink);
+  font-weight: 700;
+}
+
+.page-hero--disc .hero-preferred-source {
+  color: var(--signal-green-ink);
+  font-weight: 700;
 }
 
 /* Najważniejszy rezultat szkolenia dostaje rangę przez mocniejszą regułę siatki, bez dokładania nowej rodziny koloru. */
@@ -1775,10 +1909,37 @@ img {
   border: 1px solid var(--signal-green-ink);
 }
 
+.page-hero--corporate .action-link--primary {
+  background: var(--signal-coral-ink);
+  color: var(--surface-white);
+  border: 1px solid var(--signal-coral-ink);
+}
+
+.page-hero--corporate .action-link--primary:hover,
+.page-hero--corporate .action-link--primary:focus-visible {
+  background: var(--signal-coral);
+  border-color: var(--signal-coral);
+  transform: translateY(-2px);
+}
+
 .page-hero--disc .action-link--primary:hover,
 .page-hero--disc .action-link--primary:focus-visible {
   background: var(--surface-ink);
   border-color: var(--surface-ink);
+  transform: translateY(-2px);
+}
+
+/* Insights hero: CTA w ochre, hover jaśniejszy */
+.page-hero--insights .action-link--primary {
+  background: var(--signal-ochre);
+  color: var(--surface-ink);
+  border: 1px solid var(--signal-ochre);
+}
+
+.page-hero--insights .action-link--primary:hover,
+.page-hero--insights .action-link--primary:focus-visible {
+  background: var(--signal-ochre-bright);
+  border-color: var(--signal-ochre-bright);
   transform: translateY(-2px);
 }
 
@@ -1787,6 +1948,7 @@ img {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
   gap: clamp(40px, 10vw, 150px);
   align-items: center;
+  margin-top: 3rem;
 }
 
 .page-hero-copy h1 {
@@ -2813,6 +2975,7 @@ img {
   .contact-layout,
   .page-hero-grid {
     display: block;
+    margin-top: 0;
   }
 
   .proof-heading {
@@ -2967,6 +3130,7 @@ img {
   }
 
   .page-hero {
+    min-height: calc(100vh - 72px);
     padding-block: 44px 52px;
   }
 

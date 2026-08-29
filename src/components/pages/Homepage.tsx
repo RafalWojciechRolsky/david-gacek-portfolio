@@ -68,7 +68,8 @@ export function Homepage({ page }: HomepageProps) {
             rel="noopener noreferrer"
             data-object-id="homepage-hero-preferred-source"
           >
-            {messages.homepage.preferredSourceCta}
+            <span>{messages.homepage.preferredSourceCta}</span>
+            <Arrow />
           </a>
           <p className="hero-note">{messages.homepage.heroNote}</p>
         </div>
