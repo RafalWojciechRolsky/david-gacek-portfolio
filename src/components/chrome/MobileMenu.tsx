@@ -48,9 +48,8 @@ export function MobileMenu({
     summaryRef.current?.focus();
   };
 
-  const handleToggle = () => {
-    const nextOpen = detailsRef.current?.open ?? false;
-    setIsOpen(nextOpen);
+  const handleSummaryClick = () => {
+    setIsOpen(!(detailsRef.current?.open ?? false));
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDetailsElement>) => {
@@ -91,7 +90,6 @@ export function MobileMenu({
     <details
       className="mobile-nav"
       ref={detailsRef}
-      onToggle={handleToggle}
       onKeyDown={handleKeyDown}
       onBlur={(event) => {
         if (
@@ -106,6 +104,7 @@ export function MobileMenu({
       <summary
         ref={summaryRef}
         role="button"
+        onClick={handleSummaryClick}
         aria-label={isOpen ? messages.accessibility.closeMenu : messages.accessibility.openMenu}
         aria-expanded={isOpen}
         aria-controls="mobile-navigation-panel"

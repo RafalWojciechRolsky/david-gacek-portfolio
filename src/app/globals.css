@@ -38,6 +38,11 @@
   --tint-card: rgb(255 255 255 / 45%);
   --border-subtle: #c9c1b5;
   --border-strong: #8d887f;
+  --page-signal: var(--signal-cobalt);
+  --page-signal-ink: var(--signal-cobalt);
+  --page-signal-tint: var(--on-cobalt-soft);
+  --page-on-dark: var(--signal-ochre-bright);
+  --page-on-dark-ink: var(--surface-ink);
   --display: var(--font-space-grotesk), "Avenir Next", "Segoe UI", sans-serif;
   --reading: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
   --max-width: 1440px;
@@ -51,6 +56,69 @@
   --space-xl: 40px;
   --space-2xl: 88px;
   --space-3xl: 120px;
+}
+
+/* Semantyczne role sygnału pozwalają komponentom dziedziczyć tożsamość strony
+   bez wiązania wspólnych interakcji z konkretnym kolorem. */
+:is(
+  .page-hero--cobalt,
+  .page-section-signal--cobalt,
+  .video-section--cobalt,
+  .site-header--page-home,
+  .site-header--page-profile,
+  .site-header--page-teacherTraining,
+  .site-header--page-projects,
+  .site-header--page-contact,
+  .site-header--page-materials
+) {
+  --page-signal: var(--signal-cobalt);
+  --page-signal-ink: var(--signal-cobalt);
+  --page-signal-tint: var(--on-cobalt-soft);
+  --page-on-dark: var(--signal-ochre-bright);
+  --page-on-dark-ink: var(--surface-ink);
+}
+
+:is(
+  .page-hero--ochre,
+  .page-section-signal--ochre,
+  .video-section--ochre,
+  .site-header--theme-ochre,
+  .site-header--page-childrenWorkshops,
+  .site-header--page-insights
+) {
+  --page-signal: var(--signal-ochre);
+  --page-signal-ink: var(--signal-ochre-ink);
+  --page-signal-tint: var(--surface-ochre);
+  --page-on-dark: var(--signal-ochre-bright);
+  --page-on-dark-ink: var(--surface-ink);
+}
+
+:is(
+  .page-hero--coral,
+  .page-section-signal--coral,
+  .video-section--coral,
+  .site-header--theme-coral,
+  .site-header--page-corporateEvents
+) {
+  --page-signal: var(--signal-coral);
+  --page-signal-ink: var(--signal-coral-ink);
+  --page-signal-tint: var(--surface-coral);
+  --page-on-dark: var(--surface-coral);
+  --page-on-dark-ink: var(--surface-ink);
+}
+
+:is(
+  .page-hero--green,
+  .page-section-signal--green,
+  .video-section--green,
+  .site-header--theme-green,
+  .site-header--page-disc
+) {
+  --page-signal: var(--signal-green);
+  --page-signal-ink: var(--signal-green-ink);
+  --page-signal-tint: var(--surface-green);
+  --page-on-dark: var(--surface-green);
+  --page-on-dark-ink: var(--surface-ink);
 }
 
 @theme inline {
@@ -110,15 +178,30 @@ img {
   outline-offset: 4px;
 }
 
-/* Na ciemnych tłach kobaltowy focus znika, więc przechodzimy na jasną ochrę */
+/* Jasne konteksty dziedziczą tekstowy sygnał strony, ciemne używają jasnego
+   odpowiednika tej samej rodziny albo jawnego wyjątku cobalt + ochre. */
+.page-hero :focus-visible,
+.content-section :focus-visible,
+.faq-section :focus-visible,
+.site-header--at-top :focus-visible {
+  outline-color: var(--page-signal-ink);
+}
+
 .content-section--ink :focus-visible,
 .content-section--cobalt :focus-visible,
 .video-section :focus-visible,
 .contact-section--signal :focus-visible,
+.page-hero--teacher :focus-visible,
+.page-hero--insights :focus-visible,
+.page-hero--contact :focus-visible,
 .site-header--theme-cobalt.site-header--at-top :focus-visible,
 .site-header--theme-dark-cobalt.site-header--at-top :focus-visible,
 .site-header--theme-ink.site-header--at-top :focus-visible {
-  outline-color: var(--signal-ochre-bright);
+  outline-color: var(--page-on-dark);
+}
+
+.site-header--at-top .nav-submenu :focus-visible {
+  outline-color: var(--page-signal-ink);
 }
 
 .container {
@@ -257,26 +340,11 @@ img {
   color: var(--surface-ink);
 }
 
-/* Po scrollu Header zostaje neutralną powierzchnią, a aktywny link zachowuje tożsamość strony. */
-.site-header--scrolled.site-header--page-teacherTraining [aria-current="page"],
-.site-header--scrolled.site-header--page-profile [aria-current="page"],
-.site-header--scrolled.site-header--page-projects [aria-current="page"],
-.site-header--scrolled.site-header--page-contact [aria-current="page"],
-.site-header--scrolled.site-header--page-materials [aria-current="page"] {
-  color: var(--signal-cobalt);
-}
-
-.site-header--scrolled.site-header--page-corporateEvents [aria-current="page"] {
-  color: var(--signal-coral-ink);
-}
-
-.site-header--scrolled.site-header--page-childrenWorkshops [aria-current="page"],
-.site-header--scrolled.site-header--page-insights [aria-current="page"] {
-  color: var(--signal-ochre-ink);
-}
-
-.site-header--scrolled.site-header--page-disc [aria-current="page"] {
-  color: var(--signal-green-ink);
+/* Po scrollu chrome jest neutralny, a bieżąca strona zostaje rozpoznawalna
+   przez jeden tekstowy sygnał w aktywnym elemencie. */
+.site-header--scrolled [aria-current="page"],
+.site-header--scrolled .nav-dropdown[data-current] > summary {
+  color: var(--page-signal-ink);
 }
 
 /* Hero theme backgrounds when at top */
@@ -350,13 +418,19 @@ img {
 .site-header--theme-cobalt.site-header--at-top .nav-dropdown > summary:hover,
 .site-header--theme-dark-cobalt.site-header--at-top .nav-dropdown > summary:hover,
 .site-header--theme-ink.site-header--at-top .nav-dropdown > summary:hover {
-  color: var(--surface-white);
+  color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .desktop-nav > a[aria-current="page"],
 .site-header--theme-dark-cobalt.site-header--at-top .desktop-nav > a[aria-current="page"],
 .site-header--theme-ink.site-header--at-top .desktop-nav > a[aria-current="page"] {
-  color: var(--signal-ochre-bright);
+  color: var(--page-on-dark);
+}
+
+.site-header--theme-cobalt.site-header--at-top .nav-dropdown[data-current] > summary,
+.site-header--theme-dark-cobalt.site-header--at-top .nav-dropdown[data-current] > summary,
+.site-header--theme-ink.site-header--at-top .nav-dropdown[data-current] > summary {
+  color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .header-call,
@@ -375,7 +449,7 @@ img {
 .site-header--theme-cobalt.site-header--at-top .language-switcher a[aria-current="page"],
 .site-header--theme-dark-cobalt.site-header--at-top .language-switcher a[aria-current="page"],
 .site-header--theme-ink.site-header--at-top .language-switcher a[aria-current="page"] {
-  color: var(--signal-ochre-bright);
+  color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .mobile-nav > summary,
@@ -406,7 +480,7 @@ img {
 }
 
 .brand:hover {
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
 }
 
 .desktop-nav {
@@ -434,11 +508,12 @@ img {
 .desktop-nav > a:hover,
 .nav-dropdown > summary:hover,
 .header-call:hover {
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
 }
 
-.desktop-nav > a[aria-current="page"] {
-  color: var(--signal-cobalt);
+.desktop-nav > a[aria-current="page"],
+.nav-dropdown[data-current] > summary {
+  color: var(--page-signal-ink);
 }
 
 .nav-dropdown {
@@ -492,8 +567,14 @@ img {
 }
 
 .nav-submenu a:hover {
-  background: var(--surface-paper);
-  color: var(--signal-cobalt);
+  background: var(--page-signal-tint);
+  color: var(--page-signal-ink);
+}
+
+.nav-submenu a[aria-current="page"] {
+  color: var(--page-signal-ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .header-tools {
@@ -505,7 +586,7 @@ img {
 .header-call {
   padding: 0 12px;
   border-left: 1px solid var(--border-subtle);
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
 }
 
 .language-switcher {
@@ -526,7 +607,7 @@ img {
 }
 
 .language-switcher a[aria-current="page"] {
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -710,7 +791,7 @@ img {
   width: fit-content;
   min-height: 44px;
   margin-top: 4px;
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.3;
@@ -719,20 +800,20 @@ img {
   transition: color var(--ease), text-decoration-color var(--ease);
 }
 
-/* Hover: mocniejszy sygnał strony */
+/* Jasne hero zachowują kontrastowy tusz sygnału również podczas interakcji. */
 .page-hero--children .hero-preferred-source:hover,
 .page-hero--children .hero-preferred-source:focus-visible {
-  color: var(--signal-ochre);
+  color: var(--signal-ochre-ink);
 }
 
 .page-hero--corporate .hero-preferred-source:hover,
 .page-hero--corporate .hero-preferred-source:focus-visible {
-  color: var(--signal-coral);
+  color: var(--signal-coral-ink);
 }
 
 .page-hero--disc .hero-preferred-source:hover,
 .page-hero--disc .hero-preferred-source:focus-visible {
-  color: var(--signal-green);
+  color: var(--signal-green-ink);
 }
 
 .page-hero--teacher .hero-preferred-source:hover,
@@ -978,11 +1059,7 @@ img {
 }
 
 .video-section .rhythmic-marker span {
-  background: var(--signal-ochre-bright);
-}
-
-.video-section--coral {
-  background: var(--signal-coral-ink);
+  background: var(--page-on-dark);
 }
 
 .video-note {
@@ -1052,9 +1129,9 @@ img {
   width: 76px;
   height: 76px;
   place-items: center;
-  border: 1px solid var(--surface-white);
-  background: var(--signal-cobalt);
-  color: var(--surface-white);
+  border: 1px solid var(--page-on-dark);
+  background: var(--page-on-dark);
+  color: var(--page-on-dark-ink);
   transform: translate(-50%, -50%);
 }
 
@@ -1069,6 +1146,8 @@ img {
   bottom: 17px;
   left: 20px;
   max-width: 330px;
+  padding: 6px 8px;
+  background: var(--media-panel-deep);
   font-family: var(--display);
   font-size: clamp(1rem, 2vw, 1.35rem);
   line-height: 1.1;
@@ -1308,7 +1387,10 @@ img {
   color: inherit;
 }
 
-.content-section--ink .section-intro,
+.content-section--ink .section-intro {
+  color: var(--on-ink-intro);
+}
+
 .content-section--cobalt .section-intro {
   color: var(--on-cobalt-muted);
 }
@@ -1324,10 +1406,13 @@ img {
 }
 
 .content-section--ink .content-card p,
-.content-section--cobalt .content-card p,
 .content-section--ink .content-card .card-meta,
+.content-section--ink .content-card .card-status {
+  color: var(--on-ink-muted);
+}
+
+.content-section--cobalt .content-card p,
 .content-section--cobalt .content-card .card-meta,
-.content-section--ink .content-card .card-status,
 .content-section--cobalt .content-card .card-status {
   color: var(--on-cobalt-muted);
 }
@@ -1387,22 +1472,22 @@ img {
 
 .page-section-signal--ochre.content-section--ink .action-link,
 .page-section-signal--ochre.content-section--cobalt .action-link {
-  color: var(--signal-ochre-bright);
+  color: var(--page-on-dark);
 }
 
 .page-section-signal--coral.content-section--ink .action-link,
 .page-section-signal--coral.content-section--cobalt .action-link {
-  color: var(--signal-coral);
+  color: var(--page-on-dark);
 }
 
 .page-section-signal--green.content-section--ink .action-link,
 .page-section-signal--green.content-section--cobalt .action-link {
-  color: var(--signal-green);
+  color: var(--page-on-dark);
 }
 
 .page-section-signal--cobalt.content-section--ink .action-link,
 .page-section-signal--cobalt.content-section--cobalt .action-link {
-  color: var(--signal-ochre-bright);
+  color: var(--page-on-dark);
 }
 
 .page-section-signal--cobalt .content-card .card-number,
@@ -1434,16 +1519,22 @@ img {
 }
 
 /* CTA sekcji dziedziczy rodzinę sygnału strony, zamiast stałego kobaltu */
-.page-section-signal--ochre .section-action {
-  color: var(--signal-ochre-ink);
-}
-
-.page-section-signal--coral .section-action {
-  color: var(--signal-coral-ink);
-}
-
+.page-section-signal--cobalt .section-action,
+.page-section-signal--ochre .section-action,
+.page-section-signal--coral .section-action,
 .page-section-signal--green .section-action {
-  color: var(--signal-green-ink);
+  color: var(--page-signal-ink);
+}
+
+.page-section-signal--cobalt .action-link,
+.page-section-signal--ochre .action-link,
+.page-section-signal--coral .action-link,
+.page-section-signal--green .action-link,
+.page-section-signal--cobalt .share-button,
+.page-section-signal--ochre .share-button,
+.page-section-signal--coral .share-button,
+.page-section-signal--green .share-button {
+  color: var(--page-signal-ink);
 }
 
 .page-section-signal--ochre .rhythmic-marker span {
@@ -1462,7 +1553,7 @@ img {
 .content-section.content-section--ink .rhythmic-marker span,
 .content-section.content-section--cobalt .rhythmic-marker span,
 .contact-section.contact-section--signal .rhythmic-marker span {
-  background: var(--signal-ochre-bright);
+  background: var(--page-on-dark);
 }
 
 .content-grid {
@@ -1822,7 +1913,7 @@ img {
 
 .page-hero--insights .page-hero-proof {
   border-color: var(--on-dark-border);
-  color: var(--surface-ivory);
+  color: var(--surface-paper);
 }
 
 /* Jasne hero: proof w kolorze ink jak H1, border w kolorze sygnału */
@@ -2113,7 +2204,7 @@ img {
   right: 8px;
   width: 1px;
   height: 12px;
-  background: var(--signal-cobalt);
+  background: var(--page-signal-ink);
   content: "";
   transform: translateY(-50%);
   transition: opacity var(--ease);
@@ -2124,14 +2215,14 @@ img {
   top: 50%;
   right: 3px;
   width: 12px;
-  border-top: 1px solid var(--signal-cobalt);
+  border-top: 1px solid var(--page-signal-ink);
   content: "";
   transform: translateY(-50%);
 }
 
 .faq-list summary:hover,
 .faq-list details[open] summary {
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
 }
 
 .faq-list details[open] summary::after {
@@ -2773,7 +2864,7 @@ img {
     justify-content: flex-end;
     gap: 10px;
     cursor: pointer;
-    color: var(--signal-cobalt);
+    color: var(--page-signal-ink);
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -2830,18 +2921,39 @@ img {
     padding: 30px var(--gutter) 42px;
     border-top: 1px solid var(--surface-ink);
     background: var(--surface-white);
+    color: var(--surface-ink);
   }
 
   .mobile-panel a {
     display: block;
     min-height: 44px;
     padding-block: 10px;
+    color: var(--surface-ink);
     text-decoration: none;
   }
 
   .mobile-panel a:hover,
   .mobile-panel a:focus-visible {
-    color: var(--signal-cobalt);
+    color: var(--page-signal-ink);
+  }
+
+  .mobile-panel a[aria-current="page"] {
+    color: var(--page-signal-ink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* Panel ustanawia własny jasny kontrakt niezależny od koloru Headera. */
+  .site-header.site-header--at-top .mobile-panel .language-switcher a {
+    color: var(--surface-ink-soft);
+  }
+
+  .site-header.site-header--at-top .mobile-panel .language-switcher a[aria-current="page"] {
+    color: var(--page-signal-ink);
+  }
+
+  .site-header.site-header--at-top .mobile-panel :focus-visible {
+    outline-color: var(--page-signal-ink);
   }
 
   .mobile-panel .mobile-group {
@@ -2868,7 +2980,7 @@ img {
 
   .mobile-panel .mobile-contact strong {
     display: block;
-    color: var(--signal-cobalt);
+    color: var(--page-signal-ink);
   }
 
   .mobile-panel .mobile-phone-number {

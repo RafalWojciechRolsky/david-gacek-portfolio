@@ -75,7 +75,10 @@ export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
       {sectionsAfterVideo.length ? (
         <PageSections sections={sectionsAfterVideo} locale={locale} visual={visual} />
       ) : null}
-      <section className="faq-section section-rule" aria-labelledby="page-faq-heading">
+      <section
+        className={`faq-section section-rule page-section-signal--${visual.signal}`}
+        aria-labelledby="page-faq-heading"
+      >
         <div className="container faq-layout">
           <div className="faq-heading">
             <SectionHeader

@@ -180,7 +180,10 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
           </ActionLink>
         </div>
       </article>
-      <section className="faq-section section-rule" aria-labelledby="article-faq-heading">
+      <section
+        className={`faq-section section-rule page-section-signal--${article.category.signal}`}
+        aria-labelledby="article-faq-heading"
+      >
         <div className="container faq-layout">
           <div className="faq-heading">
             <SectionHeader

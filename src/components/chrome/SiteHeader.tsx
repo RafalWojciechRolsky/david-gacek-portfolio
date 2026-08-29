@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useSyncExternalStore } from "react";
 import { pathFor } from "@/lib/routes";
 import type { Locale, PageKey } from "@/lib/types";
 
@@ -21,6 +21,56 @@ const HERO_THEMES: Record<PageKey, string> = {
   contact: "dark-cobalt",
   materials: "paper",
 };
+
+/** Stan nagłówka wynikający z pozycji i kierunku przewijania. */
+type HeaderScrollState = "top" | "scrolled" | "hidden";
+
+let headerScrollSnapshot: HeaderScrollState = "top";
+
+/**
+ * Zwraca ostatni stabilny stan nagłówka dla Reacta.
+ */
+function getHeaderScrollSnapshot(): HeaderScrollState {
+  return headerScrollSnapshot;
+}
+
+/**
+ * Zapewnia zgodny z SSR stan początkowy przed hydratacją.
+ */
+function getServerHeaderScrollSnapshot(): HeaderScrollState {
+  return "top";
+}
+
+/**
+ * Subskrybuje przewijanie jako zewnętrzne źródło stanu bez ręcznej synchronizacji efektami.
+ */
+function subscribeToHeaderScroll(onStoreChange: () => void): () => void {
+  let previousScrollY = window.scrollY;
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    const nextSnapshot: HeaderScrollState =
+      currentScrollY <= 30
+        ? "top"
+        : currentScrollY > 100 && currentScrollY > previousScrollY
+          ? "hidden"
+          : "scrolled";
+
+    previousScrollY = currentScrollY;
+
+    if (nextSnapshot !== headerScrollSnapshot) {
+      headerScrollSnapshot = nextSnapshot;
+      onStoreChange();
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll();
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}
 
 /** Motywy powierzchni dostępne dla nagłówka strony. */
 export type HeaderTheme =
@@ -64,34 +114,13 @@ export function SiteHeader({
 }: SiteHeaderProps) {
   const messages = getMessages(locale);
   const theme = themeOverride ?? HERO_THEMES[currentPage] ?? "paper";
-
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
-  const lastScrollYRef = useRef(0);
-
-  useEffect(() => {
-    function handleScroll() {
-      const currentScrollY = window.scrollY;
-      const prevScrollY = lastScrollYRef.current;
-
-      if (currentScrollY > 30) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-
-      if (currentScrollY > 100 && currentScrollY > prevScrollY) {
-        setIsHidden(true);
-      } else if (currentScrollY < prevScrollY || currentScrollY <= 30) {
-        setIsHidden(false);
-      }
-
-      lastScrollYRef.current = currentScrollY;
-    }
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const scrollState = useSyncExternalStore(
+    subscribeToHeaderScroll,
+    getHeaderScrollSnapshot,
+    getServerHeaderScrollSnapshot,
+  );
+  const isScrolled = scrollState !== "top";
+  const isHidden = scrollState === "hidden";
 
   const headerClasses = [
     "site-header",

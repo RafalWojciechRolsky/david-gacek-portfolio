@@ -24,6 +24,11 @@ export function DesktopCollaborationMenu({
   const summaryRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const messages = getMessages(locale);
+  const isCurrent =
+    currentPage === "teacherTraining" ||
+    currentPage === "childrenWorkshops" ||
+    currentPage === "corporateEvents" ||
+    currentPage === "disc";
 
   const close = () => {
     if (detailsRef.current) {
@@ -33,12 +38,8 @@ export function DesktopCollaborationMenu({
     summaryRef.current?.focus();
   };
 
-  const handleToggle = () => {
-    window.requestAnimationFrame(() => {
-      const nextOpen = detailsRef.current?.open ?? false;
-      setIsOpen(nextOpen);
-      summaryRef.current?.setAttribute("aria-expanded", String(nextOpen));
-    });
+  const handleSummaryClick = () => {
+    setIsOpen(!(detailsRef.current?.open ?? false));
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDetailsElement>) => {
@@ -51,8 +52,8 @@ export function DesktopCollaborationMenu({
   return (
     <details
       className="nav-dropdown"
+      data-current={isCurrent || undefined}
       ref={detailsRef}
-      onToggle={handleToggle}
       onKeyDown={handleKeyDown}
       onBlur={(event) => {
         if (
@@ -67,6 +68,7 @@ export function DesktopCollaborationMenu({
       <summary
         ref={summaryRef}
         role="button"
+        onClick={handleSummaryClick}
         aria-controls="collaboration-menu"
         aria-expanded={isOpen}
       >

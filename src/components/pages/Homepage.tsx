@@ -217,7 +217,10 @@ export function Homepage({ page }: HomepageProps) {
         </div>
       </section>
 
-      <section className="faq-section section-rule" aria-labelledby="faq-heading">
+      <section
+        className="faq-section section-rule page-section-signal--cobalt"
+        aria-labelledby="faq-heading"
+      >
         <div className="container faq-layout">
           <div className="faq-heading">
             <SectionHeader
