@@ -140,7 +140,7 @@
         "dowody": "ink",
         "oferta": "white",
         "realizacje": "coral",
-        "artykuly": "ink"
+        "artykuly": "white"
       },
       "en": {
         "triage": "paper",
@@ -149,7 +149,7 @@
         "evidence": "ink",
         "offer": "white",
         "projects": "coral",
-        "articles": "ink"
+        "articles": "white"
       }
     }
   },

@@ -64,6 +64,7 @@
   .page-hero--cobalt,
   .page-section-signal--cobalt,
   .video-section--cobalt,
+  .article-page--cobalt,
   .site-header--page-home,
   .site-header--page-profile,
   .site-header--page-teacherTraining,
@@ -82,6 +83,7 @@
   .page-hero--ochre,
   .page-section-signal--ochre,
   .video-section--ochre,
+  .article-page--ochre,
   .site-header--theme-ochre,
   .site-header--page-childrenWorkshops,
   .site-header--page-insights
@@ -97,6 +99,7 @@
   .page-hero--coral,
   .page-section-signal--coral,
   .video-section--coral,
+  .article-page--coral,
   .site-header--theme-coral,
   .site-header--page-corporateEvents
 ) {
@@ -111,6 +114,7 @@
   .page-hero--green,
   .page-section-signal--green,
   .video-section--green,
+  .article-page--green,
   .site-header--theme-green,
   .site-header--page-disc
 ) {
@@ -1463,31 +1467,12 @@ img {
   color: var(--signal-green-ink);
 }
 
-/* Ciemne sekcje: linki akcji czytelne na ink i kobalcie, w kolorze sygnału strony. */
+/* Ciemne sekcje: wszystkie linki akcji białe, jedna rodzina sygnału na sekcję.
+   Hierarchię CTA buduje waga typograficzna i pozycja, nie dodatkowy kolor. */
 .content-section.content-section--ink .action-link,
 .content-section.content-section--cobalt .action-link,
 .contact-section.contact-section--signal .action-link {
   color: var(--surface-white);
-}
-
-.page-section-signal--ochre.content-section--ink .action-link,
-.page-section-signal--ochre.content-section--cobalt .action-link {
-  color: var(--page-on-dark);
-}
-
-.page-section-signal--coral.content-section--ink .action-link,
-.page-section-signal--coral.content-section--cobalt .action-link {
-  color: var(--page-on-dark);
-}
-
-.page-section-signal--green.content-section--ink .action-link,
-.page-section-signal--green.content-section--cobalt .action-link {
-  color: var(--page-on-dark);
-}
-
-.page-section-signal--cobalt.content-section--ink .action-link,
-.page-section-signal--cobalt.content-section--cobalt .action-link {
-  color: var(--page-on-dark);
 }
 
 .page-section-signal--cobalt .content-card .card-number,
@@ -1635,7 +1620,7 @@ img {
   gap: 8px;
   margin-top: auto;
   padding-top: 0;
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
   font-size: 0.82rem;
   font-weight: 700;
   text-decoration: underline;
@@ -2065,7 +2050,7 @@ img {
   margin: 28px 0 0;
   padding-top: 16px;
   border-top: 1px solid var(--surface-ink);
-  color: var(--signal-cobalt);
+  color: var(--page-signal-ink);
   font-family: var(--display);
   font-size: clamp(1.4rem, 2.7vw, 2.5rem);
   font-weight: 700;
