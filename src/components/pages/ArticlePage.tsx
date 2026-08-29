@@ -3,12 +3,14 @@ import Image from "next/image";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { SectionHeader } from "@/components/sections/SectionHeader";
 import { ActionLink } from "@/components/ui/ActionLink";
+import { Arrow } from "@/components/ui/Arrow";
 import { CardGrid } from "@/components/ui/CardGrid";
 import { ContentCard } from "@/components/ui/ContentCard";
 import { DisclosureFaq } from "@/components/ui/DisclosureFaq";
 import type { ArticleDetail, ArticleSection, Locale } from "@/lib/types";
 import { articleToCardItem, formatArticleDate, getRelatedArticles } from "@/lib/articles";
 import { pathFor, pathWithAnchor } from "@/lib/routes";
+import { preferredSourceUrl } from "@/lib/site-config";
 import { getMessages } from "@/messages/ui";
 
 interface ArticlePageProps {
@@ -151,6 +153,16 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
             <p className="article-source-line">
               {messages.article.sourcePrefix} {article.sourceLabel}
             </p>
+            <a
+              className="article-preferred-source"
+              href={preferredSourceUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-object-id="article-preferred-source"
+            >
+              <span>{messages.header.preferredSource}</span>
+              <Arrow />
+            </a>
           </div>
           {related.length ? (
             <section className="article-related" aria-labelledby="article-related-heading">

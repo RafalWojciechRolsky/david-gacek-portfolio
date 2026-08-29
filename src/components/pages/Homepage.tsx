@@ -105,9 +105,9 @@ export function Homepage({ page }: HomepageProps) {
                     <div className="environment" key={environment.id}>
                       <strong>{environment.title}</strong>
                       <span>{environment.body}</span>
-                      {environment.source ? (
-                        <ActionLink href={environment.source.href} variant="source" withArrow>
-                          {environment.source.label}
+                      {environment.href ? (
+                        <ActionLink href={environment.href} variant="source" withArrow>
+                          {environment.actionLabel ?? environment.title}
                         </ActionLink>
                       ) : null}
                     </div>

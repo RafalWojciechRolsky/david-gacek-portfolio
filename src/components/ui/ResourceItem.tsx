@@ -13,12 +13,14 @@ interface ResourceItemProps {
   resource: ContentItem;
   /** Lokalizacja bieżącej strony. */
   locale: "pl" | "en";
+  /** Poziom nagłówka zasobu, gdy strona nie ma nagłówka sekcji H2. */
+  headingLevel?: "h2" | "h3";
 }
 
 /**
  * Udostępnia zasób natywnie albo pokazuje uczciwy stan przygotowania.
  */
-export function ResourceItem({ resource, locale }: ResourceItemProps) {
+export function ResourceItem({ resource, locale, headingLevel = "h3" }: ResourceItemProps) {
   const [downloadStarted, setDownloadStarted] = useState(false);
   const messages = getMessages(locale);
   const isAvailable = resource.status === "available" && Boolean(resource.href);
@@ -30,11 +32,12 @@ export function ResourceItem({ resource, locale }: ResourceItemProps) {
     resource.status === "unavailable"
       ? "status--unavailable"
       : "status--pending";
+  const Heading = headingLevel;
 
   return (
     <article className="resource-item">
       <span className="card-label">{resource.type ?? messages.resources.label}</span>
-      <h3>{resource.title}</h3>
+      <Heading>{resource.title}</Heading>
       <p>{resource.body}</p>
       <div className="card-footer resource-footer">
         {isAvailable && resource.href ? (

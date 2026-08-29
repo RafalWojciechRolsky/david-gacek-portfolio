@@ -34,7 +34,7 @@ export default function EnglishMaterialsPage() {
               .find((item) => item.id === "director-materials" || item.id === "leadership-materials")
               ?.items?.map((resource) =>
                 "title" in resource ? (
-                  <ResourceItem key={resource.id} resource={resource} locale="en" />
+                  <ResourceItem key={resource.id} resource={resource} locale="en" headingLevel="h2" />
                 ) : null,
               )}
           </div>

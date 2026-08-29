@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { PageShell } from "@/components/chrome/PageShell";
 import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
 import type { Locale, PageKey } from "@/lib/types";
@@ -13,6 +15,8 @@ interface UtilityPageProps {
   intro: string;
   /** Tekst statusu dokumentu. */
   body: string;
+  /** Opcjonalne akcje ratunkowe pod treścią, np. na stronie 404. */
+  children?: ReactNode;
 }
 
 /**
@@ -24,6 +28,7 @@ export function UtilityPage({
   title,
   intro,
   body,
+  children,
 }: UtilityPageProps) {
   return (
     <PageShell locale={locale} currentPage={currentPage}>
@@ -35,6 +40,7 @@ export function UtilityPage({
           <div className="utility-page-body">
             <p>{body}</p>
           </div>
+          {children}
         </div>
       </section>
     </PageShell>

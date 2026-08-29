@@ -126,7 +126,9 @@
     "notFound": {
       "title": "Tej strony nie ma",
       "intro": "Wróć do strony głównej albo wybierz właściwy kontekst zaproszenia Dawida.",
-      "body": "Użyj nawigacji, aby przejść do profilu, oferty, Wiedzy lub kontaktu."
+      "body": "Użyj nawigacji, aby przejść do profilu, oferty, Wiedzy lub kontaktu.",
+      "homeAction": "Strona główna",
+      "contactAction": "Kontakt"
     },
     "materials": {
       "title": "Materiały po szkoleniu",
@@ -270,7 +272,9 @@
     "notFound": {
       "title": "This page is not here",
       "intro": "Return home or choose the right context for inviting Dawid.",
-      "body": "Use the navigation to open the profile, an offer, Insights, or Contact."
+      "body": "Use the navigation to open the profile, an offer, Insights, or Contact.",
+      "homeAction": "Home",
+      "contactAction": "Contact"
     },
     "materials": {
       "title": "Post-training materials",

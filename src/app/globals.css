@@ -807,7 +807,8 @@ img {
 
 /* Preferred Sources: drugi CTA w hero, dyskretny tekstowy link pod primary.
    Na ciemnych hero czytelny przez dziedziczenie color z sekcji. */
-.hero-preferred-source {
+.hero-preferred-source,
+.article-preferred-source {
   display: flex;
   align-items: center;
   width: fit-content;
@@ -820,6 +821,11 @@ img {
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color var(--ease), text-decoration-color var(--ease);
+}
+
+/* Na stronie artykułu link zamyka blok źródła z własnym oddechem. */
+.article-preferred-source {
+  margin-top: 18px;
 }
 
 /* Jasne hero zachowują kontrastowy tusz sygnału również podczas interakcji. */
@@ -847,22 +853,28 @@ img {
   color: var(--surface-white);
 }
 
-.hero-preferred-source .arrow {
+.hero-preferred-source .arrow,
+.article-preferred-source .arrow {
   transition: transform var(--ease);
 }
 
 .hero-preferred-source:hover .arrow,
-.hero-preferred-source:focus-visible .arrow {
+.hero-preferred-source:focus-visible .arrow,
+.article-preferred-source:hover .arrow,
+.article-preferred-source:focus-visible .arrow {
   transform: translateX(5px);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-preferred-source .arrow {
+  .hero-preferred-source .arrow,
+  .article-preferred-source .arrow {
     transition: none;
   }
 
   .hero-preferred-source:hover .arrow,
-  .hero-preferred-source:focus-visible .arrow {
+  .hero-preferred-source:focus-visible .arrow,
+  .article-preferred-source:hover .arrow,
+  .article-preferred-source:focus-visible .arrow {
     transform: none;
   }
 }
@@ -994,7 +1006,7 @@ img {
 }
 
 .status--unavailable {
-  color: var(--signal-coral);
+  color: var(--signal-coral-ink);
 }
 
 /* Status należy do rodziny bieżącej strony, zamiast wprowadzać obcy sygnał. */
@@ -1054,14 +1066,14 @@ img {
   padding-top: 14px;
 }
 
-/* Karta dowodowa odpowiada na hover całej karty, jak pozostałe karty siatki,
-   aby rytm interakcji był jednolity. Cel kliknięcia pozostaje w linku źródłowym,
-   a klawiatura podnosi kartę przez focus na tym linku. */
-.content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) {
+/* Karta dowodowa odpowiada tylko wtedy, gdy wskaźnik jest na linku źródłowym,
+   aby affordance nie obiecywał kliknięcia na całej powierzchni. Klawiatura
+   podnosi kartę przez focus na tym linku. */
+.content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) {
   background: var(--page-signal-tint);
 }
 
-.content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source {
+.content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .action-link--source {
   color: var(--page-signal-ink);
 }
 
@@ -1073,7 +1085,7 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) {
   border-color: var(--on-dark-border);
   background: var(--page-signal-ink);
   color: var(--surface-white);
@@ -1085,21 +1097,21 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) h3,
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) h3,
 :is(
   .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-number,
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .card-number,
 :is(
   .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-label {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .card-label {
   color: var(--surface-white);
 }
 
@@ -1109,7 +1121,7 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) p {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) p {
   color: var(--on-dark-copy);
 }
 
@@ -1118,8 +1130,8 @@ img {
 :is(
   .content-section--ink,
   .content-section--cobalt
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source,
-.contact-section.contact-section--signal .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .action-link--source,
+.contact-section.contact-section--signal .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .action-link--source {
   color: var(--surface-white);
 }
 
@@ -1129,7 +1141,7 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) {
   border-color: var(--border-strong);
   background: var(--surface-white);
   color: var(--surface-ink);
@@ -1140,19 +1152,19 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) h3,
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) h3,
 :is(
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-number,
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .card-number,
 :is(
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-label {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .card-label {
   color: var(--surface-ink);
 }
 
@@ -1161,7 +1173,7 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) p {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) p {
   color: var(--surface-ink-soft);
 }
 
@@ -1170,7 +1182,7 @@ img {
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source {
+) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .action-link--source {
   color: var(--page-signal-ink);
 }
 
@@ -2098,6 +2110,7 @@ img {
   min-height: 210px;
 }
 
+.resource-item h2,
 .resource-item h3 {
   margin: 13px 0 0;
   font-family: var(--display);
@@ -2796,6 +2809,13 @@ img {
   margin: 0;
 }
 
+.utility-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  margin-top: 28px;
+}
+
 .resource-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3340,15 +3360,11 @@ img {
   }
 
   .hero-caption {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+    right: 16px;
+    bottom: 12px;
+    max-width: 200px;
+    padding: 6px 8px;
+    font-size: 0.78rem;
   }
 
   .hero-copy {
@@ -3500,7 +3516,9 @@ img {
   .page-section--teacher .content-grid--4,
   .page-section--children .content-grid--4,
   .page-section--disc .content-grid--4,
-  .page-section--insights .content-grid--5 {
+  .page-section--insights .content-grid--5,
+  .page-section--corporate .content-grid--3,
+  .page-section--projects .content-grid--3 {
     grid-template-columns: 1fr;
   }
 
