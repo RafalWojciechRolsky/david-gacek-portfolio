@@ -66,7 +66,7 @@
         {
           "id": "maxidisc",
           "label": "04",
-          "title": "MaxiDISC",
+          "title": "MaxieDISC",
           "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie, 2023. Dokument wystawiono 10 maja 2023 roku.",
           "status": "confirmed"
         }
@@ -159,34 +159,25 @@
           "id": "droga-lwa",
           "title": "Droga Lwa",
           "body": "Mówca wydarzenia, łączenie Bum Bum Rurek i DISC.",
-          "source": {
-            "label": "Źródło: Droga Lwa",
-            "href": "https://drogalwa.pl/",
-            "external": true
-          },
-          "kind": "evidence"
+          "href": "https://drogalwa.pl/",
+          "actionLabel": "Droga Lwa",
+          "kind": "navigation"
         },
         {
           "id": "gls",
           "title": "Global Leadership Summit Polska",
           "body": "Zespół organizacyjny i współorganizacja.",
-          "source": {
-            "label": "Źródło: GLS Polska",
-            "href": "https://gls.org.pl/",
-            "external": true
-          },
-          "kind": "evidence"
+          "href": "https://gls.org.pl/",
+          "actionLabel": "GLS Polska",
+          "kind": "navigation"
         },
         {
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Obszar Komunikacja i DISC.",
-          "source": {
-            "label": "Źródło: Akademia Przywództwa",
-            "href": "https://akademiaprzywodztwa.pl/",
-            "external": true
-          },
-          "kind": "evidence"
+          "href": "https://akademiaprzywodztwa.pl/",
+          "actionLabel": "Akademia Przywództwa",
+          "kind": "navigation"
         }
       ],
       "sections": [],
@@ -279,7 +270,7 @@
         {
           "id": "maxidisc",
           "label": "04",
-          "title": "MaxiDISC",
+          "title": "MaxieDISC",
           "body": "Consultant certificate after training, a mentoring session, and an exam, 2023. The document was issued on 10 May 2023.",
           "status": "confirmed"
         }
@@ -372,34 +363,25 @@
           "id": "droga-lwa",
           "title": "Droga Lwa",
           "body": "Speaker at the event, combining boomwhackers and DISC.",
-          "source": {
-            "label": "Source: Droga Lwa",
-            "href": "https://drogalwa.pl/",
-            "external": true
-          },
-          "kind": "evidence"
+          "href": "https://drogalwa.pl/",
+          "actionLabel": "Droga Lwa",
+          "kind": "navigation"
         },
         {
           "id": "gls",
           "title": "Global Leadership Summit Polska",
           "body": "Part of the organizing team and co-organizers.",
-          "source": {
-            "label": "Source: GLS Polska",
-            "href": "https://gls.org.pl/",
-            "external": true
-          },
-          "kind": "evidence"
+          "href": "https://gls.org.pl/",
+          "actionLabel": "GLS Polska",
+          "kind": "navigation"
         },
         {
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Communication and DISC area.",
-          "source": {
-            "label": "Source: Akademia Przywództwa",
-            "href": "https://akademiaprzywodztwa.pl/",
-            "external": true
-          },
-          "kind": "evidence"
+          "href": "https://akademiaprzywodztwa.pl/",
+          "actionLabel": "Akademia Przywództwa",
+          "kind": "navigation"
         }
       ],
       "sections": [],
@@ -522,7 +504,7 @@
               {
                 "id": "2023",
                 "title": "2023",
-                "body": "Certyfikat konsultanta MaxiDISC po szkoleniu, sesji mentorskiej i egzaminie. Od tego momentu pracuję modelem DISC podczas sesji indywidualnych, omówień raportów i szkoleń zespołów.",
+                "body": "Certyfikat konsultanta MaxieDISC po szkoleniu, sesji mentorskiej i egzaminie. Od tego momentu pracuję modelem DISC podczas sesji indywidualnych, omówień raportów i szkoleń zespołów.",
                 "status": "confirmed",
                 "kind": "information"
               },
@@ -551,23 +533,19 @@
                 "title": "Historyczny rekord GWR",
                 "body": "661 osób grało razem na Bum Bum Rurkach podczas wydarzenia dla P&G Europe Planning Service Centre w Polsce, 19 kwietnia 2016 roku. Byłem jego głównym dyrygentem i autorem koncepcji wykonawczej.",
                 "status": "confirmed",
-                "source": {
-                  "label": "Nagranie na YouTube",
-                  "href": "https://youtu.be/Z5yKnlzKECg",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://youtu.be/Z5yKnlzKECg",
+                "actionLabel": "Nagranie na YouTube",
+                "kind": "navigation"
               },
               {
                 "id": "profile-proof-disc",
-                "title": "MaxiDISC",
+                "title": "MaxieDISC",
                 "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie. Pracuję modelem DISC, który opisuje style zachowań, a nie typy osobowości.",
                 "status": "confirmed",
-                "source": {
-                  "label": "Certyfikat MaxiDISC (PDF)",
-                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
-                },
-                "kind": "evidence"
+                "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf",
+                "actionLabel": "Certyfikat MaxieDISC (PDF)",
+                "download": true,
+                "kind": "navigation"
               }
             ]
           },
@@ -580,56 +558,41 @@
                 "id": "dobedu",
                 "title": "DobEdu",
                 "body": "Akredytowana placówka doskonalenia nauczycieli. Działam w niej jako edukator i prowadzący szkolenia z Bum Bum Rurek.",
-                "source": {
-                  "label": "Profil w DobEdu",
-                  "href": "https://www.dobedu.pl/team/dawid-gacek",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://www.dobedu.pl/team/dawid-gacek",
+                "actionLabel": "Profil w DobEdu",
+                "kind": "navigation"
               },
               {
                 "id": "droga-odwaznych",
                 "title": "Droga Odważnych",
                 "body": "Fundacja i środowisko rozwojowe dla mężczyzn, w którym działam jako prowadzący i mentor.",
-                "source": {
-                  "label": "drogaodwaznych.pl",
-                  "href": "https://drogaodwaznych.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogaodwaznych.pl/",
+                "actionLabel": "drogaodwaznych.pl",
+                "kind": "navigation"
               },
               {
                 "id": "droga-lwa",
                 "title": "Droga Lwa",
                 "body": "Cykliczne wydarzenie dla mężczyzn. Występuję na nim jako mówca i łączę na scenie Bum Bum Rurki z modelem DISC.",
-                "source": {
-                  "label": "drogalwa.pl",
-                  "href": "https://drogalwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogalwa.pl/",
+                "actionLabel": "drogalwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
                 "body": "Program rozwojowy dla liderów. Działam w zespole Akademii, w obszarze komunikacji i modelu DISC.",
-                "source": {
-                  "label": "akademiaprzywodztwa.pl",
-                  "href": "https://akademiaprzywodztwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://akademiaprzywodztwa.pl/",
+                "actionLabel": "akademiaprzywodztwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "gls",
                 "title": "Global Leadership Summit Polska",
                 "body": "Polska edycja globalnej konferencji przywództwa. Oficjalna strona wymienia mnie w zespole organizacyjnym i wśród współorganizatorów.",
-                "source": {
-                  "label": "gls.org.pl",
-                  "href": "https://gls.org.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://gls.org.pl/",
+                "actionLabel": "gls.org.pl",
+                "kind": "navigation"
               }
             ]
           }
@@ -643,7 +606,7 @@
           {
             "id": "profile-evidence",
             "question": "Jakie doświadczenie i dowody ma Dawid Gacek?",
-            "answer": "Ponad 4000 przeszkolonych nauczycieli od 2010 roku, historyczny rekord Guinnessa z udziałem 661 osób w 2016 roku oraz certyfikat konsultanta MaxiDISC z 2023 roku."
+            "answer": "Ponad 4000 przeszkolonych nauczycieli od 2010 roku, historyczny rekord Guinnessa z udziałem 661 osób w 2016 roku oraz certyfikat konsultanta MaxieDISC z 2023 roku."
           },
           {
             "id": "profile-audience",
@@ -755,7 +718,7 @@
               {
                 "id": "2023",
                 "title": "2023",
-                "body": "MaxiDISC consultant certificate after training, a mentoring session, and an exam. Since then, I have used the DISC model in individual sessions, report debriefs, and team trainings.",
+                "body": "MaxieDISC consultant certificate after training, a mentoring session, and an exam. Since then, I have used the DISC model in individual sessions, report debriefs, and team trainings.",
                 "status": "confirmed",
                 "kind": "information"
               },
@@ -784,23 +747,19 @@
                 "title": "Historical GWR record",
                 "body": "661 people played boomwhackers together at an event for P&G Europe Planning Service Centre in Poland on 19 April 2016. I led it as the main conductor and the creator of the performance concept.",
                 "status": "confirmed",
-                "source": {
-                  "label": "Watch on YouTube",
-                  "href": "https://youtu.be/Z5yKnlzKECg",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://youtu.be/Z5yKnlzKECg",
+                "actionLabel": "Watch on YouTube",
+                "kind": "navigation"
               },
               {
                 "id": "profile-proof-disc",
-                "title": "MaxiDISC",
+                "title": "MaxieDISC",
                 "body": "Consultant certificate after training, a mentoring session, and an exam. I work with the DISC model, which describes behavioural styles, not personality types.",
                 "status": "confirmed",
-                "source": {
-                  "label": "MaxiDISC certificate (PDF)",
-                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
-                },
-                "kind": "evidence"
+                "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf",
+                "actionLabel": "MaxieDISC certificate (PDF)",
+                "download": true,
+                "kind": "navigation"
               }
             ]
           },
@@ -813,56 +772,41 @@
                 "id": "dobedu",
                 "title": "DobEdu",
                 "body": "An accredited teacher development institution. I work there as an educator and a boomwhackers training facilitator.",
-                "source": {
-                  "label": "DobEdu profile",
-                  "href": "https://www.dobedu.pl/team/dawid-gacek",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://www.dobedu.pl/team/dawid-gacek",
+                "actionLabel": "DobEdu profile",
+                "kind": "navigation"
               },
               {
                 "id": "droga-odwaznych",
                 "title": "Droga Odważnych",
                 "body": "A foundation and development community for men, where I work as a facilitator and mentor.",
-                "source": {
-                  "label": "drogaodwaznych.pl",
-                  "href": "https://drogaodwaznych.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogaodwaznych.pl/",
+                "actionLabel": "drogaodwaznych.pl",
+                "kind": "navigation"
               },
               {
                 "id": "droga-lwa",
                 "title": "Droga Lwa",
                 "body": "A recurring event for men. I speak there, combining boomwhackers with the DISC model on stage.",
-                "source": {
-                  "label": "drogalwa.pl",
-                  "href": "https://drogalwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogalwa.pl/",
+                "actionLabel": "drogalwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
                 "body": "A leadership development program. I am part of the Academy team in the communication and DISC area.",
-                "source": {
-                  "label": "akademiaprzywodztwa.pl",
-                  "href": "https://akademiaprzywodztwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://akademiaprzywodztwa.pl/",
+                "actionLabel": "akademiaprzywodztwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "gls",
                 "title": "Global Leadership Summit Polska",
                 "body": "The Polish edition of a global leadership conference. The official website lists me in the organizing team and among the co-organizers.",
-                "source": {
-                  "label": "gls.org.pl",
-                  "href": "https://gls.org.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://gls.org.pl/",
+                "actionLabel": "gls.org.pl",
+                "kind": "navigation"
               }
             ]
           }
@@ -876,7 +820,7 @@
           {
             "id": "profile-evidence",
             "question": "What experience and evidence does Dawid Gacek have?",
-            "answer": "More than 4,000 teachers trained since 2010, a historic Guinness World Record with 661 people in 2016, and the MaxiDISC consultant certificate from 2023."
+            "answer": "More than 4,000 teachers trained since 2010, a historic Guinness World Record with 661 people in 2016, and the MaxieDISC consultant certificate from 2023."
           },
           {
             "id": "profile-audience",
@@ -1042,7 +986,7 @@
               },
               {
                 "id": "teacher-disc",
-                "title": "Certyfikat konsultanta MaxiDISC",
+                "title": "Certyfikat konsultanta MaxieDISC",
                 "body": "Formalne przygotowanie wspiera świadomą pracę z komunikacją, dynamiką grupy i różnicami widocznymi w sali.",
                 "kind": "information"
               }
@@ -1145,7 +1089,7 @@
               {
                 "id": "outline",
                 "title": "Dowody doświadczenia",
-                "body": "Opis metody wraz z potwierdzonymi dowodami: 4000 przeszkolonych nauczycieli, historyczny rekord Guinnessa i certyfikat konsultanta MaxiDISC.",
+                "body": "Opis metody wraz z potwierdzonymi dowodami: 4000 przeszkolonych nauczycieli, historyczny rekord Guinnessa i certyfikat konsultanta MaxieDISC.",
                 "status": "preparing",
                 "kind": "information"
               }
@@ -1330,7 +1274,7 @@
               },
               {
                 "id": "teacher-disc",
-                "title": "MaxiDISC consultant certificate",
+                "title": "MaxieDISC consultant certificate",
                 "body": "Formal preparation supports thoughtful work with communication and differences visible in a group.",
                 "kind": "information"
               }
@@ -1433,7 +1377,7 @@
               {
                 "id": "outline",
                 "title": "Evidence of experience",
-                "body": "A description of the method with confirmed evidence: 4,000 teachers trained, the historic Guinness World Record, and the MaxiDISC consultant certificate.",
+                "body": "A description of the method with confirmed evidence: 4,000 teachers trained, the historic Guinness World Record, and the MaxieDISC consultant certificate.",
                 "status": "preparing",
                 "kind": "information"
               }
@@ -2505,7 +2449,7 @@
           "title": "Szkolenie DISC dla zespołów | Dawid Gacek",
           "description": "Szkolenie DISC dla zespołów. Zobacz, czym jest model stylów zachowania, jak wspiera komunikację i jak wygląda bezpieczna praca z Dawidem przed decyzją."
         },
-        "title": "MaxiDISC dla zespołów",
+        "title": "MaxieDISC dla zespołów",
         "eyebrow": "Model stylów zachowania i komunikacji w pracy zespołu.",
         "intro": "Pomagam zespołom zobaczyć, jak działają, komunikują się i reagują na siebie w konkretnych sytuacjach.",
         "proof": "DISC jako model, nie test osobowości.",
@@ -2656,14 +2600,13 @@
             "items": [
               {
                 "id": "maxidisc",
-                "title": "Certyfikat konsultanta MaxiDISC",
+                "title": "Certyfikat konsultanta MaxieDISC",
                 "body": "Certyfikat z 10 maja 2023 roku, po szkoleniu, sesji mentorskiej i egzaminie.",
                 "status": "confirmed",
-                "source": {
-                  "label": "Certyfikat MaxiDISC (PDF)",
-                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
-                },
-                "kind": "evidence"
+                "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf",
+                "actionLabel": "Certyfikat MaxieDISC (PDF)",
+                "download": true,
+                "kind": "navigation"
               },
               {
                 "id": "teachers",
@@ -2676,23 +2619,17 @@
                 "id": "droga-lwa",
                 "title": "Droga Lwa",
                 "body": "Jako mówca tego cyklicznego wydarzenia łączę na scenie Bum Bum Rurki z modelem DISC.",
-                "source": {
-                  "label": "drogalwa.pl",
-                  "href": "https://drogalwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogalwa.pl/",
+                "actionLabel": "drogalwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
                 "body": "Działam w zespole Akademii w obszarze komunikacji i DISC, prowadząc pracę z modelami zachowań.",
-                "source": {
-                  "label": "akademiaprzywodztwa.pl",
-                  "href": "https://akademiaprzywodztwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://akademiaprzywodztwa.pl/",
+                "actionLabel": "akademiaprzywodztwa.pl",
+                "kind": "navigation"
               }
             ]
           },
@@ -2786,7 +2723,7 @@
           {
             "id": "disc-certificate",
             "question": "Jakie masz przygotowanie do prowadzenia DISC?",
-            "answer": "Certyfikat konsultanta MaxiDISC z 2023 roku, po szkoleniu, sesji mentorskiej i egzaminie, oraz wieloletnia praktyka w prowadzeniu grup."
+            "answer": "Certyfikat konsultanta MaxieDISC z 2023 roku, po szkoleniu, sesji mentorskiej i egzaminie, oraz wieloletnia praktyka w prowadzeniu grup."
           }
         ]
       },
@@ -2798,7 +2735,7 @@
           "title": "DISC Team Training | Dawid Gacek",
           "description": "DISC team training for stronger communication. Learn what the behavioural styles model is, how it supports teams, and how Dawid works with groups in practice."
         },
-        "title": "MaxiDISC for teams",
+        "title": "MaxieDISC for teams",
         "eyebrow": "A model of behavioural styles and communication for team work.",
         "intro": "I help teams see how they act, communicate, and respond to one another in concrete situations.",
         "proof": "DISC as a model, not a personality test.",
@@ -2949,14 +2886,13 @@
             "items": [
               {
                 "id": "maxidisc",
-                "title": "MaxiDISC consultant certificate",
+                "title": "MaxieDISC consultant certificate",
                 "body": "Issued on 10 May 2023, after training, a mentoring session, and an exam.",
                 "status": "confirmed",
-                "source": {
-                  "label": "MaxiDISC certificate (PDF)",
-                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
-                },
-                "kind": "evidence"
+                "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf",
+                "actionLabel": "MaxieDISC certificate (PDF)",
+                "download": true,
+                "kind": "navigation"
               },
               {
                 "id": "teachers",
@@ -2969,23 +2905,17 @@
                 "id": "droga-lwa",
                 "title": "Droga Lwa",
                 "body": "As a speaker at this recurring event, I combine boomwhackers with the DISC model on stage.",
-                "source": {
-                  "label": "drogalwa.pl",
-                  "href": "https://drogalwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogalwa.pl/",
+                "actionLabel": "drogalwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
                 "body": "I am part of the Academy team in the communication and DISC area.",
-                "source": {
-                  "label": "akademiaprzywodztwa.pl",
-                  "href": "https://akademiaprzywodztwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://akademiaprzywodztwa.pl/",
+                "actionLabel": "akademiaprzywodztwa.pl",
+                "kind": "navigation"
               }
             ]
           },
@@ -3079,7 +3009,7 @@
           {
             "id": "disc-certificate",
             "question": "What prepares you to lead DISC?",
-            "answer": "The MaxiDISC consultant certificate from 2023, after training, a mentoring session, and an exam, plus years of practice in leading groups."
+            "answer": "The MaxieDISC consultant certificate from 2023, after training, a mentoring session, and an exam, plus years of practice in leading groups."
           }
         ]
       }
@@ -3137,24 +3067,18 @@
                 "title": "Wydarzenie GWR, 2016",
                 "body": "661 pracowników korporacyjnych, Dawid jako główny dyrygent i autor koncepcji wykonawczej. Historyczny kontekst, nie bieżąca współpraca z P&G.",
                 "status": "confirmed",
-                "source": {
-                  "label": "Materiał o rekordzie",
-                  "href": "https://youtu.be/Z5yKnlzKECg",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://youtu.be/Z5yKnlzKECg",
+                "actionLabel": "Materiał o rekordzie",
+                "kind": "navigation"
               },
               {
                 "id": "droga-lwa",
                 "title": "Droga Lwa",
                 "body": "Cykliczne wydarzenie dla mężczyzn, w którym Dawid łączy Bum Bum Rurki i DISC.",
                 "status": "confirmed",
-                "source": {
-                  "label": "drogalwa.pl",
-                  "href": "https://drogalwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogalwa.pl/",
+                "actionLabel": "drogalwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "pending-case",
@@ -3266,24 +3190,18 @@
                 "title": "GWR event, 2016",
                 "body": "661 corporate employees, with Dawid as lead conductor and creator of the performance concept. Historical context, not current P&G cooperation.",
                 "status": "confirmed",
-                "source": {
-                  "label": "Record event material",
-                  "href": "https://youtu.be/Z5yKnlzKECg",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://youtu.be/Z5yKnlzKECg",
+                "actionLabel": "Record event material",
+                "kind": "navigation"
               },
               {
                 "id": "droga-lwa",
                 "title": "Droga Lwa",
                 "body": "A recurring event for men where Dawid combines boomwhackers and DISC.",
                 "status": "confirmed",
-                "source": {
-                  "label": "drogalwa.pl",
-                  "href": "https://drogalwa.pl/",
-                  "external": true
-                },
-                "kind": "evidence"
+                "href": "https://drogalwa.pl/",
+                "actionLabel": "drogalwa.pl",
+                "kind": "navigation"
               },
               {
                 "id": "pending-case",

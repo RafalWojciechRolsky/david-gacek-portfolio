@@ -22,6 +22,10 @@ const validateCard = (item, location) => {
   if (item.kind === "navigation") {
     assert.ok(item.href, `${location}: navigation needs href`);
     assert.ok(!item.source, `${location}: navigation must not have source`);
+    assert.ok(
+      !item.download || item.href.endsWith(".pdf"),
+      `${location}: navigation download flag requires a PDF href`,
+    );
     return;
   }
 

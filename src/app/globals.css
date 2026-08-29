@@ -245,7 +245,9 @@ img {
 .eyebrow,
 .card-label,
 .media-status {
-  color: var(--signal-cobalt);
+  /* Etykiety dziedziczą sygnał strony, zamiast twardego kobaltu
+     (ten sam wzorzec, co przy card-action i sekcji) */
+  color: var(--page-signal-ink);
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -1052,6 +1054,126 @@ img {
   padding-top: 14px;
 }
 
+/* Karta dowodowa odpowiada na hover całej karty, jak pozostałe karty siatki,
+   aby rytm interakcji był jednolity. Cel kliknięcia pozostaje w linku źródłowym,
+   a klawiatura podnosi kartę przez focus na tym linku. */
+.content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) {
+  background: var(--page-signal-tint);
+}
+
+.content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source {
+  color: var(--page-signal-ink);
+}
+
+/* Ciemne i sygnałowe powierzchnie potrzebują pełnej inwersji, ponieważ jasny
+   tint nie może dziedziczyć jasnej typografii z otoczenia. */
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) {
+  border-color: var(--on-dark-border);
+  background: var(--page-signal-ink);
+  color: var(--surface-white);
+}
+
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) h3,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-number,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-label {
+  color: var(--surface-white);
+}
+
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) p {
+  color: var(--on-dark-copy);
+}
+
+/* Karta w pełni pokryta tłem sygnału: jej link źródłowy dziedziczy biel,
+   zamiast pozostać w kolorze tła (kontrast 1:1 na kobalcie i ink). */
+:is(
+  .content-section--ink,
+  .content-section--cobalt
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source,
+.contact-section.contact-section--signal .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source {
+  color: var(--surface-white);
+}
+
+/* Karta dowodowa na powierzchni sygnałowej unosi się na bieli, jak karta nawigacyjna. */
+:is(
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) {
+  border-color: var(--border-strong);
+  background: var(--surface-white);
+  color: var(--surface-ink);
+}
+
+:is(
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) h3,
+:is(
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-number,
+:is(
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .card-label {
+  color: var(--surface-ink);
+}
+
+:is(
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) p {
+  color: var(--surface-ink-soft);
+}
+
+:is(
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--evidence:is(:hover, :has(.action-link--source:focus-visible)) .action-link--source {
+  color: var(--page-signal-ink);
+}
+
 .environment .proof-status {
   margin-top: 10px;
 }
@@ -1718,57 +1840,98 @@ img {
   color: var(--surface-white);
 }
 
+/* Karta na powierzchni w tym samym sygnale, co akcent karty, unosi się na bieli.
+   Tło własnego sygnału byłoby niewidoczne (kontrast 1:1), a typografia w tuszu
+   zostaje w jednej rodzinie z kartami na jasnych sekcjach. Reguła następuje po
+   inwersji, aby celować wyłącznie w sekcje sygnałowe. */
 :is(
-  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) {
+  border-color: var(--border-strong);
+  background: var(--surface-white);
+  color: var(--surface-ink);
+}
+
+:is(
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
 ) .content-card--navigation:is(:hover, :focus-visible) h3,
 :is(
-  .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
 ) .content-card--navigation:is(:hover, :focus-visible) .card-number,
 :is(
-  .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
-) .content-card--navigation:is(:hover, :focus-visible) .card-label,
+) .content-card--navigation:is(:hover, :focus-visible) .card-label {
+  color: var(--surface-ink);
+}
+
 :is(
-  .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
 ) .content-card--navigation:is(:hover, :focus-visible) .card-action {
-  color: var(--surface-white);
+  color: var(--page-signal-ink);
 }
 
 :is(
-  .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
 ) .content-card--navigation:is(:hover, :focus-visible) p,
 :is(
-  .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
 ) .content-card--navigation:is(:hover, :focus-visible) .card-meta,
 :is(
-  .content-section--ink,
   .content-section--cobalt,
   .content-section--ochre,
   .content-section--coral,
   .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) .card-status {
+  color: var(--surface-ink-soft);
+}
+
+/* Na sekcji ink karta nadal invertuje (biała typografia na tle sygnału),
+   a na sekcjach sygnałowych końcowy stan to białe uniesienie z typografią
+   w tuszu, więc ostatnie słowo muszą mieć reguły uniesienia. */
+:is(
+  .content-section--ink
+) .content-card--navigation:is(:hover, :focus-visible) h3,
+:is(
+  .content-section--ink
+) .content-card--navigation:is(:hover, :focus-visible) .card-number,
+:is(
+  .content-section--ink
+) .content-card--navigation:is(:hover, :focus-visible) .card-label,
+:is(
+  .content-section--ink
+) .content-card--navigation:is(:hover, :focus-visible) .card-action {
+  color: var(--surface-white);
+}
+
+:is(
+  .content-section--ink
+) .content-card--navigation:is(:hover, :focus-visible) p,
+:is(
+  .content-section--ink
+) .content-card--navigation:is(:hover, :focus-visible) .card-meta,
+:is(
+  .content-section--ink
 ) .content-card--navigation:is(:hover, :focus-visible) .card-status {
   color: var(--on-dark-copy);
 }

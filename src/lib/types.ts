@@ -175,7 +175,7 @@ export interface ContentItem extends ContentItemBase {
 }
 
 /**
- * Karta prowadząca do jednej konkretnej ścieżki.
+ * Karta prowadząca do jednej konkretnej ścieżki albo zasobu.
  */
 export interface NavigationContentCard extends ContentItemBase {
   /** Rozróżnia kartę nawigacyjną od dowodu i informacji. */
@@ -184,6 +184,8 @@ export interface NavigationContentCard extends ContentItemBase {
   href: string;
   /** Opcjonalna etykieta akcji, gdy tytuł karty nie opisuje celu dostatecznie jasno. */
   actionLabel?: string;
+  /** Włącza natywne pobieranie zasobu, np. certyfikatu PDF. */
+  download?: boolean;
   /** Karta nawigacyjna nie miesza się z linkiem źródłowym. */
   source?: never;
 }

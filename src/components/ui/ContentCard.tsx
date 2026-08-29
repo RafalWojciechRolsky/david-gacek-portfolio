@@ -78,7 +78,12 @@ export function ContentCard({
 
   if (item.kind === "navigation") {
     return (
-      <a className={cardClassName} href={item.href} data-object-id={objectId}>
+      <a
+        className={cardClassName}
+        href={item.href}
+        data-object-id={objectId}
+        download={item.download || undefined}
+      >
         {cardContent}
       </a>
     );
