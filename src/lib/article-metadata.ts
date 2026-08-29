@@ -36,6 +36,8 @@ export function buildArticleMetadata(
       description: article.seoDescription,
       url: absoluteUrl(article.href ?? "/"),
       type: "article",
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
       images: siteConfig.siteUrl
         ? [
             {

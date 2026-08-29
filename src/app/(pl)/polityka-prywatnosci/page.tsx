@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { UtilityPage } from "@/components/pages/UtilityPage";
+import { getPage } from "@/lib/content";
 import { getMessages } from "@/messages/ui";
 
 const messages = getMessages("pl");
@@ -21,6 +22,10 @@ export default function PolishPrivacyPage() {
       title={messages.legal.privacyTitle}
       intro={messages.legal.intro}
       body={messages.legal.privacyBody}
+      structuredData={{
+        page: getPage("contact", "pl"),
+        pageKey: "contact",
+      }}
     />
   );
 }

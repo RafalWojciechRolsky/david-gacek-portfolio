@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { PageShell } from "@/components/chrome/PageShell";
+import { StructuredData } from "@/components/seo/StructuredData";
 import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
 import { ResourceItem } from "@/components/ui/ResourceItem";
 import { getPage } from "@/lib/content";
@@ -22,6 +23,7 @@ export default function EnglishMaterialsPage() {
 
   return (
     <PageShell locale="en" currentPage="materials">
+      <StructuredData page={page} locale="en" pageKey="materials" />
       <section className="utility-page">
         <div className="container utility-page-inner">
           <RhythmicMarker />

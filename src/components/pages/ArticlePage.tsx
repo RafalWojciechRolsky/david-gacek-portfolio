@@ -88,10 +88,13 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
       <article className={`article-page article-page--${article.category.signal}`}>
         <header className="article-header">
           <div className="container article-header-grid">
-            <div className="article-category">
+            <nav
+              className="article-category"
+              aria-label={messages.accessibility.breadcrumbNavigation}
+            >
               <span>{messages.article.categoryLabel}</span>
               <a href={article.category.href}>{article.category.label}</a>
-            </div>
+            </nav>
             <div className="article-header-copy">
               <p className="article-format">
                 <span>{messages.article.formatLabel}</span>

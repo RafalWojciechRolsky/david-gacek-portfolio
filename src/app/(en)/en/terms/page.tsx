@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { UtilityPage } from "@/components/pages/UtilityPage";
+import { getPage } from "@/lib/content";
 import { getMessages } from "@/messages/ui";
 
 const messages = getMessages("en");
@@ -21,6 +22,10 @@ export default function EnglishTermsPage() {
       title={messages.legal.termsTitle}
       intro={messages.legal.intro}
       body={messages.legal.termsBody}
+      structuredData={{
+        page: getPage("contact", "en"),
+        pageKey: "contact",
+      }}
     />
   );
 }

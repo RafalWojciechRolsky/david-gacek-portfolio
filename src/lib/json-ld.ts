@@ -5,7 +5,7 @@ import { getMessages } from "@/messages/ui";
 
 interface JsonLdObject {
   /** Wartości zgodne z minimalnym kontraktem JSON-LD używanym przez serwis. */
-  [key: string]: string | string[] | JsonLdObject | JsonLdObject[];
+  [key: string]: string | number | string[] | JsonLdObject | JsonLdObject[];
 }
 
 /**
@@ -78,7 +78,7 @@ function breadcrumbSchema(
     itemListElement: [
       {
         "@type": "ListItem",
-        position: "1",
+        position: 1,
         name: homeLabel,
         item: siteConfig.siteUrl
           ? new URL(pathFor("home", locale), siteConfig.siteUrl).toString()
@@ -86,7 +86,7 @@ function breadcrumbSchema(
       },
       {
         "@type": "ListItem",
-        position: "2",
+        position: 2,
         name: page.title,
         item: siteConfig.siteUrl
           ? new URL(pathFor(pageKey, locale), siteConfig.siteUrl).toString()
@@ -103,7 +103,8 @@ export function buildJsonLd(
   page: PageData,
   locale: Locale,
   pageKey: PageKey,
-): JsonLdObject[] {
+): { "@context": string; "@graph": JsonLdObject[] } {
+  const messages = getMessages(locale);
   const pageType =
     pageKey === "profile"
       ? "ProfilePage"
@@ -129,15 +130,19 @@ export function buildJsonLd(
   if (pageType === "Service") {
     pageSchema.provider = {
       "@type": "Person",
-      name: "Dawid Gacek",
+      name: messages.brandName,
     };
+    pageSchema.serviceType = page.title;
     pageSchema.areaServed = "PL";
   }
 
-  return [
-    ...identitySchema(locale, pageKey),
-    pageSchema,
-    breadcrumbSchema(page, locale, pageKey),
-    faqSchema(page.faq),
-  ];
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      ...identitySchema(locale, pageKey),
+      pageSchema,
+      breadcrumbSchema(page, locale, pageKey),
+      faqSchema(page.faq),
+    ],
+  };
 }
