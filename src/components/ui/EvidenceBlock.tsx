@@ -33,6 +33,7 @@ export function EvidenceBlock({
             href={evidence.source.href}
             variant="source"
             ariaLabel={evidence.source.ariaLabel}
+            withArrow
           >
             {evidence.source.label}
           </ActionLink>

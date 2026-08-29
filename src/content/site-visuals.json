@@ -26,16 +26,14 @@
         "jak-pracuje": "white",
         "os-czasu": "ink",
         "dowody": "cobalt",
-        "srodowiska": "paper",
-        "referencje": "white"
+        "srodowiska": "paper"
       },
       "en": {
         "who-i-am": "paper",
         "how-i-work": "white",
         "timeline": "ink",
         "evidence": "cobalt",
-        "contexts": "paper",
-        "references": "white"
+        "contexts": "paper"
       }
     }
   },
@@ -83,7 +81,8 @@
         "transfer": "cobalt",
         "oferta": "white",
         "materialy-dla-dyrekcji": "paper",
-        "materialy-dla-dyrektorki": "paper"
+        "materialy-dla-dyrektorki": "paper",
+        "artykuly": "paper"
       },
       "en": {
         "who-for": "paper",
@@ -93,7 +92,8 @@
         "follow-up": "cobalt",
         "offer": "white",
         "leadership-materials": "paper",
-        "director-materials": "paper"
+        "director-materials": "paper",
+        "articles": "paper"
       }
     }
   },
@@ -139,7 +139,8 @@
         "sposob": "paper",
         "dowody": "ink",
         "oferta": "white",
-        "realizacje": "coral"
+        "realizacje": "coral",
+        "artykuly": "paper"
       },
       "en": {
         "triage": "paper",
@@ -147,7 +148,8 @@
         "how": "paper",
         "evidence": "ink",
         "offer": "white",
-        "projects": "coral"
+        "projects": "coral",
+        "articles": "paper"
       }
     }
   },
@@ -194,7 +196,8 @@
         "przebieg": "ink",
         "organizacja": "ochre",
         "dowody": "white",
-        "warunki": "paper"
+        "warunki": "paper",
+        "artykuly": "white"
       },
       "en": {
         "age": "paper",
@@ -203,7 +206,8 @@
         "process": "ink",
         "organization": "ochre",
         "evidence": "white",
-        "terms": "paper"
+        "terms": "paper",
+        "articles": "white"
       }
     }
   },
@@ -236,7 +240,8 @@
         "przebieg": "green",
         "wariant-muzyczny": "paper",
         "kwalifikacje": "white",
-        "oferta": "green"
+        "oferta": "green",
+        "artykuly": "white"
       },
       "en": {
         "disc-definition": "paper",
@@ -245,7 +250,8 @@
         "process": "green",
         "music-variant": "paper",
         "qualifications": "white",
-        "offer": "green"
+        "offer": "green",
+        "articles": "white"
       }
     }
   },

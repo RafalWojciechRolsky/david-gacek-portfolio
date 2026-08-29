@@ -53,7 +53,7 @@ export function MediaFacade({
           <p>
             {messages.media.pendingBody}
           </p>
-          <ActionLink href={video.fallback.href} variant="source">
+          <ActionLink href={video.fallback.href} variant="source" withArrow>
             {video.fallback.label}
           </ActionLink>
         </div>

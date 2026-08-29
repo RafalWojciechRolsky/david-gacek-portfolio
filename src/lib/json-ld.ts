@@ -41,6 +41,13 @@ function identitySchema(locale: Locale, pageKey: PageKey): JsonLdObject[] {
       name: messages.brandName,
       url: pageUrl,
       jobTitle: messages.jobTitle,
+      knowsAbout: [
+        "Bum Bum Rurki",
+        "Boomwhackers",
+        "DISC",
+        "edukacja muzyczna",
+        "integracja zespołów",
+      ],
       sameAs: [
         siteConfig.externalLinks.linkedin.href,
         siteConfig.externalLinks.instagram.href,

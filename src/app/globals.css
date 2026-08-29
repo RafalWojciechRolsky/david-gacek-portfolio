@@ -1134,6 +1134,7 @@ img {
   letter-spacing: -0.03em;
   line-height: 1.05;
   overflow-wrap: break-word;
+  min-height: calc(3 * 1.05em);
 }
 
 .context-card p {
@@ -1429,6 +1430,16 @@ img {
   border-right: 0;
 }
 
+/* Profil: pięć afiliacji w rytmie 3+2, ostatnia karta domyka drugi wiersz */
+.page-section--profile .content-grid--5 .content-card:nth-child(3n) {
+  border-right: 0;
+}
+
+.page-section--profile .content-grid--5 .content-card:last-child {
+  grid-column: 2 / span 2;
+  border-right: 0;
+}
+
 .page-section--insights .content-grid--5 .content-card:nth-child(2),
 .page-section--insights .content-grid--5 .content-card:last-child {
   border-right: 0;
@@ -1476,6 +1487,14 @@ img {
   letter-spacing: -0.03em;
   line-height: 1.12;
   overflow-wrap: break-word;
+  min-height: calc(2 * 1.12em);
+}
+
+.article-grid .content-card h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .content-card p {
@@ -2773,6 +2792,7 @@ img {
 
   .context-card h3 {
     margin-top: 24px;
+    min-height: 0;
   }
 
   .content-grid,
@@ -2795,6 +2815,10 @@ img {
     grid-column: auto;
   }
 
+  .page-section--profile .content-grid--5 .content-card:last-child {
+    grid-column: auto;
+  }
+
   .content-card,
   .content-card:first-child {
     min-height: 0;
@@ -2804,6 +2828,7 @@ img {
 
   .content-card h3 {
     margin-top: 17px;
+    min-height: 0;
   }
 
   .content-card .action-link:last-child {

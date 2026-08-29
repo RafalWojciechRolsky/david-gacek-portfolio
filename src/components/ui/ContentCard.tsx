@@ -47,6 +47,8 @@ export function ContentCard({
           href={item.source.href}
           variant="source"
           ariaLabel={item.source.ariaLabel}
+          download={item.source.href.endsWith(".pdf")}
+          withArrow
         >
           {item.source.label}
         </ActionLink>

@@ -423,7 +423,7 @@
         "slug": "dawid-gacek",
         "seo": {
           "title": "Dawid Gacek | Trener Bum Bum Rurek i komunikacji DISC",
-          "description": "Poznaj historię, metodę pracy i doświadczenie Dawida Gacka, trenera Bum Bum Rurek i komunikacji DISC. Zobacz fakty, role oraz konteksty jego pracy i rozmowę."
+          "description": "Poznaj historię, metodę pracy i doświadczenie Dawida Gacka, trenera Bum Bum Rurek, edukatora muzycznego i trenera komunikacji DISC."
         },
         "title": "Dawid Gacek",
         "eyebrow": "Trener Bum Bum Rurek, edukator muzyczny i trener komunikacji DISC.",
@@ -447,134 +447,159 @@
             "items": [
               {
                 "id": "profile-bio",
-                "title": "Pracuję z ludźmi, nie z gotowymi pakietami",
-                "body": "Bum Bum Rurki, muzyka, ruch i rozmowa są narzędziami do budowania uważności, współpracy i komunikacji."
+                "title": "Od 2010 roku z ludźmi przez muzykę",
+                "body": "Jestem trenerem Bum Bum Rurek, edukatorem muzycznym i trenerem komunikacji DISC. Zaczynałem, kiedy nikt w Polsce nie pracował z rurkami na taką skalę. Dziś pokazuję, jak prosty instrument otwiera grupę, uruchamia współpracę i zamienia zabawę w wartościową rozmowę."
+              },
+              {
+                "id": "profile-bio-life",
+                "title": "Poza szkoleniami",
+                "body": "Najważniejszą rolą jest dla mnie bycie szczęśliwym mężczyzną i tatą. Poza tym jestem basistą, z wykształcenia inżynierem dźwięku, miłośnikiem życia i smakoszem kawy. Hobbystycznie prowadzę zajęcia kulinarne dla dzieci. Wszystko spina jedna zasada: smakowanie życia, komunikacja i ludzie."
               }
             ]
           },
           {
             "id": "jak-pracuje",
             "heading": "Jak pracuję",
-            "intro": "Metoda zaczyna się od grupy i jej realnego celu.",
+            "intro": "Rurki są proste, ale praca z grupą już nie.",
             "items": [
               {
                 "id": "movement",
                 "title": "Ruch",
-                "body": "Uruchamia uwagę i pozwala wejść w doświadczenie całym ciałem."
+                "body": "Uruchamia uwagę i pozwala wejść w doświadczenie całym ciałem, zanim padną pierwsze słowa o komunikacji. Ruch obniża spięcie w sali, rozluźnia grupę i sprawia, że kolejne ćwiczenia przychodzą naturalnie."
               },
               {
                 "id": "music",
                 "title": "Muzyka i rytm",
-                "body": "Wspólny puls daje grupie prosty język działania."
+                "body": "Wspólny puls daje grupie prosty język działania, w którym każdy od razu słyszy efekt wspólnej pracy. Nie trzeba tego tłumaczyć, grupa sama słyszy, kiedy gra razem, a kiedy się rozjeżdża."
               },
               {
                 "id": "action",
                 "title": "Wspólne działanie",
-                "body": "Zadania pokazują, jak słuchamy siebie i innych."
+                "body": "Zadania pokazują, jak słuchamy siebie i innych. Kolor rurki potrafi stać się punktem wyjścia do rozmowy o stylach zachowania."
               },
               {
                 "id": "reflection",
                 "title": "Rozmowa i refleksja",
-                "body": "Doświadczenie zamienia się w wnioski możliwe do użycia dalej."
+                "body": "Doświadczenie zamieniamy we wnioski, które grupa zabiera do swojej codziennej pracy, w klasie albo w zespole."
               }
             ]
           },
           {
             "id": "os-czasu",
             "heading": "Oś czasu",
-            "intro": "Najważniejsze punkty drogi Dawida.",
+            "intro": "Od pierwszych warsztatów do czterech ścieżek pracy.",
             "items": [
               {
                 "id": "2010",
                 "title": "2010",
-                "body": "Początek pracy z Bum Bum Rurkami i edukacją."
+                "body": "Pierwsze szkolenia nauczycieli z Bum Bum Rurkami. Jako basista i edukator muzyczny zaczynam pokazywać, jak proste rurki porządkują pracę z grupą, i robię to jako pierwszy na taką skalę w Polsce."
               },
               {
                 "id": "2016",
                 "title": "2016",
-                "body": "Rekord Guinnessa z udziałem 661 osób."
+                "body": "Prowadzę jako główny dyrygent i autor koncepcji wykonawczej wydarzenie, podczas którego ustanowiono historyczny rekord Guinnessa w grze na Bum Bum Rurkach."
               },
               {
                 "id": "2023",
                 "title": "2023",
-                "body": "Certyfikat konsultanta MaxiDISC z 10 maja 2023 roku.",
+                "body": "Certyfikat konsultanta MaxiDISC po szkoleniu, sesji mentorskiej i egzaminie. Od tego momentu pracuję modelem DISC podczas sesji indywidualnych, omówień raportów i szkoleń zespołów.",
                 "status": "confirmed"
+              },
+              {
+                "id": "dzis",
+                "title": "Dziś",
+                "body": "Cztery powiązane ścieżki pracy: szkolenia nauczycieli, warsztaty dla dzieci i młodzieży, eventy dla firm oraz sesje i szkolenia DISC."
               }
             ]
           },
           {
             "id": "dowody",
-            "heading": "Dowody kompetencji",
+            "heading": "Dowody doświadczenia",
             "intro": "Fakty mają kontekst, datę i status źródła.",
             "items": [
               {
                 "id": "profile-proof-4000",
                 "title": "4000 przeszkolonych nauczycieli",
-                "body": "Potwierdzony dowód skali doświadczenia.",
+                "body": "Około 4000 nauczycieli z całej Polski przeszło przez moje szkolenia od 2010 roku. Część z nich wraca lata później i zaprasza mnie do swoich placówek już jako dyrektorzy.",
                 "status": "confirmed"
               },
               {
                 "id": "profile-proof-gwr",
                 "title": "Historyczny rekord GWR",
-                "body": "661 osób w wydarzeniu z 2016 roku, z jawnym kontekstem historycznym.",
-                "status": "confirmed"
+                "body": "661 osób grało razem na Bum Bum Rurkach podczas wydarzenia dla P&G Europe Planning Service Centre w Polsce, 19 kwietnia 2016 roku. Byłem jego głównym dyrygentem i autorem koncepcji wykonawczej.",
+                "status": "confirmed",
+                "source": {
+                  "label": "Nagranie na YouTube",
+                  "href": "https://youtu.be/Z5yKnlzKECg",
+                  "external": true
+                }
               },
               {
                 "id": "profile-proof-disc",
                 "title": "MaxiDISC",
-                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie.",
-                "status": "confirmed"
+                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie. Pracuję modelem DISC, który opisuje style zachowań, a nie typy osobowości.",
+                "status": "confirmed",
+                "source": {
+                  "label": "Certyfikat MaxiDISC (PDF)",
+                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
+                }
               }
             ]
           },
           {
             "id": "srodowiska",
-            "heading": "Środowiska i afiliacje",
-            "intro": "Publicznie potwierdzone konteksty, nie kompletna lista klientów.",
+            "heading": "Środowiska, w których działam",
+            "intro": "Organizacje i wydarzenia, przy których działam, z linkami do oficjalnych źródeł.",
             "items": [
               {
-                "id": "droga-lwa",
-                "title": "Droga Lwa",
-                "body": "Mówca cyklicznego wydarzenia, łączenie Bum Bum Rurek i DISC.",
+                "id": "dobedu",
+                "title": "DobEdu",
+                "body": "Akredytowana placówka doskonalenia nauczycieli. Działam w niej jako edukator i prowadzący szkolenia z Bum Bum Rurek.",
                 "source": {
-                  "label": "Oficjalna strona",
-                  "href": "https://drogalwa.pl/",
+                  "label": "Profil w DobEdu",
+                  "href": "https://www.dobedu.pl/team/dawid-gacek",
                   "external": true
                 }
               },
               {
-                "id": "gls",
-                "title": "Global Leadership Summit Polska",
-                "body": "Zespół organizacyjny i współorganizacja.",
+                "id": "droga-odwaznych",
+                "title": "Droga Odważnych",
+                "body": "Fundacja i środowisko rozwojowe dla mężczyzn, w którym działam jako prowadzący i mentor.",
                 "source": {
-                  "label": "Oficjalna strona",
-                  "href": "https://gls.org.pl/",
+                  "label": "drogaodwaznych.pl",
+                  "href": "https://drogaodwaznych.pl/",
+                  "external": true
+                }
+              },
+              {
+                "id": "droga-lwa",
+                "title": "Droga Lwa",
+                "body": "Cykliczne wydarzenie dla mężczyzn. Występuję na nim jako mówca i łączę na scenie Bum Bum Rurki z modelem DISC.",
+                "source": {
+                  "label": "drogalwa.pl",
+                  "href": "https://drogalwa.pl/",
                   "external": true
                 }
               },
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
-                "body": "Obszar Komunikacja i DISC.",
-                "status": "confirmed",
+                "body": "Program rozwojowy dla liderów. Działam w zespole Akademii, w obszarze komunikacji i modelu DISC.",
                 "source": {
-                  "label": "Oficjalna strona",
+                  "label": "akademiaprzywodztwa.pl",
                   "href": "https://akademiaprzywodztwa.pl/",
                   "external": true
                 }
-              }
-            ]
-          },
-          {
-            "id": "referencje",
-            "heading": "Referencje i realizacje",
-            "intro": "Pojawią się tutaj dopiero po potwierdzeniu roli, kontekstu i praw publikacji.",
-            "items": [
+              },
               {
-                "id": "references-pending",
-                "title": "Materiały w przygotowaniu",
-                "body": "Nie publikujemy niezweryfikowanych nazw, opinii ani zdjęć.",
-                "status": "preparing"
+                "id": "gls",
+                "title": "Global Leadership Summit Polska",
+                "body": "Polska edycja globalnej konferencji przywództwa. Oficjalna strona wymienia mnie w zespole organizacyjnym i wśród współorganizatorów.",
+                "source": {
+                  "label": "gls.org.pl",
+                  "href": "https://gls.org.pl/",
+                  "external": true
+                }
               }
             ]
           }
@@ -583,22 +608,27 @@
           {
             "id": "profile-fun",
             "question": "Czy Bum Bum Rurki to tylko zabawa?",
-            "answer": "Zabawa jest punktem wyjścia, a praca rozwija słuchanie, rytm, współpracę i komunikację."
+            "answer": "Zabawa jest punktem wyjścia, ale praca z rurkami rozwija słuchanie, rytm, współpracę i komunikację. Najważniejsze jest to, co grupa zaczyna zauważać o sobie podczas wspólnego działania."
+          },
+          {
+            "id": "profile-evidence",
+            "question": "Jakie doświadczenie i dowody ma Dawid Gacek?",
+            "answer": "Ponad 4000 przeszkolonych nauczycieli od 2010 roku, historyczny rekord Guinnessa z udziałem 661 osób w 2016 roku oraz certyfikat konsultanta MaxiDISC z 2023 roku."
           },
           {
             "id": "profile-audience",
             "question": "Z kim pracuje Dawid?",
-            "answer": "Z nauczycielami i szkołami, dziećmi i młodzieżą, firmami, agencjami, zespołami i liderami."
+            "answer": "Z nauczycielami i szkołami, dziećmi i młodzieżą, firmami i agencjami oraz zespołami i liderami zainteresowanymi komunikacją i modelem DISC."
           },
           {
             "id": "profile-disc",
             "question": "Jak Bum Bum Rurki łączą się z DISC?",
-            "answer": "Rurki uruchamiają grupę i pokazują zachowania w działaniu, które można później omówić przez komunikację i style zachowania."
+            "answer": "Rurki pomagają uruchomić grupę i zobaczyć zachowania w działaniu. Później można nazwać to, co wydarzyło się podczas ćwiczeń, i przełożyć obserwacje na rozmowę o komunikacji oraz stylach zachowania."
           },
           {
             "id": "profile-contact",
             "question": "Jak zaprosić Dawida do współpracy?",
-            "answer": "Telefon lub WhatsApp, z ustaleniem odbiorców, potrzeb, terminu, formatu i warunków."
+            "answer": "Najlepiej zadzwonić albo napisać na WhatsApp. Opowiesz, dla kogo ma być spotkanie, czego potrzebujesz i kiedy może się odbyć. Wspólnie ustalimy format, termin i warunki."
           }
         ]
       },
@@ -632,134 +662,159 @@
             "items": [
               {
                 "id": "profile-bio",
-                "title": "I work with people, not ready-made packages",
-                "body": "Boomwhackers, music, movement, and conversation are tools for attention, cooperation, and communication."
+                "title": "Since 2010, with people through music",
+                "body": "I am a boomwhackers trainer, a music educator, and a DISC communication trainer. I started when nobody in Poland worked with boomwhackers on such a scale. Today I show how a simple instrument opens up a group, activates collaboration, and turns play into a meaningful conversation."
+              },
+              {
+                "id": "profile-bio-life",
+                "title": "Beyond training",
+                "body": "My most important role is being a happy man and a dad. Beyond that, I am a bass player, a sound engineer by education, a lover of life, and a coffee enthusiast. I also run cooking classes for children as a hobby. One idea ties it all together: savouring life, communication, and people."
               }
             ]
           },
           {
             "id": "how-i-work",
             "heading": "How I work",
-            "intro": "The method starts with the group and its real goal.",
+            "intro": "Boomwhackers are simple, but working with a group is not.",
             "items": [
               {
                 "id": "movement",
                 "title": "Movement",
-                "body": "It activates attention and lets people enter the experience with their whole body."
+                "body": "It activates attention and lets people enter the experience with their whole body, before the first words about communication. Movement lowers the tension in the room, loosens the group up, and makes the next exercises come naturally."
               },
               {
                 "id": "music",
                 "title": "Music and rhythm",
-                "body": "A shared pulse gives a group a simple language for action."
+                "body": "A shared pulse gives a group a simple language for action, where everyone instantly hears the effect of working together. There is nothing to explain, the group hears on its own when it plays together and when it drifts out of sync."
               },
               {
                 "id": "action",
                 "title": "Shared action",
-                "body": "Tasks show how we listen to ourselves and to others."
+                "body": "Tasks show how we listen to ourselves and to others. The colour of a tube can become a starting point for talking about behavioural styles."
               },
               {
                 "id": "reflection",
                 "title": "Conversation and reflection",
-                "body": "Experience becomes insight that can be used beyond the session."
+                "body": "We turn the experience into insights that the group takes back to its daily work, in the classroom or in the team."
               }
             ]
           },
           {
             "id": "timeline",
             "heading": "Timeline",
-            "intro": "The key points in Dawid's path.",
+            "intro": "From the first workshops to four paths of work.",
             "items": [
               {
                 "id": "2010",
                 "title": "2010",
-                "body": "The beginning of work with boomwhackers and education."
+                "body": "The first boomwhackers trainings for teachers. As a bass player and music educator, I start showing how simple tubes bring order to group work, as the first one to do it on such a scale in Poland."
               },
               {
                 "id": "2016",
                 "title": "2016",
-                "body": "Guinness World Record event with 661 participants."
+                "body": "I lead an event as its main conductor and the author of the performance concept, during which the historic Guinness World Record in group boomwhacker playing was set."
               },
               {
                 "id": "2023",
                 "title": "2023",
-                "body": "MaxiDISC consultant certificate issued on 10 May 2023.",
+                "body": "MaxiDISC consultant certificate after training, a mentoring session, and an exam. Since then, I have used the DISC model in individual sessions, report debriefs, and team trainings.",
                 "status": "confirmed"
+              },
+              {
+                "id": "today",
+                "title": "Today",
+                "body": "Four connected paths of work: teacher training, workshops for children and young people, corporate events, and DISC sessions and trainings."
               }
             ]
           },
           {
             "id": "evidence",
-            "heading": "Evidence of competence",
+            "heading": "Evidence of experience",
             "intro": "Facts have context, a date, and a source status.",
             "items": [
               {
                 "id": "profile-proof-4000",
                 "title": "4,000 teachers trained",
-                "body": "A confirmed proof point showing the scale of experience.",
+                "body": "Around 4,000 teachers from all over Poland have taken part in my training since 2010. Many of them return years later, inviting me to their schools already as headteachers.",
                 "status": "confirmed"
               },
               {
                 "id": "profile-proof-gwr",
                 "title": "Historical GWR record",
-                "body": "661 people at an event in 2016, with its historical context made explicit.",
-                "status": "confirmed"
+                "body": "661 people played boomwhackers together at an event for P&G Europe Planning Service Centre in Poland on 19 April 2016. I led it as the main conductor and the creator of the performance concept.",
+                "status": "confirmed",
+                "source": {
+                  "label": "Watch on YouTube",
+                  "href": "https://youtu.be/Z5yKnlzKECg",
+                  "external": true
+                }
               },
               {
                 "id": "profile-proof-disc",
                 "title": "MaxiDISC",
-                "body": "Consultant certificate after training, mentoring, and an exam.",
-                "status": "confirmed"
+                "body": "Consultant certificate after training, a mentoring session, and an exam. I work with the DISC model, which describes behavioural styles, not personality types.",
+                "status": "confirmed",
+                "source": {
+                  "label": "MaxiDISC certificate (PDF)",
+                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
+                }
               }
             ]
           },
           {
             "id": "contexts",
-            "heading": "Contexts and affiliations",
-            "intro": "Publicly confirmed contexts, not a complete client list.",
+            "heading": "Where I work",
+            "intro": "Organizations and events I am part of, with links to official sources.",
             "items": [
               {
-                "id": "droga-lwa",
-                "title": "Droga Lwa",
-                "body": "Speaker at a recurring event, combining boomwhackers and DISC.",
+                "id": "dobedu",
+                "title": "DobEdu",
+                "body": "An accredited teacher development institution. I work there as an educator and a boomwhackers training facilitator.",
                 "source": {
-                  "label": "Official website",
-                  "href": "https://drogalwa.pl/",
+                  "label": "DobEdu profile",
+                  "href": "https://www.dobedu.pl/team/dawid-gacek",
                   "external": true
                 }
               },
               {
-                "id": "gls",
-                "title": "Global Leadership Summit Polska",
-                "body": "Part of the organizing team and co-organizers.",
+                "id": "droga-odwaznych",
+                "title": "Droga Odważnych",
+                "body": "A foundation and development community for men, where I work as a facilitator and mentor.",
                 "source": {
-                  "label": "Official website",
-                  "href": "https://gls.org.pl/",
+                  "label": "drogaodwaznych.pl",
+                  "href": "https://drogaodwaznych.pl/",
+                  "external": true
+                }
+              },
+              {
+                "id": "droga-lwa",
+                "title": "Droga Lwa",
+                "body": "A recurring event for men. I speak there, combining boomwhackers with the DISC model on stage.",
+                "source": {
+                  "label": "drogalwa.pl",
+                  "href": "https://drogalwa.pl/",
                   "external": true
                 }
               },
               {
                 "id": "akademia",
                 "title": "Akademia Przywództwa",
-                "body": "Communication and DISC area.",
-                "status": "confirmed",
+                "body": "A leadership development program. I am part of the Academy team in the communication and DISC area.",
                 "source": {
-                  "label": "Official website",
+                  "label": "akademiaprzywodztwa.pl",
                   "href": "https://akademiaprzywodztwa.pl/",
                   "external": true
                 }
-              }
-            ]
-          },
-          {
-            "id": "references",
-            "heading": "References and projects",
-            "intro": "These will appear after the role, context, and publication permissions are confirmed.",
-            "items": [
+              },
               {
-                "id": "references-pending",
-                "title": "Materials in preparation",
-                "body": "Unverified names, testimonials, and photos are not published.",
-                "status": "preparing"
+                "id": "gls",
+                "title": "Global Leadership Summit Polska",
+                "body": "The Polish edition of a global leadership conference. The official website lists me in the organizing team and among the co-organizers.",
+                "source": {
+                  "label": "gls.org.pl",
+                  "href": "https://gls.org.pl/",
+                  "external": true
+                }
               }
             ]
           }
@@ -768,22 +823,27 @@
           {
             "id": "profile-fun",
             "question": "Are boomwhackers just for fun?",
-            "answer": "Fun is the starting point, while the work develops listening, rhythm, cooperation, and communication."
+            "answer": "Fun is the starting point, but working with boomwhackers develops listening, rhythm, cooperation, and communication. What matters most is what the group starts to notice about itself while working together."
+          },
+          {
+            "id": "profile-evidence",
+            "question": "What experience and evidence does Dawid Gacek have?",
+            "answer": "More than 4,000 teachers trained since 2010, a historic Guinness World Record with 661 people in 2016, and the MaxiDISC consultant certificate from 2023."
           },
           {
             "id": "profile-audience",
             "question": "Who does Dawid work with?",
-            "answer": "Teachers and schools, children and young people, companies, agencies, teams, and leaders."
+            "answer": "I work with teachers and schools, children and young people, companies and agencies, as well as teams and leaders interested in communication and the DISC model."
           },
           {
             "id": "profile-disc",
             "question": "How do boomwhackers connect with DISC?",
-            "answer": "The instruments activate a group and make behaviour visible, creating something to reflect on through communication and behavioural styles."
+            "answer": "Boomwhackers activate the group and make behaviour visible in action. Afterwards, we can name what happened during the exercises and turn those observations into a conversation about communication and behavioural styles."
           },
           {
             "id": "profile-contact",
             "question": "How can you invite Dawid to work with you?",
-            "answer": "Call or message on WhatsApp to discuss the audience, need, timing, format, and practical details."
+            "answer": "The best way is to call or message me on WhatsApp. Tell me who the meeting is for, what you need, and when it could take place. Together, we'll work out the format, date, and practical details."
           }
         ]
       }
@@ -830,18 +890,18 @@
             "items": [
               {
                 "id": "audience",
-                "title": "Nauczyciele i osoby prowadzące zajęcia",
-                "body": "Dla osób, które szukają nowych sposobów pracy z rytmem, ruchem i uwagą grupy."
+                "title": "Nauczyciele przedszkoli, szkół i edukatorzy",
+                "body": "Dla osób pracujących z dziećmi i młodzieżą, które szukają świeżych, angażujących sposobów na rytm, ruch i skupienie uwagi w sali."
               },
               {
                 "id": "educators",
-                "title": "Zajęcia muzyczne, edukacyjne i integracyjne",
-                "body": "Program pomaga łączyć słuchanie, koordynację i wspólne działanie w różnych typach zajęć."
+                "title": "Zajęcia muzyczne, rytmika i integracja",
+                "body": "Do natychmiastowego wykorzystania na lekcjach muzyki, w edukacji wczesnoszkolnej, świetlicach, kołach zainteresowań i przy budowaniu grupy."
               },
               {
                 "id": "schools",
-                "title": "Szkoły i rady pedagogiczne",
-                "body": "Dla placówek, które chcą dostać praktyczne narzędzia do dalszej pracy, a nie tylko jednorazowy pokaz."
+                "title": "Rady pedagogiczne i placówki edukacyjne",
+                "body": "Dla dyrekcji i szkół, które chcą dać całemu zespołowi nauczycieli wspólne, praktyczne narzędzie dydaktyczne i wychowawcze."
               }
             ]
           },
@@ -852,23 +912,23 @@
             "items": [
               {
                 "id": "start-stop",
-                "title": "START / STOP i odliczanie",
-                "body": "Uwaga zaczyna się od jasnego sygnału i wspólnego początku."
+                "title": "START / STOP i zasady grupy",
+                "body": "Każde działanie zaczynamy i kończymy na wyraźny znak prowadzącego. Komendy START i STOP oraz jasne zasady porządkują pracę grupy od pierwszych minut, bez podnoszenia głosu."
               },
               {
                 "id": "rhythm",
-                "title": "Tempo, wartości rytmiczne i ruch",
-                "body": "Rytm łączy słuchanie z koordynacją i energią grupy."
+                "title": "Odliczanie, tempo i karty rytmów",
+                "body": "Odliczanie w stylu RAZ, DWA, TERAZ JA przekazuje tempo i prowadzenie. Pracujemy na ćwierćnutach i ósemkach w prostych metrach, a karty rytmów pokazują uderzenia WHACK, TAP, BOOM oraz pauzę SHH."
               },
               {
                 "id": "playing",
                 "title": "Wspólne granie i wyobraźnia",
-                "body": "Ćwiczenia prowadzą do własnych pomysłów oraz przygotowania występu."
+                "body": "Rurki stają się falą, deszczem, dżunglą albo instrumentem opowieści. Od naśladownictwa dochodzimy do własnych pomysłów grupy i przygotowania krótkiego wspólnego występu."
               },
               {
                 "id": "scenarios",
-                "title": "Scenariusze zajęć i narzędzia online",
-                "body": "Uczestnik wychodzi z materiałem, który może dopasować do swoich zajęć."
+                "title": "Scenariusze, gry i multimedia",
+                "body": "Konspekt ćwiczeń, gry rytmiczne i ruchowe, multimedia oraz narzędzia online, które można dopasować do własnych zajęć. Uczestnik wychodzi z gotowym materiałem do dalszej pracy."
               }
             ]
           },
@@ -879,18 +939,18 @@
             "items": [
               {
                 "id": "attention",
-                "title": "Utrzymanie uwagi grupy",
-                "body": "Uczestnicy poznają zasady i atrakcyjne aktywności, które pomagają utrzymać uwagę bez podnoszenia głosu."
+                "title": "Utrzymanie uwagi i dyscyplina bez krzyku",
+                "body": "Konkretne techniki START / STOP, odliczanie i gesty dyrygenckie, które pozwalają uciszyć i skupić 30-osobową grupę w kilka sekund bez podnoszenia głosu."
               },
               {
                 "id": "own-scenarios",
-                "title": "Własne scenariusze",
-                "body": "Ćwiczenia pokazują, jak łączyć rytm, ruch, wyobraźnię i zabawę we własnym planie zajęć."
+                "title": "Bank gotowych scenariuszy i własne pomysły",
+                "body": "Biblioteka sprawdzonych zabaw muzyczno-ruchowych oraz prosty schemat tworzenia własnych zajęć dopasowanych do wieku dzieci i podstawy programowej."
               },
               {
                 "id": "transfer",
-                "title": "Transfer po szkoleniu",
-                "body": "Konspekt, linki do narzędzi, materiały wideo, muzyka i dodatkowe zasoby.",
+                "title": "Praktyczny transfer i materiały do pracy",
+                "body": "Kompletny konspekt, plansze rytmiczne, gotowe podkłady muzyczne oraz nagrania wideo do natychmiastowego wykorzystania w sali lekcyjnej.",
                 "status": "available"
               }
             ],
@@ -907,22 +967,22 @@
               {
                 "id": "teacher-proof",
                 "title": "4000 przeszkolonych nauczycieli",
-                "body": "Skala doświadczenia z nauczycielami pomaga pracować z realnymi potrzebami sali i grupy."
+                "body": "Skala doświadczenia z nauczycielami w całej Polsce pomaga odpowiadać na realne potrzeby sali i grupy."
               },
               {
                 "id": "since-2010",
-                "title": "Praca z Bum Bum Rurkami od 2010 roku",
-                "body": "Wieloletnia praktyka łączy muzykę i ruch z prowadzeniem grup o różnym poziomie doświadczenia."
+                "title": "Praktyka z rurkami od 2010 roku",
+                "body": "Wieloletnia praktyka łączy muzykę i ruch z prowadzeniem grup o różnym poziomie energii i doświadczenia."
               },
               {
                 "id": "teacher-method",
-                "title": "Od doświadczenia do własnej metody",
+                "title": "Od doświadczenia do metody",
                 "body": "Uczestnicy najpierw przechodzą przez ćwiczenia, a potem rozkładają je na zasady możliwe do użycia we własnych zajęciach."
               },
               {
                 "id": "teacher-disc",
-                "title": "Potwierdzony certyfikat MaxiDISC",
-                "body": "Formalne przygotowanie wspiera świadomą pracę z komunikacją i różnicami widocznymi w grupie."
+                "title": "Certyfikat konsultanta MaxiDISC",
+                "body": "Formalne przygotowanie wspiera świadomą pracę z komunikacją, dynamiką grupy i różnicami widocznymi w sali."
               }
             ]
           },
@@ -933,17 +993,46 @@
             "items": [
               {
                 "id": "outline",
-                "title": "Konspekt",
-                "body": "Roboczy materiał do adaptacji przez nauczyciela.",
+                "title": "Konspekt z kartami rytmów",
+                "body": "Konspekt ćwiczeń z kartami rytmów i wariantami dla różnych grup. Materiał roboczy, który można od razu adaptować do własnych zajęć.",
                 "status": "preparing"
               },
               {
-                "id": "links",
-                "title": "Narzędzia i inspiracje",
-                "body": "Linki, muzyka i dodatkowe zasoby po potwierdzeniu praw.",
+                "id": "music",
+                "title": "Muzyka i nagrania ćwiczeń",
+                "body": "Playlista muzyki do zajęć oraz linki do nagrań pokazujących ćwiczenia w praktyce, od odliczania po wspólny występ.",
+                "status": "preparing"
+              },
+              {
+                "id": "tools",
+                "title": "Narzędzia online i strona materiałów",
+                "body": "Lista sprawdzonych narzędzi online oraz dostęp do dedykowanej strony z materiałami po szkoleniu, którą uczestnicy dostają linkiem na spotkaniu.",
                 "status": "preparing"
               }
             ]
+          },
+          {
+            "id": "artykuly",
+            "heading": "Wiedza dla nauczycieli",
+            "intro": "Trzy artykuły, które porządkują temat przed szkoleniem i pomagają wrócić do niego po spotkaniu.",
+            "items": [
+              {
+                "id": "insight-what-are-boomwhackers",
+                "href": "/wiedza/bum-bum-rurki-czym-sa"
+              },
+              {
+                "id": "insight-boomwhackers-games",
+                "href": "/wiedza/bum-bum-rurki-zabawy"
+              },
+              {
+                "id": "insight-group-attention",
+                "href": "/wiedza/uwaga-grupy"
+              }
+            ],
+            "action": {
+              "label": "Przejdź do Wiedzy i inspiracji",
+              "href": "/wiedza#artykuly"
+            }
           },
           {
             "id": "oferta",
@@ -953,17 +1042,17 @@
               {
                 "id": "format",
                 "title": "Format",
-                "body": "Szkolenie grupowe na terenie szkoły lub placówki, dla całej rady pedagogicznej albo wybranej grupy nauczycieli."
+                "body": "Szkolenie grupowe na terenie szkoły lub placówki, dla całej rady pedagogicznej albo wybranej grupy nauczycieli. Standardowo 20 do 25 osób, większe zespoły wyceniamy indywidualnie."
               },
               {
                 "id": "price",
                 "title": "Cena",
-                "body": "180 zł brutto za osobę. Przy większych grupach ustalamy stawkę grupową, o czym mówię wprost podczas rozmowy."
+                "body": "180 zł brutto za osobę. Powyżej 25 osób ustalamy stawkę grupową, dojazd doliczamy zależnie od lokalizacji, a cenę zawsze potwierdzamy przy rezerwacji terminu."
               },
               {
                 "id": "duration",
                 "title": "Czas",
-                "body": "240 minut, z przerwą. Program mieści się w jednym dniu roboczym i nie wymaga dodatkowych zajęć przygotowawczych."
+                "body": "240 minut z przerwą. Program mieści się w jednym dniu roboczym, nie wymaga przygotowań ze strony uczestników ani wcześniejszej wiedzy muzycznej."
               },
               {
                 "id": "date",
@@ -979,14 +1068,14 @@
             "items": [
               {
                 "id": "offer-pdf",
-                "title": "Oferta szkolenia",
-                "body": "Plik zostanie udostępniony po potwierdzeniu wersji i praw.",
+                "title": "Oferta szkolenia w jednym pliku",
+                "body": "PDF z programem, przebiegiem, transferem i warunkami organizacyjnymi. Udostępniamy w aktualnej wersji po potwierdzeniu praw do materiałów.",
                 "status": "preparing"
               },
               {
                 "id": "outline",
-                "title": "Konspekt i dowody",
-                "body": "Opis programu, transferu oraz doświadczenia Dawida.",
+                "title": "Dowody doświadczenia",
+                "body": "Opis metody wraz z potwierdzonymi dowodami: 4000 przeszkolonych nauczycieli, historyczny rekord Guinnessa i certyfikat konsultanta MaxiDISC.",
                 "status": "preparing"
               }
             ]
@@ -1006,12 +1095,22 @@
           {
             "id": "teacher-materials",
             "question": "Co szkoła dostaje po szkoleniu?",
-            "answer": "Aktualny zestaw materiałów i inspiracji do planowania własnych zajęć."
+            "answer": "Uczestnicy dostają konspekt z kartami rytmów, playlistę muzyki, listę narzędzi online oraz link do dedykowanej strony z materiałami po szkoleniu."
           },
           {
             "id": "teacher-price",
             "question": "Jak ustalić cenę i termin?",
             "answer": "Telefon lub WhatsApp, z ustaleniem formatu, liczby uczestników, miejsca, terminu, logistyki i wyceny."
+          },
+          {
+            "id": "teacher-group",
+            "question": "Ile osób może wziąć udział?",
+            "answer": "Standardowo od 20 do 25 osób, ale układamy się też z mniejszą grupą. Przy większych zespołach ustalamy wycenę indywidualną."
+          },
+          {
+            "id": "teacher-room",
+            "question": "Jakie warunki musi mieć sala?",
+            "answer": "Wystarczy sala, w której uczestnicy mogą stanąć w kole. Sprzęt, logistykę i szczegóły techniczne ustalamy telefonicznie przed spotkaniem."
           }
         ]
       },
@@ -1056,18 +1155,18 @@
             "items": [
               {
                 "id": "audience",
-                "title": "Teachers and educators",
-                "body": "For people looking for new ways to work with rhythm, movement, and group attention."
+                "title": "Kindergarten and school teachers",
+                "body": "For educators working with children and youth who want fresh, engaging approaches to rhythm, movement, and group focus."
               },
               {
                 "id": "educators",
-                "title": "Music, educational, and group activities",
-                "body": "The programme helps combine listening, coordination, and shared action across different types of sessions."
+                "title": "Music classes, rhythmics, and integration",
+                "body": "For immediate use in early education, music lessons, after-school care, activity clubs, and everyday classroom integration."
               },
               {
                 "id": "schools",
-                "title": "Schools and staff teams",
-                "body": "For schools that need practical tools for continued work, not just a one-off demonstration."
+                "title": "Teaching faculties and school teams",
+                "body": "For school management seeking an actionable, practical teaching method that the entire faculty can use right away."
               }
             ]
           },
@@ -1078,23 +1177,23 @@
             "items": [
               {
                 "id": "start-stop",
-                "title": "START / STOP and counting in",
-                "body": "Attention starts with a clear signal and a shared beginning."
+                "title": "START / STOP and group rules",
+                "body": "Every activity starts and ends with a clear signal from the facilitator. The START and STOP cues, along with simple rules, bring order to group work from the first minutes, without raising your voice."
               },
               {
                 "id": "rhythm",
-                "title": "Tempo, rhythm values, and movement",
-                "body": "Rhythm links listening with coordination and group energy."
+                "title": "Counting in, tempo, and rhythm cards",
+                "body": "Counting in the style of ONE, TWO, NOW ME passes the tempo and the lead. We work with quarter and eighth notes in simple metres, and rhythm cards show WHACK, TAP, BOOM strikes and the SHH rest."
               },
               {
                 "id": "playing",
                 "title": "Playing together and imagination",
-                "body": "Exercises lead to original ideas and preparing a performance."
+                "body": "The tubes become a wave, rain, a jungle, or an instrument in a story. From imitation we move towards the group's own ideas and a short shared performance."
               },
               {
                 "id": "scenarios",
-                "title": "Session plans and online tools",
-                "body": "Participants leave with material they can adapt to their own classes."
+                "title": "Session plans, games, and multimedia",
+                "body": "A session outline, rhythm and movement games, multimedia, and online tools that can be adapted to your own classes. Participants leave with ready material for further work."
               }
             ]
           },
@@ -1105,18 +1204,18 @@
             "items": [
               {
                 "id": "attention",
-                "title": "Holding a group's attention",
-                "body": "Participants learn structures and engaging activities that help hold attention without raising their voice."
+                "title": "Group attention without raising your voice",
+                "body": "Actionable START / STOP routines, count-ins, and conducting cues that focus and quiet a group of 30 children in seconds without shouting."
               },
               {
                 "id": "own-scenarios",
-                "title": "Your own session plans",
-                "body": "Exercises show how to combine rhythm, movement, imagination, and play in your own session plan."
+                "title": "Ready lesson scenarios and flexible ideas",
+                "body": "A complete library of rhythm games, movement activities, and an easy framework for designing custom sessions matched to student ages."
               },
               {
                 "id": "transfer",
-                "title": "Follow-up materials",
-                "body": "An outline, tool links, video, music, and additional resources.",
+                "title": "Immediate classroom transfer and resources",
+                "body": "Ready session outlines, rhythm cards, backing tracks, and video tutorials ready to bring straight into the classroom the very next day.",
                 "status": "available"
               }
             ],
@@ -1133,21 +1232,21 @@
               {
                 "id": "teacher-proof",
                 "title": "4,000 teachers trained",
-                "body": "This scale of teacher training supports work with the real needs of a room and its group."
+                "body": "This scale of teacher training across Poland supports work with the real needs of a room and its group."
               },
               {
                 "id": "since-2010",
-                "title": "Working with boomwhackers since 2010",
+                "title": "Practice since 2010",
                 "body": "Long-term practice connects music and movement with groups at different levels of experience."
               },
               {
                 "id": "teacher-method",
-                "title": "From experience to your own method",
+                "title": "From practice to method",
                 "body": "Participants first experience the exercises, then break them down into principles they can use in their own sessions."
               },
               {
                 "id": "teacher-disc",
-                "title": "Confirmed MaxiDISC certificate",
+                "title": "MaxiDISC consultant certificate",
                 "body": "Formal preparation supports thoughtful work with communication and differences visible in a group."
               }
             ]
@@ -1159,17 +1258,46 @@
             "items": [
               {
                 "id": "outline",
-                "title": "Session outline",
-                "body": "A working resource for the teacher to adapt.",
+                "title": "Outline with rhythm cards",
+                "body": "A session outline with rhythm cards and variants for different groups. A working document you can adapt to your own classes right away.",
                 "status": "preparing"
               },
               {
-                "id": "links",
-                "title": "Tools and ideas",
-                "body": "Links, music, and additional resources after rights are confirmed.",
+                "id": "music",
+                "title": "Music and exercise recordings",
+                "body": "A playlist of music for sessions and links to recordings showing the exercises in practice, from counting in to a shared performance.",
+                "status": "preparing"
+              },
+              {
+                "id": "tools",
+                "title": "Online tools and materials page",
+                "body": "A list of proven online tools and access to a dedicated post-training materials page, shared with participants as a link during the session.",
                 "status": "preparing"
               }
             ]
+          },
+          {
+            "id": "articles",
+            "heading": "Insights for teachers",
+            "intro": "Three articles that organise the topic before the training and help you return to it afterwards.",
+            "items": [
+              {
+                "id": "insight-what-are-boomwhackers",
+                "href": "/en/insights/what-are-boomwhackers"
+              },
+              {
+                "id": "insight-boomwhackers-games",
+                "href": "/en/insights/boomwhackers-games"
+              },
+              {
+                "id": "insight-group-attention",
+                "href": "/en/insights/group-attention"
+              }
+            ],
+            "action": {
+              "label": "Go to Insights and inspiration",
+              "href": "/en/insights#articles"
+            }
           },
           {
             "id": "offer",
@@ -1179,17 +1307,17 @@
               {
                 "id": "format",
                 "title": "Format",
-                "body": "Group training at your school or venue, for the whole teaching council or a selected group of teachers."
+                "body": "Group training at your school, for the whole staff team or a selected group of teachers. Typically 20 to 25 participants, larger groups are quoted individually."
               },
               {
                 "id": "price",
                 "title": "Price",
-                "body": "180 PLN gross per person. For larger groups we agree a group rate, which I state clearly during the call."
+                "body": "180 PLN gross per person. Above 25 people we agree on a group rate, travel costs are added depending on the location, and we always confirm the price when booking the date."
               },
               {
                 "id": "duration",
                 "title": "Duration",
-                "body": "240 minutes with a break. The programme fits into a single working day and needs no extra preparation sessions."
+                "body": "240 minutes with a break. The programme fits into one working day, requires no preparation from participants, and no prior music knowledge."
               },
               {
                 "id": "date",
@@ -1205,14 +1333,14 @@
             "items": [
               {
                 "id": "offer-pdf",
-                "title": "Training offer",
-                "body": "The file will be shared after its version and rights are confirmed.",
+                "title": "The training offer in one file",
+                "body": "A PDF with the programme, flow, follow-up, and organisational details. Shared in its current version after we confirm rights to the materials.",
                 "status": "preparing"
               },
               {
                 "id": "outline",
-                "title": "Outline and evidence",
-                "body": "Programme, follow-up, and Dawid's experience.",
+                "title": "Evidence of experience",
+                "body": "A description of the method with confirmed evidence: 4,000 teachers trained, the historic Guinness World Record, and the MaxiDISC consultant certificate.",
                 "status": "preparing"
               }
             ]
@@ -1232,12 +1360,22 @@
           {
             "id": "teacher-materials",
             "question": "What does the school receive after training?",
-            "answer": "A current set of materials and ideas for planning your own sessions."
+            "answer": "Participants receive an outline with rhythm cards, a music playlist, a list of online tools, and a link to the dedicated post-training materials page."
           },
           {
             "id": "teacher-price",
             "question": "How do we agree on price and timing?",
             "answer": "Call or message to discuss the format, group size, venue, date, logistics, and quote."
+          },
+          {
+            "id": "teacher-group",
+            "question": "How many people can take part?",
+            "answer": "Typically 20 to 25 participants, but we can work with a smaller group as well. Larger teams are quoted individually."
+          },
+          {
+            "id": "teacher-room",
+            "question": "What does the room need?",
+            "answer": "Any room where participants can stand in a circle is enough. Equipment, logistics, and technical details are agreed by phone before the session."
           }
         ]
       }
@@ -1302,17 +1440,22 @@
               {
                 "id": "icebreaker",
                 "title": "Icebreaker konferencyjny",
-                "body": "Szybki wspólny rytm, który pomaga grupie wejść w spotkanie."
+                "body": "Kilka do kilkunastu minut wspólnego rytmu, które rozgrzewa salę i ustawia grupę na dalszą część programu. Sprawdza się przy otwarciu konferencji albo między blokami."
               },
               {
                 "id": "team-building",
                 "title": "Muzyczny team building",
-                "body": "Dłuższa praca nad słuchaniem, współpracą i finałem."
+                "body": "Dłuższe spotkanie z rozgrzewką, grami rytmicznymi i pracą nad wspólnym wykonaniem. Grupa słyszy, jak z kilku osób powstaje jeden zespół."
               },
               {
                 "id": "workshop",
                 "title": "Warsztat firmowy",
-                "body": "Format dopasowany do celu zespołu, miejsca i czasu."
+                "body": "Format szyty na miarę celu zespołu, miejsca i czasu, np. integracja przy okazji szkolenia albo domknięcie dnia firmowego."
+              },
+              {
+                "id": "repertoire",
+                "title": "Repertuar dopasowany do grupy",
+                "body": "Od rozgrzewki Santo Domingo, przez taneczną dawkę energii Cheri Cheri Lady, po Kolorowy Groove albo Piraci Mix. Wiązankę dobieramy do profilu uczestników."
               }
             ],
             "action": {
@@ -1328,17 +1471,22 @@
               {
                 "id": "brief",
                 "title": "Brief i dobór formatu",
-                "body": "Najpierw poznajemy cel, grupę, miejsce i ograniczenia."
+                "body": "Najpierw rozmowa o celu wydarzenia, profilu gości, miejscu i ograniczeniach technicznych. Dopiero potem proponuję format i repertuar."
               },
               {
                 "id": "facilitation",
                 "title": "Prowadzenie od zasad do działania",
-                "body": "Dawid buduje bezpieczny rytm, w którym każdy może wejść do grupy."
+                "body": "Zaczynam od jasnych zasad i prostego sygnału START / STOP, dzięki czemu grupa szybko wchodzi w rytm, a nikt nie czuje się oceniany."
               },
               {
                 "id": "final",
                 "title": "Finał i rozmowa",
-                "body": "Wspólne doświadczenie zostaje domknięte krótką refleksją."
+                "body": "Spotkanie domyka wspólne wykonanie i krótka refleksja o tym, co grupa usłyszała o sobie. Bez wykładu, na przykładach z tego, co właśnie się wydarzyło."
+              },
+              {
+                "id": "crew",
+                "title": "Solo, z zespołem albo z instrumentalistą",
+                "body": "Prowadzę sam, z zespołem albo z dodatkowym instrumentalistą. Skład dobieramy do skali eventu i oczekiwań organizatora."
               }
             ]
           },
@@ -1364,29 +1512,47 @@
           {
             "id": "oferta",
             "heading": "Oferta, logistyka i materiały",
-            "intro": "Wycena opisuje uzgodniony zakres, przygotowanie, prowadzenie, czas, liczbę osób, logistykę i dojazd. Dodatkowe elementy omawiamy przed potwierdzeniem.",
+            "intro": "Wycena opisuje uzgodniony zakres: przygotowanie, prowadzenie, czas, liczbę osób, logistykę i dojazd. Współpracuję zarówno bezpośrednio z firmami, jak i jako podwykonawca agencji eventowych.",
             "items": [
               {
                 "id": "format",
-                "title": "Format",
-                "body": "Icebreaker, team building albo warsztat."
-              },
-              {
-                "id": "duration",
-                "title": "Czas i liczebność",
-                "body": "Od krótkiego wejścia do dłuższego formatu, zależnie od grupy i miejsca."
-              },
-              {
-                "id": "crew",
-                "title": "Skład",
-                "body": "Dawid solo, z zespołem lub instrumentalistą, jeśli wymaga tego format."
+                "title": "Format i czas",
+                "body": "Od krótkiego icebreakera konferencyjnego po pełny warsztat. Czas dopasowujemy do programu wydarzenia i przerw między blokami."
               },
               {
                 "id": "quote",
-                "title": "Wycena",
-                "body": "Indywidualna, po rozmowie o celu, zakresie i logistyce."
+                "title": "Wycena indywidualna",
+                "body": "Cena zależy od zakresu, liczby uczestników, miejsca i dojazdu. Ustalamy ją w rozmowie, bez ukrytych kosztów, a szczegóły potwierdzamy przed wydarzeniem."
+              },
+              {
+                "id": "logistics",
+                "title": "Logistyka",
+                "body": "Instrumenty i sprzęt dostosowuję do miejsca, w tym do dużej sali konferencyjnej. Organizator dostaje wcześniej listę niezbędnych warunków."
               }
             ]
+          },
+          {
+            "id": "artykuly",
+            "heading": "Wiedza dla HR i agencji",
+            "intro": "Trzy artykuły o tym, jak muzyka i rurki budują współpracę w zespole, zanim umówimy szczegóły wydarzenia.",
+            "items": [
+              {
+                "id": "insight-music-cooperation",
+                "href": "/wiedza/muzyka-jezyk-wspolpracy"
+              },
+              {
+                "id": "insight-musical-icebreakers",
+                "href": "/wiedza/muzyczne-lodolamacze"
+              },
+              {
+                "id": "insight-disc-in-practice",
+                "href": "/wiedza/disc-w-praktyce"
+              }
+            ],
+            "action": {
+              "label": "Przejdź do Wiedzy i inspiracji",
+              "href": "/wiedza#artykuly"
+            }
           },
           {
             "id": "realizacje",
@@ -1423,6 +1589,16 @@
             "id": "corporate-travel",
             "question": "Czy dojeżdżasz i kto prowadzi?",
             "answer": "Dojazd jest ustalany indywidualnie. Prowadzi Dawid, a dodatkowy skład pojawia się tylko przy uzasadnionym formacie."
+          },
+          {
+            "id": "corporate-agency",
+            "question": "Współpracujecie z agencjami eventowymi?",
+            "answer": "Tak, najczęściej działam jako podwykonawca agencji. Ustalamy zakres, rolę w programie i warunki tak, żeby dało się to czysto wpiąć w ofertę dla klienta."
+          },
+          {
+            "id": "corporate-embarrassment",
+            "question": "Czy uczestnicy muszą się wstydzić albo śpiewać?",
+            "answer": "Nie. Nikogo nie zmuszam do śpiewu i występów solo. Rurki są proste, a zasady i rytm sprawiają, że grupa szybko działa razem."
           }
         ]
       },
@@ -1485,17 +1661,22 @@
               {
                 "id": "icebreaker",
                 "title": "Conference icebreaker",
-                "body": "A quick shared rhythm that helps a group enter the meeting."
+                "body": "A few to a dozen or so minutes of shared rhythm that warms up the room and sets the tone for the rest of the programme. It works at conference openings and between blocks."
               },
               {
                 "id": "team-building",
                 "title": "Musical team building",
-                "body": "Longer work with listening, cooperation, and a shared finale."
+                "body": "A longer session with a warm-up, rhythm games, and work on a shared performance. The group hears how a few people become one team."
               },
               {
                 "id": "workshop",
-                "title": "Company workshop",
-                "body": "A format shaped around the team's goal, venue, and schedule."
+                "title": "Corporate workshop",
+                "body": "A format tailored to the team's goal, venue, and schedule, for example integration during a training day or closing a company event."
+              },
+              {
+                "id": "repertoire",
+                "title": "Repertoire matched to the group",
+                "body": "From the Santo Domingo warm-up, through the dance-fuelled Cheri Cheri Lady, to Kolorowy Groove or Pirates Mix. We match the set to the audience profile."
               }
             ],
             "action": {
@@ -1510,18 +1691,23 @@
             "items": [
               {
                 "id": "brief",
-                "title": "Brief and format",
-                "body": "We begin with the goal, group, venue, and constraints."
+                "title": "Brief and format selection",
+                "body": "First we talk about the event's goal, the audience, the venue, and technical constraints. Only then do I propose a format and a repertoire."
               },
               {
                 "id": "facilitation",
-                "title": "From rules to action",
-                "body": "Dawid builds a safe rhythm in which everyone can join the group."
+                "title": "Facilitation from rules to action",
+                "body": "I start with clear rules and a simple START / STOP signal, so the group quickly finds the rhythm and nobody feels judged."
               },
               {
                 "id": "final",
-                "title": "Finale and reflection",
-                "body": "The shared experience closes with a short reflection."
+                "title": "Finale and conversation",
+                "body": "The session closes with a shared performance and a short reflection on what the group heard about itself. No lecture, just examples from what just happened."
+              },
+              {
+                "id": "crew",
+                "title": "Solo, with a band, or with an instrumentalist",
+                "body": "I can lead on my own, with a band, or with an additional instrumentalist. We match the line-up to the scale of the event and the organizer's expectations."
               }
             ]
           },
@@ -1547,29 +1733,47 @@
           {
             "id": "offer",
             "heading": "Offer, logistics, and materials",
-            "intro": "The quote covers the agreed scope, preparation, facilitation, timing, group size, logistics, and travel. Additional elements are discussed before confirmation.",
+            "intro": "The quote describes the agreed scope: preparation, facilitation, time, group size, logistics, and travel. I work directly with companies and as a subcontractor for event agencies.",
             "items": [
               {
                 "id": "format",
-                "title": "Format",
-                "body": "Icebreaker, team building, or workshop."
-              },
-              {
-                "id": "duration",
-                "title": "Timing and group size",
-                "body": "From a short opening to a longer format, depending on group and venue."
-              },
-              {
-                "id": "crew",
-                "title": "Line-up",
-                "body": "Dawid solo, with a band, or with an instrumentalist when the format calls for it."
+                "title": "Format and time",
+                "body": "From a short conference icebreaker to a full workshop. We fit the time into the event programme and the breaks between blocks."
               },
               {
                 "id": "quote",
-                "title": "Quote",
-                "body": "Individual, after a conversation about the goal, scope, and logistics."
+                "title": "Individual quote",
+                "body": "The price depends on the scope, the number of participants, the venue, and travel. We agree on it in a conversation, without hidden costs, and confirm the details before the event."
+              },
+              {
+                "id": "logistics",
+                "title": "Logistics",
+                "body": "I adapt instruments and equipment to the venue, including a large conference hall. The organizer receives a list of required conditions in advance."
               }
             ]
+          },
+          {
+            "id": "articles",
+            "heading": "Insights for HR and agencies",
+            "intro": "Three articles on how music and boomwhackers build cooperation in a team, before we agree on the details of your event.",
+            "items": [
+              {
+                "id": "insight-music-cooperation",
+                "href": "/en/insights/music-cooperation"
+              },
+              {
+                "id": "insight-musical-icebreakers",
+                "href": "/en/insights/musical-icebreakers"
+              },
+              {
+                "id": "insight-disc-in-practice",
+                "href": "/en/insights/disc-in-practice"
+              }
+            ],
+            "action": {
+              "label": "Go to Insights and inspiration",
+              "href": "/en/insights#articles"
+            }
           },
           {
             "id": "projects",
@@ -1606,6 +1810,16 @@
             "id": "corporate-travel",
             "question": "Do you travel, and who leads the session?",
             "answer": "Travel is agreed individually. Dawid leads the session, with an additional performer only where the format calls for it."
+          },
+          {
+            "id": "corporate-agency",
+            "question": "Do you work with event agencies?",
+            "answer": "Yes, I most often work as an agency subcontractor. We agree on the scope, the role in the programme, and the terms so it fits cleanly into the client's offer."
+          },
+          {
+            "id": "corporate-embarrassment",
+            "question": "Do participants have to sing or feel embarrassed?",
+            "answer": "No. Nobody is forced to sing or perform solo. The tubes are simple, and the rules and rhythm make the group work together quickly."
           }
         ]
       }
@@ -1648,25 +1862,22 @@
           {
             "id": "wiek",
             "heading": "Wybierz grupę wiekową",
-            "intro": "Warsztat dobieramy do wieku, liczby dzieci i możliwości grupy, żeby tempo, zasady i aktywności były dla niej zrozumiałe.",
+            "intro": "Warsztat dobieram do wieku, liczby dzieci i możliwości grupy, a historie spotkań dopasowuję do grup od 3 do 14 lat.",
             "items": [
               {
                 "id": "wiek-3-6",
-                "title": "3-6 lat",
-                "body": "Pierwsze doświadczenia z rytmem, ruchem, słuchaniem i prostymi zasadami.",
-                "href": "#wiek-3-6"
+                "title": "Dzieci przedszkolne (3-6 lat)",
+                "body": "Pierwsze spotkanie z rytmem i muzyką. Proste powtarzanie rytmów, ruch, taniec oraz postacie takie jak Bongo Banana czy Wujek Marchewa, które natychmiast skupiają uwagę najmłodszych."
               },
               {
                 "id": "wiek-7-10",
-                "title": "7-10 lat",
-                "body": "Wspólne granie, koordynacja i zadania rozwijające uważność.",
-                "href": "#wiek-7-10"
+                "title": "Klasy I-III (7-10 lat)",
+                "body": "Wspólny kolorowy groove, koordynacja słuchowo-ruchowa, zabawy z kubkami i gry zespołowe. Uczestnicy uczą się słuchać innych i grać pierwsze wielogłosowe melodie w grupie."
               },
               {
                 "id": "wiek-10-14",
-                "title": "10-14 lat",
-                "body": "Więcej samodzielności, rytmu, wyobraźni i pracy zespołowej.",
-                "href": "#wiek-10-14"
+                "title": "Młodzież i starszaki (10-14 lat)",
+                "body": "Więcej wyzwań i samodzielności: podstawy beatboxu, kodowanie struktur rytmicznych z kartami, dyrygowanie grupą i praca nad własnym, pełnym wykonaniem utworu."
               }
             ]
           },
@@ -1677,23 +1888,23 @@
             "items": [
               {
                 "id": "rhythm",
-                "title": "Rytm i słuchanie",
-                "body": "Proste zadania uczą reagowania na wspólny puls, słuchania własnego dźwięku i miejsca innych osób w grupie."
+                "title": "Rytm i aktywne słuchanie",
+                "body": "Gramy rytmy, akordy, melodie i kolorowy groove. Dzieci uczą się reagować na wspólny puls i słyszeć swoje miejsce w grupie."
               },
               {
                 "id": "movement",
-                "title": "Ruch i koordynacja",
-                "body": "Ruch pomaga poczuć tempo i porządek utworu, a poziom koordynacji dopasowujemy do wieku dzieci."
+                "title": "Ruch, taniec i koordynacja",
+                "body": "Taniec, gry sprawnościowe i konkurencje w parach, które łączą ruch z muzyką i uczą współpracy przez zabawę."
               },
               {
                 "id": "playing",
-                "title": "Wspólne granie",
-                "body": "Każde dziecko dostaje czytelną rolę, dzięki czemu grupa może zbudować wspólny finał bez wcześniejszego przygotowania muzycznego."
+                "title": "Wspólne granie i role w grupie",
+                "body": "Każde dziecko wciela się w postać, którą symbolizuje kolorowa rurka, i dostaje czytelną rolę w wspólnym wykonaniu."
               },
               {
                 "id": "imagination",
                 "title": "Wyobraźnia i własny pomysł",
-                "body": "Po poznaniu zasad grupa może zmieniać rytm, ruch albo kolejność i stworzyć własną wersję ćwiczenia."
+                "body": "Zamieniamy rurki w śmiesznych bohaterów, patrzymy na muzykę oczyma wyobraźni i rozmawiamy o pojęciach abstrakcyjnych, a grupa tworzy własne wersje ćwiczeń."
               }
             ],
             "action": {
@@ -1704,63 +1915,86 @@
           {
             "id": "bezpieczenstwo",
             "heading": "Bezpieczeństwo i zasady START / STOP",
-            "intro": "Jasne reguły pomagają dzieciom swobodnie wejść w doświadczenie.",
+            "intro": "Jasne reguły porządkują pracę i pozwalają dzieciom swobodnie wejść w doświadczenie.",
             "items": [
               {
                 "id": "rules",
-                "title": "Słuchanie prowadzącego i grupy",
-                "body": "Wspólny sygnał porządkuje tempo i uwagę."
+                "title": "Zasady START / STOP i dyscyplina",
+                "body": "Każdą aktywność zaczynamy i kończymy na wyraźny znak prowadzącego. Rurka służy wyłącznie do grania, nie do uderzania innych, a kto chwilowo przekracza zasady, pauzuje w strefie kar i szybko wraca do gry."
               },
               {
                 "id": "space",
-                "title": "Dbanie o przestrzeń i instrumenty",
-                "body": "Poziom trudności dopasowuje się do grupy."
+                "title": "Dopasowane tempo i przestrzeń",
+                "body": "Działamy w tempie dobranym do energii i możliwości grupy. Dbamy o instrumenty i wspólną przestrzeń, tworząc bezpieczne środowisko, w którym każde dziecko może się otworzyć."
               }
             ]
           },
           {
             "id": "przebieg",
             "heading": "Przebieg warsztatu",
-            "intro": "Każde spotkanie ma rytm, który można dopasować do grupy.",
+            "intro": "Każde spotkanie ma wyraźny rytm, który dopasowuję do wieku i energii grupy.",
             "items": [
               {
                 "id": "beginning",
-                "title": "Poznanie przestrzeni i zasad",
-                "body": "Zaczynamy od prostego wejścia w grupę."
+                "title": "Wejście, zasady i bohaterowie",
+                "body": "Krótkie poznanie grupy, wprowadzenie bohaterów spotkania i ustalenie zasad, żeby każdy wiedział, co go czeka."
               },
               {
                 "id": "warm-up",
-                "title": "Rozgrzewka i zadania",
-                "body": "Ćwiczenia rozwijają słuchanie, ruch i wspólne granie."
+                "title": "Rozgrzewka, gry i konkurencje",
+                "body": "Około 55 minut zapełnionych przygotowanymi grami: rytmiczne, ruchowe i sprawnościowe, z częstą współpracą w parach i zespołach."
               },
               {
                 "id": "ending",
-                "title": "Wspólne wykonanie i podsumowanie",
-                "body": "Spotkanie kończy się doświadczeniem, które można nazwać."
+                "title": "Wspólne wykonanie i finał",
+                "body": "Spotkanie kończy wspólne granie albo mini występ, który grupa może pokazać wychowawcy albo rodzicom."
               }
             ]
           },
           {
             "id": "organizacja",
             "heading": "Organizacja i przygotowanie",
-            "intro": "Instytucja zna warunki jeszcze przed rozmową o terminie.",
+            "intro": "Placówka zna warunki jeszcze przed rozmową o terminie.",
             "items": [
               {
                 "id": "room",
-                "title": "Sala",
-                "body": "Przestrzeń do ruchu i bezpiecznego działania."
+                "title": "Sala i przestrzeń do działania",
+                "body": "Przestronna sala gimnastyczna, aula lub klasa lekcyjna z odsuniętymi stolikami, w której cała grupa może swobodnie stanąć w kole, usiąść na podłodze i poruszać się w rytmie."
               },
               {
                 "id": "groups",
-                "title": "Wiek i liczba uczestników",
-                "body": "Informacje potrzebne do dopasowania programu."
+                "title": "Grupy klasowe do ok. 20 dzieci",
+                "body": "Spotkania prowadzę w kameralnych grupach klasowych (optymalnie 20-25 osób). Dzięki temu każde dziecko ma własny zestaw rurek, pełną uwagę prowadzącego i realny wpływ na wspólny utwór."
               },
               {
                 "id": "contact",
-                "title": "Osoba kontaktowa",
-                "body": "Jedna osoba po stronie organizatora ułatwia przygotowanie."
+                "title": "Koordynator i harmonogram dnia",
+                "body": "Jedna osoba kontaktowa po stronie przedszkola lub szkoły, z którą ustalamy plan dnia, kolejność grup i dopasowanie wejść do przerw międzylekcyjnych oraz planu placówki."
               }
             ]
+          },
+          {
+            "id": "artykuly",
+            "heading": "Wiedza dla organizatorów i rodziców",
+            "intro": "Trzy artykuły, które pokazują, jak pracuję z dziećmi i rurkami, zanim umówimy termin spotkania.",
+            "items": [
+              {
+                "id": "insight-integration-games-children",
+                "href": "/wiedza/zabawy-integracyjne-dla-dzieci"
+              },
+              {
+                "id": "insight-boomwhackers-games",
+                "href": "/wiedza/bum-bum-rurki-zabawy"
+              },
+              {
+                "id": "insight-boomwhackers-songs",
+                "href": "/wiedza/bum-bum-rurki-piosenki"
+              }
+            ],
+            "action": {
+              "label": "Przejdź do Wiedzy i inspiracji",
+              "href": "/wiedza#artykuly"
+            }
           },
           {
             "id": "dowody",
@@ -1769,14 +2003,14 @@
             "items": [
               {
                 "id": "since-2010",
-                "title": "Praca od 2010 roku",
-                "body": "Doświadczenie z Bum Bum Rurkami i grupami.",
+                "title": "Doświadczenie od 2010 roku",
+                "body": "Setki zrealizowanych warsztatów w przedszkolach, szkołach podstawowych i domach kultury w całej Polsce. Praktyka wypracowana w pracy z tysiącami dzieci o różnym poziomie skupienia.",
                 "status": "confirmed"
               },
               {
                 "id": "teacher-scale",
                 "title": "4000 przeszkolonych nauczycieli",
-                "body": "Dowód skali pracy Dawida.",
+                "body": "Doświadczenie w pracy z dziećmi połączone ze szkoleniem kadry pedagogicznej. Warsztat dziecięcy prowadzony jest z pełną świadomością metodyczną i wychowawczą.",
                 "status": "confirmed"
               }
             ]
@@ -1788,18 +2022,18 @@
             "items": [
               {
                 "id": "duration",
-                "title": "Czas i liczba grup",
-                "body": "Ustalane z placówką."
+                "title": "Czas trwania spotkania (55 minut)",
+                "body": "Pojedynczy warsztat trwa około 55 minut intensywnej zabawy muzyczno-ruchowej. W ciągu jednego dnia w placówce mogę przeprowadzić rotacyjnie kilka spotkań dla kolejnych klas."
               },
               {
                 "id": "venue",
-                "title": "Miejsce i dojazd",
-                "body": "Ustalane indywidualnie."
+                "title": "Dojazd z Krakowa w całej Polsce",
+                "body": "Na warsztaty wyruszam z Krakowa z kompletem własnych instrumentów. Przy odległościach powyżej 150 km warunki logistyczne i ewentualną dopłatę ustalamy indywidualnie."
               },
               {
                 "id": "price",
-                "title": "Wycena",
-                "body": "Zależna od zakresu, grup, czasu, miejsca i dojazdu.",
+                "title": "Przejrzysta wycena za uczestnika",
+                "body": "Stawka za dziecko zależy od łącznej liczby grup i uczestników w placówce w danym dniu. Ostateczny kosztorys i dogodny termin zawsze potwierdzamy telefonicznie.",
                 "status": "pending"
               }
             ]
@@ -1830,6 +2064,16 @@
             "id": "children-price",
             "question": "Jak ustalamy cenę i dojazd?",
             "answer": "Zależnie od zakresu, grup, czasu, miejsca i dojazdu, przed potwierdzeniem realizacji."
+          },
+          {
+            "id": "children-story",
+            "question": "Co się dzieje na warsztacie?",
+            "answer": "Dzieci wcielają się w bohaterów symbolizowanych kolorowymi rurkami, grają rytmy, tańczą, biorą udział w konkurencjach i kończą wspólnym wykonaniem."
+          },
+          {
+            "id": "children-group-size",
+            "question": "Ile dzieci może wziąć udział?",
+            "answer": "Spotkania prowadzę grupami do około 20 dzieci, a przy większych placówkach układamy rotację kilku grup w ciągu dnia."
           }
         ]
       },
@@ -1870,52 +2114,49 @@
           {
             "id": "age",
             "heading": "Choose an age group",
-            "intro": "The workshop is matched to the children's age, group size, and abilities so the pace, rules, and activities are clear.",
+            "intro": "I match the workshop to age, group size, and the abilities of the children, with story-based sessions prepared for groups aged 3 to 14.",
             "items": [
               {
-                "id": "age-3-6",
-                "title": "3-6 years",
-                "body": "First experiences with rhythm, movement, listening, and simple rules.",
-                "href": "#age-3-6"
+                "id": "wiek-3-6",
+                "title": "Preschool children (ages 3-6)",
+                "body": "A playful first encounter with rhythm and music. Simple echo patterns, dance, movement, and character stories like Bongo Banana that quickly focus young children's attention."
               },
               {
-                "id": "age-7-10",
-                "title": "7-10 years",
-                "body": "Shared playing, coordination, and tasks that develop attention.",
-                "href": "#age-7-10"
+                "id": "wiek-7-10",
+                "title": "Primary school (ages 7-10)",
+                "body": "A colourful shared groove, audio-motor coordination, cup games, and team rhythm challenges where children learn to listen to each other and play multi-part melodies together."
               },
               {
-                "id": "age-10-14",
-                "title": "10-14 years",
-                "body": "More independence, rhythm, imagination, and teamwork.",
-                "href": "#age-10-14"
+                "id": "wiek-10-14",
+                "title": "Older children and youth (ages 10-14)",
+                "body": "Advanced challenges and autonomy: beatbox fundamentals, rhythm coding with cards, student conducting, and collaborating on their own full musical arrangement."
               }
             ]
           },
           {
             "id": "programme",
             "heading": "A programme matched to age",
-            "intro": "I do not use one script for every group. Activities are adapted to age, group size, available time, and venue.",
+            "intro": "I do not run one scenario for everyone. I match activities to age, group size, time, and venue.",
             "items": [
               {
                 "id": "rhythm",
-                "title": "Rhythm and listening",
-                "body": "Simple tasks teach children to respond to a shared pulse, hear their own sound, and notice other people in the group."
+                "title": "Rhythm and active listening",
+                "body": "We play rhythms, chords, melodies, and a colourful groove. Children learn to respond to a shared pulse and hear their place in the group."
               },
               {
                 "id": "movement",
-                "title": "Movement and coordination",
-                "body": "Movement helps children feel tempo and musical structure, with coordination matched to their age."
+                "title": "Movement, dance, and coordination",
+                "body": "Dance, action games, and partner challenges that connect movement with music and teach cooperation through play."
               },
               {
                 "id": "playing",
-                "title": "Playing together",
-                "body": "Each child receives a clear role so the group can build a shared finale without previous musical training."
+                "title": "Playing together and group roles",
+                "body": "Every child becomes a character symbolised by the colour of their tube and receives a clear role in the shared performance."
               },
               {
                 "id": "imagination",
-                "title": "Imagination and original ideas",
-                "body": "Once the rules are clear, the group can change the rhythm, movement, or order and create its own version."
+                "title": "Imagination and own ideas",
+                "body": "We turn tubes into funny characters, look at music through imagination, talk about abstract ideas, and let the group create their own versions of the exercises."
               }
             ],
             "action": {
@@ -1926,39 +2167,39 @@
           {
             "id": "safety",
             "heading": "Safety and START / STOP rules",
-            "intro": "Clear rules help children enter the experience with confidence.",
+            "intro": "Clear rules keep the session organised and let children enter the experience freely.",
             "items": [
               {
                 "id": "rules",
-                "title": "Listening to the facilitator and group",
-                "body": "A shared signal organizes tempo and attention."
+                "title": "START / STOP rules and focus",
+                "body": "Every activity begins and ends with a clear conductor cue. Tubes are strictly for music-making, not for hitting others, and anyone who steps outside the rules takes a brief penalty break before jumping right back in."
               },
               {
                 "id": "space",
-                "title": "Care for space and instruments",
-                "body": "The level is matched to the group."
+                "title": "Pacing and shared room safety",
+                "body": "We work at a tempo tailored to the group's natural energy. Caring for instruments and physical boundaries creates a structured environment where every child feels confident to participate."
               }
             ]
           },
           {
             "id": "process",
             "heading": "How the workshop runs",
-            "intro": "Every session has a rhythm that can be matched to the group.",
+            "intro": "Every session has a clear rhythm that I match to the age and energy of the group.",
             "items": [
               {
                 "id": "beginning",
-                "title": "Space and rules",
-                "body": "We begin with a simple way into the group."
+                "title": "Arrival, rules, and characters",
+                "body": "A short way into the group, an introduction of the session's characters, and clear rules so everyone knows what is coming."
               },
               {
                 "id": "warm-up",
-                "title": "Warm-up and tasks",
-                "body": "Exercises develop listening, movement, and shared playing."
+                "title": "Warm-up, games, and challenges",
+                "body": "About 55 minutes filled with prepared games: rhythm, movement, and action tasks, often requiring cooperation in pairs and teams."
               },
               {
                 "id": "ending",
-                "title": "Shared performance and reflection",
-                "body": "The session closes with an experience the group can name."
+                "title": "Shared performance and finale",
+                "body": "The session closes with playing together or a mini performance the group can show to their teacher or parents."
               }
             ]
           },
@@ -1969,20 +2210,43 @@
             "items": [
               {
                 "id": "room",
-                "title": "Room",
-                "body": "Space for movement and safe activity."
+                "title": "Room and movement space",
+                "body": "A gymnasium, hall, or large classroom with desks moved aside, allowing the whole group to form a circle, sit comfortably on the floor, and move freely to the pulse."
               },
               {
                 "id": "groups",
-                "title": "Age and group size",
-                "body": "Details needed to match the programme."
+                "title": "Class-sized groups of ~20 children",
+                "body": "Sessions run with individual classes (ideally 20-25 children). This ensures every child holds their own instrument, receives personal guidance, and actively shapes the performance."
               },
               {
                 "id": "contact",
-                "title": "Contact person",
-                "body": "One person on the organizer's side makes preparation easier."
+                "title": "School coordinator and daily plan",
+                "body": "A designated contact person at the school or kindergarten who coordinates the schedule, group rotation, and aligns session times with school bells and breaks."
               }
             ]
+          },
+          {
+            "id": "articles",
+            "heading": "Insights for organizers and parents",
+            "intro": "Three articles that show how I work with children and boomwhackers, before we agree on a date.",
+            "items": [
+              {
+                "id": "insight-integration-games-children",
+                "href": "/en/insights/icebreaker-games-for-children"
+              },
+              {
+                "id": "insight-boomwhackers-games",
+                "href": "/en/insights/boomwhackers-games"
+              },
+              {
+                "id": "insight-boomwhackers-songs",
+                "href": "/en/insights/boomwhackers-songs"
+              }
+            ],
+            "action": {
+              "label": "Go to Insights and inspiration",
+              "href": "/en/insights#articles"
+            }
           },
           {
             "id": "evidence",
@@ -1991,14 +2255,14 @@
             "items": [
               {
                 "id": "since-2010",
-                "title": "Working since 2010",
-                "body": "Experience with boomwhackers and groups.",
+                "title": "Hands-on experience since 2010",
+                "body": "Hundreds of workshops delivered in schools, kindergartens, and cultural centres across Poland, refined through live work with thousands of children of all energy levels.",
                 "status": "confirmed"
               },
               {
                 "id": "teacher-scale",
-                "title": "4,000 teachers trained",
-                "body": "A proof point showing Dawid's scale of work.",
+                "title": "4,000 teachers trained nationwide",
+                "body": "Extensive practice with children combined with training education professionals, ensuring workshops follow sound pedagogical, developmental, and safety standards.",
                 "status": "confirmed"
               }
             ]
@@ -2010,18 +2274,18 @@
             "items": [
               {
                 "id": "duration",
-                "title": "Timing and groups",
-                "body": "Agreed with the institution."
+                "title": "Session duration (55 minutes)",
+                "body": "Each workshop lasts around 55 minutes of dynamic music and movement play. During a single school visit, multiple sessions can run back-to-back across different classes."
               },
               {
                 "id": "venue",
-                "title": "Venue and travel",
-                "body": "Agreed individually."
+                "title": "Travel from Kraków nationwide",
+                "body": "I travel across Poland from Kraków with complete sets of instruments. For destinations over 150 km, travel logistics and arrangements are agreed individually."
               },
               {
                 "id": "price",
-                "title": "Quote",
-                "body": "Depends on scope, groups, timing, venue, and travel.",
+                "title": "Transparent per-student pricing",
+                "body": "The rate per child depends on the total number of participating groups and students on the day. Final budgets and dates are always confirmed directly by phone.",
                 "status": "pending"
               }
             ]
@@ -2052,6 +2316,16 @@
             "id": "children-price",
             "question": "How do we agree on price and travel?",
             "answer": "It depends on scope, groups, timing, venue, and travel, and is agreed before the event."
+          },
+          {
+            "id": "children-story",
+            "question": "What happens during a workshop?",
+            "answer": "Children become characters symbolised by colourful tubes, play rhythms, dance, take part in challenges, and close with a shared performance."
+          },
+          {
+            "id": "children-group-size",
+            "question": "How many children can take part?",
+            "answer": "I run sessions for groups of up to about 20 children, and larger institutions arrange a rotation of several groups across the day."
           }
         ]
       }
@@ -2082,7 +2356,17 @@
               {
                 "id": "definition",
                 "title": "Model stylów zachowania i komunikacji",
-                "body": "DISC opisuje preferowane sposoby działania i porozumiewania się. Nie jest diagnozą kliniczną ani stałą etykietą."
+                "body": "DISC opisuje cztery dominujące style zachowań: dominujący, inspirujący, stabilny i sumienny. To rozwinięcie znanej od XIX wieku myśli o temperamentach, uporządkowane współcześnie przez Williama Moultona Marstona. Model nie jest diagnozą kliniczną ani stałą etykietą."
+              },
+              {
+                "id": "styles-not-types",
+                "title": "Style zachowań, nie typy osobowości",
+                "body": "Każdy z nas ma w sobie wszystkie cztery style, tylko po niektóre sięgamy chętniej i naturalniej. Praca z modelem polega na świadomym korzystaniu z własnej mocnej strony, a nie na wpisywaniu ludzi w szufladki."
+              },
+              {
+                "id": "adaptation",
+                "title": "Adaptacja i jej koszt",
+                "body": "Czasem pełniona rola każe zachowywać się wbrew naturalnym preferencjom. Taka adaptacja kosztuje energię, a utrzymywana latami prowadzi wprost do wypalenia. O tym też rozmawiamy."
               }
             ]
           },
@@ -2121,17 +2405,17 @@
               {
                 "id": "preferences",
                 "title": "Rozpoznawanie preferencji",
-                "body": "Zespół zauważa różne sposoby reagowania i działania."
+                "body": "Zespół zauważa różne sposoby reagowania: jedni chcą działać szybko i konkretnie, inni potrzebują czasu na przemyślenie. Obie postawy mają sens, różni je tempo i potrzeby."
               },
               {
                 "id": "communication",
                 "title": "Dopasowanie komunikacji",
-                "body": "Uczestnicy ćwiczą, jak mówić jasno do osób o innych potrzebach."
+                "body": "Z osobą o dominującym stylu rozmawiamy konkretnie, bez gadki-szmatki. Osobę o stabilnym stylu nie zaskakujemy i nie wypychamy przed szereg. Uczestnicy ćwiczą te dopasowania na własnych przykładach."
               },
               {
-                "id": "language",
-                "title": "Wspólny język współpracy",
-                "body": "Różnice można omawiać bez oceny i diagnozowania."
+                "id": "conflicts",
+                "title": "Konflikty jako różnica potrzeb",
+                "body": "Większość spięć w zespole to zderzenie potrzeb, a nie złych intencji. Model daje język, w którym o tych potrzebach można mówić wprost, bez wzajemnego obwiniania."
               }
             ],
             "action": {
@@ -2147,22 +2431,22 @@
               {
                 "id": "goal",
                 "title": "Cel i kontekst zespołu",
-                "body": "Zaczynamy od sytuacji, która ma znaczenie dla uczestników."
+                "body": "Zaczynam od sytuacji, która ma znaczenie dla uczestników, np. konfliktu, zmiany w zespole albo wspólnego projektu."
               },
               {
                 "id": "concepts",
-                "title": "Pojęcia DISC",
-                "body": "Porządkujemy model prostym, praktycznym językiem."
+                "title": "Pojęcia DISC prostym językiem",
+                "body": "Model porządkuję na przykładach z życia, w tym na metaforze zwierząt: zając, osioł, żółwik i kameleon. Każdy styl ma swoje mocne strony i swoje pułapki."
               },
               {
                 "id": "practice",
-                "title": "Ćwiczenia i obserwacje",
-                "body": "Przykłady pomagają zobaczyć zachowania w działaniu."
+                "title": "Diagnoza na działaniu, nie na papierze",
+                "body": "Zanim padnie jakiekolwiek pojęcie z modelu, grupa najpierw działa, a potem obserwuje, co w niej było łatwe, trudne i zaskakujące. To doświadczenie staje się punktem wyjścia do wykładu."
               },
               {
                 "id": "transfer",
                 "title": "Przełożenie na współpracę",
-                "body": "Kończymy wnioskami, które można zabrać do codziennych rozmów."
+                "body": "Kończymy wnioskami do codziennych rozmów: jak dzielić pracę, jak dawać informację zwrotną i jak rozmawiać z osobą o innym stylu."
               }
             ]
           },
@@ -2173,28 +2457,56 @@
             "items": [
               {
                 "id": "music-variant",
-                "title": "Doświadczenie różnicy bez etykiet",
-                "body": "Wspólny rytm pozwala obserwować grupę, a rozmowa po ćwiczeniu łączy doświadczenie z komunikacją.",
-                "status": "available"
+                "title": "Diagnoza bez testów",
+                "body": "Wspólna zabawa rurkami pokazuje style zachowań szybciej niż ankieta. Grupa obserwuje siebie w działaniu, a rozmowa po ćwiczeniu łączy to doświadczenie z modelem DISC."
+              },
+              {
+                "id": "colours",
+                "title": "Kolory rurek i kolory stylów",
+                "body": "Rurki mają cztery kolory, a DISC również cztery style, więc uczestnicy sami wskazują, do którego koloru czują się najbliżej. Od tego momentu każdy widzi w sali swoją mapę stylów."
               }
             ]
           },
           {
             "id": "kwalifikacje",
             "heading": "Kwalifikacje i dowody",
-            "intro": "Potwierdzony certyfikat MaxiDISC uzupełnia doświadczenie Dawida w pracy z ludźmi przez muzykę, ruch i komunikację.",
+            "intro": "Certyfikat, skala praktyki grupowej i stałe środowiska, w których pracuję modelem DISC.",
             "items": [
               {
                 "id": "maxidisc",
-                "title": "MaxiDISC",
-                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie.",
+                "title": "Certyfikat konsultanta MaxiDISC",
+                "body": "Certyfikat z 10 maja 2023 roku, po szkoleniu, sesji mentorskiej i egzaminie.",
+                "status": "confirmed",
+                "source": {
+                  "label": "Certyfikat MaxiDISC (PDF)",
+                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
+                }
+              },
+              {
+                "id": "teachers",
+                "title": "4000 przeszkolonych nauczycieli",
+                "body": "Około 4000 nauczycieli od 2010 roku i wieloletnia praca z grupami różnej wielkości, od klas szkolnych po sale konferencyjne.",
                 "status": "confirmed"
               },
               {
-                "id": "practice",
-                "title": "Praktyka pracy z grupami",
-                "body": "Doświadczenie od 2010 roku i konteksty opisane w źródłach.",
-                "status": "confirmed"
+                "id": "droga-lwa",
+                "title": "Droga Lwa",
+                "body": "Jako mówca tego cyklicznego wydarzenia łączę na scenie Bum Bum Rurki z modelem DISC.",
+                "source": {
+                  "label": "drogalwa.pl",
+                  "href": "https://drogalwa.pl/",
+                  "external": true
+                }
+              },
+              {
+                "id": "akademia",
+                "title": "Akademia Przywództwa",
+                "body": "Działam w zespole Akademii w obszarze komunikacji i DISC, prowadząc pracę z modelami zachowań.",
+                "source": {
+                  "label": "akademiaprzywodztwa.pl",
+                  "href": "https://akademiaprzywodztwa.pl/",
+                  "external": true
+                }
               }
             ]
           },
@@ -2206,7 +2518,7 @@
               {
                 "id": "format",
                 "title": "Format",
-                "body": "Szkolenie DISC dla zespołów, z opcjonalnym wariantem muzycznym."
+                "body": "Szkolenie grupowe dla zespołów oraz sesje indywidualne z raportem, z opcjonalnym wariantem muzycznym."
               },
               {
                 "id": "audience",
@@ -2216,7 +2528,7 @@
               {
                 "id": "scope",
                 "title": "Zakres",
-                "body": "Model, przykłady, ćwiczenia oraz rozmowa o przełożeniu wniosków na codzienną współpracę."
+                "body": "Model, przykłady, ćwiczenia i rozmowa o wnioskach. W wariancie z raportem uczestnicy wypełniają ankietę w wybranym kontekście i dostają indywidualny raport do omówienia."
               },
               {
                 "id": "terms",
@@ -2225,6 +2537,29 @@
                 "status": "pending"
               }
             ]
+          },
+          {
+            "id": "artykuly",
+            "heading": "Wiedza o komunikacji i DISC",
+            "intro": "Trzy artykuły, które przygotują zespół do rozmowy o stylach zachowań, zanim umówimy szkolenie.",
+            "items": [
+              {
+                "id": "insight-disc-in-practice",
+                "href": "/wiedza/disc-w-praktyce"
+              },
+              {
+                "id": "insight-music-cooperation",
+                "href": "/wiedza/muzyka-jezyk-wspolpracy"
+              },
+              {
+                "id": "insight-musical-icebreakers",
+                "href": "/wiedza/muzyczne-lodolamacze"
+              }
+            ],
+            "action": {
+              "label": "Przejdź do Wiedzy i inspiracji",
+              "href": "/wiedza#artykuly"
+            }
           }
         ],
         "faq": [
@@ -2252,6 +2587,16 @@
             "id": "disc-price",
             "question": "Jak ustalamy cenę?",
             "answer": "Indywidualnie, po krótkiej rozmowie o potrzebach, zakresie, czasie i logistyce."
+          },
+          {
+            "id": "disc-individual",
+            "question": "Czy prowadzisz sesje indywidualne z raportem?",
+            "answer": "Tak. Uczestnik wypełnia ankietę w wybranym kontekście, zawodowym albo rodzinnym, dostaje raport, a następnie spotykamy się na omówienie i plan dalszej pracy."
+          },
+          {
+            "id": "disc-certificate",
+            "question": "Jakie masz przygotowanie do prowadzenia DISC?",
+            "answer": "Certyfikat konsultanta MaxiDISC z 2023 roku, po szkoleniu, sesji mentorskiej i egzaminie, oraz wieloletnia praktyka w prowadzeniu grup."
           }
         ]
       },
@@ -2275,12 +2620,22 @@
           {
             "id": "disc-definition",
             "heading": "DISC without myths",
-            "intro": "Plain language instead of diagnosis and fixed labels.",
+            "intro": "Plain language instead of diagnosis and rigid labels.",
             "items": [
               {
                 "id": "definition",
-                "title": "A model of behavioural styles and communication",
-                "body": "DISC describes preferred ways of acting and communicating. It is not a clinical diagnosis or a fixed label."
+                "title": "A model of behavioural and communication styles",
+                "body": "DISC describes four dominant behavioural styles: dominant, inspiring, steady, and conscientious. It is a modern development of nineteenth-century temperament thinking, organised by William Moulton Marston. The model is not a clinical diagnosis or a permanent label."
+              },
+              {
+                "id": "styles-not-types",
+                "title": "Behavioural styles, not personality types",
+                "body": "Every one of us carries all four styles, we simply reach for some of them more willingly. Working with the model means using your natural strengths consciously, not putting people into boxes."
+              },
+              {
+                "id": "adaptation",
+                "title": "Adaptation and its cost",
+                "body": "Sometimes a role pushes us to behave against our natural preferences. Such adaptation costs energy, and kept up for years it leads straight to burnout. We talk about that too."
               }
             ]
           },
@@ -2318,18 +2673,18 @@
             "items": [
               {
                 "id": "preferences",
-                "title": "Recognizing preferences",
-                "body": "The team notices different ways of responding and acting."
+                "title": "Recognising preferences",
+                "body": "The team notices different ways of responding: some people want to move fast and be specific, others need time to think. Both approaches make sense, they differ in pace and needs."
               },
               {
                 "id": "communication",
-                "title": "Adapting communication",
-                "body": "Participants practise speaking clearly to people with different needs."
+                "title": "Adjusting communication",
+                "body": "With a dominant style you get straight to the point. A steady style dislikes surprises and being pushed to the front. Participants practise these adjustments on their own examples."
               },
               {
-                "id": "language",
-                "title": "A shared language for cooperation",
-                "body": "Differences can be discussed without judgement or diagnosis."
+                "id": "conflict",
+                "title": "Conflict as a clash of needs",
+                "body": "Most friction in a team comes from clashing needs, not bad intentions. The model gives the team a language to name those needs directly, without mutual blame."
               }
             ],
             "action": {
@@ -2344,23 +2699,23 @@
             "items": [
               {
                 "id": "goal",
-                "title": "Team goal and context",
-                "body": "We start with a situation that matters to participants."
+                "title": "The team's goal and context",
+                "body": "I start from a situation that matters to the participants, for example a conflict, a change in the team, or a shared project."
               },
               {
                 "id": "concepts",
-                "title": "DISC concepts",
-                "body": "We make the model practical and easy to use."
+                "title": "DISC concepts in plain language",
+                "body": "I organise the model with real-life examples, including an animal metaphor: the hare, the donkey, the tortoise, and the chameleon. Every style has its strengths and its traps."
               },
               {
                 "id": "practice",
-                "title": "Exercises and observations",
-                "body": "Examples make behaviour visible in action."
+                "title": "Diagnosis through action, not on paper",
+                "body": "Before any term from the model appears, the group acts first and then observes what felt easy, difficult, and surprising. That experience becomes the starting point for the lecture part."
               },
               {
                 "id": "transfer",
-                "title": "Transfer to collaboration",
-                "body": "We finish with insights for everyday conversations."
+                "title": "Transferring it into cooperation",
+                "body": "We close with conclusions for everyday conversations: how to divide work, how to give feedback, and how to talk with a person of a different style."
               }
             ]
           },
@@ -2371,28 +2726,56 @@
             "items": [
               {
                 "id": "music-variant",
-                "title": "Experiencing difference without labels",
-                "body": "A shared rhythm makes group behaviour visible, while reflection connects it to communication.",
-                "status": "available"
+                "title": "Diagnosis without tests",
+                "body": "A shared boomwhacker game reveals behavioural styles faster than a questionnaire. The group observes itself in action, and the debrief links that experience with the DISC model."
+              },
+              {
+                "id": "colours",
+                "title": "Tube colours and style colours",
+                "body": "Tubes come in four colours, and DISC also has four styles, so participants point out which colour feels closest to them. From that moment everyone sees their own map of styles in the room."
               }
             ]
           },
           {
             "id": "qualifications",
             "heading": "Qualifications and evidence",
-            "intro": "The confirmed MaxiDISC certificate complements Dawid's experience working with people through music, movement, and communication.",
+            "intro": "A certificate, the scale of group practice, and the communities where I use the DISC model.",
             "items": [
               {
                 "id": "maxidisc",
-                "title": "MaxiDISC",
-                "body": "Consultant certificate after training, mentoring, and an exam.",
+                "title": "MaxiDISC consultant certificate",
+                "body": "Issued on 10 May 2023, after training, a mentoring session, and an exam.",
+                "status": "confirmed",
+                "source": {
+                  "label": "MaxiDISC certificate (PDF)",
+                  "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf"
+                }
+              },
+              {
+                "id": "teachers",
+                "title": "4,000 teachers trained",
+                "body": "Around 4,000 teachers since 2010 and years of work with groups of different sizes, from classrooms to conference halls.",
                 "status": "confirmed"
               },
               {
-                "id": "practice",
-                "title": "Practical group work",
-                "body": "Experience since 2010 and contexts described in sources.",
-                "status": "confirmed"
+                "id": "droga-lwa",
+                "title": "Droga Lwa",
+                "body": "As a speaker at this recurring event, I combine boomwhackers with the DISC model on stage.",
+                "source": {
+                  "label": "drogalwa.pl",
+                  "href": "https://drogalwa.pl/",
+                  "external": true
+                }
+              },
+              {
+                "id": "akademia",
+                "title": "Akademia Przywództwa",
+                "body": "I am part of the Academy team in the communication and DISC area.",
+                "source": {
+                  "label": "akademiaprzywodztwa.pl",
+                  "href": "https://akademiaprzywodztwa.pl/",
+                  "external": true
+                }
               }
             ]
           },
@@ -2404,7 +2787,7 @@
               {
                 "id": "format",
                 "title": "Format",
-                "body": "DISC team training with an optional music-based variant."
+                "body": "Group training for teams and individual sessions with a report, with an optional music-based variant."
               },
               {
                 "id": "audience",
@@ -2414,7 +2797,7 @@
               {
                 "id": "scope",
                 "title": "Scope",
-                "body": "The model, examples, exercises, and a conversation about applying insights to everyday cooperation."
+                "body": "The model, examples, exercises, and a conversation about applying insights. In the report variant, participants fill in a questionnaire in a chosen context and receive an individual report to discuss."
               },
               {
                 "id": "terms",
@@ -2423,6 +2806,29 @@
                 "status": "pending"
               }
             ]
+          },
+          {
+            "id": "articles",
+            "heading": "Insights on communication and DISC",
+            "intro": "Three articles that prepare your team for a conversation about behavioural styles, before we book the training.",
+            "items": [
+              {
+                "id": "insight-disc-in-practice",
+                "href": "/en/insights/disc-in-practice"
+              },
+              {
+                "id": "insight-music-cooperation",
+                "href": "/en/insights/music-cooperation"
+              },
+              {
+                "id": "insight-musical-icebreakers",
+                "href": "/en/insights/musical-icebreakers"
+              }
+            ],
+            "action": {
+              "label": "Go to Insights and inspiration",
+              "href": "/en/insights#articles"
+            }
           }
         ],
         "faq": [
@@ -2450,6 +2856,16 @@
             "id": "disc-price",
             "question": "How do we agree on price?",
             "answer": "Individually, after a short conversation about needs, scope, timing, and logistics."
+          },
+          {
+            "id": "disc-individual",
+            "question": "Do you run individual sessions with a report?",
+            "answer": "Yes. A participant fills in a questionnaire in a chosen context, professional or family, receives a report, and then we meet for a debrief and a plan for further work."
+          },
+          {
+            "id": "disc-certificate",
+            "question": "What prepares you to lead DISC?",
+            "answer": "The MaxiDISC consultant certificate from 2023, after training, a mentoring session, and an exam, plus years of practice in leading groups."
           }
         ]
       }
@@ -2516,7 +2932,7 @@
                 "body": "Cykliczne wydarzenie dla mężczyzn, w którym Dawid łączy Bum Bum Rurki i DISC.",
                 "status": "confirmed",
                 "source": {
-                  "label": "Oficjalna strona",
+                  "label": "drogalwa.pl",
                   "href": "https://drogalwa.pl/",
                   "external": true
                 }
@@ -2636,7 +3052,7 @@
                 "body": "A recurring event for men where Dawid combines boomwhackers and DISC.",
                 "status": "confirmed",
                 "source": {
-                  "label": "Official website",
+                  "label": "drogalwa.pl",
                   "href": "https://drogalwa.pl/",
                   "external": true
                 }

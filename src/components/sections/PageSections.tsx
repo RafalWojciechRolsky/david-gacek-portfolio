@@ -99,7 +99,7 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                         item={contentItem}
                         index={index}
                         objectId={contentItem.id}
-                        linkWholeCard
+                        linkWholeCard={Boolean(contentItem.href)}
                         statusLabel={
                           contentItem.status === "preparing" ||
                           contentItem.status === "unavailable"
