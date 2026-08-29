@@ -29,6 +29,7 @@
       "corporateEvents": "Firmy i eventy",
       "disc": "DISC i komunikacja",
       "insights": "Wiedza i inspiracje",
+      "projects": "Realizacje",
       "contact": "Kontakt",
       "callShort": "Zadzwoń",
       "menu": "Menu",
@@ -109,7 +110,9 @@
       "authorHeading": "O autorze",
       "authorBio": "Dawid Gacek pracuje z Bum Bum Rurkami od 2010 roku, szkoli nauczycieli, prowadzi warsztaty dla dzieci, integracje firmowe i szkolenia DISC dla zespołów.",
       "sourcePrefix": "Materiał powstał w oparciu o",
-      "relatedHeading": "Powiązane materiały"
+      "relatedHeading": "Powiązane materiały",
+      "categoryNavAria": "Filtr kategorii Wiedzy",
+      "allCategories": "Wszystkie"
     },
     "status": {
       "confirmed": "Potwierdzone",
@@ -174,6 +177,7 @@
       "corporateEvents": "Corporate events",
       "disc": "DISC and communication",
       "insights": "Insights and inspiration",
+      "projects": "Projects",
       "contact": "Contact",
       "callShort": "Call",
       "menu": "Menu",
@@ -254,7 +258,9 @@
       "authorHeading": "About the author",
       "authorBio": "Dawid Gacek has worked with boomwhackers since 2010, training teachers, leading children's workshops, corporate integrations, and DISC training for teams.",
       "sourcePrefix": "This material is based on",
-      "relatedHeading": "Related articles"
+      "relatedHeading": "Related articles",
+      "categoryNavAria": "Insights category filter",
+      "allCategories": "All"
     },
     "status": {
       "confirmed": "Confirmed",

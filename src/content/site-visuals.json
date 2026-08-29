@@ -313,13 +313,13 @@
     "toneBySection": {
       "pl": {
         "szybki-start": "white",
-        "kategorie": "white",
+        "kategorie": "paper-deep",
         "artykuly": "ink",
         "materialy": "white"
       },
       "en": {
         "quick-start": "white",
-        "categories": "white",
+        "categories": "paper-deep",
         "articles": "ink",
         "resources": "white"
       }

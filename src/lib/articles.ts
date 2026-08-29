@@ -1,5 +1,10 @@
 import articleData from "@/content/articles.json";
-import type { ArticleDetail, ArticleItem, Locale } from "@/lib/types";
+import type {
+  ArticleDetail,
+  ArticleItem,
+  Locale,
+  PageData,
+} from "@/lib/types";
 
 interface ArticleDocument {
   /** Artykuły pogrupowane według lokalizacji. */
@@ -7,6 +12,9 @@ interface ArticleDocument {
 }
 
 const typedArticleData = articleData as ArticleDocument;
+
+/** Sekcje huba Wiedzy podlegające filtrowaniu kategorii. */
+const INSIGHTS_SECTION_IDS = new Set(["artykuly", "articles"]);
 
 /**
  * Zwraca artykuł po zlokalizowanym slugu.
@@ -25,6 +33,57 @@ export function getArticle(
  */
 export function getArticles(locale: Locale): ArticleDetail[] {
   return typedArticleData.articles[locale];
+}
+
+/**
+ * Zwraca unikalne kategorie artykułów w kolejności występowania.
+ */
+export function getArticleCategories(
+  locale: Locale,
+): Array<{ id: string; label: string }> {
+  const categories: Array<{ id: string; label: string }> = [];
+  for (const article of typedArticleData.articles[locale]) {
+    if (!categories.some((category) => category.id === article.category.id)) {
+      categories.push({
+        id: article.category.id,
+        label: article.category.label,
+      });
+    }
+  }
+  return categories;
+}
+
+/**
+ * Filtruje sekcję artykułów huba Wiedzy po kategorii, pozostawiając resztę strony bez zmian.
+ * Nieznana kategoria pokazuje pełną listę, więc błędny adres nie tworzy pustej strony.
+ */
+export function filterInsightsByCategory(
+  page: PageData,
+  category?: string,
+): PageData {
+  const requested = category?.trim();
+  if (!requested) return page;
+  const articles = getArticles(page.locale);
+  if (!articles.some((article) => article.category.id === requested)) {
+    return page;
+  }
+  const selected = articles.filter(
+    (article) => article.category.id === requested,
+  );
+  return {
+    ...page,
+    sections: page.sections.map((section) =>
+      INSIGHTS_SECTION_IDS.has(section.id)
+        ? {
+            ...section,
+            items: selected.map((article) => ({
+              id: `insight-${article.id}`,
+              href: article.href ?? "",
+            })),
+          }
+        : section,
+    ),
+  };
 }
 
 /**

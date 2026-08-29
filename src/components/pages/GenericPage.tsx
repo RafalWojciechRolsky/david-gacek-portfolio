@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageHero } from "@/components/sections/PageHero";
 import { PageSections } from "@/components/sections/PageSections";
@@ -16,6 +18,8 @@ interface GenericPageProps {
   pageKey: Exclude<PageKey, "home" | "materials">;
   /** Lokalizacja strony. */
   locale: Locale;
+  /** Opcjonalny filtr osadzany wewnątrz sekcji biblioteki artykułów. */
+  articleLibraryNav?: ReactNode;
 }
 
 const VIDEO_AFTER_SECTION: Partial<
@@ -38,7 +42,12 @@ const VIDEO_AFTER_SECTION: Partial<
 /**
  * Renderuje wspólny szkielet podstron editorialowych z zachowaniem kolejności treści.
  */
-export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
+export function GenericPage({
+  page,
+  pageKey,
+  locale,
+  articleLibraryNav,
+}: GenericPageProps) {
   const messages = getMessages(locale);
   const visual = getPageVisual(pageKey, locale);
   const hasVideo =
@@ -68,12 +77,22 @@ export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
         ctaLabel={page.cta?.label ?? page.title}
         locale={locale}
       />
-      <PageSections sections={sectionsBeforeVideo} locale={locale} visual={visual} />
+      <PageSections
+        sections={sectionsBeforeVideo}
+        locale={locale}
+        visual={visual}
+        articleLibraryNav={articleLibraryNav}
+      />
       {hasVideo ? (
         <VideoSection locale={locale} video={video} signal={visual.signal} />
       ) : null}
       {sectionsAfterVideo.length ? (
-        <PageSections sections={sectionsAfterVideo} locale={locale} visual={visual} />
+        <PageSections
+          sections={sectionsAfterVideo}
+          locale={locale}
+          visual={visual}
+          articleLibraryNav={articleLibraryNav}
+        />
       ) : null}
       <section
         className={`faq-section section-rule page-section-signal--${visual.signal}`}

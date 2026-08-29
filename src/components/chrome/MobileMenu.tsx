@@ -157,6 +157,13 @@ export function MobileMenu({
           {messages.header.insights}
         </a>
         <a
+          href={pathFor("projects", locale)}
+          aria-current={currentPage === "projects" ? "page" : undefined}
+          onClick={closeMenu}
+        >
+          {messages.header.projects}
+        </a>
+        <a
           href={pathFor("contact", locale)}
           aria-current={currentPage === "contact" ? "page" : undefined}
           onClick={closeMenu}

@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { siteConfig } from "@/lib/site-config";
 import { getStatusLabel } from "@/lib/content-labels";
 import { articleToCardItem, getArticle, getArticleById } from "@/lib/articles";
@@ -18,12 +20,19 @@ interface PageSectionsProps {
   locale: Locale;
   /** Konfiguracja wizualnego rytmu podstrony. */
   visual: PageVisual;
+  /** Filtr należący do sekcji biblioteki artykułów. */
+  articleLibraryNav?: ReactNode;
 }
 
 /**
  * Renderuje generyczne sekcje stron bez uzależniania UI od źródła danych.
  */
-export function PageSections({ sections, locale, visual }: PageSectionsProps) {
+export function PageSections({
+  sections,
+  locale,
+  visual,
+  articleLibraryNav,
+}: PageSectionsProps) {
   return (
     <>
       {sections.map((pageSection) => {
@@ -56,6 +65,7 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                 headingId={`${pageSection.id}-heading`}
                 signal={visual.signal}
               />
+              {isArticleLibrary ? articleLibraryNav : null}
               {isContactChannels ? (
                 <ContactChannels
                   locale={locale}

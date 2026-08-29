@@ -2106,6 +2106,43 @@ img {
   margin-top: 28px;
 }
 
+/* Filtr jest kontrolą biblioteki artykułów, dlatego pozostaje wewnątrz jej
+   ciemnej powierzchni zamiast tworzyć osobny pas między sekcjami. */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 26px;
+  margin-top: 30px;
+  padding-block: 16px;
+  border-top: 1px solid var(--on-dark-border-soft);
+  border-bottom: 1px solid var(--on-dark-border-soft);
+}
+
+.category-nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--page-on-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.category-nav a:hover,
+.category-nav a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+.category-nav a[aria-current="true"] {
+  color: var(--surface-white);
+  text-decoration-thickness: 2px;
+}
+
+.category-nav + .content-grid {
+  margin-top: 34px;
+}
+
 .resource-item {
   min-height: 210px;
 }
@@ -3608,6 +3645,34 @@ img {
 
   .content-grid--editorial .card-grid__item:last-child .content-card {
     border-bottom: 0;
+  }
+
+  /* Na mobile wyróżnione karty biblioteki zlewają się z sekcją, zamiast
+     tworzyć osobny papierowy blok, który na wąskim ekranie wygląda obco. */
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured {
+    background: transparent;
+    border-color: var(--on-dark-border-soft);
+  }
+
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured h3,
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured p,
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured .card-meta,
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured .card-status {
+    color: var(--on-dark-copy);
+  }
+
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured .card-number,
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured .card-label,
+  .content-section.content-section--ink.page-section--insights
+    .content-card--featured .card-action {
+    color: var(--page-on-dark);
   }
 
   .knowledge-header .action-link {

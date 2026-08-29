@@ -1019,6 +1019,10 @@
             "id": "transfer",
             "heading": "Co zostaje po szkoleniu",
             "intro": "Szkolenie nie kończy się w chwili wyjścia z sali. Uczestnicy dostają materiały, do których mogą wrócić przy planowaniu kolejnych zajęć.",
+            "action": {
+              "label": "Strona z materiałami po szkoleniu",
+              "href": "/materialy"
+            },
             "items": [
               {
                 "id": "outline",
@@ -1078,6 +1082,10 @@
             "id": "materialy-dla-dyrekcji",
             "heading": "Materiały dla dyrekcji",
             "intro": "Przekaż dyrekcji jeden kompletny adres. Znajdzie tu sens szkolenia, program, materiały, dowody i warunki do ustalenia.",
+            "action": {
+              "label": "Kompletna strona dla dyrekcji",
+              "href": "/materialy"
+            },
             "items": [
               {
                 "id": "offer-pdf",
@@ -1307,6 +1315,10 @@
             "id": "follow-up",
             "heading": "What remains after training",
             "intro": "The training does not end when you leave the room. Participants receive materials they can return to when planning future activities.",
+            "action": {
+              "label": "Post-training materials page",
+              "href": "/en/materials"
+            },
             "items": [
               {
                 "id": "outline",
@@ -1366,6 +1378,10 @@
             "id": "leadership-materials",
             "heading": "Materials for school leadership",
             "intro": "Send your school leadership one complete link. It brings together the training purpose, programme, materials, evidence, and practical details.",
+            "action": {
+              "label": "The complete leadership page",
+              "href": "/en/materials"
+            },
             "items": [
               {
                 "id": "offer-pdf",
@@ -2630,6 +2646,14 @@
                 "href": "https://akademiaprzywodztwa.pl/",
                 "actionLabel": "akademiaprzywodztwa.pl",
                 "kind": "navigation"
+              },
+              {
+                "id": "case-studies",
+                "title": "Potwierdzone realizacje",
+                "body": "Realizacje z kontekstem, rolą i publicznym źródłem, w tym wydarzenia, gdzie DISC spotyka się z muzyką.",
+                "href": "/realizacje",
+                "actionLabel": "Zobacz realizacje",
+                "kind": "navigation"
               }
             ]
           },
@@ -2915,6 +2939,14 @@
                 "body": "I am part of the Academy team in the communication and DISC area.",
                 "href": "https://akademiaprzywodztwa.pl/",
                 "actionLabel": "akademiaprzywodztwa.pl",
+                "kind": "navigation"
+              },
+              {
+                "id": "case-studies",
+                "title": "Confirmed projects",
+                "body": "Realizations with context, role, and public source, including events where DISC and music met in practice.",
+                "href": "/en/projects",
+                "actionLabel": "See projects",
                 "kind": "navigation"
               }
             ]

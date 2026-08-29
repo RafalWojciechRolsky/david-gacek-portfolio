@@ -152,6 +152,9 @@ export function SiteHeader({
           <a href={pathFor("profile", locale)} aria-current={currentPage === "profile" ? "page" : undefined}>
             {messages.header.dawid}
           </a>
+          <a href={pathFor("projects", locale)} aria-current={currentPage === "projects" ? "page" : undefined}>
+            {messages.header.projects}
+          </a>
           <a href={pathFor("contact", locale)} aria-current={currentPage === "contact" ? "page" : undefined}>
             {messages.header.contact}
           </a>
