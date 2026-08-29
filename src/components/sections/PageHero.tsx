@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import { siteConfig } from "@/lib/site-config";
-import type { PageData, PageVisual } from "@/lib/types";
+import { preferredSourceUrl, siteConfig } from "@/lib/site-config";
+import type { Locale, PageData, PageVisual } from "@/lib/types";
+import { getMessages } from "@/messages/ui";
 
 import { ActionLink } from "@/components/ui/ActionLink";
 
@@ -14,14 +15,17 @@ interface PageHeroProps {
   proof?: string;
   /** Etykieta CTA. */
   ctaLabel: string;
+  /** Lokalizacja treści. */
+  locale: Locale;
 }
 
 /**
  * Renderuje hero podstrony z jednym H1, rolą, dowodem i akcją.
  */
-export function PageHero({ page, visual, proof, ctaLabel }: PageHeroProps) {
+export function PageHero({ page, visual, proof, ctaLabel, locale }: PageHeroProps) {
   const heroImage = visual.heroImage ?? page.heroImage;
   const heroClassName = `page-hero page-hero--${visual.variant} page-hero--${visual.signal}`;
+  const messages = getMessages(locale);
 
   return (
     <section className={heroClassName} aria-labelledby="page-hero-heading">
@@ -40,6 +44,15 @@ export function PageHero({ page, visual, proof, ctaLabel }: PageHeroProps) {
               {ctaLabel}
             </ActionLink>
           ) : null}
+          <a
+            className="hero-preferred-source"
+            href={preferredSourceUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-object-id="page-hero-preferred-source"
+          >
+            {messages.page.preferredSourceCta}
+          </a>
         </div>
         {heroImage ? (
           <div className="page-hero-media">

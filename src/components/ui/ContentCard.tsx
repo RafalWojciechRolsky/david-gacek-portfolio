@@ -30,40 +30,54 @@ export function ContentCard({
   const cardClassName = `content-card ${
     linkWholeCard && item.href ? "content-card--link" : ""
   }`.trim();
+  const hasTop = Boolean(cardNumber || item.type || item.label);
+  const hasFooter = Boolean(
+    item.meta ||
+      item.readTime ||
+      statusLabel ||
+      (!linkWholeCard && item.source) ||
+      (linkWholeCard && item.href) ||
+      (!linkWholeCard && item.href)
+  );
+
   const cardContent = (
     <>
-      {cardNumber ? <span className="card-number">{cardNumber}</span> : null}
-      {item.type ?? item.label ? (
-        <span className="card-label">{item.type ?? item.label}</span>
-      ) : null}
+      <div className={`card-top ${hasTop ? "" : "card-top--empty"}`}>
+        {cardNumber ? <span className="card-number">{cardNumber}</span> : null}
+        {item.type ?? item.label ? (
+          <span className="card-label">{item.type ?? item.label}</span>
+        ) : null}
+      </div>
       <h3>{item.title}</h3>
       <p>{item.body}</p>
-      {item.meta ?? item.readTime ? (
-        <span className="card-meta">{item.meta ?? item.readTime}</span>
-      ) : null}
-      {statusLabel ? <span className="card-status">{statusLabel}</span> : null}
-      {!linkWholeCard && item.source ? (
-        <ActionLink
-          href={item.source.href}
-          variant="source"
-          ariaLabel={item.source.ariaLabel}
-          download={item.source.href.endsWith(".pdf")}
-          withArrow
-        >
-          {item.source.label}
-        </ActionLink>
-      ) : null}
-      {linkWholeCard && item.href ? (
-        <span className="card-action">
-          {item.actionLabel ?? item.title}
-          <Arrow />
-        </span>
-      ) : null}
-      {!linkWholeCard && item.href ? (
-        <ActionLink href={item.href} variant="text" withArrow>
-          {item.actionLabel ?? item.title}
-        </ActionLink>
-      ) : null}
+      <div className={`card-footer ${hasFooter ? "" : "card-footer--empty"}`}>
+        {item.meta ?? item.readTime ? (
+          <span className="card-meta">{item.meta ?? item.readTime}</span>
+        ) : null}
+        {statusLabel ? <span className="card-status">{statusLabel}</span> : null}
+        {!linkWholeCard && item.source ? (
+          <ActionLink
+            href={item.source.href}
+            variant="source"
+            ariaLabel={item.source.ariaLabel}
+            download={item.source.href.endsWith(".pdf")}
+            withArrow
+          >
+            {item.source.label}
+          </ActionLink>
+        ) : null}
+        {linkWholeCard && item.href ? (
+          <span className="card-action">
+            {item.actionLabel ?? item.title}
+            <Arrow />
+          </span>
+        ) : null}
+        {!linkWholeCard && item.href ? (
+          <ActionLink href={item.href} variant="text" withArrow>
+            {item.actionLabel ?? item.title}
+          </ActionLink>
+        ) : null}
+      </div>
     </>
   );
 

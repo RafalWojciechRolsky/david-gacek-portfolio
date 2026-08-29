@@ -9,6 +9,17 @@ function envOrFallback(value: string | undefined, fallback: string): string {
 }
 
 /**
+ * Buduje deeplink Google Preferred Sources z publicznego adresu serwisu.
+ * Gdy siteUrl jest pusty (etap developmentu), prowadzi do ogólnej strony preferencji.
+ */
+export function preferredSourceUrl(): string {
+  const url = siteConfig.siteUrl;
+  if (!url) return "https://www.google.com/preferences/source";
+  const domain = url.replace(/^https?:\/\//, "").replace(/\/.*$/, "");
+  return `https://www.google.com/preferences/source?q=${domain}`;
+}
+
+/**
  * Udostępnia centralną konfigurację kontaktu, NAP i linków zewnętrznych.
  */
 export const siteConfig: SiteConfig = {

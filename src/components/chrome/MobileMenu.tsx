@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 
 import { pathFor } from "@/lib/routes";
 import type { Locale, PageKey } from "@/lib/types";
+import { preferredSourceUrl } from "@/lib/site-config";
 import { getMessages } from "@/messages/ui";
 
 import { LanguageSwitcher } from "@/components/chrome/LanguageSwitcher";
@@ -172,6 +173,14 @@ export function MobileMenu({
           </a>
           <a href={whatsappHref} onClick={closeMenu}>
             {messages.header.whatsapp}
+          </a>
+          <a
+            href={preferredSourceUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+          >
+            {messages.header.preferredSource}
           </a>
         </div>
       </nav>

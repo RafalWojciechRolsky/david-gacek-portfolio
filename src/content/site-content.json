@@ -987,6 +987,29 @@
             ]
           },
           {
+            "id": "artykuly",
+            "heading": "Wiedza dla nauczycieli",
+            "intro": "Trzy artykuły, które porządkują temat przed szkoleniem i pomagają wrócić do niego po spotkaniu.",
+            "items": [
+              {
+                "id": "insight-what-are-boomwhackers",
+                "href": "/wiedza/bum-bum-rurki-czym-sa"
+              },
+              {
+                "id": "insight-boomwhackers-games",
+                "href": "/wiedza/bum-bum-rurki-zabawy"
+              },
+              {
+                "id": "insight-group-attention",
+                "href": "/wiedza/uwaga-grupy"
+              }
+            ],
+            "action": {
+              "label": "Przejdź do Wiedzy i inspiracji",
+              "href": "/wiedza#artykuly"
+            }
+          },
+          {
             "id": "transfer",
             "heading": "Co zostaje po szkoleniu",
             "intro": "Szkolenie nie kończy się w chwili wyjścia z sali. Uczestnicy dostają materiały, do których mogą wrócić przy planowaniu kolejnych zajęć.",
@@ -1010,29 +1033,6 @@
                 "status": "preparing"
               }
             ]
-          },
-          {
-            "id": "artykuly",
-            "heading": "Wiedza dla nauczycieli",
-            "intro": "Trzy artykuły, które porządkują temat przed szkoleniem i pomagają wrócić do niego po spotkaniu.",
-            "items": [
-              {
-                "id": "insight-what-are-boomwhackers",
-                "href": "/wiedza/bum-bum-rurki-czym-sa"
-              },
-              {
-                "id": "insight-boomwhackers-games",
-                "href": "/wiedza/bum-bum-rurki-zabawy"
-              },
-              {
-                "id": "insight-group-attention",
-                "href": "/wiedza/uwaga-grupy"
-              }
-            ],
-            "action": {
-              "label": "Przejdź do Wiedzy i inspiracji",
-              "href": "/wiedza#artykuly"
-            }
           },
           {
             "id": "oferta",
@@ -1252,6 +1252,29 @@
             ]
           },
           {
+            "id": "articles",
+            "heading": "Insights for teachers",
+            "intro": "Three articles that organise the topic before the training and help you return to it afterwards.",
+            "items": [
+              {
+                "id": "insight-what-are-boomwhackers",
+                "href": "/en/insights/what-are-boomwhackers"
+              },
+              {
+                "id": "insight-boomwhackers-games",
+                "href": "/en/insights/boomwhackers-games"
+              },
+              {
+                "id": "insight-group-attention",
+                "href": "/en/insights/group-attention"
+              }
+            ],
+            "action": {
+              "label": "Go to Insights and inspiration",
+              "href": "/en/insights#articles"
+            }
+          },
+          {
             "id": "follow-up",
             "heading": "What remains after training",
             "intro": "The training does not end when you leave the room. Participants receive materials they can return to when planning future activities.",
@@ -1275,29 +1298,6 @@
                 "status": "preparing"
               }
             ]
-          },
-          {
-            "id": "articles",
-            "heading": "Insights for teachers",
-            "intro": "Three articles that organise the topic before the training and help you return to it afterwards.",
-            "items": [
-              {
-                "id": "insight-what-are-boomwhackers",
-                "href": "/en/insights/what-are-boomwhackers"
-              },
-              {
-                "id": "insight-boomwhackers-games",
-                "href": "/en/insights/boomwhackers-games"
-              },
-              {
-                "id": "insight-group-attention",
-                "href": "/en/insights/group-attention"
-              }
-            ],
-            "action": {
-              "label": "Go to Insights and inspiration",
-              "href": "/en/insights#articles"
-            }
           },
           {
             "id": "offer",
@@ -1392,7 +1392,7 @@
         "title": "Team building dla firm",
         "eyebrow": "Muzyka, ruch i współpraca na konferencjach, eventach i spotkaniach zespołów.",
         "intro": "Prowadzę muzyczne aktywności, które uruchamiają grupę i dają uczestnikom wspólne doświadczenie, nie tylko kolejną atrakcję.",
-        "proof": "Pracuję z ludźmi przez muzykę, ruch i współpracę od 2010 roku.",
+        "proof": "Pracuję z ludźmi poprzez muzykę, ruch i współpracę.",
         "cta": {
           "label": "Sprawdź formaty",
           "href": "#formaty"
@@ -1613,7 +1613,7 @@
         "title": "Team building for companies",
         "eyebrow": "Music, movement, and cooperation for conferences, events, and team sessions.",
         "intro": "I lead musical activities that activate a group and create a shared experience, not just another attraction.",
-        "proof": "I have worked with people through music, movement, and cooperation since 2010.",
+        "proof": "I work with people through music, movement, and cooperation.",
         "cta": {
           "label": "Explore the formats",
           "href": "#formats"
@@ -1833,9 +1833,9 @@
           "title": "Warsztaty muzyczne dla dzieci | Dawid Gacek",
           "description": "Warsztaty muzyczne dla dzieci z Bum Bum Rurkami. Sprawdź grupy wiekowe, program, zasady, doświadczenie i warunki organizacji spotkania dla Twojej grupy."
         },
-        "title": "Warsztaty dla dzieci z Bum Bum Rurkami",
+        "title": "Zajęcia z Bum Bum Rurkami",
         "eyebrow": "Rytm, ruch i wspólne granie dopasowane do wieku oraz możliwości grupy.",
-        "intro": "Prowadzę warsztaty muzyczne, w których dzieci mogą słuchać siebie nawzajem, działać razem i odkrywać muzykę przez ruch oraz zabawę.",
+        "intro": "Prowadzę warsztaty muzyczne, które uczą dzieci współpracy i odkrywania muzyki przez zabawę.",
         "proof": "Pracuję z Bum Bum Rurkami od 2010 roku.",
         "cta": {
           "label": "Dobierz warsztat do wieku",
@@ -2085,9 +2085,9 @@
           "title": "Music workshops for children | Dawid Gacek",
           "description": "Music workshops for children with boomwhackers. Explore age groups, programme, facilitation, experience, and practical details for organizers in Poland."
         },
-        "title": "Workshops for children with boomwhackers",
+        "title": "Boomwhackers activities",
         "eyebrow": "Rhythm, movement, and shared playing matched to the age and abilities of the group.",
-        "intro": "I lead workshops where children can listen to one another, act together, and discover music through movement and play.",
+        "intro": "I lead music workshops that teach children cooperation and discovering music through play.",
         "proof": "I have worked with boomwhackers since 2010.",
         "cta": {
           "label": "Choose a workshop by age",
@@ -2339,7 +2339,7 @@
           "title": "Szkolenie DISC dla zespołów | Dawid Gacek",
           "description": "Szkolenie DISC dla zespołów. Zobacz, czym jest model stylów zachowania, jak wspiera komunikację i jak wygląda bezpieczna praca z Dawidem przed decyzją."
         },
-        "title": "Szkolenie DISC dla zespołów",
+        "title": "MaxiDISC dla zespołów",
         "eyebrow": "Model stylów zachowania i komunikacji w pracy zespołu.",
         "intro": "Pomagam zespołom zobaczyć, jak działają, komunikują się i reagują na siebie w konkretnych sytuacjach.",
         "proof": "DISC jako model, nie test osobowości.",
@@ -2608,7 +2608,7 @@
           "title": "DISC Team Training | Dawid Gacek",
           "description": "DISC team training for stronger communication. Learn what the behavioural styles model is, how it supports teams, and how Dawid works with groups in practice."
         },
-        "title": "DISC team training",
+        "title": "MaxiDISC for teams",
         "eyebrow": "A model of behavioural styles and communication for team work.",
         "intro": "I help teams see how they act, communicate, and respond to one another in concrete situations.",
         "proof": "DISC as a model, not a personality test.",

@@ -66,6 +66,7 @@ export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
         visual={visual}
         proof={page.proof}
         ctaLabel={page.cta?.label ?? page.title}
+        locale={locale}
       />
       <PageSections sections={sectionsBeforeVideo} locale={locale} visual={visual} />
       {hasVideo ? (

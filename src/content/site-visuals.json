@@ -140,7 +140,7 @@
         "dowody": "ink",
         "oferta": "white",
         "realizacje": "coral",
-        "artykuly": "paper"
+        "artykuly": "ink"
       },
       "en": {
         "triage": "paper",
@@ -149,7 +149,7 @@
         "evidence": "ink",
         "offer": "white",
         "projects": "coral",
-        "articles": "paper"
+        "articles": "ink"
       }
     }
   },
@@ -197,7 +197,7 @@
         "organizacja": "ochre",
         "dowody": "white",
         "warunki": "paper",
-        "artykuly": "white"
+        "artykuly": "paper"
       },
       "en": {
         "age": "paper",
@@ -207,7 +207,7 @@
         "organization": "ochre",
         "evidence": "white",
         "terms": "paper",
-        "articles": "white"
+        "articles": "paper"
       }
     }
   },

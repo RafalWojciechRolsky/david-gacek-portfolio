@@ -10,7 +10,7 @@ import { DisclosureFaq } from "@/components/ui/DisclosureFaq";
 import { EvidenceBlock } from "@/components/ui/EvidenceBlock";
 import { MediaFacade } from "@/components/ui/MediaFacade";
 import { pathWithAnchor } from "@/lib/routes";
-import { siteConfig } from "@/lib/site-config";
+import { preferredSourceUrl, siteConfig } from "@/lib/site-config";
 import type { HomepageData } from "@/lib/types";
 import { getMessages } from "@/messages/ui";
 
@@ -61,6 +61,15 @@ export function Homepage({ page }: HomepageProps) {
               {page.cta.label}
             </ActionLink>
           ) : null}
+          <a
+            className="hero-preferred-source"
+            href={preferredSourceUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-object-id="homepage-hero-preferred-source"
+          >
+            {messages.homepage.preferredSourceCta}
+          </a>
           <p className="hero-note">{messages.homepage.heroNote}</p>
         </div>
       </section>
@@ -154,15 +163,19 @@ export function Homepage({ page }: HomepageProps) {
                 eventName="select_invitation_context"
                 parameters={{ context: context.id, location: "homepage" }}
               >
-                <span className="card-number">
-                  {String(index + 1).padStart(2, "0")} / {context.label}
-                </span>
+                <div className="card-top">
+                  <span className="card-number">
+                    {String(index + 1).padStart(2, "0")} / {context.label}
+                  </span>
+                </div>
                 <h3>{context.title}</h3>
                 <p>{context.body}</p>
-                <span className="card-action">
-                  {context.actionLabel}
-                  <Arrow />
-                </span>
+                <div className="card-footer">
+                  <span className="card-action">
+                    {context.actionLabel}
+                    <Arrow />
+                  </span>
+                </div>
               </TrackedLink>
             ))}
           </div>
