@@ -26,20 +26,39 @@ function faqSchema(items: FaqItem[]): JsonLdObject {
 }
 
 /**
+ * Zwraca adres kanoniczny encji, zachowując względny adres lokalnie bez domeny.
+ */
+function canonicalUrl(path: string): string {
+  return siteConfig.siteUrl ? new URL(path, siteConfig.siteUrl).toString() : path;
+}
+
+/**
+ * Zwraca trwały identyfikator osoby, by grafy każdej podstrony wskazywały tę samą encję.
+ */
+export function personJsonLdId(): string {
+  return `${canonicalUrl("/")}#person`;
+}
+
+/**
+ * Zwraca trwały identyfikator witryny, by strony i artykuły tworzyły jeden graf wiedzy.
+ */
+export function websiteJsonLdId(): string {
+  return `${canonicalUrl("/")}#website`;
+}
+
+/**
  * Buduje dane Person i WebSite wspólne dla wszystkich stron.
  */
-function identitySchema(locale: Locale, pageKey: PageKey): JsonLdObject[] {
+export function buildIdentityJsonLd(locale: Locale): JsonLdObject[] {
   const messages = getMessages(locale);
-  const pagePath = pathFor(pageKey, locale);
-  const pageUrl = siteConfig.siteUrl
-    ? new URL(pagePath, siteConfig.siteUrl).toString()
-    : pagePath;
+  const siteUrl = canonicalUrl("/");
 
   return [
     {
       "@type": "Person",
+      "@id": personJsonLdId(),
       name: messages.brandName,
-      url: pageUrl,
+      url: siteUrl,
       jobTitle: messages.jobTitle,
       knowsAbout: [
         "Bum Bum Rurki",
@@ -57,44 +76,56 @@ function identitySchema(locale: Locale, pageKey: PageKey): JsonLdObject[] {
     },
     {
       "@type": "WebSite",
+      "@id": websiteJsonLdId(),
       name: messages.brandName,
-      url: siteConfig.siteUrl || pagePath,
-      inLanguage: locale,
+      url: siteUrl,
+      inLanguage: ["pl", "en"],
     },
   ];
 }
 
 /**
- * Buduje BreadcrumbList zgodny z lokalizowaną ścieżką.
+ * Buduje BreadcrumbList z lokalizowaną etykietą strony głównej.
+ * Strona główna pomija drugą pozycję, żeby nie duplikować tego samego adresu.
  */
 function breadcrumbSchema(
-  page: PageData,
+  name: string,
   locale: Locale,
-  pageKey: PageKey,
+  pagePath: string,
+  includeCurrent = true,
 ): JsonLdObject {
   const homeLabel = getMessages(locale).seo.home;
+  const homePath = pathFor("home", locale);
+  const homeItem: JsonLdObject = {
+    "@type": "ListItem",
+    position: 1,
+    name: homeLabel,
+    item: canonicalUrl(homePath),
+  };
+  const currentItem: JsonLdObject[] = includeCurrent
+    ? [
+        {
+          "@type": "ListItem",
+          position: 2,
+          name,
+          item: canonicalUrl(pagePath),
+        },
+      ]
+    : [];
+
   return {
     "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: homeLabel,
-        item: siteConfig.siteUrl
-          ? new URL(pathFor("home", locale), siteConfig.siteUrl).toString()
-          : pathFor("home", locale),
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: page.title,
-        item: siteConfig.siteUrl
-          ? new URL(pathFor(pageKey, locale), siteConfig.siteUrl).toString()
-          : pathFor(pageKey, locale),
-      },
-    ],
+    itemListElement: [homeItem, ...currentItem],
   };
 }
+
+/**
+ * Kompletny graf JSON-LD z jednym kontekstem schema.org.
+ */
+export type JsonLdGraph = {
+  "@context": string;
+  "@graph": JsonLdObject[];
+};
 
 /**
  * Zwraca dane strukturalne strony zgodne z widoczną treścią.
@@ -103,8 +134,7 @@ export function buildJsonLd(
   page: PageData,
   locale: Locale,
   pageKey: PageKey,
-): { "@context": string; "@graph": JsonLdObject[] } {
-  const messages = getMessages(locale);
+): JsonLdGraph {
   const pageType =
     pageKey === "profile"
       ? "ProfilePage"
@@ -116,21 +146,21 @@ export function buildJsonLd(
             pageKey === "disc"
           ? "Service"
           : "WebPage";
+  const pagePath = pathFor(pageKey, locale);
 
   const pageSchema: JsonLdObject = {
     "@type": pageType,
+    "@id": canonicalUrl(pagePath),
     name: page.title,
     description: page.seo.description,
     inLanguage: locale,
-    url: siteConfig.siteUrl
-      ? new URL(pathFor(pageKey, locale), siteConfig.siteUrl).toString()
-      : pathFor(pageKey, locale),
+    url: canonicalUrl(pagePath),
+    isPartOf: { "@id": websiteJsonLdId() },
   };
 
   if (pageType === "Service") {
     pageSchema.provider = {
-      "@type": "Person",
-      name: messages.brandName,
+      "@id": personJsonLdId(),
     };
     pageSchema.serviceType = page.title;
     pageSchema.areaServed = "PL";
@@ -139,10 +169,38 @@ export function buildJsonLd(
   return {
     "@context": "https://schema.org",
     "@graph": [
-      ...identitySchema(locale, pageKey),
+      ...buildIdentityJsonLd(locale),
       pageSchema,
-      breadcrumbSchema(page, locale, pageKey),
+      breadcrumbSchema(page.title, locale, pagePath, pageKey !== "home"),
       faqSchema(page.faq),
+    ],
+  };
+}
+
+/**
+ * Buduje dane strukturalne strony technicznej lub prawnej bez FAQPage,
+ * bo pytania FAQ nie są widoczne na tych stronach.
+ */
+export function buildUtilityJsonLd(
+  title: string,
+  description: string,
+  locale: Locale,
+  pagePath: string,
+): JsonLdGraph {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      ...buildIdentityJsonLd(locale),
+      {
+        "@type": "WebPage",
+        "@id": canonicalUrl(pagePath),
+        name: title,
+        description,
+        inLanguage: locale,
+        url: canonicalUrl(pagePath),
+        isPartOf: { "@id": websiteJsonLdId() },
+      },
+      breadcrumbSchema(title, locale, pagePath),
     ],
   };
 }

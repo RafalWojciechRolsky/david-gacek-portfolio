@@ -2959,11 +2959,45 @@ img {
   gap: 24px;
 }
 
-.article-category {
+.article-context {
   grid-column: 1 / span 3;
   align-self: start;
+}
+
+.article-breadcrumb {
   padding-top: 10px;
   border-top: 1px solid currentColor;
+  color: var(--article-header-muted);
+}
+
+.article-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-breadcrumb li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.article-breadcrumb li:not(:last-child)::after {
+  content: "/";
+}
+
+.article-breadcrumb a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+
+.article-category {
+  margin-top: 24px;
   color: var(--article-header-muted);
 }
 

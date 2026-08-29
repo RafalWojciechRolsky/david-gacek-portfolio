@@ -3,7 +3,8 @@ import type { ReactNode } from "react";
 import { PageShell } from "@/components/chrome/PageShell";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
-import type { Locale, PageData, PageKey } from "@/lib/types";
+import type { JsonLdGraph } from "@/lib/json-ld";
+import type { Locale, PageKey } from "@/lib/types";
 
 interface UtilityPageProps {
   /** Lokalizacja dokumentu. */
@@ -16,11 +17,8 @@ interface UtilityPageProps {
   intro: string;
   /** Tekst statusu dokumentu. */
   body: string;
-  /** Dane strukturalne strony, gdy strona ma wpis treści. */
-  structuredData?: {
-    page: PageData;
-    pageKey: PageKey;
-  };
+  /** Dane strukturalne zgodne z widoczną treścią strony. */
+  structuredData?: JsonLdGraph;
   /** Opcjonalne akcje ratunkowe pod treścią, np. na stronie 404. */
   children?: ReactNode;
 }
@@ -39,13 +37,7 @@ export function UtilityPage({
 }: UtilityPageProps) {
   return (
     <PageShell locale={locale} currentPage={currentPage}>
-      {structuredData ? (
-        <StructuredData
-          page={structuredData.page}
-          locale={locale}
-          pageKey={structuredData.pageKey}
-        />
-      ) : null}
+      {structuredData ? <StructuredData data={structuredData} /> : null}
       <section className="utility-page">
         <div className="container utility-page-inner">
           <RhythmicMarker />

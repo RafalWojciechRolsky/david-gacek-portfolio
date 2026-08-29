@@ -519,7 +519,7 @@
           {
             "id": "dowody",
             "heading": "Dowody doświadczenia",
-            "intro": "Fakty mają kontekst, datę i status źródła.",
+            "intro": "Fakty mają kontekst, datę i źródło do sprawdzenia.",
             "items": [
               {
                 "id": "profile-proof-4000",
@@ -733,7 +733,7 @@
           {
             "id": "evidence",
             "heading": "Evidence of experience",
-            "intro": "Facts have context, a date, and a source status.",
+            "intro": "Facts have context, a date, and a source you can check.",
             "items": [
               {
                 "id": "profile-proof-4000",
@@ -1483,7 +1483,7 @@
               {
                 "id": "experience",
                 "title": "Doświadczenie bez marketingowego hałasu",
-                "body": "Historyczny GWR z 661 osobami i praca od 2010 roku pokazują skalę, a przy każdym dowodzie podajemy datę i rolę Dawida.",
+                "body": "Historyczny GWR z 661 osobami i praca od 2010 roku pokazują skalę, a przy każdym dowodzie jest data, rola i źródło.",
                 "kind": "information"
               }
             ]
@@ -1625,13 +1625,13 @@
           },
           {
             "id": "realizacje",
-            "heading": "Potwierdzone realizacje",
-            "intro": "Case studies pokazujemy dopiero wtedy, gdy znamy kontekst, rolę i prawa.",
+            "heading": "Dowody do pokazania klientowi",
+            "intro": "Realizacje z kontekstem, datą, rolą Dawida i źródłem, które możesz od razu pokazać swojemu klientowi.",
             "items": [
               {
                 "id": "projects-link",
                 "title": "Zobacz realizacje",
-                "body": "Kolekcja potwierdzonych case studies bez niezweryfikowanej listy marek.",
+                "body": "Rekord GWR 661 osób, Droga Lwa, GLS Polska i Akademia Przywództwa, każdy dowód ze źródłem do sprawdzenia.",
                 "href": "/realizacje",
                 "actionLabel": "Przejdź do realizacji",
                 "kind": "navigation"
@@ -1862,13 +1862,13 @@
           },
           {
             "id": "projects",
-            "heading": "Confirmed projects",
-            "intro": "Case studies appear only when the context, role, and permissions are clear.",
+            "heading": "Proof to show your client",
+            "intro": "Projects with context, a date, Dawid's role, and a source you can show your client right away.",
             "items": [
               {
                 "id": "projects-link",
                 "title": "Explore projects",
-                "body": "A collection of confirmed case studies without an unverified brand list.",
+                "body": "The 661-person GWR record, Droga Lwa, GLS Polska, and Akademia Przywództwa, each with a source to check.",
                 "href": "/en/projects",
                 "actionLabel": "Explore projects",
                 "kind": "navigation"
@@ -3053,120 +3053,90 @@
         "slug": "realizacje",
         "seo": {
           "title": "Realizacje | Dawid Gacek",
-          "description": "Wybrane realizacje Dawida Gacka: kontekst wydarzenia, rola, materiały wizualne i rezultat. Zobacz case studies, które można bezpiecznie przekazać dalej."
+          "description": "Wybrane realizacje Dawida Gacka: kontekst wydarzenia, data, rola i źródło. Dowody, które można bezpiecznie pokazać klientowi."
         },
         "title": "Realizacje Dawida Gacka",
-        "eyebrow": "Potwierdzone case studies z wydarzeń, warsztatów i pracy z grupami.",
-        "intro": "Wybierz realizację, którą możesz pokazać klientowi jako konkretny dowód doświadczenia.",
-        "proof": "Każda publikowana realizacja ma kontekst, rolę Dawida i status źródła.",
+        "eyebrow": "Dowody z wydarzeń, warsztatów i pracy z grupami.",
+        "intro": "Od rekordowego wydarzenia dla 661 osób po cykliczne sceny i pracę z dużymi grupami. Każdy dowód ma publiczne źródło.",
+        "proof": "Rekord 661 osób na jednym wydarzeniu, doświadczenie od 2010 roku.",
         "cta": {
-          "label": "Zobacz realizacje",
+          "label": "Sprawdź dowody",
           "href": "#case-studies"
         },
         "sections": [
           {
-            "id": "kryteria",
-            "heading": "Jak wybrać dobry dowód",
-            "intro": "Publikujemy tylko to, co da się bezpiecznie opisać.",
-            "items": [
-              {
-                "id": "named-context",
-                "title": "Nazwany kontekst",
-                "body": "Wiemy, dla kogo i przy jakiej okazji odbyła się realizacja.",
-                "kind": "information"
-              },
-              {
-                "id": "role",
-                "title": "Rola Dawida",
-                "body": "Opisujemy, co konkretnie prowadził lub tworzył.",
-                "kind": "information"
-              },
-              {
-                "id": "source",
-                "title": "Źródło i prawa",
-                "body": "Materiał ma źródło oraz potwierdzony zakres publikacji.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
             "id": "case-studies",
             "heading": "Wybrane realizacje",
-            "intro": "Potwierdzone przykłady z kontekstem, rolą Dawida i publicznym źródłem. Nie publikujemy wymyślonych klientów.",
+            "intro": "Każdy dowód prowadzi do źródła: materiału z wydarzenia albo oficjalnej strony organizatora.",
             "items": [
               {
                 "id": "gwr-event",
-                "title": "Wydarzenie GWR, 2016",
-                "body": "661 pracowników korporacyjnych, Dawid jako główny dyrygent i autor koncepcji wykonawczej. Historyczny kontekst, nie bieżąca współpraca z P&G.",
+                "label": "Wydarzenie, 2016",
+                "title": "Rekord GWR 661 osób",
+                "body": "Wydarzenie dla P&G Europe Planning Service Centre, 19 kwietnia 2016. Dawid jako główny dyrygent i autor koncepcji wykonawczej.",
                 "status": "confirmed",
                 "href": "https://youtu.be/Z5yKnlzKECg",
-                "actionLabel": "Materiał o rekordzie",
+                "actionLabel": "Materiał z wydarzenia",
                 "kind": "navigation"
               },
               {
                 "id": "droga-lwa",
+                "label": "Wydarzenie cykliczne",
                 "title": "Droga Lwa",
-                "body": "Cykliczne wydarzenie dla mężczyzn, w którym Dawid łączy Bum Bum Rurki i DISC.",
+                "body": "Cykliczne wydarzenie dla mężczyzn, na którym Dawid jako mówca łączy Bum Bum Rurki i DISC.",
                 "status": "confirmed",
                 "href": "https://drogalwa.pl/",
-                "actionLabel": "drogalwa.pl",
+                "actionLabel": "Oficjalna strona Drogi Lwa",
                 "kind": "navigation"
               },
               {
-                "id": "pending-case",
-                "title": "Kolejne realizacje",
-                "body": "Następne karty pojawią się po potwierdzeniu kontekstu, roli i praw.",
-                "status": "preparing",
-                "kind": "information"
+                "id": "gls-polska",
+                "label": "Współpraca organizacyjna",
+                "title": "Global Leadership Summit Polska",
+                "body": "Dawid w zespole organizacyjnym i wśród współorganizatorów summitu, przy wydarzeniach dużej skali.",
+                "status": "confirmed",
+                "href": "https://gls.org.pl/",
+                "actionLabel": "Oficjalna strona GLS Polska",
+                "kind": "navigation"
+              },
+              {
+                "id": "akademia-przywodztwa",
+                "label": "Współpraca merytoryczna",
+                "title": "Akademia Przywództwa",
+                "body": "Dawid w zespole Akademii w obszarze komunikacji i DISC, w pracy z grupami dorosłych.",
+                "status": "confirmed",
+                "href": "https://akademiaprzywodztwa.pl/",
+                "actionLabel": "Oficjalna strona Akademii Przywództwa",
+                "kind": "navigation"
               }
             ]
           },
           {
-            "id": "odsprzedaz",
-            "heading": "Jak wykorzystać realizację w ofercie klienta",
-            "intro": "Wybierz podobny kontekst i pokaż źródło razem z rolą Dawida.",
-            "items": [
-              {
-                "id": "step-one",
-                "title": "Wybierz podobną sytuację",
-                "body": "Dopasuj wydarzenie do potrzeb swojego klienta.",
-                "kind": "information"
-              },
-              {
-                "id": "step-two",
-                "title": "Sprawdź kontekst",
-                "body": "Nie wycinaj faktu z daty, roli ani statusu źródła.",
-                "kind": "information"
-              },
-              {
-                "id": "step-three",
-                "title": "Wróć do oferty",
-                "body": "Przejdź do właściwego formatu i porozmawiaj o wydarzeniu.",
-                "kind": "information"
-              }
-            ]
+            "id": "oferta",
+            "heading": "Te zasady pracują też na Twoim wydarzeniu",
+            "intro": "Wspólny rytm, jasne zasady i praca z całą salą, które widać w realizacjach, budują muzyczne integracje dla firm i wydarzenia specjalne.",
+            "items": [],
+            "action": {
+              "label": "Zobacz formaty dla firm i eventów",
+              "href": "/muzyczny-team-building"
+            }
           }
         ],
         "faq": [
           {
+            "id": "projects-size",
+            "question": "Jak dużą grupę można objąć jednym wydarzeniem?",
+            "answer": "Rekordowa realizacja połączyła 661 osób jednocześnie. Liczbę gości, salę i czas ustalamy przy pierwszej rozmowie o wydarzeniu."
+          },
+          {
+            "id": "projects-verify",
+            "question": "Czy da się sprawdzić, że te realizacje się wydarzyły?",
+            "answer": "Tak. Przy każdym dowodzie podaję datę, opis roli i link do źródła: materiału z wydarzenia albo oficjalnej strony organizatora."
+          },
+          {
             "id": "projects-use",
-            "question": "Czy mogę użyć realizacji w ofercie dla mojego klienta?",
-            "answer": "Tak, jeśli karta ma potwierdzony kontekst, rolę i status źródła."
-          },
-          {
-            "id": "projects-brands",
-            "question": "Czy wszystkie nazwy marek są potwierdzone?",
-            "answer": "Publikowane są tylko marki z potwierdzoną nazwą i kontekstem, w przeciwnym razie wpis jest anonimowy lub pomijany."
-          },
-          {
-            "id": "projects-media",
-            "question": "Czy przy realizacjach są dostępne zdjęcia i wideo?",
-            "answer": "Tylko przy potwierdzonych prawach. Karta może działać bez mediów."
-          },
-          {
-            "id": "projects-missing",
-            "question": "Dlaczego niektórych realizacji nie ma na stronie?",
-            "answer": "Brak roli, źródła, zgody lub bezpiecznego opisu rezultatu wyklucza publikację."
+            "question": "Czy mogę pokazać te realizacje swojemu klientowi?",
+            "answer": "Tak, wszystkie źródła są publiczne i link prowadzi do oryginału. Jeśli potrzebujesz dowodu pod konkretne wydarzenie, zadzwoń i omówimy szczegóły."
           }
         ]
       },
@@ -3176,120 +3146,90 @@
         "slug": "projects",
         "seo": {
           "title": "Projects | Dawid Gacek",
-          "description": "Selected projects by Dawid Gacek: event context, role, visual material, and outcomes. Explore confirmed case studies that can support a client proposal."
+          "description": "Selected projects by Dawid Gacek: event context, date, role, and source. Proofs you can safely show a client."
         },
         "title": "Dawid Gacek projects",
-        "eyebrow": "Confirmed case studies from events, workshops, and group work.",
-        "intro": "Choose a project you can show a client as a concrete proof of experience.",
-        "proof": "Every published project has a context, Dawid's role, and a source status.",
+        "eyebrow": "Proof from events, workshops, and group work.",
+        "intro": "From a record event for 661 people to recurring stages and large-group work. Every project has a public source.",
+        "proof": "A 661-person event record and experience since 2010.",
         "cta": {
-          "label": "Explore projects",
+          "label": "See the evidence",
           "href": "#case-studies"
         },
         "sections": [
           {
-            "id": "criteria",
-            "heading": "How to choose a useful proof point",
-            "intro": "We publish only what can be described safely.",
-            "items": [
-              {
-                "id": "named-context",
-                "title": "Named context",
-                "body": "We know for whom and on what occasion the project took place.",
-                "kind": "information"
-              },
-              {
-                "id": "role",
-                "title": "Dawid's role",
-                "body": "We state what he actually led or created.",
-                "kind": "information"
-              },
-              {
-                "id": "source",
-                "title": "Source and rights",
-                "body": "The material has a source and confirmed publication scope.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
             "id": "case-studies",
             "heading": "Selected projects",
-            "intro": "Confirmed examples with context, Dawid's role, and a public source. We do not publish invented clients.",
+            "intro": "Every proof leads to a source: event footage or the organiser's official website.",
             "items": [
               {
                 "id": "gwr-event",
-                "title": "GWR event, 2016",
-                "body": "661 corporate employees, with Dawid as lead conductor and creator of the performance concept. Historical context, not current P&G cooperation.",
+                "label": "Event, 2016",
+                "title": "GWR record of 661 people",
+                "body": "An event for P&G Europe Planning Service Centre, 19 April 2016. Dawid as lead conductor and creator of the performance concept.",
                 "status": "confirmed",
                 "href": "https://youtu.be/Z5yKnlzKECg",
-                "actionLabel": "Record event material",
+                "actionLabel": "Event footage",
                 "kind": "navigation"
               },
               {
                 "id": "droga-lwa",
+                "label": "Recurring event",
                 "title": "Droga Lwa",
-                "body": "A recurring event for men where Dawid combines boomwhackers and DISC.",
+                "body": "A recurring event for men where Dawid combines boomwhackers and DISC as a speaker.",
                 "status": "confirmed",
                 "href": "https://drogalwa.pl/",
-                "actionLabel": "drogalwa.pl",
+                "actionLabel": "Droga Lwa website",
                 "kind": "navigation"
               },
               {
-                "id": "pending-case",
-                "title": "More projects",
-                "body": "Additional cards will appear after the context, role, and permissions are confirmed.",
-                "status": "preparing",
-                "kind": "information"
+                "id": "gls-polska",
+                "label": "Organisational collaboration",
+                "title": "Global Leadership Summit Polska",
+                "body": "Dawid in the organisational team and among the co-organisers of the summit, at large-scale events.",
+                "status": "confirmed",
+                "href": "https://gls.org.pl/",
+                "actionLabel": "GLS Polska website",
+                "kind": "navigation"
+              },
+              {
+                "id": "akademia-przywodztwa",
+                "label": "Subject-matter collaboration",
+                "title": "Akademia Przywództwa",
+                "body": "Dawid in the Academy team in the area of communication and DISC, working with adult groups.",
+                "status": "confirmed",
+                "href": "https://akademiaprzywodztwa.pl/",
+                "actionLabel": "Akademia Przywództwa website",
+                "kind": "navigation"
               }
             ]
           },
           {
-            "id": "resell",
-            "heading": "How to use a project in a client proposal",
-            "intro": "Choose a similar context and show the source together with Dawid's role.",
-            "items": [
-              {
-                "id": "step-one",
-                "title": "Choose a similar situation",
-                "body": "Match the project to your client's needs.",
-                "kind": "information"
-              },
-              {
-                "id": "step-two",
-                "title": "Check the context",
-                "body": "Keep the date, role, and source status attached to the proof.",
-                "kind": "information"
-              },
-              {
-                "id": "step-three",
-                "title": "Return to the offer",
-                "body": "Move to the right format and discuss the event.",
-                "kind": "information"
-              }
-            ]
+            "id": "offer",
+            "heading": "These principles work at your event too",
+            "intro": "The shared rhythm, clear ground rules, and whole-room engagement visible in these projects also drive musical team events and special occasions.",
+            "items": [],
+            "action": {
+              "label": "Explore corporate event formats",
+              "href": "/en/music-team-building"
+            }
           }
         ],
         "faq": [
           {
+            "id": "projects-size",
+            "question": "How large a group can a single event cover?",
+            "answer": "The record project brought 661 people together at once. We settle the group size, venue, and timing in the first conversation about the event."
+          },
+          {
+            "id": "projects-verify",
+            "question": "Can these projects be verified?",
+            "answer": "Yes. Every proof comes with a date, a description of the role, and a link to the source: event footage or the organiser's official website."
+          },
+          {
             "id": "projects-use",
-            "question": "Can I use a project in a proposal for my client?",
-            "answer": "Yes, when the card has a confirmed context, Dawid's role, and source status."
-          },
-          {
-            "id": "projects-brands",
-            "question": "Are all brand names confirmed?",
-            "answer": "Only brands with a confirmed name and context are published. Otherwise, the entry is anonymised or omitted."
-          },
-          {
-            "id": "projects-media",
-            "question": "Are photos and videos available for projects?",
-            "answer": "Only when publication rights are confirmed. A card can work without media."
-          },
-          {
-            "id": "projects-missing",
-            "question": "Why are some projects not shown?",
-            "answer": "A missing role, source, permission, or safe description of the outcome prevents publication."
+            "question": "Can I show these projects to my client?",
+            "answer": "Yes, all sources are public and each link leads to the original. If you need proof for a specific event, call me and we will discuss the details."
           }
         ]
       }
@@ -3463,7 +3403,7 @@
           {
             "id": "insights-updates",
             "question": "Jak często hub jest aktualizowany?",
-            "answer": "Wtedy, gdy materiał ma potwierdzone źródło, prawa i wersję publikacyjną, bez obietnicy stałego rytmu."
+            "answer": "Gdy nowy materiał jest gotowy i sprawdzony merytorycznie, bez sztywnego harmonogramu."
           },
           {
             "id": "insights-offer",
@@ -3640,7 +3580,7 @@
           {
             "id": "insights-updates",
             "question": "How often is the hub updated?",
-            "answer": "When a material has a confirmed source, rights, and publication version, without promising a fixed rhythm."
+            "answer": "When a new material is ready and fact-checked, without a fixed schedule."
           },
           {
             "id": "insights-offer",

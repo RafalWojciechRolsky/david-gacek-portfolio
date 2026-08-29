@@ -5,6 +5,7 @@ import { PageShell } from "@/components/chrome/PageShell";
 import { GenericPage } from "@/components/pages/GenericPage";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { getPage } from "@/lib/content";
+import { buildJsonLd } from "@/lib/json-ld";
 import { buildMetadata, viewport } from "@/lib/metadata";
 import { pageKeyFromSlug, routeMap } from "@/lib/routes";
 import type { PageKey } from "@/lib/types";
@@ -61,7 +62,7 @@ export default async function EnglishSlugPage({ params }: EnglishSlugPageProps) 
 
   return (
     <PageShell locale="en" currentPage={pageKey}>
-      <StructuredData page={page} locale="en" pageKey={pageKey} />
+      <StructuredData data={buildJsonLd(page, "en", pageKey)} />
       <GenericPage page={page} pageKey={pageKey} locale="en" />
     </PageShell>
   );

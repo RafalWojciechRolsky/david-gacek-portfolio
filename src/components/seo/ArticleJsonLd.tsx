@@ -1,5 +1,6 @@
 import { absoluteUrl } from "@/lib/metadata";
 import type { ArticleDetail, Locale } from "@/lib/types";
+import { buildIdentityJsonLd, personJsonLdId, websiteJsonLdId } from "@/lib/json-ld";
 import { pathFor } from "@/lib/routes";
 import { getMessages } from "@/messages/ui";
 
@@ -19,22 +20,25 @@ export function ArticleJsonLd({ article, locale }: ArticleJsonLdProps) {
   const payload = {
     "@context": "https://schema.org",
     "@graph": [
+      ...buildIdentityJsonLd(locale),
       {
         "@type": "BlogPosting",
+        "@id": `${articleUrl}#blogposting`,
         headline: article.title,
         description: article.seoDescription,
         inLanguage: locale,
         url: articleUrl,
-        mainEntityOfPage: articleUrl,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": articleUrl,
+        },
         image: absoluteUrl(article.hero.src),
         datePublished: article.publishedAt,
         dateModified: article.updatedAt,
         articleSection: article.category.label,
-        author: {
-          "@type": "Person",
-          name: messages.brandName,
-          url: absoluteUrl(pathFor("profile", locale)),
-        },
+        author: { "@id": personJsonLdId() },
+        publisher: { "@id": personJsonLdId() },
+        isPartOf: { "@id": websiteJsonLdId() },
       },
       {
         "@type": "BreadcrumbList",
@@ -42,12 +46,18 @@ export function ArticleJsonLd({ article, locale }: ArticleJsonLdProps) {
           {
             "@type": "ListItem",
             position: 1,
-            name: messages.header.insights,
-            item: absoluteUrl(locale === "pl" ? "/wiedza" : "/en/insights"),
+            name: messages.seo.home,
+            item: absoluteUrl(pathFor("home", locale)),
           },
           {
             "@type": "ListItem",
             position: 2,
+            name: messages.header.insights,
+            item: absoluteUrl(pathFor("insights", locale)),
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
             name: article.title,
             item: articleUrl,
           },

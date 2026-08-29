@@ -117,9 +117,6 @@ export function MobileMenu({
         id="mobile-navigation-panel"
         aria-label={messages.accessibility.mobileNavigation}
       >
-        <a href={pathFor("profile", locale)} aria-current={currentPage === "profile" ? "page" : undefined} onClick={closeMenu}>
-          {messages.header.dawid}
-        </a>
         <p className="mobile-group">{messages.header.mobileWorkWith}</p>
         <a
           href={pathFor("teacherTraining", locale)}
@@ -162,6 +159,13 @@ export function MobileMenu({
           onClick={closeMenu}
         >
           {messages.header.projects}
+        </a>
+        <a
+          href={pathFor("profile", locale)}
+          aria-current={currentPage === "profile" ? "page" : undefined}
+          onClick={closeMenu}
+        >
+          {messages.header.dawid}
         </a>
         <a
           href={pathFor("contact", locale)}

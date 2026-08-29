@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/validate-public-config.mjs && next build",
     "test": "node scripts/validate-content.mjs",
     "typecheck": "tsc --noEmit",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:public-config": "node scripts/validate-public-config.mjs"
   },
   "dependencies": {
     "next": "16.3.3",

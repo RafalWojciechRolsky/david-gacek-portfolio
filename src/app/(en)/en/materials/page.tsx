@@ -5,6 +5,8 @@ import { StructuredData } from "@/components/seo/StructuredData";
 import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
 import { ResourceItem } from "@/components/ui/ResourceItem";
 import { getPage } from "@/lib/content";
+import { buildUtilityJsonLd } from "@/lib/json-ld";
+import { pathFor } from "@/lib/routes";
 import { getMessages } from "@/messages/ui";
 
 const messages = getMessages("en");
@@ -23,7 +25,14 @@ export default function EnglishMaterialsPage() {
 
   return (
     <PageShell locale="en" currentPage="materials">
-      <StructuredData page={page} locale="en" pageKey="materials" />
+      <StructuredData
+        data={buildUtilityJsonLd(
+          messages.materials.title,
+          messages.materials.description,
+          "en",
+          pathFor("materials", "en"),
+        )}
+      />
       <section className="utility-page">
         <div className="container utility-page-inner">
           <RhythmicMarker />

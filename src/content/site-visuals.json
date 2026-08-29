@@ -278,14 +278,12 @@
     },
     "toneBySection": {
       "pl": {
-        "kryteria": "ink",
-        "case-studies": "white",
-        "odsprzedaz": "paper-deep"
+        "case-studies": "ink",
+        "oferta": "paper-deep"
       },
       "en": {
-        "criteria": "ink",
-        "case-studies": "white",
-        "resell": "paper-deep"
+        "case-studies": "ink",
+        "offer": "paper-deep"
       }
     }
   },

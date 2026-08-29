@@ -4,6 +4,7 @@ import { Homepage } from "@/components/pages/Homepage";
 import { PageShell } from "@/components/chrome/PageShell";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { getHomepage } from "@/lib/content";
+import { buildJsonLd } from "@/lib/json-ld";
 import { buildMetadata, viewport } from "@/lib/metadata";
 
 export { viewport };
@@ -18,7 +19,7 @@ export default function PolishHomepage() {
 
   return (
     <PageShell locale="pl" currentPage="home">
-      <StructuredData page={page} locale="pl" pageKey="home" />
+      <StructuredData data={buildJsonLd(page, "pl", "home")} />
       <Homepage page={page} />
     </PageShell>
   );

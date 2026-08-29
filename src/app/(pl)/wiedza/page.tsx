@@ -6,6 +6,7 @@ import { GenericPage } from "@/components/pages/GenericPage";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { filterInsightsByCategory } from "@/lib/articles";
 import { getPage } from "@/lib/content";
+import { buildJsonLd } from "@/lib/json-ld";
 import { buildMetadata, viewport } from "@/lib/metadata";
 
 export { viewport };
@@ -28,7 +29,7 @@ export default async function PolishInsightsPage({
 
   return (
     <PageShell locale="pl" currentPage="insights">
-      <StructuredData page={page} locale="pl" pageKey="insights" />
+      <StructuredData data={buildJsonLd(page, "pl", "insights")} />
       <GenericPage
         page={page}
         pageKey="insights"

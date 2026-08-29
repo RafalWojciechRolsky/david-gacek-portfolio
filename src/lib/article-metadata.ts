@@ -7,7 +7,8 @@ import { siteConfig } from "@/lib/site-config";
 import { getMessages } from "@/messages/ui";
 
 /**
- * Buduje metadata artykułu bez udawania daty publikacji, której jeszcze nie ma.
+ * Buduje metadata artykułu z lokalizowanymi alternates, obrazem hero
+ * i kartą Twitter zgodną z widoczną treścią.
  */
 export function buildArticleMetadata(
   article: ArticleDetail,
@@ -32,7 +33,7 @@ export function buildArticleMetadata(
       },
     },
     openGraph: {
-      title: `${article.title} | Dawid Gacek`,
+      title: `${article.title} | ${messages.brandName}`,
       description: article.seoDescription,
       url: absoluteUrl(article.href ?? "/"),
       type: "article",
@@ -41,14 +42,19 @@ export function buildArticleMetadata(
       images: siteConfig.siteUrl
         ? [
             {
-              url: absoluteUrl("/images/dawid-gacek-portret-czarne-polo.jpeg"),
-              width: 1024,
-              height: 683,
-              alt:
-                messages.seo.imageAlt,
+              url: absoluteUrl(article.hero.src),
+              width: article.hero.width,
+              height: article.hero.height,
+              alt: article.hero.alt,
             },
           ]
         : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${article.title} | ${messages.brandName}`,
+      description: article.seoDescription,
+      images: siteConfig.siteUrl ? [absoluteUrl(article.hero.src)] : undefined,
     },
   };
 }

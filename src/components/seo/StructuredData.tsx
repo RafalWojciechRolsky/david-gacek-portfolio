@@ -1,29 +1,18 @@
-import { buildJsonLd } from "@/lib/json-ld";
-import type { Locale, PageData, PageKey } from "@/lib/types";
+import type { JsonLdGraph } from "@/lib/json-ld";
 
 interface StructuredDataProps {
-  /** Dane strony użyte również w widocznym UI. */
-  page: PageData;
-  /** Lokalizacja dokumentu. */
-  locale: Locale;
-  /** Klucz strony. */
-  pageKey: PageKey;
+  /** Kompletny graf JSON-LD zgodny z widoczną treścią. */
+  data: JsonLdGraph;
 }
 
 /**
  * Wstawia JSON-LD renderowany po stronie serwera.
  */
-export function StructuredData({
-  page,
-  locale,
-  pageKey,
-}: StructuredDataProps) {
+export function StructuredData({ data }: StructuredDataProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(buildJsonLd(page, locale, pageKey)),
-      }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   );
 }
