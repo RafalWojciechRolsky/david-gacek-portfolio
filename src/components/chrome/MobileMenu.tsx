@@ -166,7 +166,7 @@ export function MobileMenu({
         <LanguageSwitcher locale={locale} pageKey={currentPage} />
         <div className="mobile-contact">
           <a className="mobile-phone-link" href={phoneHref} onClick={closeMenu}>
-              <strong>{messages.header.call}</strong>
+            <strong>{messages.header.call}</strong>
             <span className="mobile-phone-number">{phoneDisplay}</span>
             <small>{phoneHours}</small>
           </a>

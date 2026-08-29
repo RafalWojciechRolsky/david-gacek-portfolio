@@ -280,12 +280,12 @@
       "pl": {
         "kryteria": "ink",
         "case-studies": "white",
-        "odsprzedaz": "paper"
+        "odsprzedaz": "paper-deep"
       },
       "en": {
         "criteria": "ink",
         "case-studies": "white",
-        "resell": "paper"
+        "resell": "paper-deep"
       }
     }
   },
@@ -313,13 +313,13 @@
     "toneBySection": {
       "pl": {
         "szybki-start": "white",
-        "kategorie": "ochre",
+        "kategorie": "white",
         "artykuly": "ink",
         "materialy": "white"
       },
       "en": {
         "quick-start": "white",
-        "categories": "ochre",
+        "categories": "white",
         "articles": "ink",
         "resources": "white"
       }

@@ -177,6 +177,12 @@ img {
   color: var(--surface-ink);
 }
 
+/* Zaznaczenie tekstu na powierzchniach w rodzinie ochry zostaje czytelne */
+.content-section--ochre ::selection {
+  background: var(--surface-ink);
+  color: var(--surface-ochre-bright);
+}
+
 :focus-visible {
   outline: 3px solid var(--signal-cobalt);
   outline-offset: 4px;
@@ -260,6 +266,10 @@ img {
   letter-spacing: -0.03em;
   line-height: 1.1;
   overflow-wrap: break-word;
+  /* Rzadkie długie słowa łamią się w obrębie wyrazu zamiast przelewać kolumnę */
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 12 4 4;
 }
 
 .section-intro {
@@ -331,7 +341,7 @@ img {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--border-subtle);
-  transition: transform 0.28s ease, background-color 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+  transition: transform 0.28s ease;
 }
 
 .site-header--hidden {
@@ -354,6 +364,12 @@ img {
 /* Hero theme backgrounds when at top */
 .site-header--theme-paper.site-header--at-top {
   background: var(--surface-paper);
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--surface-ink);
+}
+
+.site-header--theme-paper-deep.site-header--at-top {
+  background: var(--surface-paper-deep);
   border-bottom: 1px solid var(--border-subtle);
   color: var(--surface-ink);
 }
@@ -1362,6 +1378,10 @@ img {
   background: var(--surface-white);
 }
 
+.content-section--paper-deep {
+  background: var(--surface-paper-deep);
+}
+
 .content-section--ink {
   background: var(--surface-ink);
   color: var(--surface-paper);
@@ -1583,7 +1603,7 @@ img {
   display: none;
 }
 
-.content-card--link {
+.content-card--navigation {
   color: inherit;
   text-decoration: none;
 }
@@ -1662,23 +1682,168 @@ img {
   border-right: 0;
 }
 
-/* Karty linkowe: ruch strzałki jako jedyny ruchomy element, akcja dokleja się do dołu kafla */
-.content-card--link .card-action .arrow {
+/* Karta nawigacyjna na neutralnej powierzchni zmienia tło i całą rodzinę tekstu.
+   Wskaźnik i klawiatura otrzymują ten sam stan, a outline pozostaje dodatkowym sygnałem. */
+.content-card--navigation:is(:hover, :focus-visible) {
+  background: var(--page-signal-tint);
+}
+
+.content-card--navigation:is(:hover, :focus-visible) h3 {
+  color: var(--surface-ink);
+}
+
+.content-card--navigation:is(:hover, :focus-visible) p,
+.content-card--navigation:is(:hover, :focus-visible) .card-meta,
+.content-card--navigation:is(:hover, :focus-visible) .card-status {
+  color: var(--surface-ink-soft);
+}
+
+.content-card--navigation:is(:hover, :focus-visible) .card-number,
+.content-card--navigation:is(:hover, :focus-visible) .card-label,
+.content-card--navigation:is(:hover, :focus-visible) .card-action {
+  color: var(--page-signal-ink);
+}
+
+/* Ciemne i sygnałowe powierzchnie potrzebują pełnej inwersji, ponieważ jasny
+   tint nie może dziedziczyć jasnej typografii z otoczenia. */
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) {
+  border-color: var(--on-dark-border);
+  background: var(--page-signal-ink);
+  color: var(--surface-white);
+}
+
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) h3,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) .card-number,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) .card-label,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) .card-action {
+  color: var(--surface-white);
+}
+
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) p,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) .card-meta,
+:is(
+  .content-section--ink,
+  .content-section--cobalt,
+  .content-section--ochre,
+  .content-section--coral,
+  .content-section--green
+) .content-card--navigation:is(:hover, :focus-visible) .card-status {
+  color: var(--on-dark-copy);
+}
+
+.content-card--navigation .card-action .arrow {
   transition: transform var(--ease);
 }
 
-.content-card--link:hover .card-action .arrow {
+.content-card--navigation:is(:hover, :focus-visible) .card-action .arrow {
   transform: translateX(5px);
 }
 
+/* Pierwsze trzy materiały huba tworzą wyraźny próg wejścia do biblioteki.
+   Są ciepłą, redakcyjną powierzchnią na ink, a nie kolejną rodziną sygnału. */
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured {
+  background: var(--surface-paper-deep);
+  color: var(--surface-ink);
+  border-color: var(--border-subtle);
+}
+
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured h3,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured p,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured .card-meta,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured .card-status {
+  color: var(--surface-ink-soft);
+}
+
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured .card-number,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured .card-label,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured .card-action {
+  color: var(--page-signal-ink);
+}
+
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) {
+  border-color: var(--on-dark-border);
+  background: var(--page-signal-ink);
+  color: var(--surface-white);
+}
+
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) h3,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) .card-number,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) .card-label,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) .card-action {
+  color: var(--surface-white);
+}
+
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) p,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) .card-meta,
+.content-section.content-section--ink.page-section--insights
+  .content-card--featured:is(:hover, :focus-visible) .card-status {
+  color: var(--on-dark-copy);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .content-card--link .card-action .arrow,
+  .content-card--navigation .card-action .arrow,
   .context-card .card-action .arrow {
     transition: none;
   }
 
-  .content-card--link:hover .card-action .arrow,
-  .content-card--link:focus-visible .card-action .arrow,
+  .content-card--navigation:is(:hover, :focus-visible) .card-action .arrow,
   .context-card:hover .card-action .arrow,
   .context-card:focus-visible .card-action .arrow {
     transform: none;
@@ -1885,9 +2050,13 @@ img {
 }
 
 .page-hero--teacher .page-hero-intro,
-.page-hero--insights .page-hero-intro,
 .page-hero--contact .page-hero-intro {
   color: var(--on-cobalt-muted);
+}
+
+/* Ink hero czytelni używa ciepłej rodziny on-ink, nie kobaltowego tintu */
+.page-hero--insights .page-hero-intro {
+  color: var(--on-ink-intro);
 }
 
 .page-hero--teacher .page-hero-proof,

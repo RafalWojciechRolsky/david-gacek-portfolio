@@ -16,7 +16,7 @@ const HERO_THEMES: Record<PageKey, string> = {
   corporateEvents: "coral",
   childrenWorkshops: "ochre",
   disc: "green",
-  projects: "paper",
+  projects: "paper-deep",
   insights: "ink",
   contact: "dark-cobalt",
   materials: "paper",
@@ -75,6 +75,7 @@ function subscribeToHeaderScroll(onStoreChange: () => void): () => void {
 /** Motywy powierzchni dostępne dla nagłówka strony. */
 export type HeaderTheme =
   | "paper"
+  | "paper-deep"
   | "white"
   | "cobalt"
   | "dark-cobalt"

@@ -125,7 +125,9 @@
             "question": "Ile rurek potrzeba na start?",
             "answer": "Wystarczy jedna rurka na uczestnika. Pełny zestaw klasowy daje więcej możliwości podziału na głosy, ale nie jest wymagany."
           }
-        ]
+        ],
+        "kind": "navigation",
+        "featured": true
       },
       {
         "id": "boomwhackers-songs",
@@ -263,7 +265,9 @@
             "question": "Gdzie szukać gotowych piosenek na Bum Bum Rurki?",
             "answer": "W internecie są dostępne zapisy z kolorami, a materiały do pobrania na tej stronie pojawią się po potwierdzeniu praw do utworów."
           }
-        ]
+        ],
+        "kind": "navigation",
+        "featured": true
       },
       {
         "id": "boomwhackers-games",
@@ -394,7 +398,9 @@
             "question": "Dla ilu osób działają te zabawy?",
             "answer": "Od kilku osób do dużych grup klasowych. W większej grupie prowadzisz bardziej wyrazistym gestem i dzielisz ją na więcej kolorów."
           }
-        ]
+        ],
+        "kind": "navigation",
+        "featured": true
       },
       {
         "id": "integration-games-children",
@@ -537,7 +543,8 @@
             "question": "Czy to zajęcia muzyczne czy integracyjne?",
             "answer": "Oba naraz. Rytm jest tu narzędziem budowania grupy, a przy okazji dzieci realnie grają i śpiewają."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "musical-icebreakers",
@@ -685,7 +692,8 @@
             "question": "Na jak dużych grupach to działa?",
             "answer": "Od kilkunastoosobowych zespołów po duże sale. W dużych grupach prowadzący dzieli uczestników na więcej sekcji kolorów i dyryguje wyraźniej."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "disc-in-practice",
@@ -830,7 +838,8 @@
             "question": "Czy DISC dzieli ludzi na lepszych i gorszych?",
             "answer": "Nie. Model opisuje różnice w potrzebach i tempie pracy, a zespół, który je rozpoznaje, przestaje czytać różnice jako złe intencje."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "group-attention",
@@ -980,7 +989,8 @@
             "question": "Czy sygnał musi być dźwiękowy?",
             "answer": "Nie. Może być wizualny albo ruchowy, ważne, żeby był zawsze taki sam i wprowadzony na początku zajęć."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "music-cooperation",
@@ -1132,7 +1142,8 @@
             "question": "Czy to działa także online?",
             "answer": "Najlepiej na żywo, bo grupa słyszy siebie w jednej przestrzeni. Online traci najważniejszy element, wspólne słuchanie w czasie rzeczywistym."
           }
-        ]
+        ],
+        "kind": "navigation"
       }
     ],
     "en": [
@@ -1260,7 +1271,9 @@
             "question": "How many tubes do you need to start?",
             "answer": "One tube per participant is enough. A full classroom set gives more options for splitting parts but is not required."
           }
-        ]
+        ],
+        "kind": "navigation",
+        "featured": true
       },
       {
         "id": "boomwhackers-songs",
@@ -1398,7 +1411,9 @@
             "question": "Where can I find ready boomwhackers songs?",
             "answer": "Colour-coded sheets are available online, and downloadable materials on this site will appear once the rights to the songs are confirmed."
           }
-        ]
+        ],
+        "kind": "navigation",
+        "featured": true
       },
       {
         "id": "boomwhackers-games",
@@ -1529,7 +1544,9 @@
             "question": "How many players do these games work with?",
             "answer": "From a handful of people to large classroom groups. With bigger groups, split players into more colour sections and conduct more clearly."
           }
-        ]
+        ],
+        "kind": "navigation",
+        "featured": true
       },
       {
         "id": "integration-games-children",
@@ -1672,7 +1689,8 @@
             "question": "Is this a music class or an integration class?",
             "answer": "Both at once. Rhythm is the tool for building the group, and the children genuinely play music along the way."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "musical-icebreakers",
@@ -1820,7 +1838,8 @@
             "question": "How large are the groups it works with?",
             "answer": "From small teams of fifteen to large halls. With bigger groups the facilitator splits players into more colour sections and conducts more clearly."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "disc-in-practice",
@@ -1965,7 +1984,8 @@
             "question": "Does DISC rank people as better or worse?",
             "answer": "No. The model describes differences in needs and pace, and a team that recognises them stops reading differences as bad intentions."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "group-attention",
@@ -2115,7 +2135,8 @@
             "question": "Does the signal have to be a sound?",
             "answer": "No. It can be visual or movement-based, what matters is that it stays the same and is introduced at the beginning of the session."
           }
-        ]
+        ],
+        "kind": "navigation"
       },
       {
         "id": "music-cooperation",
@@ -2267,7 +2288,8 @@
             "question": "Does it also work online?",
             "answer": "Best in person, because the group hears itself in one space. Online loses the key element, shared listening in real time."
           }
-        ]
+        ],
+        "kind": "navigation"
       }
     ]
   }

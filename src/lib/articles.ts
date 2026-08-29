@@ -64,6 +64,8 @@ export function getArticleById(
 export function articleToCardItem(article: ArticleDetail): ArticleItem {
   return {
     id: `insight-${article.id}`,
+    kind: "navigation",
+    featured: article.featured,
     type: article.category.label,
     title: article.title,
     body: article.body,

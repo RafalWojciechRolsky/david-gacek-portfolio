@@ -1,19 +1,17 @@
-import type { ContentItem } from "@/lib/types";
+import type { ContentCardItem } from "@/lib/types";
 
 import { ActionLink } from "@/components/ui/ActionLink";
 import { Arrow } from "@/components/ui/Arrow";
 
 interface ContentCardProps {
   /** Dane karty treści. */
-  item: ContentItem;
+  item: ContentCardItem;
   /** Lokalny komunikat statusu. */
   statusLabel?: string;
   /** Numer pozycji w kolekcji. */
   index?: number;
   /** Identyfikator obiektu ze specyfikacji. */
   objectId?: string;
-  /** Renderuje pojedynczy link obejmujący całą kartę. */
-  linkWholeCard?: boolean;
 }
 
 /**
@@ -24,20 +22,22 @@ export function ContentCard({
   statusLabel,
   index,
   objectId,
-  linkWholeCard = false,
 }: ContentCardProps) {
   const cardNumber = index === undefined ? undefined : String(index + 1).padStart(2, "0");
-  const cardClassName = `content-card ${
-    linkWholeCard && item.href ? "content-card--link" : ""
-  }`.trim();
+  const cardClassName = [
+    "content-card",
+    `content-card--${item.kind}`,
+    item.featured ? "content-card--featured" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
   const hasTop = Boolean(cardNumber || item.type || item.label);
   const hasFooter = Boolean(
     item.meta ||
       item.readTime ||
       statusLabel ||
-      (!linkWholeCard && item.source) ||
-      (linkWholeCard && item.href) ||
-      (!linkWholeCard && item.href)
+      item.kind === "evidence" ||
+      item.kind === "navigation"
   );
 
   const cardContent = (
@@ -55,7 +55,7 @@ export function ContentCard({
           <span className="card-meta">{item.meta ?? item.readTime}</span>
         ) : null}
         {statusLabel ? <span className="card-status">{statusLabel}</span> : null}
-        {!linkWholeCard && item.source ? (
+        {item.kind === "evidence" ? (
           <ActionLink
             href={item.source.href}
             variant="source"
@@ -66,22 +66,17 @@ export function ContentCard({
             {item.source.label}
           </ActionLink>
         ) : null}
-        {linkWholeCard && item.href ? (
+        {item.kind === "navigation" ? (
           <span className="card-action">
             {item.actionLabel ?? item.title}
             <Arrow />
           </span>
         ) : null}
-        {!linkWholeCard && item.href ? (
-          <ActionLink href={item.href} variant="text" withArrow>
-            {item.actionLabel ?? item.title}
-          </ActionLink>
-        ) : null}
       </div>
     </>
   );
 
-  if (linkWholeCard && item.href) {
+  if (item.kind === "navigation") {
     return (
       <a className={cardClassName} href={item.href} data-object-id={objectId}>
         {cardContent}
@@ -90,7 +85,7 @@ export function ContentCard({
   }
 
   return (
-    <article className={cardClassName} id={item.href?.startsWith("#") ? item.href.slice(1) : undefined} data-object-id={objectId}>
+    <article className={cardClassName} data-object-id={objectId}>
       {cardContent}
     </article>
   );

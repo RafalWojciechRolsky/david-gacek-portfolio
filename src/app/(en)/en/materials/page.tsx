@@ -32,9 +32,11 @@ export default function EnglishMaterialsPage() {
           <div className="resource-list">
             {page.sections
               .find((item) => item.id === "director-materials" || item.id === "leadership-materials")
-              ?.items?.map((resource) => (
-                <ResourceItem key={resource.id} resource={resource} locale="en" />
-              ))}
+              ?.items?.map((resource) =>
+                "title" in resource ? (
+                  <ResourceItem key={resource.id} resource={resource} locale="en" />
+                ) : null,
+              )}
           </div>
         </div>
       </section>

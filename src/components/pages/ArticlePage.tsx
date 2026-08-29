@@ -165,7 +165,6 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
                     item={articleToCardItem(relatedArticle)}
                     index={index}
                     objectId={`related-${relatedArticle.id}`}
-                    linkWholeCard
                   />
                 ))}
               </div>

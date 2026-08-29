@@ -28,6 +28,7 @@ export type Signal = "cobalt" | "ochre" | "coral" | "green";
  */
 export type PageTone =
   | "paper"
+  | "paper-deep"
   | "white"
   | "ink"
   | "cobalt"
@@ -129,9 +130,14 @@ export interface EvidenceItem {
 }
 
 /**
- * Jedna pozycja kolekcji treści.
+ * Sposób, w jaki karta komunikuje swoją interaktywność.
  */
-export interface ContentItem {
+export type ContentCardKind = "navigation" | "evidence" | "information";
+
+/**
+ * Dane wspólne kart i zasobów, niezależnie od sposobu interakcji.
+ */
+export interface ContentItemBase {
   /** Stabilny identyfikator elementu. */
   id: string;
   /** Etykieta typu lub odbiorcy. */
@@ -140,10 +146,6 @@ export interface ContentItem {
   title: string;
   /** Opis elementu. */
   body: string;
-  /** Link do dalszej treści. */
-  href?: string;
-  /** Tekst akcji. */
-  actionLabel?: string;
   /** Opcjonalny status publikacji. */
   status?: ContentStatus;
   /** Opcjonalne metadane. */
@@ -152,10 +154,114 @@ export interface ContentItem {
   type?: string;
   /** Szacowany czas czytania materiału. */
   readTime?: string;
-  /** Opcjonalne źródło. */
-  source?: LinkItem;
   /** Opcjonalny obraz. */
   image?: ImageData;
+  /** Wyróżnia punkt wejścia do dłuższej kolekcji treści. */
+  featured?: boolean;
+}
+
+/**
+ * Surowa pozycja kolekcji, używana również przez zasoby do pobrania.
+ */
+export interface ContentItem extends ContentItemBase {
+  /** Jawny typ kontraktu karty, gdy element jest renderowany przez ContentCard. */
+  kind?: ContentCardKind;
+  /** Cel nawigacji albo pobrania. */
+  href?: string;
+  /** Tekst akcji nawigacyjnej. */
+  actionLabel?: string;
+  /** Publiczne źródło dowodu. */
+  source?: LinkItem;
+}
+
+/**
+ * Karta prowadząca do jednej konkretnej ścieżki.
+ */
+export interface NavigationContentCard extends ContentItemBase {
+  /** Rozróżnia kartę nawigacyjną od dowodu i informacji. */
+  kind: "navigation";
+  /** Wymagany cel jednego linku obejmującego całą kartę. */
+  href: string;
+  /** Opcjonalna etykieta akcji, gdy tytuł karty nie opisuje celu dostatecznie jasno. */
+  actionLabel?: string;
+  /** Karta nawigacyjna nie miesza się z linkiem źródłowym. */
+  source?: never;
+}
+
+/**
+ * Karta dowodowa z osobnym odsyłaczem do źródła.
+ */
+export interface EvidenceContentCard extends ContentItemBase {
+  /** Rozróżnia kartę dowodową od nawigacyjnej i informacyjnej. */
+  kind: "evidence";
+  /** Źródło faktu, pozostające jedyną interakcją karty. */
+  source: LinkItem;
+  /** Karta dowodowa nie udaje nawigacji do innej strony. */
+  href?: never;
+  /** Akcja wynika z etykiety źródła. */
+  actionLabel?: never;
+}
+
+/**
+ * Karta informacyjna bez interakcji.
+ */
+export interface InformationContentCard extends ContentItemBase {
+  /** Rozróżnia kartę informacyjną od nawigacyjnej i dowodowej. */
+  kind: "information";
+  /** Karta informacyjna nie ma celu nawigacji. */
+  href?: never;
+  /** Karta informacyjna nie ma odsyłacza źródłowego. */
+  source?: never;
+  /** Karta informacyjna nie komunikuje nieistniejącej akcji. */
+  actionLabel?: never;
+}
+
+/**
+ * Zawężony kontrakt danych obsługiwany przez ContentCard.
+ */
+export type ContentCardItem =
+  | NavigationContentCard
+  | EvidenceContentCard
+  | InformationContentCard;
+
+/**
+ * Referencja do pełnego artykułu, rozwijana dopiero przez bibliotekę Wiedzy.
+ */
+export interface ContentReference {
+  /** Stabilny identyfikator treści do rozwinięcia. */
+  id: string;
+  /** Opcjonalna trasa pomocnicza dla migracji lokalnych treści. */
+  href?: string;
+}
+
+/**
+ * Rozpoznaje referencję bez pełnej zawartości karty.
+ *
+ * @param item Dane kolekcji z JSON.
+ * @returns Czy element wymaga rozwinięcia do pełnego artykułu.
+ */
+export function isContentReference(
+  item: ContentItem | ContentReference,
+): item is ContentReference {
+  return !("title" in item);
+}
+
+/**
+ * Rozpoznaje kompletny, rozłączny kontrakt danych dla ContentCard.
+ *
+ * @param item Surowa pozycja kolekcji.
+ * @returns Czy karta ma poprawny, jawny typ interakcji.
+ */
+export function isContentCardItem(item: ContentItem): item is ContentCardItem {
+  if (item.kind === "navigation") {
+    return Boolean(item.href) && !item.source;
+  }
+
+  if (item.kind === "evidence") {
+    return Boolean(item.source) && !item.href && !item.actionLabel;
+  }
+
+  return item.kind === "information" && !item.href && !item.source && !item.actionLabel;
 }
 
 /**
@@ -171,7 +277,7 @@ export interface PageSection {
   /** Wprowadzenie sekcji. */
   intro?: string;
   /** Elementy kolekcji. */
-  items?: ContentItem[];
+  items?: Array<ContentItem | ContentReference>;
   /** Ton tła sekcji. */
   tone?: PageTone;
   /** Link do kolejnej treści. */
@@ -287,7 +393,7 @@ export interface VideoData {
 /**
  * Dane jednego artykułu homepage albo huba Wiedzy.
  */
-export interface ArticleItem extends ContentItem {
+export interface ArticleItem extends NavigationContentCard {
   /** Typ materiału. */
   type: string;
   /** Szacowany czas czytania. */

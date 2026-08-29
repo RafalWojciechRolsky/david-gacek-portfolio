@@ -196,7 +196,6 @@ export function Homepage({ page }: HomepageProps) {
                 item={article}
                 index={index}
                 objectId="homepage-knowledge-article-card"
-                linkWholeCard
               />
             ))}
           </div>

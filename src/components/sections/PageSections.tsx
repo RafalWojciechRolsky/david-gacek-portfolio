@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/site-config";
 import { getStatusLabel } from "@/lib/content-labels";
 import { articleToCardItem, getArticle, getArticleById } from "@/lib/articles";
+import { isContentCardItem } from "@/lib/types";
 import type { Locale, PageSection, PageVisual } from "@/lib/types";
 
 import { ActionLink } from "@/components/ui/ActionLink";
@@ -68,38 +69,48 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                       : `content-grid content-grid--${pageSection.items.length}`
                   }
                 >
-                  {pageSection.items.map((contentItem, index) =>
-                    isResources ? (
-                      <ResourceItem
-                        key={contentItem.id}
-                        resource={contentItem}
-                        locale={locale}
-                      />
-                    ) : isArticleLibrary ? (
-                      (() => {
-                        const articleId = contentItem.id.replace("insight-", "");
-                        const article =
-                          getArticleById(locale, articleId) ??
-                          (contentItem.href
-                            ? getArticle(locale, contentItem.href.split("/").pop() ?? "")
-                            : undefined);
-                        return (
-                          <ContentCard
-                            key={contentItem.id}
-                            item={article ? articleToCardItem(article) : contentItem}
-                            index={index}
-                            objectId={contentItem.id}
-                            linkWholeCard
-                          />
-                        );
-                      })()
-                    ) : (
+                  {pageSection.items.map((contentItem, index) => {
+                    if (isResources) {
+                      return "title" in contentItem ? (
+                        <ResourceItem
+                          key={contentItem.id}
+                          resource={contentItem}
+                          locale={locale}
+                        />
+                      ) : null;
+                    }
+
+                    if (isArticleLibrary) {
+                      const articleId = contentItem.id.replace("insight-", "");
+                      const article =
+                        getArticleById(locale, articleId) ??
+                        (contentItem.href
+                          ? getArticle(locale, contentItem.href.split("/").pop() ?? "")
+                          : undefined);
+
+                      return article ? (
+                        <ContentCard
+                          key={contentItem.id}
+                          item={articleToCardItem(article)}
+                          index={index}
+                          objectId={contentItem.id}
+                        />
+                      ) : "title" in contentItem && isContentCardItem(contentItem) ? (
+                        <ContentCard
+                          key={contentItem.id}
+                          item={contentItem}
+                          index={index}
+                          objectId={contentItem.id}
+                        />
+                      ) : null;
+                    }
+
+                    return "title" in contentItem && isContentCardItem(contentItem) ? (
                       <ContentCard
                         key={contentItem.id}
                         item={contentItem}
                         index={index}
                         objectId={contentItem.id}
-                        linkWholeCard={Boolean(contentItem.href)}
                         statusLabel={
                           contentItem.status === "preparing" ||
                           contentItem.status === "unavailable"
@@ -107,8 +118,8 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                             : undefined
                         }
                       />
-                    ),
-                  )}
+                    ) : null;
+                  })}
                 </div>
               ) : null}
               {pageSection.action ? (

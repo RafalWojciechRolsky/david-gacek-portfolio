@@ -7,6 +7,35 @@ const articles = readJson("src/content/articles.json");
 const messages = readJson("src/messages/ui.json");
 const visuals = readJson("src/content/site-visuals.json");
 const locales = ["pl", "en"];
+const cardKinds = ["navigation", "evidence", "information"];
+const articleLibraryIds = new Set(["artykuly", "articles"]);
+
+/**
+ * Sprawdza rozłączny kontrakt pełnej karty.
+ */
+const validateCard = (item, location) => {
+  assert.ok(
+    cardKinds.includes(item.kind),
+    `${location}: missing or invalid card kind`,
+  );
+
+  if (item.kind === "navigation") {
+    assert.ok(item.href, `${location}: navigation needs href`);
+    assert.ok(!item.source, `${location}: navigation must not have source`);
+    return;
+  }
+
+  if (item.kind === "evidence") {
+    assert.ok(item.source, `${location}: evidence needs source`);
+    assert.ok(!item.href, `${location}: evidence must not have href`);
+    assert.ok(!item.actionLabel, `${location}: evidence must not have actionLabel`);
+    return;
+  }
+
+  assert.ok(!item.href, `${location}: information must not have href`);
+  assert.ok(!item.source, `${location}: information must not have source`);
+  assert.ok(!item.actionLabel, `${location}: information must not have actionLabel`);
+};
 
 /**
  * Sprawdza, czy dwa obiekty JSON mają ten sam kształt kluczy.
@@ -41,11 +70,30 @@ const validatePage = (page, locale, pageKey) => {
   page.sections.forEach((section, index) => {
     assert.ok(section.id, `${pageKey}/${locale}/section-${index}: missing id`);
     assert.ok(section.heading, `${pageKey}/${locale}/section-${index}: missing heading`);
+    section.items?.forEach((item, itemIndex) => {
+      if (!("title" in item)) {
+        assert.ok(
+          articleLibraryIds.has(section.id),
+          `${pageKey}/${locale}/${section.id}/item-${itemIndex}: reference outside article library`,
+        );
+        return;
+      }
+
+      validateCard(item, `${pageKey}/${locale}/${section.id}/item-${itemIndex}`);
+    });
   });
 };
 
 sameShape(messages.pl, messages.en, "messages");
 sameShape(content.homepageContent.pl, content.homepageContent.en, "homepage");
+locales.forEach((locale) => {
+  content.homepageContent[locale].articles.forEach((item, index) => {
+    validateCard(item, `homepage/${locale}/article-${index}`);
+  });
+  content.homepageContent[locale].environments.forEach((item, index) => {
+    validateCard(item, `homepage/${locale}/environment-${index}`);
+  });
+});
 
 const pageKeys = Object.keys(content.pageContent).sort();
 pageKeys.forEach((pageKey) => {
@@ -72,7 +120,7 @@ visualKeys.forEach((pageKey) => {
     });
     Object.values(visual.toneBySection[locale]).forEach((tone) => {
       assert.ok(
-        ["paper", "white", "ink", "cobalt", "ochre", "coral", "green"].includes(tone),
+        ["paper", "paper-deep", "white", "ink", "cobalt", "ochre", "coral", "green"].includes(tone),
         `${pageKey}/${locale}: invalid section tone`,
       );
     });
@@ -90,11 +138,13 @@ assert.deepEqual(
   "articles: locale id mismatch",
 );
 articles.articles.pl.forEach((article) => {
+  assert.equal(article.kind, "navigation", `${article.id}/pl: article card must be navigation`);
   assert.ok(article.seoTitle, `${article.id}/pl: missing SEO title`);
   assert.ok(article.seoDescription, `${article.id}/pl: missing SEO description`);
   assert.ok(article.faq.length > 0, `${article.id}/pl: missing FAQ`);
 });
 articles.articles.en.forEach((article) => {
+  assert.equal(article.kind, "navigation", `${article.id}/en: article card must be navigation`);
   assert.ok(article.seoTitle, `${article.id}/en: missing SEO title`);
   assert.ok(article.seoDescription, `${article.id}/en: missing SEO description`);
   assert.ok(article.faq.length > 0, `${article.id}/en: missing FAQ`);
