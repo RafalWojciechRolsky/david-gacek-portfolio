@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 import { Footer } from "@/components/chrome/Footer";
 import { SiteHeader } from "@/components/chrome/SiteHeader";
+import type { HeaderTheme } from "@/components/chrome/SiteHeader";
 import { SkipLink } from "@/components/chrome/SkipLink";
 import { AnalyticsScripts } from "@/components/analytics/AnalyticsScripts";
 import { siteConfig } from "@/lib/site-config";
@@ -17,6 +18,8 @@ interface PageShellProps {
   currentPage: PageKey;
   /** Klasa wariantu głównej treści. */
   className?: string;
+  /** Opcjonalny motyw nagłówka niezależny od domyślnego motywu strony. */
+  headerTheme?: HeaderTheme;
 }
 
 /**
@@ -27,6 +30,7 @@ export function PageShell({
   locale,
   currentPage,
   className = "",
+  headerTheme,
 }: PageShellProps) {
   return (
     <>
@@ -39,6 +43,7 @@ export function PageShell({
         phoneHref={siteConfig.phoneHref}
         whatsappHref={siteConfig.whatsappHref}
         phoneHours={siteConfig.phoneHoursByLocale[locale]}
+        themeOverride={headerTheme}
       />
       <main id="main" tabIndex={-1} className={className}>
         {children}

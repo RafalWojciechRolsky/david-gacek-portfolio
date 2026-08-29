@@ -50,7 +50,7 @@ export default async function EnglishArticlePage({ params }: EnglishArticleProps
   }
 
   return (
-    <PageShell locale="en" currentPage="insights">
+    <PageShell locale="en" currentPage="insights" headerTheme="paper">
       <ArticleJsonLd article={article} locale="en" />
       <ArticlePage article={article} locale="en" />
     </PageShell>

@@ -295,11 +295,49 @@ export interface ArticleItem extends ContentItem {
 }
 
 /**
+ * Sekcja treści artykułu z nagłówkiem, odporna na mapowanie na komponent CMS.
+ */
+export interface ArticleSection {
+  /** Kotwica sekcji używana w spisie treści. */
+  id: string;
+  /** Nagłówek sekcji renderowany jako H2. */
+  heading: string;
+  /** Akapity sekcji, mogą zawierać linki w zapisie [tekst](ścieżka). */
+  paragraphs: string[];
+  /** Opcjonalna lista punktów doklejona pod akapitami. */
+  bullets?: string[];
+}
+
+/**
+ * Obraz otwierający artykuł, wyłącznie z autentycznych materiałów projektu.
+ */
+export interface ArticleHero {
+  /** Ścieżka obrazu w katalogu public. */
+  src: string;
+  /** Tekst alternatywny opisujący zdjęcie. */
+  alt: string;
+  /** Podpis pod zdjęciem. */
+  caption: string;
+  /** Szerokość źródłowego pliku w pikselach. */
+  width: number;
+  /** Wysokość źródłowego pliku w pikselach. */
+  height: number;
+}
+
+/**
  * Pełny kontrakt artykułu przechowywanego w lokalnym JSON lub później w CMS.
  */
 export interface ArticleDetail extends ArticleItem {
-  /** Pełne akapity roboczego artykułu. */
-  paragraphs: string[];
+  /** Data pierwszej publikacji treści w formacie ISO. */
+  publishedAt: string;
+  /** Data ostatniej aktualizacji treści w formacie ISO. */
+  updatedAt: string;
+  /** Obraz otwierający artykuł. */
+  hero: ArticleHero;
+  /** Sekcje treści z nagłówkami H2. */
+  sections: ArticleSection[];
+  /** Identyfikatory artykułów powiązanych merytorycznie. */
+  related?: string[];
   /** Nazwa źródła artykułu. */
   sourceLabel: string;
   /** Krótki tytuł SEO z nazwą marki. */

@@ -18,6 +18,23 @@ interface GenericPageProps {
   locale: Locale;
 }
 
+const VIDEO_AFTER_SECTION: Partial<
+  Record<PageKey, Record<Locale, string>>
+> = {
+  teacherTraining: {
+    pl: "oferta",
+    en: "offer",
+  },
+  corporateEvents: {
+    pl: "oferta",
+    en: "offer",
+  },
+  childrenWorkshops: {
+    pl: "dowody",
+    en: "evidence",
+  },
+};
+
 /**
  * Renderuje wspólny szkielet podstron editorialowych z zachowaniem kolejności treści.
  */
@@ -33,12 +50,7 @@ export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
     ...pageVideo,
     placeholderImage: visual.mediaImage ?? pageVideo.placeholderImage,
   };
-  const videoAfterSection =
-    pageKey === "teacherTraining"
-      ? "transfer"
-      : pageKey === "corporateEvents"
-        ? "dowody"
-        : "dowody";
+  const videoAfterSection = VIDEO_AFTER_SECTION[pageKey]?.[locale];
   const videoIndex = page.sections.findIndex(
     (pageSection) => pageSection.id === videoAfterSection,
   );
@@ -69,13 +81,14 @@ export function GenericPage({ page, pageKey, locale }: GenericPageProps) {
               heading={messages.page.faqHeading}
               intro={messages.page.faqIntro}
               headingId="page-faq-heading"
+              signal={visual.signal}
             />
           </div>
           <DisclosureFaq items={page.faq} objectId={`${pageKey}-faq-list`} />
         </div>
       </section>
       {pageKey !== "contact" ? (
-        <ContactSection locale={locale} dark />
+        <ContactSection locale={locale} dark signal={visual.signal} />
       ) : null}
     </>
   );

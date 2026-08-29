@@ -76,24 +76,24 @@
     },
     "toneBySection": {
       "pl": {
-        "dla-kogo": "ochre",
+        "dla-kogo": "paper",
         "program": "white",
         "wyniesiesz": "paper",
         "sposob-pracy": "ink",
         "transfer": "cobalt",
         "oferta": "white",
-        "materialy-dla-dyrekcji": "ochre",
-        "materialy-dla-dyrektorki": "ochre"
+        "materialy-dla-dyrekcji": "paper",
+        "materialy-dla-dyrektorki": "paper"
       },
       "en": {
-        "who-for": "ochre",
+        "who-for": "paper",
         "programme": "white",
         "takeaways": "paper",
         "how": "ink",
         "follow-up": "cobalt",
         "offer": "white",
-        "leadership-materials": "ochre",
-        "director-materials": "ochre"
+        "leadership-materials": "paper",
+        "director-materials": "paper"
       }
     }
   },
@@ -188,22 +188,22 @@
     },
     "toneBySection": {
       "pl": {
-        "wiek": "green",
+        "wiek": "paper",
         "program": "white",
         "bezpieczenstwo": "paper",
         "przebieg": "ink",
-        "organizacja": "green",
+        "organizacja": "ochre",
         "dowody": "white",
-        "warunki": "green"
+        "warunki": "paper"
       },
       "en": {
-        "age": "green",
+        "age": "paper",
         "programme": "white",
         "safety": "paper",
         "process": "ink",
-        "organization": "green",
+        "organization": "ochre",
         "evidence": "white",
-        "terms": "green"
+        "terms": "paper"
       }
     }
   },
@@ -236,7 +236,7 @@
         "przebieg": "green",
         "wariant-muzyczny": "paper",
         "kwalifikacje": "white",
-        "oferta": "cobalt"
+        "oferta": "green"
       },
       "en": {
         "disc-definition": "paper",
@@ -245,7 +245,7 @@
         "process": "green",
         "music-variant": "paper",
         "qualifications": "white",
-        "offer": "cobalt"
+        "offer": "green"
       }
     }
   },
@@ -274,12 +274,12 @@
       "pl": {
         "kryteria": "ink",
         "case-studies": "white",
-        "odsprzedaz": "coral"
+        "odsprzedaz": "paper"
       },
       "en": {
         "criteria": "ink",
         "case-studies": "white",
-        "resell": "coral"
+        "resell": "paper"
       }
     }
   },

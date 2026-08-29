@@ -1,5 +1,6 @@
 import { absoluteUrl } from "@/lib/metadata";
 import type { ArticleDetail, Locale } from "@/lib/types";
+import { pathFor } from "@/lib/routes";
 import { getMessages } from "@/messages/ui";
 
 interface ArticleJsonLdProps {
@@ -10,7 +11,7 @@ interface ArticleJsonLdProps {
 }
 
 /**
- * Renderuje dane BlogPosting zgodne z widoczną treścią artykułu.
+ * Renderuje dane BlogPosting z obrazem, datami i autorem, zgodne z widoczną treścią artykułu.
  */
 export function ArticleJsonLd({ article, locale }: ArticleJsonLdProps) {
   const articleUrl = absoluteUrl(article.href ?? "/");
@@ -25,9 +26,13 @@ export function ArticleJsonLd({ article, locale }: ArticleJsonLdProps) {
         inLanguage: locale,
         url: articleUrl,
         mainEntityOfPage: articleUrl,
+        image: absoluteUrl(article.hero.src),
+        datePublished: article.publishedAt,
+        dateModified: article.updatedAt,
         author: {
           "@type": "Person",
           name: messages.brandName,
+          url: absoluteUrl(pathFor("profile", locale)),
         },
       },
       {

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { getArticles } from "@/lib/articles";
+import { getArticles, getArticle } from "@/lib/articles";
 import { absoluteUrl } from "@/lib/metadata";
 import { getPublicPageKeys } from "@/lib/content";
 import { pathFor } from "@/lib/routes";
@@ -38,6 +38,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const articleEntries = (["pl", "en"] as const).flatMap((locale) =>
     getArticles(locale).map((article) => ({
       url: absoluteUrl(article.href ?? "/"),
+      lastModified: new Date(article.updatedAt),
+      alternates: {
+        languages: {
+          pl: absoluteUrl(article.href ?? "/"),
+          en: absoluteUrl(
+            getArticle("en", article.id)?.href ?? article.href ?? "/",
+          ),
+        },
+      },
     })),
   );
 

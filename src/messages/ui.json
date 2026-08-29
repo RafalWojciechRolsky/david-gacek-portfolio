@@ -99,7 +99,12 @@
     "article": {
       "sourceHeading": "Źródło i kontekst",
       "back": "Wróć do Wiedzy i inspiracji",
-      "faqHeading": "Pytania do tego materiału"
+      "faqHeading": "Pytania do tego materiału",
+      "tocHeading": "W tym artykule",
+      "authorHeading": "O autorze",
+      "authorBio": "Dawid Gacek pracuje z Bum Bum Rurkami od 2010 roku, szkoli nauczycieli, prowadzi warsztaty dla dzieci, integracje firmowe i szkolenia DISC dla zespołów.",
+      "sourcePrefix": "Materiał powstał w oparciu o",
+      "relatedHeading": "Powiązane materiały"
     },
     "status": {
       "confirmed": "Potwierdzone",
@@ -233,7 +238,12 @@
     "article": {
       "sourceHeading": "Source and context",
       "back": "Back to insights and inspiration",
-      "faqHeading": "Questions about this material"
+      "faqHeading": "Questions about this material",
+      "tocHeading": "In this article",
+      "authorHeading": "About the author",
+      "authorBio": "Dawid Gacek has worked with boomwhackers since 2010, training teachers, leading children's workshops, corporate integrations, and DISC training for teams.",
+      "sourcePrefix": "This material is based on",
+      "relatedHeading": "Related articles"
     },
     "status": {
       "confirmed": "Confirmed",

@@ -100,6 +100,59 @@ articles.articles.en.forEach((article) => {
   assert.ok(article.faq.length > 0, `${article.id}/en: missing FAQ`);
 });
 
+/**
+ * Sprawdza kontrakt pełnego artykułu w nowym modelu sekcji.
+ */
+const validateArticle = (article, locale) => {
+  assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(article.publishedAt), `${article.id}/${locale}: invalid publishedAt`);
+  assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(article.updatedAt), `${article.id}/${locale}: invalid updatedAt`);
+  assert.ok(article.updatedAt >= article.publishedAt, `${article.id}/${locale}: updatedAt before publishedAt`);
+  assert.ok(article.hero?.src?.startsWith("/images/"), `${article.id}/${locale}: hero must use /images/`);
+  assert.ok(article.hero.alt, `${article.id}/${locale}: missing hero alt`);
+  assert.ok(article.hero.caption, `${article.id}/${locale}: missing hero caption`);
+  assert.ok(article.hero.width > 0 && article.hero.height > 0, `${article.id}/${locale}: missing hero dimensions`);
+  assert.ok(article.sections.length >= 4, `${article.id}/${locale}: needs at least 4 sections`);
+  const sectionIds = article.sections.map((section) => section.id);
+  assert.equal(new Set(sectionIds).size, sectionIds.length, `${article.id}/${locale}: duplicate section ids`);
+  article.sections.forEach((section, index) => {
+    assert.ok(section.heading, `${article.id}/${locale}/section-${index}: missing heading`);
+    assert.ok(
+      (section.paragraphs?.length ?? 0) + (section.bullets?.length ?? 0) > 0,
+      `${article.id}/${locale}/section-${index}: empty section`,
+    );
+  });
+  const wordCount = article.sections
+    .flatMap((section) => [...(section.paragraphs ?? []), ...(section.bullets ?? [])])
+    .join(" ")
+    .split(/\s+/).length;
+  assert.ok(wordCount >= 600, `${article.id}/${locale}: too short, ${wordCount} words`);
+  if (article.related) {
+    const allIds = articles.articles[locale].map((candidate) => candidate.id);
+    article.related.forEach((relatedId) => {
+      assert.ok(allIds.includes(relatedId), `${article.id}/${locale}: unknown related id ${relatedId}`);
+    });
+  }
+};
+articles.articles.pl.forEach((article) => validateArticle(article, "pl"));
+articles.articles.en.forEach((article) => validateArticle(article, "en"));
+
+/**
+ * Sprawdza, że biblioteka na hubie Wiedzy odwołuje się do istniejących artykułów.
+ */
+["artykuly", "articles"].forEach((sectionId) => {
+  const section = content.pageContent.insights[sectionId === "artykuly" ? "pl" : "en"].sections.find(
+    (candidate) => candidate.id === sectionId,
+  );
+  assert.ok(section, `insights: missing section ${sectionId}`);
+  section.items.forEach((item) => {
+    const slug = item.id.replace("insight-", "");
+    const article = articles.articles[sectionId === "artykuly" ? "pl" : "en"].find(
+      (candidate) => candidate.id === slug,
+    );
+    assert.ok(article, `insights/${sectionId}: card id ${item.id} has no matching article`);
+  });
+});
+
 console.log(
   `Content contracts valid: ${pageKeys.length + 1} pages, ${articles.articles.pl.length} article pairs, ${locales.length} locales.`,
 );

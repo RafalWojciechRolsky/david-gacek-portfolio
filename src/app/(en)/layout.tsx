@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import "../globals.css";
 import { inter, spaceGrotesk } from "@/app/fonts";
+import { PageTransition } from "@/components/chrome/PageTransition";
 import { getMessages } from "@/messages/ui";
 
 const messages = getMessages("en");

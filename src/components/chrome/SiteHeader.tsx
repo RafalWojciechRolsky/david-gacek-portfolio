@@ -22,6 +22,17 @@ const HERO_THEMES: Record<PageKey, string> = {
   materials: "paper",
 };
 
+/** Motywy powierzchni dostępne dla nagłówka strony. */
+export type HeaderTheme =
+  | "paper"
+  | "white"
+  | "cobalt"
+  | "dark-cobalt"
+  | "coral"
+  | "ochre"
+  | "green"
+  | "ink";
+
 interface SiteHeaderProps {
   /** Bieżąca lokalizacja. */
   locale: Locale;
@@ -35,6 +46,8 @@ interface SiteHeaderProps {
   whatsappHref: string;
   /** Godziny odbierania. */
   phoneHours: string;
+  /** Opcjonalnie odłącza powierzchnię nagłówka od domyślnego motywu strony. */
+  themeOverride?: HeaderTheme;
 }
 
 /**
@@ -47,9 +60,10 @@ export function SiteHeader({
   phoneHref,
   whatsappHref,
   phoneHours,
+  themeOverride,
 }: SiteHeaderProps) {
   const messages = getMessages(locale);
-  const theme = HERO_THEMES[currentPage] ?? "paper";
+  const theme = themeOverride ?? HERO_THEMES[currentPage] ?? "paper";
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
@@ -82,6 +96,7 @@ export function SiteHeader({
   const headerClasses = [
     "site-header",
     `site-header--theme-${theme}`,
+    `site-header--page-${currentPage}`,
     isScrolled ? "site-header--scrolled" : "site-header--at-top",
     isHidden ? "site-header--hidden" : "",
   ]

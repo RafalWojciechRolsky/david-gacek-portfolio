@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site-config";
 import { getStatusLabel } from "@/lib/content-labels";
+import { articleToCardItem, getArticle, getArticleById } from "@/lib/articles";
 import type { Locale, PageSection, PageVisual } from "@/lib/types";
 
 import { ActionLink } from "@/components/ui/ActionLink";
@@ -33,6 +34,8 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
           pageSection.id === "director-materials";
         const isContactChannels =
           pageSection.id === "kanaly" || pageSection.id === "channels";
+        const isArticleLibrary =
+          pageSection.id === "artykuly" || pageSection.id === "articles";
         const tone =
           visual.toneBySection[pageSection.id] ?? pageSection.tone ?? "paper";
 
@@ -59,7 +62,11 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                 />
               ) : pageSection.items?.length ? (
                 <div
-                  className={`content-grid content-grid--${pageSection.items.length}`}
+                  className={
+                    isArticleLibrary
+                      ? "article-grid"
+                      : `content-grid content-grid--${pageSection.items.length}`
+                  }
                 >
                   {pageSection.items.map((contentItem, index) =>
                     isResources ? (
@@ -68,6 +75,24 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                         resource={contentItem}
                         locale={locale}
                       />
+                    ) : isArticleLibrary ? (
+                      (() => {
+                        const articleId = contentItem.id.replace("insight-", "");
+                        const article =
+                          getArticleById(locale, articleId) ??
+                          (contentItem.href
+                            ? getArticle(locale, contentItem.href.split("/").pop() ?? "")
+                            : undefined);
+                        return (
+                          <ContentCard
+                            key={contentItem.id}
+                            item={article ? articleToCardItem(article) : contentItem}
+                            index={index}
+                            objectId={contentItem.id}
+                            linkWholeCard
+                          />
+                        );
+                      })()
                     ) : (
                       <ContentCard
                         key={contentItem.id}
@@ -76,7 +101,8 @@ export function PageSections({ sections, locale, visual }: PageSectionsProps) {
                         objectId={contentItem.id}
                         linkWholeCard
                         statusLabel={
-                          contentItem.status
+                          contentItem.status === "preparing" ||
+                          contentItem.status === "unavailable"
                             ? getStatusLabel(contentItem.status, locale)
                             : undefined
                         }

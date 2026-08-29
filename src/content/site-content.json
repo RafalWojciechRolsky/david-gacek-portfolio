@@ -803,7 +803,7 @@
         "proof": "4000 przeszkolonych nauczycieli",
         "cta": {
           "label": "Sprawdź szkolenie",
-          "href": "#materialy-dla-dyrektorki"
+          "href": "#materialy-dla-dyrekcji"
         },
         "video": {
           "videoId": "fqVVmwXLuoY",
@@ -953,24 +953,22 @@
               {
                 "id": "format",
                 "title": "Format",
-                "body": "Szkolenie grupowe."
+                "body": "Szkolenie grupowe na terenie szkoły lub placówki, dla całej rady pedagogicznej albo wybranej grupy nauczycieli."
               },
               {
                 "id": "price",
                 "title": "Cena",
-                "body": "180 zł brutto za osobę.",
-                "status": "pending"
+                "body": "180 zł brutto za osobę. Przy większych grupach ustalamy stawkę grupową, o czym mówię wprost podczas rozmowy."
               },
               {
                 "id": "duration",
                 "title": "Czas",
-                "body": "240 minut.",
-                "status": "pending"
+                "body": "240 minut, z przerwą. Program mieści się w jednym dniu roboczym i nie wymaga dodatkowych zajęć przygotowawczych."
               },
               {
                 "id": "date",
                 "title": "Termin i miejsce",
-                "body": "Ustalane indywidualnie telefonicznie."
+                "body": "Ustalane indywidualnie telefonicznie. Dobieramy termin do kalendarza szkoły, a sala wystarczy taka, w której da się ułożyć koło."
               }
             ]
           },
@@ -1031,7 +1029,7 @@
         "proof": "4,000 teachers trained",
         "cta": {
           "label": "Explore the training",
-          "href": "#director-materials"
+          "href": "#leadership-materials"
         },
         "video": {
           "videoId": "fqVVmwXLuoY",
@@ -1181,24 +1179,22 @@
               {
                 "id": "format",
                 "title": "Format",
-                "body": "Group training."
+                "body": "Group training at your school or venue, for the whole teaching council or a selected group of teachers."
               },
               {
                 "id": "price",
                 "title": "Price",
-                "body": "180 PLN gross per person.",
-                "status": "pending"
+                "body": "180 PLN gross per person. For larger groups we agree a group rate, which I state clearly during the call."
               },
               {
                 "id": "duration",
                 "title": "Duration",
-                "body": "240 minutes.",
-                "status": "pending"
+                "body": "240 minutes with a break. The programme fits into a single working day and needs no extra preparation sessions."
               },
               {
                 "id": "date",
                 "title": "Date and venue",
-                "body": "Agreed individually by phone."
+                "body": "Agreed individually by phone. We match the date to the school calendar, and an ordinary room where a circle fits is enough."
               }
             ]
           },
@@ -2726,25 +2722,25 @@
               {
                 "id": "piosenki",
                 "title": "Piosenki",
-                "body": "Muzyka i rytm do wykorzystania z grupą.",
-            "href": "#artykuly"
+                "body": "Muzyka i rytm do wykorzystania z grupą. Gotowe piosenki z tekstem i prostym akompaniamentem na rurki, które da się wprowadzić bez przygotowania muzycznego.",
+                "href": "#artykuly"
               },
               {
                 "id": "zabawy",
                 "title": "Zabawy",
-                "body": "Proste pomysły na aktywne zajęcia.",
-            "href": "#artykuly"
+                "body": "Proste pomysły na aktywne zajęcia. Krótkie gry rytmiczne na rozgrzewkę, na skupienie i na zamknięcie zajęcia, opisane krok po kroku.",
+                "href": "#artykuly"
               },
               {
                 "id": "scenariusze",
                 "title": "Scenariusze",
-                "body": "Struktury, które pomagają zacząć.",
-            "href": "#artykuly"
+                "body": "Struktury, które pomagają zacząć. Kompletne przebiegi zajęć z celami, listą rurek i wskazówkami, jak dostosować je do wieku grupy.",
+                "href": "#artykuly"
               },
               {
                 "id": "materialy",
                 "title": "Materiały do pobrania",
-                "body": "Karty, nuty i pliki ze statusem praw.",
+                "body": "Karty, nuty i pliki ze statusem praw. Każdy materiał ma opisane warunki użycia, żebyś wiedział, co wolno wydrukować i pokazać.",
                 "href": "#materialy"
               }
             ]
@@ -2794,37 +2790,31 @@
           {
             "id": "artykuly",
             "heading": "Biblioteka artykułów, scenariuszy i zabaw",
-            "intro": "Pierwsza odpowiedź jest zawsze na początku materiału.",
+            "intro": "Praktyczny blog o pracy z grupą: przewodniki po Bum Bum Rurkach, scenariusze zajęć i metody komunikacji DISC. Pierwsza odpowiedź jest zawsze na początku materiału.",
             "items": [
               {
-                "id": "insight-what-are-boomwhackers",
-                "type": "Przewodnik",
-                "title": "Bum Bum Rurki: czym są i co można z nimi zrobić?",
-                "body": "Punkt wyjścia do świadomej pracy z rytmem, słuchaniem, ruchem i grupą.",
-                "href": "/wiedza/bum-bum-rurki-czym-sa",
-                "actionLabel": "Czytaj artykuł",
-                "readTime": "5 minut",
-                "status": "available"
+                "id": "insight-what-are-boomwhackers"
               },
               {
-                "id": "insight-group-attention",
-                "type": "Pomysł do użycia",
-                "title": "Jak utrzymać uwagę grupy bez podnoszenia głosu?",
-                "body": "Proste zasady i rytuały, które pomagają prowadzić aktywne zajęcia.",
-                "href": "/wiedza/uwaga-grupy",
-                "actionLabel": "Czytaj artykuł",
-                "readTime": "4 minuty",
-                "status": "available"
+                "id": "insight-boomwhackers-songs"
               },
               {
-                "id": "insight-music-cooperation",
-                "type": "Metoda",
-                "title": "Muzyka jako język współpracy",
-                "body": "Co dzieje się w grupie, gdy każdy słucha swojego rytmu i rytmu innych?",
-                "href": "/wiedza/muzyka-jezyk-wspolpracy",
-                "actionLabel": "Czytaj artykuł",
-                "readTime": "6 minut",
-                "status": "available"
+                "id": "insight-boomwhackers-games"
+              },
+              {
+                "id": "insight-integration-games-children"
+              },
+              {
+                "id": "insight-musical-icebreakers"
+              },
+              {
+                "id": "insight-disc-in-practice"
+              },
+              {
+                "id": "insight-group-attention"
+              },
+              {
+                "id": "insight-music-cooperation"
               }
             ]
           },
@@ -2898,25 +2888,25 @@
               {
                 "id": "songs",
                 "title": "Songs",
-                "body": "Music and rhythm to use with a group.",
-            "href": "#articles"
+                "body": "Music and rhythm to use with a group. Ready-made songs with lyrics and simple boomwhacker accompaniment you can introduce without a music background.",
+                "href": "#articles"
               },
               {
                 "id": "games",
                 "title": "Games",
-                "body": "Simple ideas for active sessions.",
-            "href": "#articles"
+                "body": "Simple ideas for active sessions. Short rhythm games for warm-ups, focus, and closing, described step by step.",
+                "href": "#articles"
               },
               {
                 "id": "session-plans",
                 "title": "Session plans",
-                "body": "Structures that help you begin.",
-            "href": "#articles"
+                "body": "Structures that help you begin. Complete session outlines with goals, a boomwhacker list, and tips for adapting them to the age of the group.",
+                "href": "#articles"
               },
               {
                 "id": "resources",
                 "title": "Downloadable resources",
-                "body": "Cards, notes, and files with a clear rights status.",
+                "body": "Cards, notes, and files with a clear rights status. Every resource states its terms of use, so you know what you may print and share.",
                 "href": "#resources"
               }
             ]
@@ -2969,34 +2959,28 @@
             "intro": "The first answer always comes at the start of the material.",
             "items": [
               {
-                "id": "insight-what-are-boomwhackers",
-                "type": "Guide",
-                "title": "Boomwhackers: what are they and what can you do with them?",
-                "body": "A starting point for thoughtful work with rhythm, listening, movement, and groups.",
-                "href": "/en/insights/what-are-boomwhackers",
-                "actionLabel": "Read the article",
-                "readTime": "5 min read",
-                "status": "available"
+                "id": "insight-what-are-boomwhackers"
               },
               {
-                "id": "insight-group-attention",
-                "type": "Practical idea",
-                "title": "How can you hold a group's attention without raising your voice?",
-                "body": "Simple rules and rituals that help you lead active sessions.",
-                "href": "/en/insights/group-attention",
-                "actionLabel": "Read the article",
-                "readTime": "4 min read",
-                "status": "available"
+                "id": "insight-boomwhackers-songs"
               },
               {
-                "id": "insight-music-cooperation",
-                "type": "Method",
-                "title": "Music as a language of cooperation",
-                "body": "What happens when everyone listens to their own rhythm and the rhythm of others?",
-                "href": "/en/insights/music-cooperation",
-                "actionLabel": "Read the article",
-                "readTime": "6 min read",
-                "status": "available"
+                "id": "insight-boomwhackers-games"
+              },
+              {
+                "id": "insight-integration-games-children"
+              },
+              {
+                "id": "insight-musical-icebreakers"
+              },
+              {
+                "id": "insight-disc-in-practice"
+              },
+              {
+                "id": "insight-group-attention"
+              },
+              {
+                "id": "insight-music-cooperation"
               }
             ]
           },

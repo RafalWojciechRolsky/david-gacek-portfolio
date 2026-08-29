@@ -50,7 +50,7 @@ export default async function PolishArticlePage({ params }: PolishArticleProps) 
   }
 
   return (
-    <PageShell locale="pl" currentPage="insights">
+    <PageShell locale="pl" currentPage="insights" headerTheme="paper">
       <ArticleJsonLd article={article} locale="pl" />
       <ArticlePage article={article} locale="pl" />
     </PageShell>

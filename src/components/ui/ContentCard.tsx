@@ -67,7 +67,7 @@ export function ContentCard({
 
   if (linkWholeCard && item.href) {
     return (
-      <a className={cardClassName} href={item.href} id={item.href.startsWith("#") ? item.href.slice(1) : undefined} data-object-id={objectId}>
+      <a className={cardClassName} href={item.href} data-object-id={objectId}>
         {cardContent}
       </a>
     );

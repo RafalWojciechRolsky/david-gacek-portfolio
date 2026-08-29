@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import "../globals.css";
 import { inter, spaceGrotesk } from "@/app/fonts";
+import { PageTransition } from "@/components/chrome/PageTransition";
 import { getMessages } from "@/messages/ui";
 
 const messages = getMessages("pl");
@@ -26,7 +27,9 @@ interface PolishLayoutProps {
 export default function PolishLayout({ children }: PolishLayoutProps) {
   return (
     <html lang="pl" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body>{children}</body>
+      <body>
+        <PageTransition>{children}</PageTransition>
+      </body>
     </html>
   );
 }

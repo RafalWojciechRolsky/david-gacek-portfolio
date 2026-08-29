@@ -110,6 +110,17 @@ img {
   outline-offset: 4px;
 }
 
+/* Na ciemnych tłach kobaltowy focus znika, więc przechodzimy na jasną ochrę */
+.content-section--ink :focus-visible,
+.content-section--cobalt :focus-visible,
+.video-section :focus-visible,
+.contact-section--signal :focus-visible,
+.site-header--theme-cobalt.site-header--at-top :focus-visible,
+.site-header--theme-dark-cobalt.site-header--at-top :focus-visible,
+.site-header--theme-ink.site-header--at-top :focus-visible {
+  outline-color: var(--signal-ochre-bright);
+}
+
 .container {
   width: min(var(--max-width), calc(100% - (var(--gutter) * 2)));
   margin-inline: auto;
@@ -234,7 +245,6 @@ img {
   z-index: 50;
   border-bottom: 1px solid var(--border-subtle);
   transition: transform 0.28s ease, background-color 0.28s ease, color 0.28s ease, border-color 0.28s ease;
-  will-change: transform;
 }
 
 .site-header--hidden {
@@ -245,6 +255,28 @@ img {
   background: var(--surface-paper);
   border-bottom: 1px solid var(--border-subtle);
   color: var(--surface-ink);
+}
+
+/* Po scrollu Header zostaje neutralną powierzchnią, a aktywny link zachowuje tożsamość strony. */
+.site-header--scrolled.site-header--page-teacherTraining [aria-current="page"],
+.site-header--scrolled.site-header--page-profile [aria-current="page"],
+.site-header--scrolled.site-header--page-projects [aria-current="page"],
+.site-header--scrolled.site-header--page-contact [aria-current="page"],
+.site-header--scrolled.site-header--page-materials [aria-current="page"] {
+  color: var(--signal-cobalt);
+}
+
+.site-header--scrolled.site-header--page-corporateEvents [aria-current="page"] {
+  color: var(--signal-coral-ink);
+}
+
+.site-header--scrolled.site-header--page-childrenWorkshops [aria-current="page"],
+.site-header--scrolled.site-header--page-insights [aria-current="page"] {
+  color: var(--signal-ochre-ink);
+}
+
+.site-header--scrolled.site-header--page-disc [aria-current="page"] {
+  color: var(--signal-green-ink);
 }
 
 /* Hero theme backgrounds when at top */
@@ -453,6 +485,7 @@ img {
   display: block;
   min-height: 44px;
   padding: 8px;
+  color: var(--surface-ink);
   font-size: 0.86rem;
   line-height: 1.3;
   text-decoration: none;
@@ -668,7 +701,6 @@ img {
 }
 
 .proof-heading h2 {
-  font-size: clamp(1.85rem, 3.2vw, 2.7rem);
   hyphens: none;
   word-break: normal;
   overflow-wrap: normal;
@@ -780,6 +812,29 @@ img {
   color: var(--signal-coral);
 }
 
+/* Status należy do rodziny bieżącej strony, zamiast wprowadzać obcy sygnał. */
+.page-section-signal--cobalt .card-status.status--pending,
+.page-section-signal--cobalt .card-status.status--preparing,
+.utility-page .card-status.status--pending,
+.utility-page .card-status.status--preparing {
+  color: var(--signal-cobalt);
+}
+
+.page-section-signal--ochre .card-status.status--pending,
+.page-section-signal--ochre .card-status.status--preparing {
+  color: var(--signal-ochre-ink);
+}
+
+.page-section-signal--coral .card-status.status--pending,
+.page-section-signal--coral .card-status.status--preparing {
+  color: var(--signal-coral-ink);
+}
+
+.page-section-signal--green .card-status.status--pending,
+.page-section-signal--green .card-status.status--preparing {
+  color: var(--signal-green-ink);
+}
+
 .environment-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -841,23 +896,11 @@ img {
 }
 
 .video-section .rhythmic-marker span {
-  background: var(--signal-ochre);
-}
-
-.video-section--cobalt .rhythmic-marker span {
-  background: var(--signal-cobalt);
-}
-
-.video-section--coral .rhythmic-marker span {
-  background: var(--signal-coral);
+  background: var(--signal-ochre-bright);
 }
 
 .video-section--coral {
   background: var(--signal-coral-ink);
-}
-
-.video-section--green .rhythmic-marker span {
-  background: var(--signal-green);
 }
 
 .video-note {
@@ -1102,7 +1145,7 @@ img {
 
 .context-card:hover p,
 .context-card:focus-visible p {
-  color: var(--on-cobalt-soft);
+  color: rgb(255 255 255 / 85%);
 }
 
 .context-card .card-action {
@@ -1121,6 +1164,15 @@ img {
 .context-card:hover .card-action,
 .context-card:focus-visible .card-action {
   color: var(--surface-white);
+}
+
+.context-card .card-action .arrow {
+  transition: transform var(--ease);
+}
+
+.context-card:hover .card-action .arrow,
+.context-card:focus-visible .card-action .arrow {
+  transform: translateX(5px);
 }
 
 /* Cards and generic pages */
@@ -1186,48 +1238,108 @@ img {
   color: var(--on-cobalt-muted);
 }
 
-.content-section--ink .card-number,
-.content-section--ink .card-label,
-.content-section--ink .content-card .card-action,
-.content-section--cobalt .card-number,
-.content-section--cobalt .card-label,
-.content-section--cobalt .content-card .card-action {
+/* Ciemne sekcje: akcenty kart muszą zostawać czytelne na ink i kobalcie.
+   Podwójna klasa w selektorze gwarantuje wyższą specyficzność niż reguły sygnałów,
+   niezależnie od kolejności w pliku. */
+.content-section.content-section--ink .content-card .card-number,
+.content-section.content-section--ink .content-card .card-label,
+.content-section.content-section--ink .content-card .card-action,
+.content-section.content-section--cobalt .content-card .card-number,
+.content-section.content-section--cobalt .content-card .card-label,
+.content-section.content-section--cobalt .content-card .card-action,
+.contact-section.contact-section--signal .content-card .card-number,
+.contact-section.contact-section--signal .content-card .card-label,
+.contact-section.contact-section--signal .content-card .card-action {
   color: var(--surface-white);
 }
 
-.content-section--ink .content-card--link:hover h3,
-.content-section--ink .content-card--link:focus-visible h3,
-.content-section--cobalt .content-card--link:hover h3,
-.content-section--cobalt .content-card--link:focus-visible h3 {
-  color: var(--signal-ochre);
+/* Sekcje w ciepłych tonach: wtórny tekst i akcenty w tuszu sygnału, nie w neutralnej szarości */
+.content-section--ochre .content-card p {
+  color: var(--signal-ochre-ink);
 }
 
-.page-section-signal--cobalt .card-number,
-.page-section-signal--cobalt .card-label,
+.content-section--coral .content-card p {
+  color: var(--signal-coral-ink);
+}
+
+.content-section--green .content-card p {
+  color: var(--signal-green-ink);
+}
+
+.content-section--ochre .content-card .card-number,
+.content-section--ochre .content-card .card-label,
+.content-section--ochre .content-card .card-action {
+  color: var(--signal-ochre-ink);
+}
+
+.content-section--coral .content-card .card-number,
+.content-section--coral .content-card .card-label,
+.content-section--coral .content-card .card-action {
+  color: var(--signal-coral-ink);
+}
+
+.content-section--green .content-card .card-number,
+.content-section--green .content-card .card-label,
+.content-section--green .content-card .card-action {
+  color: var(--signal-green-ink);
+}
+
+/* Ciemne sekcje: linki akcji czytelne na ink i kobalcie, spójne z card-action.
+   Hover przechodzi w jasną ochrę, jak marker i hover h3. */
+.content-section.content-section--ink .action-link,
+.content-section.content-section--cobalt .action-link,
+.contact-section.contact-section--signal .action-link {
+  color: var(--surface-white);
+}
+
+.content-section.content-section--ink .action-link:hover,
+.content-section.content-section--ink .action-link:focus-visible,
+.content-section.content-section--cobalt .action-link:hover,
+.content-section.content-section--cobalt .action-link:focus-visible,
+.contact-section.contact-section--signal .action-link:hover,
+.contact-section.contact-section--signal .action-link:focus-visible {
+  color: var(--signal-ochre-bright);
+}
+
+.page-section-signal--cobalt .content-card .card-number,
+.page-section-signal--cobalt .content-card .card-label,
 .page-section-signal--cobalt .content-card .card-action {
   color: var(--signal-cobalt);
 }
 
-.page-section-signal--ochre .card-number,
-.page-section-signal--ochre .card-label,
+.page-section-signal--ochre .content-card .card-number,
+.page-section-signal--ochre .content-card .card-label,
 .page-section-signal--ochre .content-card .card-action {
   color: var(--signal-ochre-ink);
 }
 
-.page-section-signal--coral .card-number,
-.page-section-signal--coral .card-label,
+.page-section-signal--coral .content-card .card-number,
+.page-section-signal--coral .content-card .card-label,
 .page-section-signal--coral .content-card .card-action {
   color: var(--signal-coral-ink);
 }
 
-.page-section-signal--green .card-number,
-.page-section-signal--green .card-label,
+.page-section-signal--green .content-card .card-number,
+.page-section-signal--green .content-card .card-label,
 .page-section-signal--green .content-card .card-action {
   color: var(--signal-green-ink);
 }
 
 .page-section-signal--cobalt .rhythmic-marker span {
   background: var(--signal-cobalt);
+}
+
+/* CTA sekcji dziedziczy rodzinę sygnału strony, zamiast stałego kobaltu */
+.page-section-signal--ochre .section-action {
+  color: var(--signal-ochre-ink);
+}
+
+.page-section-signal--coral .section-action {
+  color: var(--signal-coral-ink);
+}
+
+.page-section-signal--green .section-action {
+  color: var(--signal-green-ink);
 }
 
 .page-section-signal--ochre .rhythmic-marker span {
@@ -1240,6 +1352,13 @@ img {
 
 .page-section-signal--green .rhythmic-marker span {
   background: var(--signal-green);
+}
+
+/* Ciemne sekcje: sygnał przechodzi w jasną ochrę, zamiast znikać w ink i kobalcie */
+.content-section.content-section--ink .rhythmic-marker span,
+.content-section.content-section--cobalt .rhythmic-marker span,
+.contact-section.contact-section--signal .rhythmic-marker span {
+  background: var(--signal-ochre-bright);
 }
 
 .content-grid {
@@ -1258,7 +1377,7 @@ img {
 }
 
 .content-grid--4 {
-  grid-template-columns: 1.35fr repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .content-card {
@@ -1276,11 +1395,6 @@ img {
   text-decoration: none;
 }
 
-.content-card--link:hover h3,
-.content-card--link:focus-visible h3 {
-  color: var(--signal-cobalt);
-}
-
 .content-card--link .card-meta {
   margin-top: auto;
   padding-top: 24px;
@@ -1290,8 +1404,8 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 14px;
-  padding-top: 0;
+  margin-top: auto;
+  padding-top: 24px;
   color: var(--signal-cobalt);
   font-size: 0.82rem;
   font-weight: 700;
@@ -1300,42 +1414,47 @@ img {
 }
 
 .content-grid--1 .content-card {
-  padding-left: 0;
   border-right: 0;
-}
-
-.content-grid--2 .content-card:nth-child(2n + 1) {
-  padding-left: 0;
 }
 
 .content-grid--2 .content-card:nth-child(2n) {
   border-right: 0;
 }
 
-.content-grid--3 .content-card:nth-child(3n + 1) {
-  padding-left: 0;
-}
-
 .content-grid--3 .content-card:nth-child(3n) {
   border-right: 0;
-}
-
-.content-grid--4 .content-card:nth-child(4n + 1) {
-  padding-left: 0;
 }
 
 .content-grid--4 .content-card:nth-child(4n) {
   border-right: 0;
 }
 
-.page-section--insights .content-grid--5 .content-card:nth-child(1),
-.page-section--insights .content-grid--5 .content-card:nth-child(3) {
-  padding-left: 0;
-}
-
 .page-section--insights .content-grid--5 .content-card:nth-child(2),
 .page-section--insights .content-grid--5 .content-card:last-child {
   border-right: 0;
+}
+
+/* Karty linkowe: ruch strzałki jako jedyny ruchomy element, akcja dokleja się do dołu kafla */
+.content-card--link .card-action .arrow {
+  transition: transform var(--ease);
+}
+
+.content-card--link:hover .card-action .arrow {
+  transform: translateX(5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-card--link .card-action .arrow,
+  .context-card .card-action .arrow {
+    transition: none;
+  }
+
+  .content-card--link:hover .card-action .arrow,
+  .content-card--link:focus-visible .card-action .arrow,
+  .context-card:hover .card-action .arrow,
+  .context-card:focus-visible .card-action .arrow {
+    transform: none;
+  }
 }
 
 .content-card {
@@ -1387,13 +1506,6 @@ img {
 
 .section-action-wrap {
   margin-top: 36px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.content-section--ink .section-action-wrap,
-.content-section--cobalt .section-action-wrap {
-  border-top-color: var(--on-dark-border-soft);
 }
 
 .section-action {
@@ -1409,10 +1521,6 @@ img {
 
 .article-grid .content-card {
   min-height: 340px;
-}
-
-.article-grid .content-card:nth-child(3n + 1) {
-  padding-left: 0;
 }
 
 .article-grid .content-card:nth-child(3n) {
@@ -1535,7 +1643,12 @@ img {
 .page-hero--insights .page-hero-proof,
 .page-hero--contact .page-hero-proof {
   border-color: var(--on-dark-border);
-  color: var(--signal-ochre);
+  color: var(--signal-ochre-bright);
+}
+
+/* Najważniejszy rezultat szkolenia dostaje rangę przez mocniejszą regułę siatki, bez dokładania nowej rodziny koloru. */
+.page-section--teacher:is(#wyniesiesz, #takeaways) .content-grid {
+  border-top-color: var(--signal-cobalt);
 }
 
 .page-hero--contact .action-link--primary {
@@ -1778,7 +1891,7 @@ img {
 }
 
 .contact-section--signal .rhythmic-marker span {
-  background: var(--signal-ochre);
+  background: var(--signal-ochre-bright);
 }
 
 .contact-channels {
@@ -2038,6 +2151,115 @@ img {
   text-transform: uppercase;
 }
 
+.article-meta a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+
+.article-hero {
+  margin-top: 48px;
+}
+
+.article-hero img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-subtle);
+}
+
+.article-hero figcaption {
+  margin-top: 12px;
+  color: var(--surface-ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.article-toc {
+  margin-top: 44px;
+  padding: 24px 28px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-white);
+}
+
+.article-toc .eyebrow {
+  margin: 0;
+}
+
+.article-toc ol {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.article-toc li {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.article-toc a {
+  color: var(--surface-ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article-toc a:hover {
+  color: var(--signal-cobalt);
+}
+
+.article-section {
+  margin-top: 54px;
+  scroll-margin-top: 96px;
+}
+
+.article-section h2 {
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.article-list {
+  margin: 22px 0 30px;
+  padding-left: 24px;
+  list-style: disc outside;
+}
+
+.article-list li {
+  margin-top: 12px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.article-list li::marker {
+  color: inherit;
+}
+
+.article-body a {
+  color: var(--signal-cobalt);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article-body a:hover {
+  color: var(--signal-cobalt-dark);
+}
+
+.article-source-line {
+  margin-top: 18px;
+  color: var(--surface-ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.article-related {
+  margin-top: 72px;
+}
+
+.article-related .content-grid,
+.article-related .article-grid {
+  margin-top: 36px;
+}
+
 .article-body {
   max-width: var(--reading-width);
   margin-top: 64px;
@@ -2118,10 +2340,6 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .content-grid--4 .content-card:nth-child(2n + 1) {
-    padding-left: 0;
-  }
-
   .content-grid--4 .content-card:nth-child(2n) {
     border-right: 0;
   }
@@ -2157,6 +2375,11 @@ img {
 
   .mobile-nav {
     display: block;
+  }
+
+  /* Otwarte menu mobilne zatrzymuje scroll tła, dzięki czemu panel pozostaje stabilny */
+  body:has(.mobile-nav[open]) {
+    overflow: hidden;
   }
 
   .mobile-nav > summary {
@@ -2577,6 +2800,24 @@ img {
 
   .article-body {
     margin-top: 48px;
+  }
+
+  .article-hero {
+    margin-top: 32px;
+  }
+
+  .article-toc {
+    margin-top: 36px;
+    padding: 20px;
+  }
+
+  .article-section {
+    margin-top: 44px;
+  }
+
+  .article-list li,
+  .article-body p {
+    font-size: 1.05rem;
   }
 }
 

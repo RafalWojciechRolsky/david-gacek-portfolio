@@ -210,13 +210,14 @@ export function Homepage({ page }: HomepageProps) {
               heading={messages.homepage.faqHeading}
               intro={messages.homepage.faqIntro}
               headingId="faq-heading"
+              signal="cobalt"
             />
           </div>
           <DisclosureFaq items={page.faq} objectId="homepage-faq-list" />
         </div>
       </section>
 
-      <ContactSection locale={page.locale} />
+      <ContactSection locale={page.locale} signal="cobalt" />
     </>
   );
 }
