@@ -104,6 +104,16 @@ articles.articles.en.forEach((article) => {
  * Sprawdza kontrakt pełnego artykułu w nowym modelu sekcji.
  */
 const validateArticle = (article, locale) => {
+  assert.ok(
+    ["teacherTraining", "childrenWorkshops", "corporateEvents", "disc"].includes(article.category?.id),
+    `${article.id}/${locale}: invalid category id`,
+  );
+  assert.ok(article.category?.label, `${article.id}/${locale}: missing category label`);
+  assert.ok(
+    ["cobalt", "ochre", "coral", "green"].includes(article.category?.signal),
+    `${article.id}/${locale}: invalid category signal`,
+  );
+  assert.ok(article.category?.href?.startsWith("/"), `${article.id}/${locale}: invalid category href`);
   assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(article.publishedAt), `${article.id}/${locale}: invalid publishedAt`);
   assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(article.updatedAt), `${article.id}/${locale}: invalid updatedAt`);
   assert.ok(article.updatedAt >= article.publishedAt, `${article.id}/${locale}: updatedAt before publishedAt`);

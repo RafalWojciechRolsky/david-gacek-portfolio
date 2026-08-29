@@ -4,6 +4,12 @@
       {
         "id": "what-are-boomwhackers",
         "type": "Przewodnik",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Nauczyciele i edukacja",
+          "signal": "cobalt",
+          "href": "/szkolenia-bum-bum-rurki"
+        },
         "title": "Bum Bum Rurki: czym są i co można z nimi zrobić?",
         "body": "Kompletne wprowadzenie do rurek: co to za instrument, dlaczego tak działa na grupę i od czego zacząć, żeby pierwsze zajęcia się udały.",
         "href": "/wiedza/bum-bum-rurki-czym-sa",
@@ -96,7 +102,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-games", "boomwhackers-songs"],
+        "related": [
+          "boomwhackers-games",
+          "boomwhackers-songs"
+        ],
         "sourceLabel": "Praktyka Dawida Gacka z Bum Bum Rurkami od 2010 roku i materiały metodyczne projektu",
         "seoTitle": "Bum Bum Rurki: czym są? | Dawid Gacek",
         "seoDescription": "Bum Bum Rurki to strojone kolorowe rurki, na których grupa gra od pierwszych minut. Poznaj zasadę działania, zastosowania i plan pierwszych zajęć krok po kroku.",
@@ -121,6 +130,12 @@
       {
         "id": "boomwhackers-songs",
         "type": "Przewodnik",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Nauczyciele i edukacja",
+          "signal": "cobalt",
+          "href": "/szkolenia-bum-bum-rurki"
+        },
         "title": "Piosenki na Bum Bum Rurki: od pierwszego dźwięku do wspólnej gry",
         "body": "Jak wybrać piosenkę, podzielić głosy między grupy kolorów i doprowadzić grupę do wspólnej gry bez znajomości nut.",
         "href": "/wiedza/bum-bum-rurki-piosenki",
@@ -225,7 +240,10 @@
             ]
           }
         ],
-        "related": ["what-are-boomwhackers", "boomwhackers-games"],
+        "related": [
+          "what-are-boomwhackers",
+          "boomwhackers-games"
+        ],
         "sourceLabel": "Praktyka szkoleniowa Dawida Gacka i materiały metodyczne projektu",
         "seoTitle": "Piosenki na Bum Bum Rurki - jak zacząć z grupą? | Dawid Gacek",
         "seoDescription": "Piosenki na Bum Bum Rurki nie wymagają znajomości nut. Zobacz, jak wybrać utwór, podzielić głosy między kolory i doprowadzić grupę do wspólnej gry.",
@@ -250,6 +268,12 @@
       {
         "id": "boomwhackers-games",
         "type": "Pomysł do użycia",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Nauczyciele i edukacja",
+          "signal": "cobalt",
+          "href": "/szkolenia-bum-bum-rurki"
+        },
         "title": "Zabawy z Bum Bum Rurkami: 8 pomysłów na aktywne zajęcia",
         "body": "Osiem sprawdzonych zabaw od rozgrzewki po mini występ, każda z jasną zasadą, czasem trwania i wskazówką, czego pilnować.",
         "href": "/wiedza/bum-bum-rurki-zabawy",
@@ -347,7 +371,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-songs", "integration-games-children"],
+        "related": [
+          "boomwhackers-songs",
+          "integration-games-children"
+        ],
         "sourceLabel": "Praktyka szkoleniowa Dawida Gacka i materiały metodyczne projektu",
         "seoTitle": "Zabawy z Bum Bum Rurkami - 8 pomysłów na zajęcia | Dawid Gacek",
         "seoDescription": "Osiem zabaw z Bum Bum Rurkami na rozgrzewkę, słuchanie, współpracę i mini występ. Proste zasady z czasem trwania i wskazówkami dla przedszkola, szkoły i warsztatów.",
@@ -372,6 +399,12 @@
       {
         "id": "integration-games-children",
         "type": "Metoda",
+        "category": {
+          "id": "childrenWorkshops",
+          "label": "Dzieci i integracja",
+          "signal": "ochre",
+          "href": "/warsztaty-muzyczne-dla-dzieci"
+        },
         "title": "Zabawy integracyjne dla dzieci: budowanie grupy przez rytm",
         "body": "Dlaczego wspólne granie szybciej łączy grupę dzieci niż rozmowa w kole i jak wygląda gotowy scenariusz pierwszych 20 minut.",
         "href": "/wiedza/zabawy-integracyjne-dla-dzieci",
@@ -481,7 +514,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-games", "group-attention"],
+        "related": [
+          "boomwhackers-games",
+          "group-attention"
+        ],
         "sourceLabel": "Praktyka warsztatowa Dawida Gacka i materiały metodyczne projektu",
         "seoTitle": "Zabawy integracyjne dla dzieci przez rytm | Dawid Gacek",
         "seoDescription": "Zabawy integracyjne dla dzieci działają lepiej, gdy mają rytm i jasną zasadę. Scenariusz pierwszych 20 minut, warianty wiekowe i rady na dzieci, które nie chcą grać.",
@@ -506,6 +542,12 @@
       {
         "id": "musical-icebreakers",
         "type": "Scenariusz",
+        "category": {
+          "id": "corporateEvents",
+          "label": "Firmy i zespoły",
+          "signal": "coral",
+          "href": "/muzyczny-team-building"
+        },
         "title": "Muzyczne lodołamacze: jak rozruszać grupę na warsztatach i wydarzeniach",
         "body": "Gotowy scenariusz otwarcia na 15 minut, który zamienia zbieraną grupę dorosłych w zespół, plus wskazówki dla prowadzącego i HR.",
         "href": "/wiedza/muzyczne-lodolamacze",
@@ -620,7 +662,10 @@
             ]
           }
         ],
-        "related": ["music-cooperation", "disc-in-practice"],
+        "related": [
+          "music-cooperation",
+          "disc-in-practice"
+        ],
         "sourceLabel": "Praktyka eventowa Dawida Gacka i materiały metodyczne projektu",
         "seoTitle": "Muzyczne lodołamacze na warsztaty i eventy | Dawid Gacek",
         "seoDescription": "Muzyczne lodołamacze rozkręcają grupę dorosłych szybciej niż klasyczne gry integracyjne. Scenariusz otwarcia w 15 minut krok po kroku, wskazówki dla HR i warianty wydarzeń.",
@@ -645,6 +690,12 @@
       {
         "id": "disc-in-practice",
         "type": "Metoda",
+        "category": {
+          "id": "disc",
+          "label": "DISC i komunikacja",
+          "signal": "green",
+          "href": "/szkolenia-disc-dla-zespolow"
+        },
         "title": "DISC w praktyce: jak rozpoznać style zachowań, gdy grupa działa",
         "body": "Model DISC najłatwiej pokazać na wspólnym działaniu, a nie na slajdach. Przebieg ćwiczenia, pytania do rozmowy i czego DISC nie jest.",
         "href": "/wiedza/disc-w-praktyce",
@@ -756,7 +807,10 @@
             ]
           }
         ],
-        "related": ["music-cooperation", "musical-icebreakers"],
+        "related": [
+          "music-cooperation",
+          "musical-icebreakers"
+        ],
         "sourceLabel": "Praktyka szkoleniowa DISC Dawida Gacka, certyfikat konsultanta MaxiDISC z 2023 roku, i materiały metodyczne projektu",
         "seoTitle": "DISC w praktyce - style zachowań w działaniu | Dawid Gacek",
         "seoDescription": "DISC najłatwiej zrozumieć, gdy zobaczysz style zachowań w działaniu grupy. Przebieg ćwiczenia, pytania do rozmowy i wyjaśnienie, czym DISC nie jest.",
@@ -781,6 +835,12 @@
       {
         "id": "group-attention",
         "type": "Pomysł do użycia",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Nauczyciele i edukacja",
+          "signal": "cobalt",
+          "href": "/szkolenia-bum-bum-rurki"
+        },
         "title": "Jak utrzymać uwagę grupy bez podnoszenia głosu?",
         "body": "Jeden powtarzalny sygnał, rytm zajęć i dwa rytuały, które działają lepiej niż krzyk. Gotowe zasady do użycia od pierwszej minuty.",
         "href": "/wiedza/uwaga-grupy",
@@ -897,7 +957,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-games", "music-cooperation"],
+        "related": [
+          "boomwhackers-games",
+          "music-cooperation"
+        ],
         "sourceLabel": "Praktyka pracy z grupami Dawida Gacka i materiały metodyczne projektu",
         "seoTitle": "Uwaga grupy bez podnoszenia głosu | Dawid Gacek",
         "seoDescription": "Poznaj jeden powtarzalny sygnał, rytm zajęć i dwa rytuały, które utrzymują uwagę grupy bez podnoszenia głosu, od przedszkola po dorosłe zespoły.",
@@ -922,6 +985,12 @@
       {
         "id": "music-cooperation",
         "type": "Metoda",
+        "category": {
+          "id": "corporateEvents",
+          "label": "Firmy i zespoły",
+          "signal": "coral",
+          "href": "/muzyczny-team-building"
+        },
         "title": "Muzyka jako język współpracy",
         "body": "Co grupa mówi o sobie, zanim cokolwiek powie, plus trzy momenty granie, w których zespół pokazuje prawdę i pytania do rozmowy.",
         "href": "/wiedza/muzyka-jezyk-wspolpracy",
@@ -1040,7 +1109,10 @@
             ]
           }
         ],
-        "related": ["disc-in-practice", "group-attention"],
+        "related": [
+          "disc-in-practice",
+          "group-attention"
+        ],
         "sourceLabel": "Praktyka pracy z grupami Dawida Gacka i materiały metodyczne projektu",
         "seoTitle": "Muzyka jako język współpracy | Dawid Gacek",
         "seoDescription": "Wspólne granie pokazuje, jak zespół słucha siebie i reaguje na błędy. Trzy momenty gry, w których grupa pokazuje prawdę, i pytania do rozmowy po ćwiczeniu.",
@@ -1067,6 +1139,12 @@
       {
         "id": "what-are-boomwhackers",
         "type": "Guide",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Teachers and education",
+          "signal": "cobalt",
+          "href": "/en/boomwhackers-teacher-training"
+        },
         "title": "Boomwhackers: what are they and what can you do with them?",
         "body": "A complete introduction to boomwhackers: what the instrument is, why it works so well with groups, and how to start so your first session succeeds.",
         "href": "/en/insights/what-are-boomwhackers",
@@ -1159,7 +1237,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-games", "boomwhackers-songs"],
+        "related": [
+          "boomwhackers-games",
+          "boomwhackers-songs"
+        ],
         "sourceLabel": "Dawid Gacek's practice with boomwhackers since 2010 and the project's method materials",
         "seoTitle": "Boomwhackers: what can you do with them? | Dawid Gacek",
         "seoDescription": "Boomwhackers are tuned colour-coded tubes that a group can play within minutes. Learn how they work, what to use them for, and how to start step by step.",
@@ -1184,6 +1265,12 @@
       {
         "id": "boomwhackers-songs",
         "type": "Guide",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Teachers and education",
+          "signal": "cobalt",
+          "href": "/en/boomwhackers-teacher-training"
+        },
         "title": "Boomwhackers songs: from the first sound to playing as one",
         "body": "How to choose a song, split the parts into colour groups, and lead a group into real music without reading notation.",
         "href": "/en/insights/boomwhackers-songs",
@@ -1288,7 +1375,10 @@
             ]
           }
         ],
-        "related": ["what-are-boomwhackers", "boomwhackers-games"],
+        "related": [
+          "what-are-boomwhackers",
+          "boomwhackers-games"
+        ],
         "sourceLabel": "Dawid Gacek's training practice and the project's method materials",
         "seoTitle": "Boomwhackers songs - how to start with a group | Dawid Gacek",
         "seoDescription": "Boomwhackers songs need no music reading. See how to pick a tune, split parts into colour groups, and lead a group from the first sound to playing as one.",
@@ -1313,6 +1403,12 @@
       {
         "id": "boomwhackers-games",
         "type": "Practical idea",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Teachers and education",
+          "signal": "cobalt",
+          "href": "/en/boomwhackers-teacher-training"
+        },
         "title": "Boomwhacker games: 8 ideas for active sessions",
         "body": "Eight tested games from warm-up to a mini performance, each with a clear rule, a duration, and a tip on what to watch.",
         "href": "/en/insights/boomwhackers-games",
@@ -1410,7 +1506,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-songs", "integration-games-children"],
+        "related": [
+          "boomwhackers-songs",
+          "integration-games-children"
+        ],
         "sourceLabel": "Dawid Gacek's training practice and the project's method materials",
         "seoTitle": "Boomwhacker games - 8 ideas for active sessions | Dawid Gacek",
         "seoDescription": "Eight boomwhacker games for warm-up, listening, cooperation, and a mini performance. Clear rules with durations and tips for preschool, school, and workshops.",
@@ -1435,6 +1534,12 @@
       {
         "id": "integration-games-children",
         "type": "Method",
+        "category": {
+          "id": "childrenWorkshops",
+          "label": "Children and integration",
+          "signal": "ochre",
+          "href": "/en/music-workshops-for-children"
+        },
         "title": "Icebreaker games for children: building a group through rhythm",
         "body": "Why shared playing connects a group of children faster than a talking circle, plus a ready scenario for the first 20 minutes.",
         "href": "/en/insights/icebreaker-games-for-children",
@@ -1544,7 +1649,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-games", "group-attention"],
+        "related": [
+          "boomwhackers-games",
+          "group-attention"
+        ],
         "sourceLabel": "Dawid Gacek's workshop practice and the project's method materials",
         "seoTitle": "Icebreaker games for children through rhythm | Dawid Gacek",
         "seoDescription": "Icebreaker games for children work better with rhythm and one clear rule. A ready scenario for the first 20 minutes, age variants, and tips for reluctant players.",
@@ -1569,6 +1677,12 @@
       {
         "id": "musical-icebreakers",
         "type": "Session plan",
+        "category": {
+          "id": "corporateEvents",
+          "label": "Companies and teams",
+          "signal": "coral",
+          "href": "/en/music-team-building"
+        },
         "title": "Musical icebreakers: how to wake up a group at workshops and events",
         "body": "A ready 15-minute opening scenario that turns a room of strangers into a team, with facilitation tips and observations for HR.",
         "href": "/en/insights/musical-icebreakers",
@@ -1683,7 +1797,10 @@
             ]
           }
         ],
-        "related": ["music-cooperation", "disc-in-practice"],
+        "related": [
+          "music-cooperation",
+          "disc-in-practice"
+        ],
         "sourceLabel": "Dawid Gacek's event practice and the project's method materials",
         "seoTitle": "Musical icebreakers for workshops and events | Dawid Gacek",
         "seoDescription": "Musical icebreakers engage adult groups faster than classic talking games. A ready 15-minute opening scenario, facilitation tips, and observations for HR.",
@@ -1708,6 +1825,12 @@
       {
         "id": "disc-in-practice",
         "type": "Method",
+        "category": {
+          "id": "disc",
+          "label": "DISC and communication",
+          "signal": "green",
+          "href": "/en/disc-team-training"
+        },
         "title": "DISC in practice: spotting behaviour styles while the group works",
         "body": "DISC is easiest to understand in shared action, not on slides. The exercise, the questions for the debrief, and what DISC is not.",
         "href": "/en/insights/disc-in-practice",
@@ -1819,7 +1942,10 @@
             ]
           }
         ],
-        "related": ["music-cooperation", "musical-icebreakers"],
+        "related": [
+          "music-cooperation",
+          "musical-icebreakers"
+        ],
         "sourceLabel": "Dawid Gacek's DISC training practice, MaxiDISC consultant certificate from 2023, and the project's method materials",
         "seoTitle": "DISC in practice - behaviour styles in action | Dawid Gacek",
         "seoDescription": "DISC is easiest to grasp when you watch behaviour styles in live group action. The exercise, debrief questions, and a clear list of what DISC is not.",
@@ -1844,6 +1970,12 @@
       {
         "id": "group-attention",
         "type": "Practical idea",
+        "category": {
+          "id": "teacherTraining",
+          "label": "Teachers and education",
+          "signal": "cobalt",
+          "href": "/en/boomwhackers-teacher-training"
+        },
         "title": "How can you hold a group's attention without raising your voice?",
         "body": "One repeatable signal, the rhythm of the session, and two rituals that work better than shouting. Ready to use from the first minute.",
         "href": "/en/insights/group-attention",
@@ -1960,7 +2092,10 @@
             ]
           }
         ],
-        "related": ["boomwhackers-games", "music-cooperation"],
+        "related": [
+          "boomwhackers-games",
+          "music-cooperation"
+        ],
         "sourceLabel": "Dawid Gacek's group-work practice and the project's method materials",
         "seoTitle": "Group attention without raising your voice | Dawid Gacek",
         "seoDescription": "One repeatable signal, the rhythm of the session, and two rituals that hold a group's attention without raising your voice, from preschool to adult teams.",
@@ -1985,6 +2120,12 @@
       {
         "id": "music-cooperation",
         "type": "Method",
+        "category": {
+          "id": "corporateEvents",
+          "label": "Companies and teams",
+          "signal": "coral",
+          "href": "/en/music-team-building"
+        },
         "title": "Music as a language of cooperation",
         "body": "What a group says about itself before it says anything, the three moments of shared playing where the truth comes out, and the questions for the debrief.",
         "href": "/en/insights/music-cooperation",
@@ -2103,7 +2244,10 @@
             ]
           }
         ],
-        "related": ["disc-in-practice", "group-attention"],
+        "related": [
+          "disc-in-practice",
+          "group-attention"
+        ],
         "sourceLabel": "Dawid Gacek's group-work practice and the project's method materials",
         "seoTitle": "Music as a language of cooperation | Dawid Gacek",
         "seoDescription": "Shared playing shows how a team listens and reacts to mistakes. Three moments of the game where the truth comes out, and questions for the conversation after the exercise.",

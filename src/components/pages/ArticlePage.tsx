@@ -82,54 +82,70 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
 
   return (
     <>
-      <article className="article-page">
-        <div className="container article-page-inner">
-          <p className="eyebrow">{article.type}</p>
-          <h1>{article.title}</h1>
-          <p className="article-lead">{article.body}</p>
-          <p className="article-meta">
-            <time dateTime={article.publishedAt}>{formatArticleDate(article.publishedAt, locale)}</time>
-            <span aria-hidden="true">|</span>
-            <span>{article.readTime}</span>
-            <span aria-hidden="true">|</span>
-            <a href={pathFor("profile", locale)}>{messages.brandName}</a>
-          </p>
-        </div>
-        <figure className="article-hero container">
-          <Image
-            src={article.hero.src}
-            alt={article.hero.alt}
-            width={article.hero.width}
-            height={article.hero.height}
-            priority
-            sizes="(min-width: 1440px) 1200px, 100vw"
-          />
-          <figcaption>{article.hero.caption}</figcaption>
-        </figure>
-        <div className="container article-page-inner">
-          {showToc ? (
-            <nav className="article-toc" aria-labelledby="article-toc-heading">
-              <p className="eyebrow" id="article-toc-heading">
-                {messages.article.tocHeading}
+      <article className={`article-page article-page--${article.category.signal}`}>
+        <header className="article-header">
+          <div className="container article-header-grid">
+            <div className="article-category">
+              <span>{messages.article.categoryLabel}</span>
+              <a href={article.category.href}>{article.category.label}</a>
+            </div>
+            <div className="article-header-copy">
+              <p className="article-format">
+                <span>{messages.article.formatLabel}</span>
+                {article.type}
               </p>
-              <ol>
-                {article.sections.map((section) => (
-                  <li key={section.id}>
-                    <a href={`#${section.id}`}>{section.heading}</a>
-                  </li>
-                ))}
-              </ol>
-            </nav>
-          ) : null}
-          <div className="article-body">
-            {article.sections.map((section) => (
-              <ArticleSectionBlock key={section.id} section={section} />
-            ))}
+              <h1>{article.title}</h1>
+              <p className="article-lead">{article.body}</p>
+              <p className="article-meta">
+                <time dateTime={article.publishedAt}>{formatArticleDate(article.publishedAt, locale)}</time>
+                <span aria-hidden="true">|</span>
+                <span>{article.readTime}</span>
+                <span aria-hidden="true">|</span>
+                <a href={pathFor("profile", locale)}>{messages.brandName}</a>
+              </p>
+            </div>
           </div>
+        </header>
+        <div className="article-reading">
+          <figure className="article-hero container">
+            <Image
+              src={article.hero.src}
+              alt={article.hero.alt}
+              width={article.hero.width}
+              height={article.hero.height}
+              priority
+              sizes="(min-width: 1440px) 1200px, 100vw"
+            />
+            <figcaption>{article.hero.caption}</figcaption>
+          </figure>
+          <div className="container article-reading-grid">
+            {showToc ? (
+              <nav className="article-toc" aria-labelledby="article-toc-heading">
+                <p className="eyebrow" id="article-toc-heading">
+                  {messages.article.tocHeading}
+                </p>
+                <ol>
+                  {article.sections.map((section) => (
+                    <li key={section.id}>
+                      <a href={`#${section.id}`}>{section.heading}</a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            ) : null}
+            <div className="article-body">
+              {article.sections.map((section) => (
+                <ArticleSectionBlock key={section.id} section={section} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="container article-footer">
           <div className="article-source">
             <SectionHeader
               heading={messages.article.authorHeading}
               intro={messages.article.authorBio}
+              signal={article.category.signal}
             />
             <p className="article-source-line">
               {messages.article.sourcePrefix} {article.sourceLabel}
@@ -137,8 +153,12 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
           </div>
           {related.length ? (
             <section className="article-related" aria-labelledby="article-related-heading">
-              <SectionHeader heading={messages.article.relatedHeading} headingId="article-related-heading" />
-              <div className="content-grid content-grid--3">
+              <SectionHeader
+                heading={messages.article.relatedHeading}
+                headingId="article-related-heading"
+                signal={article.category.signal}
+              />
+              <div className={`content-grid content-grid--${related.length}`}>
                 {related.map((relatedArticle, index) => (
                   <ContentCard
                     key={relatedArticle.id}
@@ -166,13 +186,13 @@ export function ArticlePage({ article, locale }: ArticlePageProps) {
             <SectionHeader
               heading={messages.article.faqHeading}
               headingId="article-faq-heading"
-              signal="ochre"
+              signal={article.category.signal}
             />
           </div>
           <DisclosureFaq items={article.faq} objectId="article-faq-list" />
         </div>
       </section>
-      <ContactSection locale={locale} />
+      <ContactSection locale={locale} signal={article.category.signal} />
     </>
   );
 }

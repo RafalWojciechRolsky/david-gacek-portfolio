@@ -27,7 +27,9 @@ interface EnglishLayoutProps {
 export default function EnglishLayout({ children }: EnglishLayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body>{children}</body>
+      <body>
+        <PageTransition>{children}</PageTransition>
+      </body>
     </html>
   );
 }

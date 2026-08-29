@@ -29,6 +29,7 @@ export function ArticleJsonLd({ article, locale }: ArticleJsonLdProps) {
         image: absoluteUrl(article.hero.src),
         datePublished: article.publishedAt,
         dateModified: article.updatedAt,
+        articleSection: article.category.label,
         author: {
           "@type": "Person",
           name: messages.brandName,

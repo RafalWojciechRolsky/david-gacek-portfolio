@@ -64,12 +64,13 @@ export function getArticleById(
 export function articleToCardItem(article: ArticleDetail): ArticleItem {
   return {
     id: `insight-${article.id}`,
-    type: article.type,
+    type: article.category.label,
     title: article.title,
     body: article.body,
     href: article.href,
     actionLabel: article.actionLabel,
     readTime: article.readTime,
+    meta: `${article.type} | ${article.readTime}`,
     status: "available",
   };
 }

@@ -325,9 +325,25 @@ export interface ArticleHero {
 }
 
 /**
+ * Kategoria łączy artykuł z jednym kontekstem współpracy i jego sygnałem.
+ */
+export interface ArticleCategory {
+  /** Stabilny identyfikator kategorii wspólny dla obu języków. */
+  id: "teacherTraining" | "childrenWorkshops" | "corporateEvents" | "disc";
+  /** Zlokalizowana nazwa kategorii. */
+  label: string;
+  /** Kolor sygnałowy kategorii. */
+  signal: Signal;
+  /** Link do odpowiadającej kategorii strony współpracy. */
+  href: string;
+}
+
+/**
  * Pełny kontrakt artykułu przechowywanego w lokalnym JSON lub później w CMS.
  */
 export interface ArticleDetail extends ArticleItem {
+  /** Kategoria merytoryczna powiązana z kontekstem współpracy. */
+  category: ArticleCategory;
   /** Data pierwszej publikacji treści w formacie ISO. */
   publishedAt: string;
   /** Data ostatniej aktualizacji treści w formacie ISO. */
