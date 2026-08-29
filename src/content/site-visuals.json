@@ -328,16 +328,16 @@
     "signal": "cobalt",
     "heroImage": {
       "pl": {
-        "src": "/images/gacek-1.jpg",
-        "alt": "Portret Dawida Gacka podczas rozmowy",
-        "width": 2048,
-        "height": 1365
+        "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+        "alt": "Portret Dawida Gacka na jasnym tle",
+        "width": 1024,
+        "height": 683
       },
       "en": {
-        "src": "/images/gacek-1.jpg",
-        "alt": "Portrait of Dawid Gacek during a conversation",
-        "width": 2048,
-        "height": 1365
+        "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
+        "alt": "Portrait of Dawid Gacek against a light background",
+        "width": 1024,
+        "height": 683
       }
     },
     "heroCaption": {

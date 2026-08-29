@@ -859,11 +859,11 @@
         "publishedAt": "2026-08-29",
         "updatedAt": "2026-08-29",
         "hero": {
-          "src": "/images/gacek-1.jpg",
-          "alt": "Dawid Gacek podczas spokojnej rozmowy z uczestnikami zajęć",
+          "src": "/images/gacek-2.jpg",
+          "alt": "Dawid Gacek prowadzący pracę z kolorowymi rurkami",
           "caption": "Uwaga grupy buduje się sygnałem i rytmem, nie głośnością prowadzącego.",
-          "width": 2048,
-          "height": 1365
+          "width": 800,
+          "height": 509
         },
         "sections": [
           {
@@ -2005,11 +2005,11 @@
         "publishedAt": "2026-08-29",
         "updatedAt": "2026-08-29",
         "hero": {
-          "src": "/images/gacek-1.jpg",
-          "alt": "Dawid Gacek during a calm conversation with session participants",
+          "src": "/images/gacek-2.jpg",
+          "alt": "Dawid Gacek leading a session with colourful tubes",
           "caption": "A group's attention is built with a signal and a rhythm, not with the volume of the leader.",
-          "width": 2048,
-          "height": 1365
+          "width": 800,
+          "height": 509
         },
         "sections": [
           {

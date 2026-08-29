@@ -7,6 +7,7 @@ import type { Locale, PageKey } from "@/lib/types";
 import { LanguageSwitcher } from "@/components/chrome/LanguageSwitcher";
 import { MobileMenu } from "@/components/chrome/MobileMenu";
 import { DesktopCollaborationMenu } from "@/components/chrome/DesktopCollaborationMenu";
+import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
 import { getMessages } from "@/messages/ui";
 
 const HERO_THEMES: Record<PageKey, string> = {
@@ -142,6 +143,7 @@ export function SiteHeader({
           aria-label={messages.accessibility.homeAria}
           data-object-id="site-header-brand-link"
         >
+          <RhythmicMarker signal="cobalt" />
           {messages.brandName}
         </a>
         <nav className="desktop-nav" aria-label={messages.accessibility.mainNavigation}>

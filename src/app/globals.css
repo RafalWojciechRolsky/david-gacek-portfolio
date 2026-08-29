@@ -505,6 +505,18 @@ img {
   color: var(--page-signal-ink);
 }
 
+/* Znacznik rytmiczny działa jak logo marki obok nazwiska. Dziedziczy kolor
+   tekstu marki, więc sam dopasowuje się do motywu hero, stanu przewinięcia
+   i białej powierzchni menu mobilnego, bez osobnych reguł per motyw. */
+.brand .rhythmic-marker {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.brand .rhythmic-marker span {
+  background: currentColor;
+}
+
 .desktop-nav {
   display: flex;
   align-items: center;
