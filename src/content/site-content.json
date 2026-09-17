@@ -1348,8 +1348,8 @@
         "intro": "Prowadzę muzyczne aktywności, które uruchamiają grupę i dają uczestnikom wspólne doświadczenie, nie tylko kolejną atrakcję.",
         "proof": "Pracuję z ludźmi poprzez muzykę, ruch i współpracę.",
         "cta": {
-          "label": "Sprawdź formaty",
-          "href": "#formaty"
+          "label": "Przejdź do oferty",
+          "href": "#oferta"
         },
         "video": {
           "videoId": "goTqiC2tf3M",
@@ -1372,18 +1372,19 @@
           {
             "id": "triaż",
             "heading": "Szybki triaż",
-            "intro": "W dwie minuty sprawdzisz, czy format pasuje do celu wydarzenia, profilu uczestników i tonu marki.",
+            "intro": "Sprawdź, czy format pasuje do celu wydarzenia, uczestników i tonu marki.",
             "items": [
               {
                 "id": "fit",
                 "title": "Dla firm, agencji i zespołów",
-                "body": "Format może działać na konferencji, spotkaniu zespołu albo evencie. Pracuję w kontekstach od 20 do 1000 osób, zależnie od formatu, miejsca i celu, to zakres doświadczeń, a nie obietnica konkretnej liczebności.",
+                "body": "Prowadzę konferencje, spotkania zespołów i eventy dla 20-1000 osób, zależnie od formatu, miejsca i celu. To zakres doświadczeń, nie obietnica konkretnej liczebności.",
                 "kind": "information"
               },
               {
-                "id": "experience",
-                "title": "Doświadczenie bez marketingowego hałasu",
-                "body": "Historyczny GWR z 661 osobami i praca od 2010 roku pokazują skalę, a przy każdym dowodzie jest data, rola i źródło.",
+                "id": "gwr",
+                "title": "Historyczny GWR z 661 osobami",
+                "body": "W 2016 roku współtworzyłem wydarzenie z 661 osobami. To historyczny dowód skali, nie bieżącej współpracy z marką.",
+                "status": "confirmed",
                 "kind": "information"
               }
             ]
@@ -1391,114 +1392,95 @@
           {
             "id": "formaty",
             "heading": "Formaty wydarzeń",
-            "intro": "Od krótkiego wejścia po pełny warsztat. Skalę i przebieg dobieramy do celu, liczby osób, miejsca i dostępnego czasu.",
+            "intro": "Od krótkiego wejścia po pełny warsztat, dobieram skalę i przebieg do celu, grupy, miejsca i czasu.",
             "items": [
               {
                 "id": "icebreaker",
                 "title": "Icebreaker konferencyjny",
-                "body": "Kilka do kilkunastu minut wspólnego rytmu, które rozgrzewa salę i ustawia grupę na dalszą część programu. Sprawdza się przy otwarciu konferencji albo między blokami.",
+                "body": "Kilka do kilkunastu minut wspólnego rytmu, które rozgrzewa salę i ustawia ją na dalszy program. Sprawdza się na otwarciu i między blokami.",
                 "kind": "information"
               },
               {
                 "id": "team-building",
                 "title": "Muzyczny team building",
-                "body": "Od rytmu i powtarzania przechodzimy przez melodię i kolorowy groove do finałowego wykonania. Dobieram przebieg do grupy i celu wydarzenia.",
+                "body": "Wspólne działanie od pierwszego rytmu do finałowego wykonania.",
                 "kind": "information"
               },
               {
                 "id": "workshop",
                 "title": "Warsztat firmowy",
-                "body": "Format szyty na miarę celu zespołu, miejsca i czasu, np. integracja przy okazji szkolenia albo domknięcie dnia firmowego.",
-                "kind": "information"
-              },
-              {
-                "id": "repertoire",
-                "title": "Repertuar dopasowany do grupy",
-                "body": "Od rozgrzewki Santo Domingo, przez taneczną dawkę energii Cheri Cheri Lady, po Kolorowy Groove albo Piraci Mix. Wiązankę dobieramy do profilu uczestników.",
-                "kind": "information"
-              }
-            ],
-            "action": {
-              "label": "Zadzwoń do mnie i porozmawiajmy o formacie Twojego wydarzenia",
-              "href": "tel:+48000000000"
-            }
-          },
-          {
-            "id": "sposob",
-            "heading": "Współpraca i sposób prowadzenia",
-            "intro": "Najpierw ustalamy cel i ograniczenia wydarzenia. Potem buduję wspólny rytm, prowadzę grupę i domykam doświadczenie krótką refleksją.",
-            "items": [
-              {
-                "id": "brief",
-                "title": "Brief i dobór formatu",
-                "body": "Najpierw rozmowa o celu wydarzenia, profilu gości, miejscu i ograniczeniach technicznych. Dopiero potem proponuję format i repertuar.",
-                "kind": "information"
-              },
-              {
-                "id": "facilitation",
-                "title": "Prowadzenie od zasad do działania",
-                "body": "Zaczynam od rytmu i prostego powtarzania, potem dokładam melodię i kolorowy groove, żeby grupa mogła dojść do wspólnego finału.",
-                "kind": "information"
-              },
-              {
-                "id": "final",
-                "title": "Finał i rozmowa",
-                "body": "Spotkanie domyka finałowe wykonanie, czasem z dyrygentem operowym albo z zespołem, oraz krótka refleksja o tym, co grupa usłyszała o sobie.",
-                "kind": "information"
-              },
-              {
-                "id": "crew",
-                "title": "Solo, z zespołem albo z instrumentalistą",
-                "body": "Prowadzę sam, z zespołem albo z dodatkowym instrumentalistą. Skład dobieramy do skali eventu i oczekiwań organizatora.",
+                "body": "Format do celu zespołu, miejsca i czasu, np. integracja podczas szkolenia albo domknięcie dnia firmowego.",
                 "kind": "information"
               }
             ]
           },
           {
-            "id": "dowody",
-            "heading": "Dowody i kontekst",
-            "intro": "Moje doświadczenie pokazuję razem z datą, rolą i kontekstem, bez sugerowania bieżącej współpracy z markami.",
+            "id": "sposob",
+            "heading": "Jak prowadzę wydarzenie",
+            "intro": "Ustalamy cel i ograniczenia, potem buduję rytm, prowadzę grupę i domykam doświadczenie.",
             "items": [
               {
-                "id": "since-2010",
-                "title": "Od 2010 roku",
-                "body": "Praca z ludźmi przez muzykę, ruch i współpracę.",
-                "status": "confirmed",
+                "id": "brief",
+                "title": "Brief i dobór repertuaru",
+                "body": "Rozmawiamy o celu, gościach, miejscu i ograniczeniach technicznych. Potem proponuję format i dobieram repertuar do grupy, bez gotowej listy utworów.",
                 "kind": "information"
               },
               {
-                "id": "gwr",
-                "title": "Historyczny GWR z 661 osobami",
-                "body": "Wydarzenie z 2016 roku, opisane jako historyczny kontekst.",
-                "status": "confirmed",
+                "id": "facilitation",
+                "title": "Od rytmu do kolorowego groove’u",
+                "body": "Zaczynam od rytmu i powtarzania, potem dodaję melodię i kolorowy groove, żeby grupa doszła do wspólnego finału.",
+                "kind": "information"
+              },
+              {
+                "id": "final",
+                "title": "Finał we właściwym składzie",
+                "body": "Prowadzę samodzielnie albo z dodatkowym składem. Finał może być z dyrygentem operowym lub zespołem, zależnie od formatu i skali.",
                 "kind": "information"
               }
             ]
           },
           {
             "id": "oferta",
-            "heading": "Oferta, logistyka i materiały",
-            "intro": "Wycena opisuje uzgodniony zakres: przygotowanie, prowadzenie, czas, liczbę osób, logistykę i dojazd. Współpracuję zarówno bezpośrednio z firmami, jak i jako podwykonawca agencji eventowych.",
+            "heading": "Oferta i organizacja",
+            "intro": "Po briefie przygotowuję zakres do wydarzenia, dla firm bezpośrednio lub jako podwykonawca agencji eventowej.",
             "items": [
               {
-                "id": "format",
-                "title": "Format i czas",
-                "body": "Od krótkiego icebreakera konferencyjnego po pełny warsztat. Czas dopasowujemy do programu wydarzenia i przerw między blokami.",
+                "id": "brief",
+                "title": "Brief wydarzenia",
+                "body": "Ustalamy cel, format, czas, liczbę osób i miejsce, aby oferta pasowała do programu.",
                 "kind": "information"
               },
               {
                 "id": "quote",
                 "title": "Wycena indywidualna",
-                "body": "Wycena indywidualna zależy od liczby osób, liczby rurek i formatu. Szczegóły potwierdzamy przed wydarzeniem.",
+                "body": "Wycena zależy od liczby osób, rurek i formatu. Szczegóły potwierdzamy przed wydarzeniem.",
                 "kind": "information"
               },
               {
                 "id": "logistics",
                 "title": "Logistyka",
-                "body": "Instrumenty i sprzęt dostosowuję do miejsca, w tym do dużej sali konferencyjnej. Organizator dostaje wcześniej listę niezbędnych warunków.",
+                "body": "Dostosowuję instrumenty i sprzęt do miejsca, także dużej sali. Organizator wcześniej dostaje listę warunków.",
                 "kind": "information"
+              },
+              {
+                "id": "agency",
+                "title": "Współpraca z agencją",
+                "body": "Jako podwykonawca ustalam zakres, rolę i warunki, aby agencja mogła je jasno włączyć do oferty klienta.",
+                "kind": "information"
+              },
+              {
+                "id": "projects-link",
+                "title": "Realizacje do pokazania klientowi",
+                "body": "Zobacz realizacje z kontekstem, datą, moją rolą i źródłem.",
+                "href": "/realizacje",
+                "actionLabel": "Przejdź do realizacji",
+                "kind": "navigation"
               }
-            ]
+            ],
+            "action": {
+              "label": "Zadzwoń do mnie i porozmawiajmy o ofercie",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "artykuly",
@@ -1522,38 +1504,23 @@
               "label": "Przejdź do Wiedzy i inspiracji",
               "href": "/wiedza#artykuly"
             }
-          },
-          {
-            "id": "realizacje",
-            "heading": "Dowody do pokazania klientowi",
-            "intro": "Realizacje z kontekstem, datą, moją rolą i źródłem, które możesz od razu pokazać swojemu klientowi.",
-            "items": [
-              {
-                "id": "projects-link",
-                "title": "Zobacz realizacje",
-                "body": "Rekord GWR 661 osób, Droga Lwa, GLS Polska i Akademia Przywództwa, każdy dowód ze źródłem do sprawdzenia.",
-                "href": "/realizacje",
-                "actionLabel": "Przejdź do realizacji",
-                "kind": "navigation"
-              }
-            ]
           }
         ],
         "faq": [
           {
             "id": "corporate-formal",
             "question": "Czy to pasuje do formalnego eventu firmowego?",
-            "answer": "Tak, format dopasowuje się do celu, gości i tonu marki."
+            "answer": "Tak, dopasowuję format do celu wydarzenia, gości i tonu marki."
           },
           {
             "id": "corporate-size",
             "question": "Czy można dopasować format do liczby uczestników i czasu?",
-            "answer": "Tak, przed decyzją ustala się grupę, czas, miejsce i cel."
+            "answer": "Tak, przed decyzją ustalam grupę, czas, miejsce i cel."
           },
           {
             "id": "corporate-price",
             "question": "Co dokładnie obejmuje wycena?",
-            "answer": "Przygotowanie, prowadzenie, czas, liczbę osób, logistykę i dojazd. Dodatki są omawiane wcześniej."
+            "answer": "W wycenie uwzględniam przygotowanie, prowadzenie, czas, liczbę osób, logistykę i dojazd. Dodatki omawiamy wcześniej."
           },
           {
             "id": "corporate-travel",
@@ -1585,8 +1552,8 @@
         "intro": "I lead musical activities that activate a group and create a shared experience, not just another attraction.",
         "proof": "I work with people through music, movement, and cooperation.",
         "cta": {
-          "label": "Explore the formats",
-          "href": "#formats"
+          "label": "Go to the offer",
+          "href": "#offer"
         },
         "video": {
           "videoId": "goTqiC2tf3M",
@@ -1609,18 +1576,19 @@
           {
             "id": "triage",
             "heading": "A quick fit check",
-            "intro": "In two minutes, check whether the format fits the event goal, participant profile, and brand tone.",
+            "intro": "Check whether the format fits the event goal, participants, and brand tone.",
             "items": [
               {
                 "id": "fit",
                 "title": "For companies, agencies, and teams",
-                "body": "The format can work at a conference, team meeting, or event. I work in contexts ranging from 20 to 1,000 people, depending on the format, venue, and goal, this is a range of experience, not a promise of a specific group size.",
+                "body": "I lead conferences, team sessions, and events for 20-1,000 people, depending on the format, venue, and goal. This is a range of experience, not a promise of a specific group size.",
                 "kind": "information"
               },
               {
-                "id": "experience",
-                "title": "Experience without marketing noise",
-                "body": "The historical 661-person GWR event and work since 2010 show scale, with Dawid's date and role stated for every proof point.",
+                "id": "gwr",
+                "title": "Historical GWR event with 661 people",
+                "body": "In 2016, I co-created an event with 661 people. It is historical evidence of scale, not current cooperation with a brand.",
+                "status": "confirmed",
                 "kind": "information"
               }
             ]
@@ -1628,114 +1596,95 @@
           {
             "id": "formats",
             "heading": "Event formats",
-            "intro": "From a short opening to a full workshop. Scale and flow are matched to the goal, group size, venue, and available time.",
+            "intro": "From a short opening to a full workshop, I match the scale and flow to the goal, group, venue, and time.",
             "items": [
               {
                 "id": "icebreaker",
                 "title": "Conference icebreaker",
-                "body": "A few to a dozen or so minutes of shared rhythm that warms up the room and sets the tone for the rest of the programme. It works at conference openings and between blocks.",
+                "body": "A few to a dozen or so minutes of shared rhythm that warms up the room and sets it up for the programme. It works at openings and between blocks.",
                 "kind": "information"
               },
               {
                 "id": "team-building",
                 "title": "Musical team building",
-                "body": "We move from rhythm and repetition through melody and a colourful groove to a finale. I match the flow to the group and the event goal.",
+                "body": "A shared activity from the first rhythm to a final performance.",
                 "kind": "information"
               },
               {
                 "id": "workshop",
                 "title": "Corporate workshop",
-                "body": "A format tailored to the team's goal, venue, and schedule, for example integration during a training day or closing a company event.",
-                "kind": "information"
-              },
-              {
-                "id": "repertoire",
-                "title": "Repertoire matched to the group",
-                "body": "From the Santo Domingo warm-up, through the dance-fuelled Cheri Cheri Lady, to Kolorowy Groove or Pirates Mix. We match the set to the audience profile.",
-                "kind": "information"
-              }
-            ],
-            "action": {
-              "label": "Call me to discuss the format for your event",
-              "href": "tel:+48000000000"
-            }
-          },
-          {
-            "id": "how",
-            "heading": "How the collaboration works",
-            "intro": "We first agree the goal and constraints. I then build a shared rhythm, lead the group, and close the experience with a short reflection.",
-            "items": [
-              {
-                "id": "brief",
-                "title": "Brief and format selection",
-                "body": "First we talk about the event's goal, the audience, the venue, and technical constraints. Only then do I propose a format and a repertoire.",
-                "kind": "information"
-              },
-              {
-                "id": "facilitation",
-                "title": "Facilitation from rules to action",
-                "body": "I start with rhythm and simple repetition, then add melody and a colourful groove so the group can reach a shared finale.",
-                "kind": "information"
-              },
-              {
-                "id": "final",
-                "title": "Finale and conversation",
-                "body": "The session closes with a finale, sometimes a shared performance with an opera conductor or a band, and a short reflection on what the group heard about itself.",
-                "kind": "information"
-              },
-              {
-                "id": "crew",
-                "title": "Solo, with a band, or with an instrumentalist",
-                "body": "I can lead on my own, with a band, or with an additional instrumentalist. We match the line-up to the scale of the event and the organizer's expectations.",
+                "body": "A format for the team goal, venue, and schedule, for example integration during training or closing a company day.",
                 "kind": "information"
               }
             ]
           },
           {
-            "id": "evidence",
-            "heading": "Evidence and context",
-            "intro": "I show my experience with a date, role, and context, without implying current cooperation with a brand.",
+            "id": "how",
+            "heading": "How I lead the event",
+            "intro": "We agree the goal and constraints, then I build rhythm, lead the group, and bring the experience to a close.",
             "items": [
               {
-                "id": "since-2010",
-                "title": "Since 2010",
-                "body": "Working with people through music, movement, and cooperation.",
-                "status": "confirmed",
+                "id": "brief",
+                "title": "Brief and repertoire selection",
+                "body": "We talk about the goal, guests, venue, and technical constraints. Then I propose a format and match repertoire to the group, without a fixed song list.",
                 "kind": "information"
               },
               {
-                "id": "gwr",
-                "title": "Historical GWR event with 661 people",
-                "body": "A 2016 event presented in its historical context.",
-                "status": "confirmed",
+                "id": "facilitation",
+                "title": "From rhythm to a colourful groove",
+                "body": "I start with rhythm and repetition, then add melody and a colourful groove so the group reaches a shared finale.",
+                "kind": "information"
+              },
+              {
+                "id": "final",
+                "title": "A finale with the right line-up",
+                "body": "I lead independently or with an additional line-up. The finale can include an opera conductor or a band, depending on format and scale.",
                 "kind": "information"
               }
             ]
           },
           {
             "id": "offer",
-            "heading": "Offer, logistics, and materials",
-            "intro": "The quote describes the agreed scope: preparation, facilitation, time, group size, logistics, and travel. I work directly with companies and as a subcontractor for event agencies.",
+            "heading": "Offer and organisation",
+            "intro": "After the brief, I prepare a scope for the event, directly for companies or as an event agency subcontractor.",
             "items": [
               {
-                "id": "format",
-                "title": "Format and time",
-                "body": "From a short conference icebreaker to a full workshop. We fit the time into the event programme and the breaks between blocks.",
+                "id": "brief",
+                "title": "Event brief",
+                "body": "We agree the goal, format, timing, group size, and venue so the offer fits the programme.",
                 "kind": "information"
               },
               {
                 "id": "quote",
                 "title": "Individual quote",
-                "body": "The individual quote depends on the number of people, the number of tubes, and the format. We confirm the details before the event.",
+                "body": "The quote depends on the number of people, tubes, and format. We confirm details before the event.",
                 "kind": "information"
               },
               {
                 "id": "logistics",
                 "title": "Logistics",
-                "body": "I adapt instruments and equipment to the venue, including a large conference hall. The organizer receives a list of required conditions in advance.",
+                "body": "I adapt instruments and equipment to the venue, including a large hall. The organiser receives conditions in advance.",
                 "kind": "information"
+              },
+              {
+                "id": "agency",
+                "title": "Working with an agency",
+                "body": "As a subcontractor, I agree scope, role, and terms so the agency can clearly include them in the client offer.",
+                "kind": "information"
+              },
+              {
+                "id": "projects-link",
+                "title": "Projects to show your client",
+                "body": "See projects with context, date, my role, and a source.",
+                "href": "/en/projects",
+                "actionLabel": "Explore projects",
+                "kind": "navigation"
               }
-            ]
+            ],
+            "action": {
+              "label": "Call me to discuss the offer",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "articles",
@@ -1759,38 +1708,23 @@
               "label": "Go to Insights and inspiration",
               "href": "/en/insights#articles"
             }
-          },
-          {
-            "id": "projects",
-            "heading": "Proof to show your client",
-            "intro": "Projects with context, a date, my role, and a source you can show your client right away.",
-            "items": [
-              {
-                "id": "projects-link",
-                "title": "Explore projects",
-                "body": "The 661-person GWR record, Droga Lwa, GLS Polska, and Akademia Przywództwa, each with a source to check.",
-                "href": "/en/projects",
-                "actionLabel": "Explore projects",
-                "kind": "navigation"
-              }
-            ]
           }
         ],
         "faq": [
           {
             "id": "corporate-formal",
             "question": "Does this work for a formal corporate event?",
-            "answer": "Yes. The format adapts to the event goal, guests, and brand tone."
+            "answer": "Yes. I adapt the format to the event goal, guests, and brand tone."
           },
           {
             "id": "corporate-size",
             "question": "Can the format fit the group size and schedule?",
-            "answer": "Yes. We agree on the group, timing, venue, and goal before a decision is made."
+            "answer": "Yes. Before a decision, I agree the group, timing, venue, and goal."
           },
           {
             "id": "corporate-price",
             "question": "What does the quote include?",
-            "answer": "Preparation, facilitation, time, group size, logistics, and travel. Any additions are discussed in advance."
+            "answer": "I include preparation, facilitation, time, group size, logistics, and travel in the quote. Any additions are discussed in advance."
           },
           {
             "id": "corporate-travel",
@@ -1800,7 +1734,7 @@
           {
             "id": "corporate-agency",
             "question": "Is cooperation with event agencies possible?",
-            "answer": "Yes, I most often work as an agency subcontractor. We agree on the scope, the role in the programme, and the terms so it fits cleanly into the client's offer."
+            "answer": "Yes, I most often work as an agency subcontractor. We agree on the scope, role in the programme, and terms so it fits cleanly into the client offer."
           },
           {
             "id": "corporate-embarrassment",

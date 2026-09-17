@@ -30,8 +30,8 @@ const VIDEO_AFTER_SECTION: Partial<
     en: "how",
   },
   corporateEvents: {
-    pl: "oferta",
-    en: "offer",
+    pl: "sposob",
+    en: "how",
   },
   childrenWorkshops: {
     pl: "sposob-pracy",

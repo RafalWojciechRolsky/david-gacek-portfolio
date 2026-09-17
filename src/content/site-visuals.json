@@ -129,18 +129,14 @@
         "triaż": "paper",
         "formaty": "white",
         "sposob": "paper",
-        "dowody": "ink",
         "oferta": "white",
-        "realizacje": "coral",
         "artykuly": "white"
       },
       "en": {
         "triage": "paper",
         "formats": "white",
         "how": "paper",
-        "evidence": "ink",
         "offer": "white",
-        "projects": "coral",
         "articles": "white"
       }
     }
