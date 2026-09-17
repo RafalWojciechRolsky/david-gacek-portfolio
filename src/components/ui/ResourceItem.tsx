@@ -45,16 +45,21 @@ export function ResourceItem({ resource, locale, headingLevel = "h3" }: Resource
             <ActionLink
               href={resource.href}
               variant="text"
-              ariaLabel={`${messages.resources.downloadAria} ${resource.title}`}
+              ariaLabel={
+                resource.actionLabel ??
+                `${messages.resources.downloadAria} ${resource.title}`
+              }
               className="resource-action"
               onClick={() => setDownloadStarted(true)}
               download
-              live
             >
-              {downloadStarted
-                ? messages.resources.downloadStarted
-                : messages.resources.download}
+              {resource.actionLabel ?? messages.resources.download}
             </ActionLink>
+            {downloadStarted ? (
+              <span className="sr-only" role="status">
+                {messages.resources.downloadStarted}
+              </span>
+            ) : null}
             <div className="resource-sharing">
               <ShareButton
                 href={resource.href}

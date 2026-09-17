@@ -79,11 +79,33 @@ export function PageSections({
                 >
                   {pageSection.items.map((contentItem, index) => {
                     if (isResources) {
-                      return "title" in contentItem ? (
+                      if (!("title" in contentItem)) {
+                        return null;
+                      }
+
+                      const statusLabel =
+                        contentItem.status === "preparing" ||
+                        contentItem.status === "unavailable"
+                          ? getStatusLabel(contentItem.status, locale)
+                          : undefined;
+                      const isNavigationCard =
+                        isContentCardItem(contentItem) &&
+                        contentItem.kind === "navigation";
+
+                      return (
                         <li className="card-grid__item" key={contentItem.id}>
-                          <ResourceItem resource={contentItem} locale={locale} />
+                          {isNavigationCard ? (
+                            <ContentCard
+                              item={contentItem}
+                              index={index}
+                              objectId={contentItem.id}
+                              statusLabel={statusLabel}
+                            />
+                          ) : (
+                            <ResourceItem resource={contentItem} locale={locale} />
+                          )}
                         </li>
-                      ) : null;
+                      );
                     }
 
                     if (isArticleLibrary) {
