@@ -1953,7 +1953,7 @@
         "sections": [
           {
             "id": "wiek",
-            "heading": "Wybierz grupę wiekową",
+            "heading": "Dla jakiego wieku są warsztaty?",
             "intro": "Warsztat dobieram do wieku, liczby dzieci i możliwości grupy, a historie spotkań dopasowuję do grup od 3 do 18 lat.",
             "items": [
               {
@@ -2239,7 +2239,7 @@
         "sections": [
           {
             "id": "age",
-            "heading": "Choose an age group",
+            "heading": "What ages are the workshops for?",
             "intro": "I match the workshop to age, group size, and the abilities of the children, with story-based sessions prepared for groups aged 3 to 18.",
             "items": [
               {

@@ -1,4 +1,4 @@
-import { legalRoutes, pathFor, pathWithAnchor } from "@/lib/routes";
+import { legalRoutes, pathFor } from "@/lib/routes";
 import { siteConfig } from "@/lib/site-config";
 import type { Locale, PageKey } from "@/lib/types";
 import { getMessages } from "@/messages/ui";
@@ -40,7 +40,7 @@ export function Footer({ locale, currentPage }: FooterProps) {
             <h2>{messages.footer.materials}</h2>
             <a href={pathFor("projects", locale)}>{messages.footer.projects}</a>
             <a href={pathFor("insights", locale)}>{messages.footer.insights}</a>
-            <a href={pathWithAnchor("insights", locale, locale === "pl" ? "artykuly" : "articles")}>{messages.footer.blog}</a>
+            <a href={pathFor("insights", locale)}>{messages.footer.blog}</a>
             <a href={pathFor("materials", locale)}>{messages.footer.postTraining}</a>
             <a href={pathFor("contact", locale)}>{messages.footer.contact}</a>
           </nav>

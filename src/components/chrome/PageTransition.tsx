@@ -27,7 +27,6 @@ export function PageTransition({ children }: PageTransitionProps) {
   const pathname = usePathname();
   const router = useRouter();
   const pendingDepthRef = useRef<number | null>(null);
-  const skipNextRef = useRef(true);
 
   useEffect(() => {
     const onClickCapture = (event: MouseEvent) => {
@@ -46,7 +45,6 @@ export function PageTransition({ children }: PageTransitionProps) {
       }
 
       event.preventDefault();
-      event.stopPropagation();
       // Głębokość czeka w refie; glide odpali się dopiero po montażu nowej trasy.
       pendingDepthRef.current = window.scrollY;
       router.push(href, { scroll: false });
@@ -54,7 +52,6 @@ export function PageTransition({ children }: PageTransitionProps) {
 
     const onPopState = () => {
       pendingDepthRef.current = null;
-      skipNextRef.current = true;
     };
 
     document.addEventListener("click", onClickCapture, true);
@@ -66,12 +63,6 @@ export function PageTransition({ children }: PageTransitionProps) {
   }, [router]);
 
   useIsomorphicLayoutEffect(() => {
-    if (skipNextRef.current) {
-      skipNextRef.current = false;
-      pendingDepthRef.current = null;
-      return;
-    }
-
     const depth = pendingDepthRef.current;
     pendingDepthRef.current = null;
 
