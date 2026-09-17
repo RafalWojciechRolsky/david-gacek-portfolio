@@ -218,9 +218,7 @@
       "pl": {
         "definicja-disc": "paper",
         "dla-kogo": "white",
-        "zastosowanie": "ink",
         "przebieg": "green",
-        "wariant-muzyczny": "paper",
         "kwalifikacje": "white",
         "oferta": "green",
         "artykuly": "white"
@@ -228,9 +226,7 @@
       "en": {
         "disc-definition": "paper",
         "who-for": "white",
-        "uses": "ink",
         "process": "green",
-        "music-variant": "paper",
         "qualifications": "white",
         "offer": "green",
         "articles": "white"

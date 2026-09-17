@@ -2264,15 +2264,15 @@
               {
                 "id": "adaptation",
                 "title": "Adaptacja i jej koszt",
-                "body": "Czasem pełniona rola każe zachowywać się wbrew naturalnym preferencjom. Taka adaptacja kosztuje energię, a utrzymywana latami prowadzi wprost do wypalenia. O tym też rozmawiamy.",
+                "body": "Czasem pełniona rola każe zachowywać się wbrew naturalnym preferencjom. Taka adaptacja kosztuje energię, a utrzymywana przez długi czas może obciążać. O tym też rozmawiamy.",
                 "kind": "information"
               }
             ]
           },
           {
             "id": "dla-kogo",
-            "heading": "Dla kogo i jakie problemy",
-            "intro": "Szkolenie jest dla zespołów, które chcą lepiej rozumieć swoje sposoby działania i rozmawiać o współpracy konkretniej.",
+            "heading": "Dla kogo i co wspiera",
+            "intro": "Szkolenie jest dla zespołów, liderów, HR i L&D, którzy chcą lepiej rozumieć swoje sposoby działania i rozmawiać o współpracy konkretniej.",
             "items": [
               {
                 "id": "misunderstanding",
@@ -2283,13 +2283,19 @@
               {
                 "id": "decisions",
                 "title": "Tempo, decyzje i odpowiedzialność",
-                "body": "Różne preferencje mogą stać się przedmiotem konstruktywnej rozmowy zamiast źródłem szybkich ocen.",
+                "body": "Zespół zauważa różne sposoby reagowania: jedni chcą działać szybko i konkretnie, inni potrzebują czasu na przemyślenie. Obie postawy mają sens, różni je tempo i potrzeby.",
                 "kind": "information"
               },
               {
                 "id": "feedback",
-                "title": "Informacja zwrotna",
-                "body": "Uczestnicy przyglądają się temu, jak jasno mówić o potrzebach oraz jak słuchać osób reagujących inaczej.",
+                "title": "Informacja zwrotna i dopasowanie komunikacji",
+                "body": "Uczestnicy przyglądają się temu, jak jasno mówić o potrzebach, słuchać osób reagujących inaczej i dopasować komunikację do sytuacji.",
+                "kind": "information"
+              },
+              {
+                "id": "conflicts",
+                "title": "Konflikty jako różnica potrzeb",
+                "body": "Większość spięć w zespole to zderzenie potrzeb, a nie złych intencji. Model daje język, w którym o tych potrzebach można mówić wprost, bez wzajemnego obwiniania.",
                 "kind": "information"
               },
               {
@@ -2301,38 +2307,9 @@
             ]
           },
           {
-            "id": "zastosowanie",
-            "heading": "Co szkolenie może wesprzeć",
-            "intro": "Szkolenie nie zmienia zespołu za uczestników. Daje język, obserwacje i ćwiczenia, które mogą pomóc przełożyć rozmowę na codzienną współpracę.",
-            "items": [
-              {
-                "id": "preferences",
-                "title": "Rozpoznawanie preferencji",
-                "body": "Zespół zauważa różne sposoby reagowania: jedni chcą działać szybko i konkretnie, inni potrzebują czasu na przemyślenie. Obie postawy mają sens, różni je tempo i potrzeby.",
-                "kind": "information"
-              },
-              {
-                "id": "communication",
-                "title": "Dopasowanie komunikacji",
-                "body": "Z osobą o dominującym stylu rozmawiamy konkretnie, bez gadki-szmatki. Osobę o stabilnym stylu nie zaskakujemy i nie wypychamy przed szereg. Uczestnicy ćwiczą te dopasowania na własnych przykładach.",
-                "kind": "information"
-              },
-              {
-                "id": "conflicts",
-                "title": "Konflikty jako różnica potrzeb",
-                "body": "Większość spięć w zespole to zderzenie potrzeb, a nie złych intencji. Model daje język, w którym o tych potrzebach można mówić wprost, bez wzajemnego obwiniania.",
-                "kind": "information"
-              }
-            ],
-            "action": {
-              "label": "Zadzwoń do mnie i porozmawiajmy o wyzwaniach komunikacyjnych Twojego zespołu",
-              "href": "tel:+48000000000"
-            }
-          },
-          {
             "id": "przebieg",
-            "heading": "Jak wygląda szkolenie",
-            "intro": "Zaczynamy od celu zespołu, a nie od gotowej etykiety. Potem przechodzimy przez model, przykłady i rozmowę o praktyce.",
+            "heading": "Jak pracuję z zespołem",
+            "intro": "Zaczynamy od celu zespołu, a nie od gotowej etykiety. Potem przechodzimy przez model, przykłady, działanie i rozmowę o praktyce.",
             "items": [
               {
                 "id": "goal",
@@ -2348,8 +2325,8 @@
               },
               {
                 "id": "practice",
-                "title": "Diagnoza na działaniu, nie na papierze",
-                "body": "Zanim padnie jakiekolwiek pojęcie z modelu, grupa najpierw działa, a potem obserwuje, co w niej było łatwe, trudne i zaskakujące. To doświadczenie staje się punktem wyjścia do wykładu.",
+                "title": "Obserwacja w działaniu, nie na papierze",
+                "body": "Zanim padnie jakiekolwiek pojęcie z modelu, grupa najpierw działa, a potem obserwuje, co w niej było łatwe, trudne i zaskakujące. To doświadczenie staje się punktem wyjścia do rozmowy o modelu.",
                 "kind": "information"
               },
               {
@@ -2357,32 +2334,19 @@
                 "title": "Przełożenie na współpracę",
                 "body": "Kończymy wnioskami do codziennych rozmów: jak dzielić pracę, jak dawać informację zwrotną i jak rozmawiać z osobą o innym stylu.",
                 "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "wariant-muzyczny",
-            "heading": "Muzyka, Bum Bum Rurki i DISC",
-            "intro": "Jeśli cel zespołu tego potrzebuje, muzyka i Bum Bum Rurki stają się doświadczeniem, które otwiera rozmowę o słuchaniu, reakcji i współpracy.",
-            "items": [
-              {
-                "id": "music-variant",
-                "title": "Diagnoza bez testów",
-                "body": "Wspólna zabawa rurkami pokazuje style zachowań szybciej niż ankieta. Grupa obserwuje siebie w działaniu, a rozmowa po ćwiczeniu łączy to doświadczenie z modelem DISC.",
-                "kind": "information"
               },
               {
-                "id": "colours",
-                "title": "Kolory rurek i kolory stylów",
-                "body": "Rurki mają cztery kolory, a DISC również cztery style, więc uczestnicy sami wskazują, do którego koloru czują się najbliżej. Od tego momentu każdy widzi w sali swoją mapę stylów.",
+                "id": "music-variant",
+                "title": "Obserwacja stylów w działaniu",
+                "body": "Jeśli cel zespołu tego potrzebuje, muzyka i Bum Bum Rurki stają się doświadczeniem, które otwiera rozmowę o słuchaniu, reakcji i współpracy. Grupa obserwuje siebie w działaniu, a rozmowa po ćwiczeniu łączy to doświadczenie z modelem DISC.",
                 "kind": "information"
               }
             ]
           },
           {
             "id": "kwalifikacje",
-            "heading": "Kwalifikacje i dowody",
-            "intro": "Certyfikat, skala praktyki grupowej i stałe środowiska, w których pracuję modelem DISC.",
+            "heading": "Kwalifikacje i praktyka",
+            "intro": "Certyfikat, praktyka z grupami i realizacje z kontekstem do sprawdzenia.",
             "items": [
               {
                 "id": "maxidisc",
@@ -2402,22 +2366,6 @@
                 "kind": "information"
               },
               {
-                "id": "droga-lwa",
-                "title": "Droga Lwa",
-                "body": "Jako mówca tego cyklicznego wydarzenia łączę na scenie Bum Bum Rurki z modelem DISC.",
-                "href": "https://drogalwa.pl/",
-                "actionLabel": "drogalwa.pl",
-                "kind": "navigation"
-              },
-              {
-                "id": "akademia",
-                "title": "Akademia Przywództwa",
-                "body": "Działam w zespole Akademii w obszarze komunikacji i DISC, prowadząc pracę z modelami zachowań.",
-                "href": "https://akademiaprzywodztwa.pl/",
-                "actionLabel": "akademiaprzywodztwa.pl",
-                "kind": "navigation"
-              },
-              {
                 "id": "case-studies",
                 "title": "Potwierdzone realizacje",
                 "body": "Realizacje z kontekstem, rolą i publicznym źródłem, w tym wydarzenia, gdzie DISC spotyka się z muzyką.",
@@ -2429,25 +2377,25 @@
           },
           {
             "id": "oferta",
-            "heading": "Format, czas i warunki",
+            "heading": "Oferta grupowa i indywidualna",
             "intro": "Format, czas, liczebność i wycena zależą od celu zespołu. Szczegóły ustalamy po krótkiej rozmowie.",
             "items": [
               {
-                "id": "format",
-                "title": "Format",
-                "body": "Szkolenie grupowe dla zespołów oraz sesje indywidualne z raportem, z opcjonalnym wariantem muzycznym.",
+                "id": "group-training",
+                "title": "Szkolenie grupowe",
+                "body": "Prowadzę szkolenie dla zespołu wokół modelu, przykładów, ćwiczeń i rozmowy o wnioskach.",
                 "kind": "information"
               },
               {
-                "id": "audience",
-                "title": "Zespoły, liderzy, HR i L&D",
-                "body": "Zakres dopasowujemy do sytuacji zespołu i celu, z którym przychodzą uczestnicy.",
+                "id": "individual-sessions",
+                "title": "Sesje indywidualne z raportem",
+                "body": "Uczestnik wypełnia ankietę w wybranym kontekście, zawodowym albo rodzinnym, dostaje raport, a następnie spotykamy się na omówienie i plan dalszej pracy.",
                 "kind": "information"
               },
               {
-                "id": "scope",
-                "title": "Zakres",
-                "body": "Model, przykłady, ćwiczenia i rozmowa o wnioskach. W wariancie z raportem uczestnicy wypełniają ankietę w wybranym kontekście i dostają indywidualny raport do omówienia.",
+                "id": "music-offer",
+                "title": "Opcjonalny wariant muzyczny",
+                "body": "Muzykę i Bum Bum Rurki włączam tylko wtedy, gdy wspierają cel zespołu.",
                 "kind": "information"
               },
               {
@@ -2457,7 +2405,11 @@
                 "status": "pending",
                 "kind": "information"
               }
-            ]
+            ],
+            "action": {
+              "label": "Zadzwoń do mnie i porozmawiajmy o wyzwaniach komunikacyjnych Twojego zespołu",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "artykuly",
@@ -2488,11 +2440,6 @@
             "id": "disc-model",
             "question": "Czy DISC to test osobowości?",
             "answer": "Nie. To model stylów komunikacji i współpracy, nie diagnoza kliniczna i nie stała etykieta."
-          },
-          {
-            "id": "disc-audience",
-            "question": "Dla jakich zespołów jest szkolenie?",
-            "answer": "Dla zespołów, liderów, HR i L&D. Zakres zależy od sytuacji zespołu."
           },
           {
             "id": "disc-music",
@@ -2558,15 +2505,15 @@
               {
                 "id": "adaptation",
                 "title": "Adaptation and its cost",
-                "body": "Sometimes a role pushes us to behave against our natural preferences. Such adaptation costs energy, and kept up for years it leads straight to burnout. We talk about that too.",
+                "body": "Sometimes a role pushes us to behave against our natural preferences. Such adaptation costs energy and, when sustained for a long time, can become draining. We talk about that too.",
                 "kind": "information"
               }
             ]
           },
           {
             "id": "who-for",
-            "heading": "Who it is for and which problems it helps",
-            "intro": "The training is for teams that want to understand how they work and talk about collaboration more clearly.",
+            "heading": "Who it is for and what it supports",
+            "intro": "The training is for teams, leaders, HR, and L&D who want to understand how they work and talk about collaboration more clearly.",
             "items": [
               {
                 "id": "misunderstanding",
@@ -2577,13 +2524,19 @@
               {
                 "id": "decisions",
                 "title": "Pace, decisions, and responsibility",
-                "body": "Different preferences can become a constructive topic instead of a source of quick judgement.",
+                "body": "The team notices different ways of responding: some people want to move fast and be specific, others need time to think. Both approaches make sense, they differ in pace and needs.",
                 "kind": "information"
               },
               {
                 "id": "feedback",
-                "title": "Feedback",
-                "body": "Participants examine how to express needs clearly and listen to people who respond differently.",
+                "title": "Feedback and adjusting communication",
+                "body": "Participants examine how to express needs clearly, listen to people who respond differently, and adjust communication to the situation.",
+                "kind": "information"
+              },
+              {
+                "id": "conflicts",
+                "title": "Conflict as a clash of needs",
+                "body": "Most friction in a team comes from clashing needs, not bad intentions. The model gives the team a language to name those needs directly, without mutual blame.",
                 "kind": "information"
               },
               {
@@ -2595,38 +2548,9 @@
             ]
           },
           {
-            "id": "uses",
-            "heading": "What the training can support",
-            "intro": "Training does not change a team for its participants. It offers language, observations, and exercises that can support everyday collaboration.",
-            "items": [
-              {
-                "id": "preferences",
-                "title": "Recognising preferences",
-                "body": "The team notices different ways of responding: some people want to move fast and be specific, others need time to think. Both approaches make sense, they differ in pace and needs.",
-                "kind": "information"
-              },
-              {
-                "id": "communication",
-                "title": "Adjusting communication",
-                "body": "With a dominant style you get straight to the point. A steady style dislikes surprises and being pushed to the front. Participants practise these adjustments on their own examples.",
-                "kind": "information"
-              },
-              {
-                "id": "conflict",
-                "title": "Conflict as a clash of needs",
-                "body": "Most friction in a team comes from clashing needs, not bad intentions. The model gives the team a language to name those needs directly, without mutual blame.",
-                "kind": "information"
-              }
-            ],
-            "action": {
-              "label": "Call me to discuss your team's communication challenges",
-              "href": "tel:+48000000000"
-            }
-          },
-          {
             "id": "process",
-            "heading": "What the training looks like",
-            "intro": "We start with the team's goal, not with a ready-made label. Then we work through the model, examples, and practical reflection.",
+            "heading": "How I work with a team",
+            "intro": "We start with the team's goal, not with a ready-made label. Then we work through the model, examples, action, and practical reflection.",
             "items": [
               {
                 "id": "goal",
@@ -2642,8 +2566,8 @@
               },
               {
                 "id": "practice",
-                "title": "Diagnosis through action, not on paper",
-                "body": "Before any term from the model appears, the group acts first and then observes what felt easy, difficult, and surprising. That experience becomes the starting point for the lecture part.",
+                "title": "Observation in action, not on paper",
+                "body": "Before any term from the model appears, the group acts first and then observes what felt easy, difficult, and surprising. That experience becomes the starting point for a conversation about the model.",
                 "kind": "information"
               },
               {
@@ -2651,32 +2575,19 @@
                 "title": "Transferring it into cooperation",
                 "body": "We close with conclusions for everyday conversations: how to divide work, how to give feedback, and how to talk with a person of a different style.",
                 "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "music-variant",
-            "heading": "Music, boomwhackers, and DISC",
-            "intro": "When the team's goal calls for it, music and boomwhackers create an experience that opens a conversation about listening, response, and collaboration.",
-            "items": [
-              {
-                "id": "music-variant",
-                "title": "Diagnosis without tests",
-                "body": "A shared boomwhacker game reveals behavioural styles faster than a questionnaire. The group observes itself in action, and the debrief links that experience with the DISC model.",
-                "kind": "information"
               },
               {
-                "id": "colours",
-                "title": "Tube colours and style colours",
-                "body": "Tubes come in four colours, and DISC also has four styles, so participants point out which colour feels closest to them. From that moment everyone sees their own map of styles in the room.",
+                "id": "music-variant",
+                "title": "Observing styles in action",
+                "body": "When the team's goal calls for it, music and boomwhackers create an experience that opens a conversation about listening, response, and collaboration. The group observes itself in action, and the debrief links that experience with the DISC model.",
                 "kind": "information"
               }
             ]
           },
           {
             "id": "qualifications",
-            "heading": "Qualifications and evidence",
-            "intro": "A certificate, the scale of group practice, and the communities where I use the DISC model.",
+            "heading": "Qualifications and practice",
+            "intro": "A certificate, group practice, and projects with context you can check.",
             "items": [
               {
                 "id": "maxidisc",
@@ -2696,25 +2607,9 @@
                 "kind": "information"
               },
               {
-                "id": "droga-lwa",
-                "title": "Droga Lwa",
-                "body": "As a speaker at this recurring event, I combine boomwhackers with the DISC model on stage.",
-                "href": "https://drogalwa.pl/",
-                "actionLabel": "drogalwa.pl",
-                "kind": "navigation"
-              },
-              {
-                "id": "akademia",
-                "title": "Akademia Przywództwa",
-                "body": "I am part of the Academy team in the communication and DISC area.",
-                "href": "https://akademiaprzywodztwa.pl/",
-                "actionLabel": "akademiaprzywodztwa.pl",
-                "kind": "navigation"
-              },
-              {
                 "id": "case-studies",
                 "title": "Confirmed projects",
-                "body": "Realizations with context, role, and public source, including events where DISC and music met in practice.",
+                "body": "Projects with context, role, and public source, including events where DISC and music met in practice.",
                 "href": "/en/projects",
                 "actionLabel": "See projects",
                 "kind": "navigation"
@@ -2723,25 +2618,25 @@
           },
           {
             "id": "offer",
-            "heading": "Format, timing, and terms",
+            "heading": "Group and individual offer",
             "intro": "Format, duration, group size, and pricing depend on the team's goal. We agree the details after a short conversation.",
             "items": [
               {
-                "id": "format",
-                "title": "Format",
-                "body": "Group training for teams and individual sessions with a report, with an optional music-based variant.",
+                "id": "group-training",
+                "title": "Group training",
+                "body": "I lead team training around the model, examples, exercises, and a conversation about applying insights.",
                 "kind": "information"
               },
               {
-                "id": "audience",
-                "title": "Teams, leaders, HR, and L&D",
-                "body": "The scope is matched to the team's situation and the goal participants bring to the session.",
+                "id": "individual-sessions",
+                "title": "Individual sessions with a report",
+                "body": "A participant fills in a questionnaire in a chosen context, professional or family, receives a report, and then we meet for a debrief and a plan for further work.",
                 "kind": "information"
               },
               {
-                "id": "scope",
-                "title": "Scope",
-                "body": "The model, examples, exercises, and a conversation about applying insights. In the report variant, participants fill in a questionnaire in a chosen context and receive an individual report to discuss.",
+                "id": "music-offer",
+                "title": "Optional music-based variant",
+                "body": "I use music and boomwhackers only when they support the team's goal.",
                 "kind": "information"
               },
               {
@@ -2751,7 +2646,11 @@
                 "status": "pending",
                 "kind": "information"
               }
-            ]
+            ],
+            "action": {
+              "label": "Call me to discuss your team's communication challenges",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "articles",
@@ -2782,11 +2681,6 @@
             "id": "disc-model",
             "question": "Is DISC a personality test?",
             "answer": "No. It is a model of communication and cooperation styles, not a clinical diagnosis or fixed label."
-          },
-          {
-            "id": "disc-audience",
-            "question": "Which teams is the training for?",
-            "answer": "Teams, leaders, HR, and L&D. The scope depends on the team's situation."
           },
           {
             "id": "disc-music",
