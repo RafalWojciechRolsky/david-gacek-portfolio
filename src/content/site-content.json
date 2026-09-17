@@ -847,7 +847,7 @@
         "slug": "szkolenia-bum-bum-rurki",
         "seo": {
           "title": "Szkolenia dla nauczycieli z Bum Bum Rurek | Dawid Gacek",
-          "description": "Praktyczne szkolenie dla nauczycieli z wykorzystania Bum Bum Rurek w pracy z grupą. Poznaj program, transfer, dowody, materiały i warunki współpracy z Dawidem."
+          "description": "Praktyczne szkolenie dla nauczycieli z wykorzystania Bum Bum Rurek w pracy z grupą. Poznaj program, materiały po szkoleniu, doświadczenie Dawida i warunki współpracy."
         },
         "title": "Szkolenia dla nauczycieli",
         "eyebrow": "Praktyczne szkolenie z wykorzystania Bum Bum Rurek w pracy z grupą.",
@@ -855,7 +855,7 @@
         "proof": "4000 przeszkolonych nauczycieli",
         "cta": {
           "label": "Sprawdź ofertę szkolenia",
-          "href": "#materialy-dla-dyrekcji"
+          "href": "#oferta"
         },
         "video": {
           "videoId": "fqVVmwXLuoY",
@@ -897,13 +897,25 @@
                 "title": "Rady pedagogiczne i placówki edukacyjne",
                 "body": "Dla dyrekcji i szkół, które chcą dać całemu zespołowi nauczycieli wspólne, praktyczne narzędzie dydaktyczne i wychowawcze.",
                 "kind": "information"
+              },
+              {
+                "id": "attention",
+                "title": "Utrzymanie uwagi i dyscyplina bez krzyku",
+                "body": "Konkretne techniki START / STOP, odliczanie i gesty dyrygenckie pomagają uciszyć i skupić grupę bez podnoszenia głosu.",
+                "kind": "information"
+              },
+              {
+                "id": "own-scenarios",
+                "title": "Gotowe scenariusze i własne pomysły",
+                "body": "Sprawdzone zabawy muzyczno-ruchowe oraz prosty schemat tworzenia własnych zajęć można dopasować do wieku dzieci i podstawy programowej.",
+                "kind": "information"
               }
             ]
           },
           {
             "id": "program",
             "heading": "Co wydarzy się podczas szkolenia",
-            "intro": "Zaczynamy od prostych zasad i rytmu, a kończymy pomysłami, które można wykorzystać z własną grupą.",
+            "intro": "Zaczynamy od prostych zasad i rytmu, a kończymy pomysłami oraz materiałami, do których można wrócić we własnej pracy.",
             "items": [
               {
                 "id": "start-stop",
@@ -926,71 +938,97 @@
               {
                 "id": "scenarios",
                 "title": "Scenariusze, gry i multimedia",
-                "body": "Konspekt ćwiczeń, gry rytmiczne i ruchowe, multimedia oraz narzędzia online, które można dopasować do własnych zajęć. Uczestnik wychodzi z gotowym materiałem do dalszej pracy.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "wyniesiesz",
-            "heading": "Co nauczyciele wyniosą",
-            "intro": "Po szkoleniu uczestnicy mają więcej pomysłów, narzędzi i odwagi, żeby samodzielnie pracować z rurkami.",
-            "items": [
-              {
-                "id": "attention",
-                "title": "Utrzymanie uwagi i dyscyplina bez krzyku",
-                "body": "Konkretne techniki START / STOP, odliczanie i gesty dyrygenckie, które pozwalają uciszyć i skupić 30-osobową grupę w kilka sekund bez podnoszenia głosu.",
-                "kind": "information"
-              },
-              {
-                "id": "own-scenarios",
-                "title": "Bank gotowych scenariuszy i własne pomysły",
-                "body": "Biblioteka sprawdzonych zabaw muzyczno-ruchowych oraz prosty schemat tworzenia własnych zajęć dopasowanych do wieku dzieci i podstawy programowej.",
+                "body": "Konspekt ćwiczeń, gry rytmiczne i ruchowe, multimedia oraz narzędzia online można dopasować do własnych zajęć.",
                 "kind": "information"
               },
               {
                 "id": "transfer",
-                "title": "Praktyczny transfer i materiały do pracy",
-                "body": "Interaktywny konspekt, karty rytmów, nagranie video, muzyka, linki do narzędzi online i materiały po szkoleniu, do których można wrócić przy planowaniu zajęć.",
-                "status": "available",
+                "title": "Materiały po szkoleniu",
+                "body": "Uczestnicy dostają interaktywny konspekt, karty rytmów, nagranie wideo, muzykę, linki do narzędzi online i materiały, do których mogą wrócić przy planowaniu zajęć.",
+                "kind": "information",
+                "status": "available"
+              }
+            ]
+          },
+          {
+            "id": "sposob-pracy",
+            "heading": "Metoda oparta na praktyce",
+            "intro": "Bum Bum Rurki są proste, a dobre prowadzenie grupy wymaga doświadczenia, struktury i uważności na jej energię.",
+            "items": [
+              {
+                "id": "teacher-proof",
+                "title": "4000 przeszkolonych nauczycieli",
+                "body": "Praca z nauczycielami w całej Polsce pomaga mi odpowiadać na realne potrzeby sali i grupy.",
                 "kind": "information"
+              },
+              {
+                "id": "since-2010",
+                "title": "Praktyka z rurkami od 2010 roku",
+                "body": "Od 2010 roku łączę muzykę i ruch z prowadzeniem grup o różnym poziomie energii i doświadczenia.",
+                "kind": "information"
+              },
+              {
+                "id": "teacher-method",
+                "title": "Od doświadczenia do metody",
+                "body": "Najpierw przechodzimy przez ćwiczenia, potem rozkładamy je na zasady możliwe do użycia we własnych zajęciach.",
+                "kind": "information"
+              },
+              {
+                "id": "teacher-disc",
+                "title": "Certyfikat konsultanta MaxieDISC",
+                "body": "Przygotowanie wspiera świadomą pracę z komunikacją, dynamiką grupy i różnicami widocznymi w sali.",
+                "kind": "information"
+              }
+            ],
+            "action": {
+              "label": "Otwórz źródłowy PDF oferty szkolenia",
+              "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf"
+            }
+          },
+          {
+            "id": "oferta",
+            "heading": "Oferta szkolenia",
+            "intro": "Przyjeżdżam do konkretnej placówki i konkretnego grona. Termin, liczebność grupy i logistykę ustalamy telefonicznie.",
+            "items": [
+              {
+                "id": "format",
+                "title": "Format placówkowy",
+                "body": "Prowadzę szkolenie dla rady pedagogicznej albo wybranej grupy nauczycieli w konkretnej placówce.",
+                "kind": "information"
+              },
+              {
+                "id": "price",
+                "title": "Cena",
+                "body": "180 zł brutto za osobę.",
+                "kind": "information"
+              },
+              {
+                "id": "duration",
+                "title": "Czas",
+                "body": "Szkolenie trwa 240 minut.",
+                "kind": "information"
+              },
+              {
+                "id": "date",
+                "title": "Termin i organizacja",
+                "body": "Zadzwoń do mnie i zapytaj o wolny termin dla swojej placówki. Termin, liczebność grupy i logistykę ustalamy telefonicznie.",
+                "kind": "information"
+              },
+              {
+                "id": "offer-pdf",
+                "title": "Źródłowa oferta szkolenia w PDF",
+                "body": "Tymczasowa wersja źródłowa do przekazania dyrekcji. Dokument wymaga jeszcze aktualizacji danych kontaktowych, po zakończeniu prac przygotuję nową ofertę w stylu strony.",
+                "status": "available",
+                "kind": "navigation",
+                "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf",
+                "actionLabel": "Otwórz źródłowy PDF oferty szkolenia",
+                "download": true
               }
             ],
             "action": {
               "label": "Zadzwoń do mnie i zapytaj o wolny termin dla swojej placówki",
               "href": "tel:+48000000000"
             }
-          },
-          {
-            "id": "sposob-pracy",
-            "heading": "Metoda, którą można zabrać do swojej pracy",
-            "intro": "Bum Bum Rurki są proste. To, co można z nimi zrobić w grupie, wymaga pomysłu, struktury i dobrego prowadzenia.",
-            "items": [
-              {
-                "id": "teacher-proof",
-                "title": "4000 przeszkolonych nauczycieli",
-                "body": "Skala doświadczenia z nauczycielami w całej Polsce pomaga odpowiadać na realne potrzeby sali i grupy.",
-                "kind": "information"
-              },
-              {
-                "id": "since-2010",
-                "title": "Praktyka z rurkami od 2010 roku",
-                "body": "Wieloletnia praktyka łączy muzykę i ruch z prowadzeniem grup o różnym poziomie energii i doświadczenia.",
-                "kind": "information"
-              },
-              {
-                "id": "teacher-method",
-                "title": "Od doświadczenia do metody",
-                "body": "Uczestnicy najpierw przechodzą przez ćwiczenia, a potem rozkładają je na zasady możliwe do użycia we własnych zajęciach.",
-                "kind": "information"
-              },
-              {
-                "id": "teacher-disc",
-                "title": "Certyfikat konsultanta MaxieDISC",
-                "body": "Formalne przygotowanie wspiera świadomą pracę z komunikacją, dynamiką grupy i różnicami widocznymi w sali.",
-                "kind": "information"
-              }
-            ]
           },
           {
             "id": "artykuly",
@@ -1014,97 +1052,6 @@
               "label": "Przejdź do Wiedzy i inspiracji",
               "href": "/wiedza#artykuly"
             }
-          },
-          {
-            "id": "transfer",
-            "heading": "Co zostaje po szkoleniu",
-            "intro": "Szkolenie nie kończy się w chwili wyjścia z sali. Uczestnicy dostają materiały, do których mogą wrócić przy planowaniu kolejnych zajęć.",
-            "action": {
-              "label": "Strona z materiałami po szkoleniu",
-              "href": "/materialy"
-            },
-            "items": [
-              {
-                "id": "outline",
-                "title": "Konspekt z kartami rytmów",
-                "body": "Interaktywny konspekt z kartami rytmów i wariantami ćwiczeń do adaptacji we własnych zajęciach.",
-                "status": "available",
-                "kind": "information"
-              },
-              {
-                "id": "music",
-                "title": "Muzyka i nagrania ćwiczeń",
-                "body": "Nagranie video, muzyka ze szkolenia i materiały pokazujące ćwiczenia w praktyce, od odliczania po wspólny występ.",
-                "status": "available",
-                "kind": "information"
-              },
-              {
-                "id": "tools",
-                "title": "Narzędzia online i strona materiałów",
-                "body": "Linki do narzędzi online, aplikacji i bezpłatnych szkółek video oraz strona z materiałami po szkoleniu.",
-                "status": "available",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "oferta",
-            "heading": "Format, cena, czas i logistyka",
-            "intro": "Szkolenie jest przeznaczone dla nauczycieli i osób prowadzących zajęcia. Szczegóły organizacyjne potwierdzamy z uwzględnieniem grupy i miejsca.",
-            "items": [
-              {
-                "id": "format",
-                "title": "Format",
-                "body": "Przyjeżdżam do konkretnej placówki i konkretnego grona, aby poprowadzić szkolenie dla rady pedagogicznej albo wybranej grupy nauczycieli.",
-                "kind": "information"
-              },
-              {
-                "id": "price",
-                "title": "Cena",
-                "body": "180 zł brutto za osobę.",
-                "kind": "information"
-              },
-              {
-                "id": "duration",
-                "title": "Czas",
-                "body": "Szkolenie trwa 240 minut.",
-                "kind": "information"
-              },
-              {
-                "id": "date",
-                "title": "Termin i miejsce",
-                "body": "Zadzwoń do mnie i zapytaj o wolny termin dla swojej placówki. Termin i szczegóły ustalamy indywidualnie.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "materialy-dla-dyrekcji",
-            "heading": "Materiały dla dyrekcji",
-            "intro": "Przekaż dyrekcji jeden kompletny adres. Znajdzie tu sens szkolenia, program, materiały, dowody i warunki do ustalenia.",
-            "action": {
-              "label": "Otwórz źródłowy PDF oferty szkolenia",
-              "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf"
-            },
-            "items": [
-              {
-                "id": "offer-pdf",
-                "title": "Źródłowa oferta szkolenia w PDF",
-                "body": "Tymczasowa wersja źródłowa do przekazania dyrekcji, z programem, przebiegiem, konspektem, rytmami, narzędziami online i materiałami po szkoleniu. Dokument wymaga jeszcze aktualizacji danych kontaktowych. Po zakończeniu prac przygotuję nową ofertę w stylu strony.",
-                "status": "available",
-                "kind": "navigation",
-                "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf",
-                "actionLabel": "Otwórz źródłowy PDF oferty szkolenia",
-                "download": true
-              },
-              {
-                "id": "outline",
-                "title": "Dowody doświadczenia",
-                "body": "Opis metody wraz z potwierdzonymi dowodami: 4000 przeszkolonych nauczycieli, historyczny rekord Guinnessa i certyfikat konsultanta MaxieDISC.",
-                "status": "preparing",
-                "kind": "information"
-              }
-            ]
           }
         ],
         "faq": [
@@ -1126,7 +1073,7 @@
           {
             "id": "teacher-price",
             "question": "Jak ustalić cenę i termin?",
-            "answer": "Telefon lub WhatsApp, z ustaleniem formatu, liczby uczestników, miejsca, terminu, logistyki i wyceny."
+            "answer": "Cena wynosi 180 zł brutto za osobę. Termin, liczebność grupy i logistykę ustalamy telefonicznie."
           },
           {
             "id": "teacher-group",
@@ -1146,7 +1093,7 @@
         "slug": "boomwhackers-teacher-training",
         "seo": {
           "title": "Teacher training with boomwhackers in Poland | Dawid Gacek",
-          "description": "Practical teacher training with boomwhackers in Poland. Explore the programme, follow-up materials, evidence, and practical details before you call today."
+          "description": "Practical teacher training with boomwhackers in Poland. Explore the programme, follow-up materials, Dawid's experience, and practical details before you call today."
         },
         "title": "Teacher training",
         "eyebrow": "Practical training with boomwhackers for working with groups.",
@@ -1154,7 +1101,7 @@
         "proof": "4,000 teachers trained",
         "cta": {
           "label": "Explore the teacher training offer",
-          "href": "#leadership-materials"
+          "href": "#offer"
         },
         "video": {
           "videoId": "fqVVmwXLuoY",
@@ -1196,13 +1143,25 @@
                 "title": "Teaching faculties and school teams",
                 "body": "For school management seeking an actionable, practical teaching method that the entire faculty can use right away.",
                 "kind": "information"
+              },
+              {
+                "id": "attention",
+                "title": "Group attention without raising your voice",
+                "body": "Actionable START / STOP routines, count-ins, and conducting cues help focus and quiet a group without shouting.",
+                "kind": "information"
+              },
+              {
+                "id": "own-scenarios",
+                "title": "Ready lesson scenarios and flexible ideas",
+                "body": "Proven rhythm and movement activities, plus an easy framework for designing custom sessions, can be matched to student ages.",
+                "kind": "information"
               }
             ]
           },
           {
             "id": "programme",
             "heading": "What happens during the training",
-            "intro": "We start with simple rules and rhythm, then move towards ideas you can use with your own group.",
+            "intro": "We start with simple rules and rhythm, then move towards ideas and materials participants can return to in their own work.",
             "items": [
               {
                 "id": "start-stop",
@@ -1225,56 +1184,33 @@
               {
                 "id": "scenarios",
                 "title": "Session plans, games, and multimedia",
-                "body": "A session outline, rhythm and movement games, multimedia, and online tools that can be adapted to your own classes. Participants leave with ready material for further work.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "takeaways",
-            "heading": "What teachers take away",
-            "intro": "After the training, participants have more ideas, tools, and confidence to work with boomwhackers independently.",
-            "items": [
-              {
-                "id": "attention",
-                "title": "Group attention without raising your voice",
-                "body": "Actionable START / STOP routines, count-ins, and conducting cues that focus and quiet a group of 30 children in seconds without shouting.",
-                "kind": "information"
-              },
-              {
-                "id": "own-scenarios",
-                "title": "Ready lesson scenarios and flexible ideas",
-                "body": "A complete library of rhythm games, movement activities, and an easy framework for designing custom sessions matched to student ages.",
+                "body": "A session outline, rhythm and movement games, multimedia, and online tools can be adapted to your own classes.",
                 "kind": "information"
               },
               {
                 "id": "transfer",
-                "title": "Immediate classroom transfer and resources",
-                "body": "An interactive outline, rhythm cards, video recording, music, links to online tools, and post-training materials to return to when planning sessions.",
-                "status": "available",
-                "kind": "information"
+                "title": "Post-training materials",
+                "body": "Participants receive an interactive outline, rhythm cards, a video recording, music, links to online tools, and materials they can return to when planning sessions.",
+                "kind": "information",
+                "status": "available"
               }
-            ],
-            "action": {
-              "label": "Call me to ask about an available date for your school",
-              "href": "tel:+48000000000"
-            }
+            ]
           },
           {
             "id": "how",
-            "heading": "A method you can take into your work",
-            "intro": "Boomwhackers are simple. Using them with a group takes ideas, structure, and thoughtful facilitation.",
+            "heading": "A method grounded in practice",
+            "intro": "Boomwhackers are simple, while good group facilitation needs experience, structure, and attention to the group's energy.",
             "items": [
               {
                 "id": "teacher-proof",
                 "title": "4,000 teachers trained",
-                "body": "This scale of teacher training across Poland supports work with the real needs of a room and its group.",
+                "body": "My work with teachers across Poland helps me respond to the real needs of a room and its group.",
                 "kind": "information"
               },
               {
                 "id": "since-2010",
                 "title": "Practice since 2010",
-                "body": "Long-term practice connects music and movement with groups at different levels of experience.",
+                "body": "Since 2010, I have connected music and movement with groups at different levels of energy and experience.",
                 "kind": "information"
               },
               {
@@ -1286,10 +1222,59 @@
               {
                 "id": "teacher-disc",
                 "title": "MaxieDISC consultant certificate",
-                "body": "Formal preparation supports thoughtful work with communication and differences visible in a group.",
+                "body": "This preparation supports thoughtful work with communication, group dynamics, and differences visible in a room.",
                 "kind": "information"
               }
-            ]
+            ],
+            "action": {
+              "label": "Open the source teacher training offer PDF",
+              "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf"
+            }
+          },
+          {
+            "id": "offer",
+            "heading": "Teacher training offer",
+            "intro": "I come to a specific school or institution and a specific staff group. We agree the date, group size, and logistics by phone.",
+            "items": [
+              {
+                "id": "format",
+                "title": "Institutional format",
+                "body": "I lead training for the whole faculty or a selected group of teachers at a specific school or institution.",
+                "kind": "information"
+              },
+              {
+                "id": "price",
+                "title": "Price",
+                "body": "180 PLN gross per person.",
+                "kind": "information"
+              },
+              {
+                "id": "duration",
+                "title": "Duration",
+                "body": "The training lasts 240 minutes.",
+                "kind": "information"
+              },
+              {
+                "id": "date",
+                "title": "Date and organisation",
+                "body": "Call me to ask about an available date for your school. We agree the date, group size, and logistics by phone.",
+                "kind": "information"
+              },
+              {
+                "id": "offer-pdf",
+                "title": "Source teacher training offer PDF",
+                "body": "A temporary source version to share with school leadership. The document still needs its contact details updated, after the website work is complete, I will prepare a new offer in the site's visual style.",
+                "status": "available",
+                "kind": "navigation",
+                "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf",
+                "actionLabel": "Open the source teacher training offer PDF",
+                "download": true
+              }
+            ],
+            "action": {
+              "label": "Call me to ask about an available date for your school",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "articles",
@@ -1313,97 +1298,6 @@
               "label": "Go to Insights and inspiration",
               "href": "/en/insights#articles"
             }
-          },
-          {
-            "id": "follow-up",
-            "heading": "What remains after training",
-            "intro": "The training does not end when you leave the room. Participants receive materials they can return to when planning future activities.",
-            "action": {
-              "label": "Post-training materials page",
-              "href": "/en/materials"
-            },
-            "items": [
-              {
-                "id": "outline",
-                "title": "Outline with rhythm cards",
-                "body": "An interactive outline with rhythm cards and exercise variants to adapt to your own classes.",
-                "status": "available",
-                "kind": "information"
-              },
-              {
-                "id": "music",
-                "title": "Music and exercise recordings",
-                "body": "A video recording, music from the training, and materials showing the exercises in practice, from counting in to a shared performance.",
-                "status": "available",
-                "kind": "information"
-              },
-              {
-                "id": "tools",
-                "title": "Online tools and materials page",
-                "body": "Links to online tools, apps, and free video lessons, plus the post-training materials page.",
-                "status": "available",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "offer",
-            "heading": "Format, price, timing, and logistics",
-            "intro": "The training is for teachers and educators. We confirm practical details with the group and location in mind.",
-            "items": [
-              {
-                "id": "format",
-                "title": "Format",
-                "body": "I come to a specific school or institution and a specific staff group to lead training for the whole faculty or a selected group of teachers.",
-                "kind": "information"
-              },
-              {
-                "id": "price",
-                "title": "Price",
-                "body": "180 PLN gross per person.",
-                "kind": "information"
-              },
-              {
-                "id": "duration",
-                "title": "Duration",
-                "body": "The training lasts 240 minutes.",
-                "kind": "information"
-              },
-              {
-                "id": "date",
-                "title": "Date and venue",
-                "body": "Call me to ask about an available date for your school. We agree the date and practical details individually.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "leadership-materials",
-            "heading": "Materials for school leadership",
-            "intro": "Send your school leadership one complete link. It brings together the training purpose, programme, materials, evidence, and practical details.",
-            "action": {
-              "label": "Open the source teacher training offer PDF",
-              "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf"
-            },
-            "items": [
-              {
-                "id": "offer-pdf",
-                "title": "Source teacher training offer PDF",
-                "body": "A temporary source version to share with school leadership, with the programme, flow, outline, rhythm cards, online tools, recording, and post-training materials. The document still needs its contact details updated. After the website work is complete, I will prepare a new offer in the site's visual style.",
-                "status": "available",
-                "kind": "navigation",
-                "href": "/documents/rurowa-petarda-oferta-szkolenia.pdf",
-                "actionLabel": "Open the source teacher training offer PDF",
-                "download": true
-              },
-              {
-                "id": "outline",
-                "title": "Evidence of experience",
-                "body": "A description of the method with confirmed evidence: 4,000 teachers trained, the historic Guinness World Record, and the MaxieDISC consultant certificate.",
-                "status": "preparing",
-                "kind": "information"
-              }
-            ]
           }
         ],
         "faq": [
@@ -1425,7 +1319,7 @@
           {
             "id": "teacher-price",
             "question": "How do we agree on price and timing?",
-            "answer": "Call or message to discuss the format, group size, venue, date, logistics, and quote."
+            "answer": "The price is 180 PLN gross per person. We agree the date, group size, and logistics by phone."
           },
           {
             "id": "teacher-group",
@@ -1931,7 +1825,7 @@
         "proof": "Pracuję z Bum Bum Rurkami od 2010 roku.",
         "cta": {
           "label": "Sprawdź ofertę warsztatów",
-          "href": "#wiek"
+          "href": "#oferta"
         },
         "video": {
           "videoId": "U0f4uQje2NE",
@@ -1979,7 +1873,7 @@
           {
             "id": "program",
             "heading": "Program dopasowany do wieku",
-            "intro": "Nie prowadzę jednego scenariusza dla wszystkich. Dobieram aktywności do wieku, liczby dzieci, czasu i miejsca.",
+            "intro": "Nie prowadzę jednego scenariusza dla wszystkich. Dobieram aktywności do wieku, liczby dzieci, czasu i miejsca, a spotkanie trwa 45 minut.",
             "items": [
               {
                 "id": "rhythm",
@@ -2004,68 +1898,49 @@
                 "title": "Wyobraźnia i własny pomysł",
                 "body": "Zamieniamy rurki w śmiesznych bohaterów, patrzymy na muzykę oczyma wyobraźni i rozmawiamy o pojęciach abstrakcyjnych, a grupa tworzy własne wersje ćwiczeń.",
                 "kind": "information"
+              },
+              {
+                "id": "rules",
+                "title": "Zasady START / STOP i bezpieczeństwo",
+                "body": "Każdą aktywność zaczynamy i kończymy na wyraźny znak. Rurka służy wyłącznie do grania, a krótkie hasła pomagają dzieciom od razu wiedzieć, co robić.",
+                "kind": "information"
+              },
+              {
+                "id": "process",
+                "title": "Przebieg spotkania",
+                "body": "Poznajemy grupę i zasady, przechodzimy przez 45 minut rytmicznych, ruchowych i sprawnościowych gier, a spotkanie kończymy wspólnym graniem albo mini występem.",
+                "kind": "information"
+              }
+            ]
+          },
+          {
+            "id": "sposob-pracy",
+            "heading": "Jak pracuję z grupą",
+            "intro": "Od 2010 roku prowadzę warsztaty z Bum Bum Rurkami, łącząc muzykę, ruch i jasne zasady z uważnością na energię każdej grupy.",
+            "items": [
+              {
+                "id": "since-2010",
+                "title": "Doświadczenie od 2010 roku",
+                "body": "Prowadzę warsztaty w przedszkolach, szkołach podstawowych i domach kultury w całej Polsce, a praktykę rozwijam w bezpośredniej pracy z dziećmi.",
+                "kind": "information"
+              },
+              {
+                "id": "teacher-scale",
+                "title": "4000 przeszkolonych nauczycieli",
+                "body": "Praca z dziećmi łączy się u mnie ze szkoleniem kadry pedagogicznej, dlatego warsztaty buduję z pełną świadomością metodyczną i wychowawczą.",
+                "kind": "information"
               }
             ],
             "action": {
-              "label": "Zadzwoń do mnie i porozmawiajmy o warsztatach dla Twojej grupy",
-              "href": "tel:+48000000000"
+              "label": "Otwórz źródłowy PDF oferty warsztatów",
+              "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf"
             }
           },
           {
-            "id": "bezpieczenstwo",
-            "heading": "Bezpieczeństwo i zasady START / STOP",
-            "intro": "Jasne reguły porządkują pracę i pozwalają dzieciom swobodnie wejść w doświadczenie.",
+            "id": "oferta",
+            "heading": "Oferta i organizacja warsztatów",
+            "intro": "Warunki ustalamy przed potwierdzeniem realizacji. Zadzwoń do mnie, a wspólnie dopasujemy dzień warsztatowy do placówki.",
             "items": [
-              {
-                "id": "rules",
-                "title": "Zasady START / STOP i dyscyplina",
-                "body": "Każdą aktywność zaczynamy i kończymy na wyraźny znak prowadzącego. Rurka służy wyłącznie do grania, nie do uderzania innych, a kto chwilowo przekracza zasady, pauzuje w strefie kar i szybko wraca do gry. Zamiast długich instrukcji pracuję krótkimi hasłami, jak rycerz albo ninja, które dzieci powtarzają i od razu wiedzą, co robić.",
-                "kind": "information"
-              },
-              {
-                "id": "space",
-                "title": "Dopasowane tempo i przestrzeń",
-                "body": "Działamy w tempie dobranym do energii i możliwości grupy. Dbamy o instrumenty i wspólną przestrzeń, tworząc bezpieczne środowisko, w którym każde dziecko może się otworzyć.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "przebieg",
-            "heading": "Przebieg warsztatu",
-            "intro": "Każde spotkanie ma wyraźny rytm, który dopasowuję do wieku i energii grupy.",
-            "items": [
-              {
-                "id": "beginning",
-                "title": "Wejście, zasady i bohaterowie",
-                "body": "Krótkie poznanie grupy, wprowadzenie bohaterów spotkania i ustalenie zasad, żeby każdy wiedział, co go czeka.",
-                "kind": "information"
-              },
-              {
-                "id": "warm-up",
-                "title": "Rozgrzewka, gry i konkurencje",
-                "body": "Zawsze 45 minut przygotowanych gier: rytmicznych, ruchowych i sprawnościowych, z częstą współpracą w parach i zespołach.",
-                "kind": "information"
-              },
-              {
-                "id": "ending",
-                "title": "Wspólne wykonanie i finał",
-                "body": "Spotkanie kończy wspólne granie albo mini występ, który grupa może pokazać wychowawcy albo rodzicom.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "organizacja",
-            "heading": "Co przygotować na warsztat",
-            "intro": "Placówka zna warunki jeszcze przed rozmową o terminie.",
-            "items": [
-              {
-                "id": "room",
-                "title": "Sala i przestrzeń do działania",
-                "body": "Przestronna sala gimnastyczna, aula lub klasa lekcyjna z odsuniętymi stolikami, w której cała grupa może swobodnie stanąć w kole, usiąść na podłodze i poruszać się w rytmie.",
-                "kind": "information"
-              },
               {
                 "id": "groups",
                 "title": "Minimum cztery grupy z jednej placówki",
@@ -2073,12 +1948,51 @@
                 "kind": "information"
               },
               {
-                "id": "contact",
-                "title": "Koordynator i harmonogram dnia",
-                "body": "Jedna osoba kontaktowa po stronie przedszkola lub szkoły, z którą ustalamy plan dnia, kolejność grup i dopasowanie wejść do przerw międzylekcyjnych oraz planu placówki.",
+                "id": "room",
+                "title": "Sala i przestrzeń do działania",
+                "body": "Potrzebna jest przestronna sala gimnastyczna, aula lub klasa z odsuniętymi stolikami, w której grupa może stanąć w kole, usiąść na podłodze i poruszać się w rytmie.",
                 "kind": "information"
+              },
+              {
+                "id": "contact",
+                "title": "Harmonogram dnia",
+                "body": "Z jedną osobą kontaktową ustalam plan dnia, kolejność grup i dopasowanie wejść do przerw międzylekcyjnych oraz planu placówki.",
+                "kind": "information"
+              },
+              {
+                "id": "duration",
+                "title": "Czas trwania spotkania",
+                "body": "Każdy warsztat trwa 45 minut.",
+                "kind": "information"
+              },
+              {
+                "id": "venue",
+                "title": "Dojazd z Krakowa w całej Polsce",
+                "body": "Na warsztaty wyruszam z Krakowa z kompletem własnych instrumentów. Dojazd powyżej 150 km ustalam indywidualnie.",
+                "kind": "information"
+              },
+              {
+                "id": "price",
+                "title": "Stawka za ucznia",
+                "body": "Stawkę za ucznia ustalam indywidualnie, zależnie od liczby grup i zakresu realizacji.",
+                "kind": "information",
+                "status": "pending"
+              },
+              {
+                "id": "offer-pdf",
+                "title": "Źródłowa oferta warsztatów w PDF",
+                "body": "Tymczasowa wersja źródłowa do przekazania organizatorowi. Dokument wymaga jeszcze aktualizacji danych kontaktowych, po zakończeniu prac przygotuję nową ofertę w stylu strony.",
+                "status": "available",
+                "kind": "navigation",
+                "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf",
+                "actionLabel": "Otwórz źródłowy PDF oferty warsztatów",
+                "download": true
               }
-            ]
+            ],
+            "action": {
+              "label": "Zadzwoń do mnie i porozmawiajmy o warsztatach dla swojej grupy",
+              "href": "tel:+48000000000"
+            }
           },
           {
             "id": "artykuly",
@@ -2101,67 +2015,6 @@
             "action": {
               "label": "Przejdź do Wiedzy i inspiracji",
               "href": "/wiedza#artykuly"
-            }
-          },
-          {
-            "id": "dowody",
-            "heading": "Dowody, doświadczenie i skala",
-            "intro": "Film pokazuje warsztat w kontekście dziecięcym, a doświadczenie od 2010 roku i skala pracy z nauczycielami uzupełniają obraz metody.",
-            "items": [
-              {
-                "id": "since-2010",
-                "title": "Doświadczenie od 2010 roku",
-                "body": "Setki zrealizowanych warsztatów w przedszkolach, szkołach podstawowych i domach kultury w całej Polsce. Praktyka wypracowana w pracy z tysiącami dzieci o różnym poziomie skupienia.",
-                "status": "confirmed",
-                "kind": "information"
-              },
-              {
-                "id": "teacher-scale",
-                "title": "4000 przeszkolonych nauczycieli",
-                "body": "Doświadczenie w pracy z dziećmi połączone ze szkoleniem kadry pedagogicznej. Warsztat dziecięcy prowadzony jest z pełną świadomością metodyczną i wychowawczą.",
-                "status": "confirmed",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "warunki",
-            "heading": "Koszt i warunki",
-            "intro": "Czas, liczba grup, miejsce, dojazd i cena zależą od uzgodnionego zakresu. Wszystkie warunki omawiamy przed potwierdzeniem realizacji.",
-            "items": [
-              {
-                "id": "duration",
-                "title": "Czas trwania spotkania (45 minut)",
-                "body": "Każdy warsztat trwa 45 minut.",
-                "kind": "information"
-              },
-              {
-                "id": "venue",
-                "title": "Dojazd z Krakowa w całej Polsce",
-                "body": "Na warsztaty wyruszam z Krakowa z kompletem własnych instrumentów. Dojazd powyżej 150 km ustalam indywidualnie.",
-                "kind": "information"
-              },
-              {
-                "id": "price",
-                "title": "Stawka za ucznia",
-                "body": "Stawkę za ucznia ustalam indywidualnie, zależnie od liczby grup i zakresu realizacji.",
-                "status": "pending",
-                "kind": "information"
-              },
-              {
-                "id": "offer-pdf",
-                "title": "Źródłowa oferta warsztatów w PDF",
-                "body": "Tymczasowa wersja źródłowa do przekazania organizatorowi. Dokument wymaga jeszcze aktualizacji danych kontaktowych. Po zakończeniu prac przygotuję nową ofertę w stylu strony.",
-                "status": "available",
-                "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf",
-                "actionLabel": "Otwórz źródłowy PDF oferty warsztatów",
-                "download": true,
-                "kind": "navigation"
-              }
-            ],
-            "action": {
-              "label": "Otwórz źródłowy PDF oferty warsztatów",
-              "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf"
             }
           }
         ],
@@ -2192,11 +2045,6 @@
             "answer": "Stawkę za ucznia, termin i dojazd ustalamy indywidualnie. Dojazd powyżej 150 km omawiamy osobno."
           },
           {
-            "id": "children-story",
-            "question": "Co się dzieje na warsztacie?",
-            "answer": "Dzieci wcielają się w bohaterów symbolizowanych kolorowymi rurkami, grają rytmy, tańczą, biorą udział w konkurencjach i kończą wspólnym wykonaniem."
-          },
-          {
             "id": "children-group-size",
             "question": "Ile dzieci może wziąć udział?",
             "answer": "Warsztaty organizuję dla minimum czterech grup z jednej placówki. Liczbę dzieci w pojedynczej grupie ustalamy przed terminem."
@@ -2217,7 +2065,7 @@
         "proof": "I have worked with boomwhackers since 2010.",
         "cta": {
           "label": "Explore the children's workshop offer",
-          "href": "#age"
+          "href": "#offer"
         },
         "video": {
           "videoId": "U0f4uQje2NE",
@@ -2265,7 +2113,7 @@
           {
             "id": "programme",
             "heading": "A programme matched to age",
-            "intro": "I do not run one scenario for everyone. I match activities to age, group size, time, and venue.",
+            "intro": "I do not run one scenario for everyone. I match activities to age, group size, time, and venue, and every session lasts 45 minutes.",
             "items": [
               {
                 "id": "rhythm",
@@ -2290,81 +2138,101 @@
                 "title": "Imagination and own ideas",
                 "body": "We turn tubes into funny characters, look at music through imagination, talk about abstract ideas, and let the group create their own versions of the exercises.",
                 "kind": "information"
+              },
+              {
+                "id": "rules",
+                "title": "START / STOP rules and safety",
+                "body": "Every activity begins and ends with a clear signal. Tubes are strictly for music-making, while short cue words help children immediately know what to do.",
+                "kind": "information"
+              },
+              {
+                "id": "process",
+                "title": "How the workshop runs",
+                "body": "We get to know the group and the rules, move through 45 minutes of rhythm, movement, and action games, then close by playing together or with a mini performance.",
+                "kind": "information"
+              }
+            ]
+          },
+          {
+            "id": "how",
+            "heading": "How I work with a group",
+            "intro": "Since 2010, I have led boomwhacker workshops that combine music, movement, and clear rules with attention to the energy of each group.",
+            "items": [
+              {
+                "id": "since-2010",
+                "title": "Experience since 2010",
+                "body": "I lead workshops in kindergartens, primary schools, and cultural centres across Poland, developing my practice through direct work with children.",
+                "kind": "information"
+              },
+              {
+                "id": "teacher-scale",
+                "title": "4,000 teachers trained",
+                "body": "My work with children is connected to training education professionals, so I build workshops with full pedagogical and developmental awareness.",
+                "kind": "information"
+              }
+            ],
+            "action": {
+              "label": "Open the source workshop offer PDF",
+              "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf"
+            }
+          },
+          {
+            "id": "offer",
+            "heading": "Workshop offer and organisation",
+            "intro": "We agree the conditions before confirming the visit. Call me, and together we will match the workshop day to your institution.",
+            "items": [
+              {
+                "id": "groups",
+                "title": "At least four groups from one institution",
+                "body": "I organise workshops for at least four groups from one institution, so travel and instrument setup make sense for the whole day.",
+                "kind": "information"
+              },
+              {
+                "id": "room",
+                "title": "Room and movement space",
+                "body": "A gymnasium, hall, or large classroom with desks moved aside is needed, allowing the group to form a circle, sit on the floor, and move to the rhythm.",
+                "kind": "information"
+              },
+              {
+                "id": "contact",
+                "title": "Daily schedule",
+                "body": "With one contact person, I agree the daily plan, group rotation, and session times around school breaks and the institution's schedule.",
+                "kind": "information"
+              },
+              {
+                "id": "duration",
+                "title": "Session duration",
+                "body": "Every workshop lasts 45 minutes.",
+                "kind": "information"
+              },
+              {
+                "id": "venue",
+                "title": "Travel from Kraków nationwide",
+                "body": "I travel across Poland from Kraków with complete sets of instruments. Travel beyond 150 km is agreed individually.",
+                "kind": "information"
+              },
+              {
+                "id": "price",
+                "title": "Per-student rate",
+                "body": "I agree the per-student rate individually, depending on the number of groups and the scope of the visit.",
+                "kind": "information",
+                "status": "pending"
+              },
+              {
+                "id": "offer-pdf",
+                "title": "Source workshop offer PDF",
+                "body": "A temporary source version to share with the organiser. The document still needs its contact details updated, after the website work is complete, I will prepare a new offer in the site's visual style.",
+                "status": "available",
+                "kind": "navigation",
+                "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf",
+                "actionLabel": "Open the source workshop offer PDF",
+                "download": true
               }
             ],
             "action": {
               "label": "Call me to discuss a workshop for your group",
               "href": "tel:+48000000000"
             }
-          },
-          {
-            "id": "safety",
-            "heading": "Safety and START / STOP rules",
-            "intro": "Clear rules keep the session organised and let children enter the experience freely.",
-            "items": [
-              {
-                "id": "rules",
-                "title": "START / STOP rules and focus",
-                "body": "Every activity begins and ends with a clear conductor cue. Tubes are strictly for music-making, not for hitting others, and anyone who steps outside the rules takes a brief penalty break before jumping right back in. Instead of long instructions, I work with short cue words, like knight or ninja, that children repeat and instantly know what to do.",
-                "kind": "information"
-              },
-              {
-                "id": "space",
-                "title": "Pacing and shared room safety",
-                "body": "We work at a tempo tailored to the group's natural energy. Caring for instruments and physical boundaries creates a structured environment where every child feels confident to participate.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "process",
-            "heading": "How the workshop runs",
-            "intro": "Every session has a clear rhythm that I match to the age and energy of the group.",
-            "items": [
-              {
-                "id": "beginning",
-                "title": "Arrival, rules, and characters",
-                "body": "A short way into the group, an introduction of the session's characters, and clear rules so everyone knows what is coming.",
-                "kind": "information"
-              },
-              {
-                "id": "warm-up",
-                "title": "Warm-up, games, and challenges",
-                "body": "Always 45 minutes of prepared rhythm, movement, and action games, often requiring cooperation in pairs and teams.",
-                "kind": "information"
-              },
-              {
-                "id": "ending",
-                "title": "Shared performance and finale",
-                "body": "The session closes with playing together or a mini performance the group can show to their teacher or parents.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "organization",
-            "heading": "What to prepare for a workshop",
-            "intro": "The institution knows the conditions before discussing a date.",
-            "items": [
-              {
-                "id": "room",
-                "title": "Room and movement space",
-                "body": "A gymnasium, hall, or large classroom with desks moved aside, allowing the whole group to form a circle, sit comfortably on the floor, and move freely to the pulse.",
-                "kind": "information"
-              },
-              {
-                "id": "groups",
-                "title": "At least four groups from one institution",
-                "body": "I organise workshops for at least four groups from one institution, so the travel and instrument setup make sense for the whole day.",
-                "kind": "information"
-              },
-              {
-                "id": "contact",
-                "title": "School coordinator and daily plan",
-                "body": "A designated contact person at the school or kindergarten who coordinates the schedule, group rotation, and aligns session times with school bells and breaks.",
-                "kind": "information"
-              }
-            ]
           },
           {
             "id": "articles",
@@ -2387,67 +2255,6 @@
             "action": {
               "label": "Go to Insights and inspiration",
               "href": "/en/insights#articles"
-            }
-          },
-          {
-            "id": "evidence",
-            "heading": "Evidence, experience, and scale",
-            "intro": "The video shows a children's workshop, while experience since 2010 and the scale of teacher training provide wider context for the method.",
-            "items": [
-              {
-                "id": "since-2010",
-                "title": "Hands-on experience since 2010",
-                "body": "Hundreds of workshops delivered in schools, kindergartens, and cultural centres across Poland, refined through live work with thousands of children of all energy levels.",
-                "status": "confirmed",
-                "kind": "information"
-              },
-              {
-                "id": "teacher-scale",
-                "title": "4,000 teachers trained nationwide",
-                "body": "Extensive practice with children combined with training education professionals, ensuring workshops follow sound pedagogical, developmental, and safety standards.",
-                "status": "confirmed",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "terms",
-            "heading": "Cost and terms",
-            "intro": "Timing, number of groups, venue, travel, and price depend on the agreed scope. All terms are discussed before confirmation.",
-            "items": [
-              {
-                "id": "duration",
-                "title": "Session duration (45 minutes)",
-                "body": "Every workshop lasts 45 minutes.",
-                "kind": "information"
-              },
-              {
-                "id": "venue",
-                "title": "Travel from Kraków nationwide",
-                "body": "I travel across Poland from Kraków with complete sets of instruments. Travel beyond 150 km is agreed individually.",
-                "kind": "information"
-              },
-              {
-                "id": "price",
-                "title": "Per-student rate",
-                "body": "I agree the per-student rate individually, depending on the number of groups and the scope of the visit.",
-                "status": "pending",
-                "kind": "information"
-              },
-              {
-                "id": "offer-pdf",
-                "title": "Source workshop offer PDF",
-                "body": "A temporary source version to share with the organiser. The document still needs its contact details updated. After the website work is complete, I will prepare a new offer in the site's visual style.",
-                "status": "available",
-                "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf",
-                "actionLabel": "Open the source workshop offer PDF",
-                "download": true,
-                "kind": "navigation"
-              }
-            ],
-            "action": {
-              "label": "Open the source workshop offer PDF",
-              "href": "/documents/bum-bum-rurkowe-naparzanie-warsztaty-dla-dzieci.pdf"
             }
           }
         ],
@@ -2476,11 +2283,6 @@
             "id": "children-price",
             "question": "How do we agree on price and travel?",
             "answer": "I agree the per-student rate, date, and travel individually. Travel beyond 150 km is discussed separately."
-          },
-          {
-            "id": "children-story",
-            "question": "What happens during a workshop?",
-            "answer": "Children become characters symbolised by colourful tubes, play rhythms, dance, take part in challenges, and close with a shared performance."
           },
           {
             "id": "children-group-size",

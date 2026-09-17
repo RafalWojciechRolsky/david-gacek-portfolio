@@ -76,23 +76,15 @@
       "pl": {
         "dla-kogo": "paper",
         "program": "white",
-        "wyniesiesz": "paper",
         "sposob-pracy": "ink",
-        "transfer": "cobalt",
         "oferta": "white",
-        "materialy-dla-dyrekcji": "paper",
-        "materialy-dla-dyrektorki": "paper",
         "artykuly": "paper"
       },
       "en": {
         "who-for": "paper",
         "programme": "white",
-        "takeaways": "paper",
         "how": "ink",
-        "follow-up": "cobalt",
         "offer": "white",
-        "leadership-materials": "paper",
-        "director-materials": "paper",
         "articles": "paper"
       }
     }
@@ -192,21 +184,15 @@
       "pl": {
         "wiek": "paper",
         "program": "white",
-        "bezpieczenstwo": "paper",
-        "przebieg": "ink",
-        "organizacja": "ochre",
-        "dowody": "white",
-        "warunki": "paper",
+        "sposob-pracy": "ink",
+        "oferta": "ochre",
         "artykuly": "paper"
       },
       "en": {
         "age": "paper",
         "programme": "white",
-        "safety": "paper",
-        "process": "ink",
-        "organization": "ochre",
-        "evidence": "white",
-        "terms": "paper",
+        "how": "ink",
+        "offer": "ochre",
         "articles": "paper"
       }
     }

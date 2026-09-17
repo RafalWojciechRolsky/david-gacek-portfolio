@@ -26,16 +26,16 @@ const VIDEO_AFTER_SECTION: Partial<
   Record<PageKey, Record<Locale, string>>
 > = {
   teacherTraining: {
-    pl: "oferta",
-    en: "offer",
+    pl: "sposob-pracy",
+    en: "how",
   },
   corporateEvents: {
     pl: "oferta",
     en: "offer",
   },
   childrenWorkshops: {
-    pl: "dowody",
-    en: "evidence",
+    pl: "sposob-pracy",
+    en: "how",
   },
 };
 
