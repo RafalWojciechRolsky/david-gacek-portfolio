@@ -490,8 +490,6 @@ export interface HomepageData extends PageData {
   contexts: InvitationContext[];
   /** Podgląd artykułów. */
   articles: ArticleItem[];
-  /** Publicznie potwierdzone środowiska pracy. */
-  environments: ContentItem[];
 }
 
 /**

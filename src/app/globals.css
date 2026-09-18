@@ -1044,40 +1044,6 @@ img {
   color: var(--signal-green-ink);
 }
 
-.environment-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.environment {
-  display: flex;
-  flex-direction: column;
-  padding-top: 12px;
-  border-top: 1px solid var(--border-strong);
-}
-
-.environment strong {
-  display: block;
-  font-family: var(--display);
-  font-size: 1rem;
-  line-height: 1.15;
-}
-
-.environment > span {
-  display: block;
-  margin-top: 7px;
-  font-size: 1rem;
-  line-height: 1.4;
-  overflow-wrap: break-word;
-}
-
-.environment .action-link--source {
-  margin-top: auto;
-  padding-top: 14px;
-}
-
 /* Karta dowodowa odpowiada tylko wtedy, gdy wskaźnik jest na linku źródłowym,
    aby affordance nie obiecywał kliknięcia na całej powierzchni. Klawiatura
    podnosi kartę przez focus na tym linku. */
@@ -1196,10 +1162,6 @@ img {
   .content-section--green
 ) .content-card--evidence:has(.action-link--source:hover, .action-link--source:focus-visible) .action-link--source {
   color: var(--page-signal-ink);
-}
-
-.environment .proof-status {
-  margin-top: 10px;
 }
 
 /* Video and media facade */
@@ -3270,10 +3232,6 @@ img {
     gap: 50px;
   }
 
-  .environment-list {
-    grid-template-columns: 1fr;
-  }
-
   .footer-top {
     grid-template-columns: 1.1fr repeat(3, 1fr);
     gap: 22px;
@@ -3600,11 +3558,6 @@ img {
 
   .status {
     margin-top: 10px;
-  }
-
-  .environment-list {
-    grid-template-columns: 1fr;
-    gap: 18px;
   }
 
   .video-layout > div:first-child {

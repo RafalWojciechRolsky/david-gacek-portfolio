@@ -52,20 +52,8 @@
           }
         },
         {
-          "id": "droga-lwa",
-          "label": "03",
-          "title": "Droga Lwa",
-          "body": "Jako mówca cyklicznego wydarzenia dla mężczyzn łączę Bum Bum Rurki i DISC. To praktyczna praca z grupą, która pozwala zobaczyć komunikację w działaniu.",
-          "status": "confirmed",
-          "source": {
-            "label": "Źródło: oficjalna strona Drogi Lwa",
-            "href": "https://drogalwa.pl/",
-            "external": true
-          }
-        },
-        {
           "id": "maxidisc",
-          "label": "04",
+          "label": "03",
           "title": "MaxieDISC",
           "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie, 2023. Dokument wystawiono 10 maja 2023 roku.",
           "status": "confirmed"
@@ -154,32 +142,6 @@
           "kind": "navigation"
         }
       ],
-      "environments": [
-        {
-          "id": "droga-lwa",
-          "title": "Droga Lwa",
-          "body": "Mówca wydarzenia, łączenie Bum Bum Rurek i DISC.",
-          "href": "https://drogalwa.pl/",
-          "actionLabel": "Droga Lwa",
-          "kind": "navigation"
-        },
-        {
-          "id": "gls",
-          "title": "Global Leadership Summit Polska",
-          "body": "Zespół organizacyjny i współorganizacja.",
-          "href": "https://gls.org.pl/",
-          "actionLabel": "GLS Polska",
-          "kind": "navigation"
-        },
-        {
-          "id": "akademia",
-          "title": "Akademia Przywództwa",
-          "body": "Obszar Komunikacja i DISC.",
-          "href": "https://akademiaprzywodztwa.pl/",
-          "actionLabel": "Akademia Przywództwa",
-          "kind": "navigation"
-        }
-      ],
       "sections": [],
       "faq": [
         {
@@ -256,20 +218,8 @@
           }
         },
         {
-          "id": "droga-lwa",
-          "label": "03",
-          "title": "Droga Lwa",
-          "body": "As a speaker at this recurring event for men, I combine boomwhackers and DISC in practical group work.",
-          "status": "confirmed",
-          "source": {
-            "label": "Source: Droga Lwa website",
-            "href": "https://drogalwa.pl/",
-            "external": true
-          }
-        },
-        {
           "id": "maxidisc",
-          "label": "04",
+          "label": "03",
           "title": "MaxieDISC",
           "body": "Consultant certificate after training, a mentoring session, and an exam, 2023. The document was issued on 10 May 2023.",
           "status": "confirmed"
@@ -355,32 +305,6 @@
           "href": "/en/insights/music-cooperation",
           "actionLabel": "Read the article",
           "readTime": "6 min read",
-          "kind": "navigation"
-        }
-      ],
-      "environments": [
-        {
-          "id": "droga-lwa",
-          "title": "Droga Lwa",
-          "body": "Speaker at the event, combining boomwhackers and DISC.",
-          "href": "https://drogalwa.pl/",
-          "actionLabel": "Droga Lwa",
-          "kind": "navigation"
-        },
-        {
-          "id": "gls",
-          "title": "Global Leadership Summit Polska",
-          "body": "Part of the organizing team and co-organizers.",
-          "href": "https://gls.org.pl/",
-          "actionLabel": "GLS Polska",
-          "kind": "navigation"
-        },
-        {
-          "id": "akademia",
-          "title": "Akademia Przywództwa",
-          "body": "Communication and DISC area.",
-          "href": "https://akademiaprzywodztwa.pl/",
-          "actionLabel": "Akademia Przywództwa",
           "kind": "navigation"
         }
       ],
@@ -486,51 +410,18 @@
           },
           {
             "id": "os-czasu",
-            "heading": "Oś czasu",
-            "intro": "Od pierwszych warsztatów do czterech ścieżek pracy.",
+            "heading": "Droga i dowody",
+            "intro": "Cztery kamienie milowe od pierwszych warsztatów do dzisiejszej pracy.",
             "items": [
               {
                 "id": "2010",
                 "title": "2010",
-                "body": "Pierwsze szkolenia nauczycieli z Bum Bum Rurkami. Jako basista i edukator muzyczny zaczynam pokazywać, jak proste rurki porządkują pracę z grupą, i robię to jako pierwszy na taką skalę w Polsce.",
+                "body": "Pierwsze szkolenia nauczycieli z Bum Bum Rurkami. Jako basista i edukator muzyczny zaczynam pokazywać, jak proste rurki porządkują pracę z grupą, i robię to jako pierwszy na taką skalę w Polsce. Od tego czasu przez moje szkolenia przeszło około 4000 nauczycieli z całej Polski.",
                 "kind": "information"
               },
               {
                 "id": "2016",
                 "title": "2016",
-                "body": "Prowadzę jako główny dyrygent i autor koncepcji wykonawczej wydarzenie, podczas którego ustanowiono historyczny rekord Guinnessa w grze na Bum Bum Rurkach.",
-                "kind": "information"
-              },
-              {
-                "id": "2023",
-                "title": "2023",
-                "body": "Certyfikat konsultanta MaxieDISC po szkoleniu, sesji mentorskiej i egzaminie. Od tego momentu pracuję modelem DISC podczas sesji indywidualnych, omówień raportów i szkoleń zespołów.",
-                "status": "confirmed",
-                "kind": "information"
-              },
-              {
-                "id": "dzis",
-                "title": "Dziś",
-                "body": "Cztery powiązane ścieżki pracy: szkolenia nauczycieli, warsztaty dla dzieci i młodzieży, eventy dla firm oraz sesje i szkolenia DISC.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "dowody",
-            "heading": "Dowody doświadczenia",
-            "intro": "Fakty mają kontekst, datę i źródło do sprawdzenia.",
-            "items": [
-              {
-                "id": "profile-proof-4000",
-                "title": "4000 przeszkolonych nauczycieli",
-                "body": "Około 4000 nauczycieli z całej Polski przeszło przez moje szkolenia od 2010 roku. Część z nich wraca lata później i zaprasza mnie do swoich placówek już jako dyrektorzy.",
-                "status": "confirmed",
-                "kind": "information"
-              },
-              {
-                "id": "profile-proof-gwr",
-                "title": "Historyczny rekord GWR",
                 "body": "661 osób grało razem na Bum Bum Rurkach podczas wydarzenia dla P&G Europe Planning Service Centre w Polsce, 19 kwietnia 2016 roku. Byłem jego głównym dyrygentem i autorem koncepcji wykonawczej.",
                 "status": "confirmed",
                 "href": "https://youtu.be/Z5yKnlzKECg",
@@ -538,14 +429,20 @@
                 "kind": "navigation"
               },
               {
-                "id": "profile-proof-disc",
-                "title": "MaxieDISC",
-                "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie. Pracuję modelem DISC, który opisuje style zachowań, a nie typy osobowości.",
+                "id": "2023",
+                "title": "2023",
+                "body": "Certyfikat konsultanta MaxieDISC po szkoleniu, sesji mentorskiej i egzaminie. Pracuję modelem DISC, który opisuje style zachowań, a nie typy osobowości.",
                 "status": "confirmed",
                 "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf",
                 "actionLabel": "Certyfikat MaxieDISC (PDF)",
                 "download": true,
                 "kind": "navigation"
+              },
+              {
+                "id": "dzis",
+                "title": "Dziś",
+                "body": "Cztery powiązane ścieżki pracy: szkolenia nauczycieli, warsztaty dla dzieci i młodzieży, eventy dla firm oraz sesje i szkolenia DISC.",
+                "kind": "information"
               }
             ]
           },
@@ -700,51 +597,18 @@
           },
           {
             "id": "timeline",
-            "heading": "Timeline",
-            "intro": "From the first workshops to four paths of work.",
+            "heading": "Journey and evidence",
+            "intro": "Four milestones from the first workshops to my work today.",
             "items": [
               {
                 "id": "2010",
                 "title": "2010",
-                "body": "The first boomwhackers trainings for teachers. As a bass player and music educator, I start showing how simple tubes bring order to group work, as the first one to do it on such a scale in Poland.",
+                "body": "The first boomwhackers trainings for teachers. As a bass player and music educator, I start showing how simple tubes bring order to group work, as the first one to do it on such a scale in Poland. Since then, around 4,000 teachers from all over Poland have taken part in my training.",
                 "kind": "information"
               },
               {
                 "id": "2016",
                 "title": "2016",
-                "body": "I lead an event as its main conductor and the author of the performance concept, during which the historic Guinness World Record in group boomwhacker playing was set.",
-                "kind": "information"
-              },
-              {
-                "id": "2023",
-                "title": "2023",
-                "body": "MaxieDISC consultant certificate after training, a mentoring session, and an exam. Since then, I have used the DISC model in individual sessions, report debriefs, and team trainings.",
-                "status": "confirmed",
-                "kind": "information"
-              },
-              {
-                "id": "today",
-                "title": "Today",
-                "body": "Four connected paths of work: teacher training, workshops for children and young people, corporate events, and DISC sessions and trainings.",
-                "kind": "information"
-              }
-            ]
-          },
-          {
-            "id": "evidence",
-            "heading": "Evidence of experience",
-            "intro": "Facts have context, a date, and a source you can check.",
-            "items": [
-              {
-                "id": "profile-proof-4000",
-                "title": "4,000 teachers trained",
-                "body": "Around 4,000 teachers from all over Poland have taken part in my training since 2010. Many of them return years later, inviting me to their schools already as headteachers.",
-                "status": "confirmed",
-                "kind": "information"
-              },
-              {
-                "id": "profile-proof-gwr",
-                "title": "Historical GWR record",
                 "body": "661 people played boomwhackers together at an event for P&G Europe Planning Service Centre in Poland on 19 April 2016. I led it as the main conductor and the creator of the performance concept.",
                 "status": "confirmed",
                 "href": "https://youtu.be/Z5yKnlzKECg",
@@ -752,14 +616,20 @@
                 "kind": "navigation"
               },
               {
-                "id": "profile-proof-disc",
-                "title": "MaxieDISC",
-                "body": "Consultant certificate after training, a mentoring session, and an exam. I work with the DISC model, which describes behavioural styles, not personality types.",
+                "id": "2023",
+                "title": "2023",
+                "body": "MaxieDISC consultant certificate after training, a mentoring session, and an exam. I work with the DISC model, which describes behavioural styles, not personality types.",
                 "status": "confirmed",
                 "href": "/documents/certyfikat-maxidisc-dawid-gacek.pdf",
                 "actionLabel": "MaxieDISC certificate (PDF)",
                 "download": true,
                 "kind": "navigation"
+              },
+              {
+                "id": "today",
+                "title": "Today",
+                "body": "Four connected paths of work: teacher training, workshops for children and young people, corporate events, and DISC sessions and trainings.",
+                "kind": "information"
               }
             ]
           },

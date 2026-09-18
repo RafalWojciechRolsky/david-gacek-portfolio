@@ -93,28 +93,6 @@ export function Homepage({ page }: HomepageProps) {
                 objectId={`homepage-proof-${evidence.id}`}
               />
             ))}
-            <li className="proof-item proof-item--environments">
-              <span className="proof-number" aria-hidden="true">
-                05
-              </span>
-              <div className="proof-content">
-                <h3>{messages.homepage.environmentsHeading}</h3>
-                <p>{messages.homepage.environmentsIntro}</p>
-                <div className="environment-list">
-                  {page.environments.map((environment) => (
-                    <div className="environment" key={environment.id}>
-                      <strong>{environment.title}</strong>
-                      <span>{environment.body}</span>
-                      {environment.href ? (
-                        <ActionLink href={environment.href} variant="source" withArrow>
-                          {environment.actionLabel ?? environment.title}
-                        </ActionLink>
-                      ) : null}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </li>
           </ol>
         </div>
       </section>

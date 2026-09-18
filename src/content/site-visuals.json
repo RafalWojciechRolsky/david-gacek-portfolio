@@ -25,14 +25,12 @@
         "kim-jestem": "paper",
         "jak-pracuje": "white",
         "os-czasu": "ink",
-        "dowody": "cobalt",
         "srodowiska": "paper"
       },
       "en": {
         "who-i-am": "paper",
         "how-i-work": "white",
         "timeline": "ink",
-        "evidence": "cobalt",
         "contexts": "paper"
       }
     }
