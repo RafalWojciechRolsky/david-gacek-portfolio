@@ -1,5 +1,5 @@
 import { legalRoutes, pathFor } from "@/lib/routes";
-import { siteConfig } from "@/lib/site-config";
+import { preferredSourceUrl, siteConfig } from "@/lib/site-config";
 import type { Locale, PageKey } from "@/lib/types";
 import { getMessages } from "@/messages/ui";
 
@@ -50,6 +50,14 @@ export function Footer({ locale, currentPage }: FooterProps) {
             <a href={siteConfig.externalLinks.instagram.href}>{siteConfig.externalLinks.instagram.label}</a>
             <a href={siteConfig.externalLinks.facebook.href}>{siteConfig.externalLinks.facebook.label}</a>
             <a href={siteConfig.externalLinks.patronite.href}>{siteConfig.externalLinks.patronite.label}</a>
+            <a
+              href={preferredSourceUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-object-id="site-footer-preferred-source"
+            >
+              {messages.page.preferredSourceCta}
+            </a>
           </nav>
         </div>
         <div className="footer-bottom">

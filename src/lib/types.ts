@@ -312,6 +312,8 @@ export interface PageData {
   proof?: string;
   /** Główna akcja hero. */
   cta?: LinkItem;
+  /** Druga akcja hero, kotwica do sekcji oferty. */
+  ctaSecondary?: LinkItem;
   /** Materiał wideo właściwy dla tej strony, gdy istnieje. */
   video?: VideoData;
   /** Sekcje strony. */
@@ -482,8 +484,6 @@ export interface HomepageData extends PageData {
   heroCaption: string;
   /** Główny dowód liczbowy. */
   heroStatistic: { value: string; label: string };
-  /** Druga akcja hero, kotwica do wyboru kontekstu oferty. */
-  ctaSecondary: LinkItem;
   /** Dowody w Proof Passage. */
   evidence: EvidenceItem[];
   /** Materiał wideo. */

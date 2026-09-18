@@ -873,31 +873,6 @@ img {
   margin-top: 18px;
 }
 
-/* Jasne hero zachowują kontrastowy tusz sygnału również podczas interakcji. */
-.page-hero--children .hero-preferred-source:hover,
-.page-hero--children .hero-preferred-source:focus-visible {
-  color: var(--signal-ochre-ink);
-}
-
-.page-hero--corporate .hero-preferred-source:hover,
-.page-hero--corporate .hero-preferred-source:focus-visible {
-  color: var(--signal-coral-ink);
-}
-
-.page-hero--disc .hero-preferred-source:hover,
-.page-hero--disc .hero-preferred-source:focus-visible {
-  color: var(--signal-green-ink);
-}
-
-.page-hero--teacher .hero-preferred-source:hover,
-.page-hero--teacher .hero-preferred-source:focus-visible,
-.page-hero--insights .hero-preferred-source:hover,
-.page-hero--insights .hero-preferred-source:focus-visible,
-.page-hero--contact .hero-preferred-source:hover,
-.page-hero--contact .hero-preferred-source:focus-visible {
-  color: var(--surface-white);
-}
-
 .hero-preferred-source .arrow,
 .article-preferred-source .arrow {
   transition: transform var(--ease);
@@ -2343,26 +2318,34 @@ img {
 }
 
 /* Ciemne hero: drugi CTA czytelny na ciemnym tle, hover w ochre-bright */
-.page-hero--teacher .hero-preferred-source,
-.page-hero--insights .hero-preferred-source,
-.page-hero--contact .hero-preferred-source {
+.page-hero--teacher .action-link--secondary {
+  border-color: var(--on-dark-border);
+  color: var(--surface-paper);
+}
+
+.page-hero--teacher .action-link--secondary:hover,
+.page-hero--teacher .action-link--secondary:focus-visible {
+  border-color: var(--signal-ochre-bright);
   color: var(--signal-ochre-bright);
 }
 
-/* Jasne hero: drugi CTA w kolorze sygnału jak eyebrow, mocniejszy font */
-.page-hero--children .hero-preferred-source {
+/* Jasne hero: hover drugiego CTA w kolorze sygnału jak eyebrow */
+.page-hero--children .action-link--secondary:hover,
+.page-hero--children .action-link--secondary:focus-visible {
+  border-color: var(--signal-ochre-ink);
   color: var(--signal-ochre-ink);
-  font-weight: 700;
 }
 
-.page-hero--corporate .hero-preferred-source {
+.page-hero--corporate .action-link--secondary:hover,
+.page-hero--corporate .action-link--secondary:focus-visible {
+  border-color: var(--signal-coral-ink);
   color: var(--signal-coral-ink);
-  font-weight: 700;
 }
 
-.page-hero--disc .hero-preferred-source {
+.page-hero--disc .action-link--secondary:hover,
+.page-hero--disc .action-link--secondary:focus-visible {
+  border-color: var(--signal-green-ink);
   color: var(--signal-green-ink);
-  font-weight: 700;
 }
 
 /* Najważniejszy rezultat szkolenia dostaje rangę przez mocniejszą regułę siatki, bez dokładania nowej rodziny koloru. */

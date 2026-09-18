@@ -1,11 +1,10 @@
 import Image from "next/image";
 
-import { preferredSourceUrl, siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 import type { Locale, PageData, PageVisual } from "@/lib/types";
-import { getMessages } from "@/messages/ui";
 
 import { ActionLink } from "@/components/ui/ActionLink";
-import { Arrow } from "@/components/ui/Arrow";
+import { PhoneIcon } from "@/components/ui/PhoneIcon";
 
 interface PageHeroProps {
   /** Dane zlokalizowanej strony. */
@@ -23,10 +22,9 @@ interface PageHeroProps {
 /**
  * Renderuje hero podstrony z jednym H1, rolą, dowodem i akcją.
  */
-export function PageHero({ page, visual, proof, ctaLabel, locale }: PageHeroProps) {
+export function PageHero({ page, visual, proof, ctaLabel }: PageHeroProps) {
   const heroImage = visual.heroImage ?? page.heroImage;
   const heroClassName = `page-hero page-hero--${visual.variant} page-hero--${visual.signal}`;
-  const messages = getMessages(locale);
 
   return (
     <section className={heroClassName} aria-labelledby="page-hero-heading">
@@ -36,25 +34,27 @@ export function PageHero({ page, visual, proof, ctaLabel, locale }: PageHeroProp
           <h1 id="page-hero-heading">{page.title}</h1>
           <p className="page-hero-intro">{page.intro}</p>
           {proof ? <p className="page-hero-proof">{proof}</p> : null}
-          {page.cta ? (
-            <ActionLink
-              href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
-              variant="primary"
-              withArrow
-            >
-              {ctaLabel}
-            </ActionLink>
-          ) : null}
-          <a
-            className="hero-preferred-source"
-            href={preferredSourceUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-object-id="page-hero-preferred-source"
-          >
-            <span>{messages.page.preferredSourceCta}</span>
-            <Arrow />
-          </a>
+          <div className="hero-actions">
+            {page.cta ? (
+              <ActionLink
+                href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
+                variant="primary"
+              >
+                <PhoneIcon />
+                {ctaLabel}
+              </ActionLink>
+            ) : null}
+            {page.ctaSecondary ? (
+              <ActionLink
+                href={page.ctaSecondary.href}
+                variant="secondary"
+                withArrow
+                objectId="page-hero-secondary-cta"
+              >
+                {page.ctaSecondary.label}
+              </ActionLink>
+            ) : null}
+          </div>
         </div>
         {heroImage ? (
           <div className="page-hero-media">
