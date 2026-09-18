@@ -93,6 +93,50 @@ export function Homepage({ page }: HomepageProps) {
                 objectId={`homepage-proof-${evidence.id}`}
               />
             ))}
+            <li
+              className="proof-item proof-item--environments"
+              data-object-id="homepage-proof-environments"
+            >
+              <span className="proof-number" aria-hidden="true">
+                {String(page.evidence.length + 1).padStart(2, "0")}
+              </span>
+              <div className="proof-content">
+                <h3>{messages.homepage.environmentsHeading}</h3>
+                <p>{messages.homepage.environmentsIntro}</p>
+                <div className="environment-list">
+                  {page.environments.map((environment) => (
+                    <div className="environment" key={environment.id}>
+                      <strong>{environment.title}</strong>
+                      <span>{environment.body}</span>
+                      {environment.href ? (
+                        <ActionLink
+                          href={environment.href}
+                          variant="source"
+                          withArrow
+                          objectId={`homepage-environment-${environment.id}`}
+                        >
+                          {environment.actionLabel ?? environment.title}
+                        </ActionLink>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+                <div className="environment-footer">
+                  <ActionLink
+                    href={pathWithAnchor(
+                      "profile",
+                      page.locale,
+                      isPolish ? "srodowiska" : "contexts",
+                    )}
+                    variant="text"
+                    withArrow
+                    objectId="homepage-environments-profile-link"
+                  >
+                    {messages.homepage.environmentsAllLabel}
+                  </ActionLink>
+                </div>
+              </div>
+            </li>
           </ol>
         </div>
       </section>

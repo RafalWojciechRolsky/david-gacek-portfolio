@@ -52,8 +52,20 @@
           }
         },
         {
-          "id": "maxidisc",
+          "id": "droga-lwa",
           "label": "03",
+          "title": "Droga Lwa",
+          "body": "Jako mówca cyklicznego wydarzenia dla mężczyzn łączę Bum Bum Rurki i DISC. To praktyczna praca z grupą, która pozwala zobaczyć komunikację w działaniu.",
+          "status": "confirmed",
+          "source": {
+            "label": "Źródło: oficjalna strona Drogi Lwa",
+            "href": "https://drogalwa.pl/",
+            "external": true
+          }
+        },
+        {
+          "id": "maxidisc",
+          "label": "04",
           "title": "MaxieDISC",
           "body": "Certyfikat konsultanta po szkoleniu, sesji mentorskiej i egzaminie, 2023. Dokument wystawiono 10 maja 2023 roku.",
           "status": "confirmed"
@@ -142,6 +154,32 @@
           "kind": "navigation"
         }
       ],
+      "environments": [
+        {
+          "id": "droga-lwa",
+          "title": "Droga Lwa",
+          "body": "Mówca wydarzenia, łączenie Bum Bum Rurek i DISC.",
+          "href": "https://drogalwa.pl/",
+          "actionLabel": "Droga Lwa",
+          "kind": "navigation"
+        },
+        {
+          "id": "gls",
+          "title": "Global Leadership Summit Polska",
+          "body": "Zespół organizacyjny i współorganizacja.",
+          "href": "https://gls.org.pl/",
+          "actionLabel": "GLS Polska",
+          "kind": "navigation"
+        },
+        {
+          "id": "akademia",
+          "title": "Akademia Przywództwa",
+          "body": "Obszar Komunikacja i DISC.",
+          "href": "https://akademiaprzywodztwa.pl/",
+          "actionLabel": "Akademia Przywództwa",
+          "kind": "navigation"
+        }
+      ],
       "sections": [],
       "faq": [
         {
@@ -218,8 +256,20 @@
           }
         },
         {
-          "id": "maxidisc",
+          "id": "droga-lwa",
           "label": "03",
+          "title": "Droga Lwa",
+          "body": "As a speaker at this recurring event for men, I combine boomwhackers and DISC in practical group work.",
+          "status": "confirmed",
+          "source": {
+            "label": "Source: Droga Lwa website",
+            "href": "https://drogalwa.pl/",
+            "external": true
+          }
+        },
+        {
+          "id": "maxidisc",
+          "label": "04",
           "title": "MaxieDISC",
           "body": "Consultant certificate after training, a mentoring session, and an exam, 2023. The document was issued on 10 May 2023.",
           "status": "confirmed"
@@ -305,6 +355,32 @@
           "href": "/en/insights/music-cooperation",
           "actionLabel": "Read the article",
           "readTime": "6 min read",
+          "kind": "navigation"
+        }
+      ],
+      "environments": [
+        {
+          "id": "droga-lwa",
+          "title": "Droga Lwa",
+          "body": "Speaker at the event, combining boomwhackers and DISC.",
+          "href": "https://drogalwa.pl/",
+          "actionLabel": "Droga Lwa",
+          "kind": "navigation"
+        },
+        {
+          "id": "gls",
+          "title": "Global Leadership Summit Polska",
+          "body": "Part of the organizing team and co-organizers.",
+          "href": "https://gls.org.pl/",
+          "actionLabel": "GLS Polska",
+          "kind": "navigation"
+        },
+        {
+          "id": "akademia",
+          "title": "Akademia Przywództwa",
+          "body": "Communication and DISC area.",
+          "href": "https://akademiaprzywodztwa.pl/",
+          "actionLabel": "Akademia Przywództwa",
           "kind": "navigation"
         }
       ],

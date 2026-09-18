@@ -94,6 +94,9 @@ locales.forEach((locale) => {
   content.homepageContent[locale].articles.forEach((item, index) => {
     validateCard(item, `homepage/${locale}/article-${index}`);
   });
+  content.homepageContent[locale].environments.forEach((item, index) => {
+    validateCard(item, `homepage/${locale}/environment-${index}`);
+  });
 });
 
 const pageKeys = Object.keys(content.pageContent).sort();
