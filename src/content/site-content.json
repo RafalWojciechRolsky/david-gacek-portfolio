@@ -18,6 +18,10 @@
       "proof": "4000 przeszkolonych nauczycieli",
       "cta": {
         "label": "Zaproś mnie",
+        "href": "tel:"
+      },
+      "ctaSecondary": {
+        "label": "Poznaj ofertę",
         "href": "#konteksty"
       },
       "heroImage": {
@@ -222,6 +226,10 @@
       "proof": "4,000 teachers trained",
       "cta": {
         "label": "Invite me",
+        "href": "tel:"
+      },
+      "ctaSecondary": {
+        "label": "Explore the offer",
         "href": "#contexts"
       },
       "heroImage": {

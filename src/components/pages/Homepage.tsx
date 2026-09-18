@@ -51,17 +51,29 @@ export function Homepage({ page }: HomepageProps) {
             <strong>{page.heroStatistic.value}</strong>
             <span>{page.heroStatistic.label}</span>
           </p>
+          <div className="hero-actions">
+            {page.cta ? (
+              <ActionLink
+                href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
+                variant="primary"
+                objectId="homepage-hero-primary-cta"
+              >
+                <PhoneIcon />
+                {page.cta.label}
+              </ActionLink>
+            ) : null}
+            {page.ctaSecondary ? (
+              <ActionLink
+                href={page.ctaSecondary.href}
+                variant="secondary"
+                withArrow
+                objectId="homepage-hero-secondary-cta"
+              >
+                {page.ctaSecondary.label}
+              </ActionLink>
+            ) : null}
+          </div>
           <p className="hero-hours">{siteConfig.phoneHoursByLocale[page.locale]}</p>
-          {page.cta ? (
-            <ActionLink
-              href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
-              variant="primary"
-              withArrow
-              objectId="homepage-hero-primary-cta"
-            >
-              {page.cta.label}
-            </ActionLink>
-          ) : null}
           <a
             className="hero-preferred-source"
             href={preferredSourceUrl()}
@@ -72,7 +84,6 @@ export function Homepage({ page }: HomepageProps) {
             <span>{messages.homepage.preferredSourceCta}</span>
             <Arrow />
           </a>
-          <p className="hero-note">{messages.homepage.heroNote}</p>
         </div>
       </section>
 
@@ -263,5 +274,24 @@ export function Homepage({ page }: HomepageProps) {
 
       <ContactSection locale={page.locale} signal="cobalt" />
     </>
+  );
+}
+
+/**
+ * Dekoracyjna ikona telefonu przy głównym CTA hero, sygnalizuje połączenie zamiast nawigacji.
+ */
+function PhoneIcon() {
+  return (
+    <svg
+      className="cta-icon"
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+    </svg>
   );
 }

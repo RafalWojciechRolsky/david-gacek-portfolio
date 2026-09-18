@@ -8,7 +8,7 @@ interface ActionLinkProps {
   /** Widoczna etykieta akcji. */
   children: ReactNode;
   /** Wariant wizualny linku. */
-  variant?: "primary" | "text" | "source" | "quiet";
+  variant?: "primary" | "secondary" | "text" | "source" | "quiet";
   /** Dodatkowy tekst dla technologii asystujących. */
   ariaLabel?: string;
   /** Czy pokazać dekoracyjną strzałkę. */

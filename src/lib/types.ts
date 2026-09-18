@@ -482,6 +482,8 @@ export interface HomepageData extends PageData {
   heroCaption: string;
   /** Główny dowód liczbowy. */
   heroStatistic: { value: string; label: string };
+  /** Druga akcja hero, kotwica do wyboru kontekstu oferty. */
+  ctaSecondary: LinkItem;
   /** Dowody w Proof Passage. */
   evidence: EvidenceItem[];
   /** Materiał wideo. */
