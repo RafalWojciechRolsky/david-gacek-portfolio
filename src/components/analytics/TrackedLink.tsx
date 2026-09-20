@@ -20,6 +20,22 @@ interface TrackedLinkProps {
   className?: string;
   /** Dodatkowa etykieta dostępności. */
   ariaLabel?: string;
+  /** Stabilny identyfikator obiektu ze specyfikacji. */
+  objectId?: string;
+  /** Włącza natywne pobieranie zasobu. */
+  download?: boolean;
+}
+
+/**
+ * Wysyła anonimowe zdarzenie do GA4, gdy analityka jest podłączona, bez rzucania błędów w DEV.
+ */
+export function trackEvent(
+  eventName: string,
+  parameters: AnalyticsParameters = {},
+): void {
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", eventName, parameters);
+  }
 }
 
 /**
@@ -32,15 +48,22 @@ export function TrackedLink({
   parameters = {},
   className = "",
   ariaLabel,
+  objectId,
+  download = false,
 }: TrackedLinkProps) {
   const handleClick = () => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", eventName, parameters);
-    }
+    trackEvent(eventName, parameters);
   };
 
   return (
-    <a className={className} href={href} aria-label={ariaLabel} onClick={handleClick}>
+    <a
+      className={className}
+      href={href}
+      aria-label={ariaLabel}
+      data-object-id={objectId}
+      download={download || undefined}
+      onClick={handleClick}
+    >
       {children}
     </a>
   );
@@ -56,3 +79,5 @@ declare global {
     ) => void;
   }
 }
+
+export type { AnalyticsParameters };

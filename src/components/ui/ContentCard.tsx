@@ -1,5 +1,6 @@
 import type { ContentCardItem } from "@/lib/types";
 
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { Arrow } from "@/components/ui/Arrow";
 
@@ -86,7 +87,18 @@ export function ContentCard({
   );
 
   if (item.kind === "navigation") {
-    return (
+    return item.download ? (
+      <TrackedLink
+        className={cardClassName}
+        href={item.href}
+        objectId={objectId}
+        download
+        eventName="file_download"
+        parameters={{ location: objectId ?? "content-card", format: "pdf" }}
+      >
+        {cardContent}
+      </TrackedLink>
+    ) : (
       <a
         className={cardClassName}
         href={item.href}

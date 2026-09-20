@@ -57,9 +57,14 @@ export function Homepage({ page }: HomepageProps) {
               <ActionLink
                 href={page.cta.href.startsWith("tel:") ? siteConfig.phoneHref : page.cta.href}
                 variant="primary"
+                withArrow={!page.cta.href.startsWith("tel:")}
                 objectId="homepage-hero-primary-cta"
+                eventName={
+                  page.cta.href.startsWith("tel:") ? "click_phone" : undefined
+                }
+                eventParameters={{ location: "hero" }}
               >
-                <PhoneIcon />
+                {page.cta.href.startsWith("tel:") ? <PhoneIcon /> : null}
                 {page.cta.label}
               </ActionLink>
             ) : null}

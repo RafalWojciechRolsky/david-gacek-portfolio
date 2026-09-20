@@ -5,6 +5,7 @@ import { pathFor } from "@/lib/routes";
 import type { Locale, PageKey } from "@/lib/types";
 
 import { LanguageSwitcher } from "@/components/chrome/LanguageSwitcher";
+import { trackEvent } from "@/components/analytics/TrackedLink";
 import { MobileMenu } from "@/components/chrome/MobileMenu";
 import { DesktopCollaborationMenu } from "@/components/chrome/DesktopCollaborationMenu";
 import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
@@ -167,6 +168,7 @@ export function SiteHeader({
             href={phoneHref}
             aria-label={messages.accessibility.callAria}
             data-object-id="site-header-phone-link"
+            onClick={() => trackEvent("click_phone", { location: "header" })}
           >
             {messages.header.callShort}
           </a>

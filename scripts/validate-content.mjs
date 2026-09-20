@@ -67,6 +67,18 @@ const validatePage = (page, locale, pageKey) => {
   assert.equal(page.locale, locale, `${pageKey}/${locale}: locale mismatch`);
   assert.equal(typeof page.contentKey, "string", `${pageKey}/${locale}: missing contentKey`);
   assert.equal(typeof page.title, "string", `${pageKey}/${locale}: missing title`);
+  if (page.titleLines) {
+    assert.ok(
+      Array.isArray(page.titleLines) && page.titleLines.length > 0,
+      `${pageKey}/${locale}: titleLines must be a non-empty array`,
+    );
+    page.titleLines.forEach((line, lineIndex) => {
+      assert.ok(
+        typeof line === "string" && line.trim().length > 0,
+        `${pageKey}/${locale}/titleLine-${lineIndex}: titleLine must be a non-empty string`,
+      );
+    });
+  }
   assert.ok(page.seo?.title, `${pageKey}/${locale}: missing SEO title`);
   assert.ok(page.seo?.description, `${pageKey}/${locale}: missing SEO description`);
   assert.ok(page.sections.length > 0, `${pageKey}/${locale}: missing sections`);
@@ -74,6 +86,18 @@ const validatePage = (page, locale, pageKey) => {
   page.sections.forEach((section, index) => {
     assert.ok(section.id, `${pageKey}/${locale}/section-${index}: missing id`);
     assert.ok(section.heading, `${pageKey}/${locale}/section-${index}: missing heading`);
+    if (section.logos) {
+      assert.ok(
+        Array.isArray(section.logos) && section.logos.length > 0,
+        `${pageKey}/${locale}/${section.id}: logos must be a non-empty array`,
+      );
+      section.logos.forEach((logo, logoIndex) => {
+        assert.ok(
+          typeof logo === "string" && logo.trim().length > 0,
+          `${pageKey}/${locale}/${section.id}/logo-${logoIndex}: logo must be a non-empty string`,
+        );
+      });
+    }
     section.items?.forEach((item, itemIndex) => {
       if (!("title" in item)) {
         assert.ok(

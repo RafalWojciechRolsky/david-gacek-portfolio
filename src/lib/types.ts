@@ -280,6 +280,8 @@ export interface PageSection {
   intro?: string;
   /** Elementy kolekcji. */
   items?: Array<ContentItem | ContentReference>;
+  /** Nazwy marek do typograficznej ściany dowodu. */
+  logos?: string[];
   /** Ton tła sekcji. */
   tone?: PageTone;
   /** Link do kolejnej treści. */
@@ -302,6 +304,8 @@ export interface PageData {
   noindex?: boolean;
   /** Główny nagłówek H1. */
   title: string;
+  /** Opcjonalne rozbicie nagłówka H1 na wiersze. */
+  titleLines?: string[];
   /** Krótka etykieta roli strony. */
   eyebrow?: string;
   /** Wprowadzenie hero. */

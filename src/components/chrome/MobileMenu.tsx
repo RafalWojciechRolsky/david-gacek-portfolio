@@ -8,6 +8,7 @@ import { preferredSourceUrl } from "@/lib/site-config";
 import { getMessages } from "@/messages/ui";
 
 import { LanguageSwitcher } from "@/components/chrome/LanguageSwitcher";
+import { trackEvent } from "@/components/analytics/TrackedLink";
 
 interface MobileMenuProps {
   /** Bieżąca lokalizacja. */
@@ -176,7 +177,14 @@ export function MobileMenu({
         </a>
         <LanguageSwitcher locale={locale} pageKey={currentPage} />
         <div className="mobile-contact">
-          <a className="mobile-phone-link" href={phoneHref} onClick={closeMenu}>
+          <a
+            className="mobile-phone-link"
+            href={phoneHref}
+            onClick={() => {
+              trackEvent("click_phone", { location: "menu" });
+              closeMenu();
+            }}
+          >
             <strong>{messages.header.call}</strong>
             <span className="mobile-phone-number">{phoneDisplay}</span>
             <small>{phoneHours}</small>

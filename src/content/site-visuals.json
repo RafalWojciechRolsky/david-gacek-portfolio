@@ -125,16 +125,18 @@
     "toneBySection": {
       "pl": {
         "triaż": "paper",
-        "formaty": "white",
-        "sposob": "paper",
-        "oferta": "white",
+        "marki": "white",
+        "formaty": "paper",
+        "sposob": "white",
+        "oferta": "paper",
         "artykuly": "white"
       },
       "en": {
         "triage": "paper",
-        "formats": "white",
-        "how": "paper",
-        "offer": "white",
+        "brands": "white",
+        "formats": "paper",
+        "how": "white",
+        "offer": "paper",
         "articles": "white"
       }
     }

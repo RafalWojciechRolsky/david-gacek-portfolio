@@ -52,6 +52,8 @@ export function ResourceItem({ resource, locale, headingLevel = "h3" }: Resource
               className="resource-action"
               onClick={() => setDownloadStarted(true)}
               download
+              eventName="file_download"
+              eventParameters={{ location: "resource", format: "pdf" }}
             >
               {resource.actionLabel ?? messages.resources.download}
             </ActionLink>

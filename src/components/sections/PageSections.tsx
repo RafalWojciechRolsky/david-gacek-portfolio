@@ -9,6 +9,7 @@ import type { Locale, PageSection, PageVisual } from "@/lib/types";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { CardGrid } from "@/components/ui/CardGrid";
 import { ContentCard } from "@/components/ui/ContentCard";
+import { LogoWall } from "@/components/sections/LogoWall";
 import { ResourceItem } from "@/components/ui/ResourceItem";
 import { SectionHeader } from "@/components/sections/SectionHeader";
 import { ContactChannels } from "@/components/sections/ContactChannels";
@@ -66,7 +67,12 @@ export function PageSections({
                 signal={visual.signal}
               />
               {isArticleLibrary ? articleLibraryNav : null}
-              {isContactChannels ? (
+              {pageSection.logos?.length ? (
+                <LogoWall
+                  names={pageSection.logos}
+                  objectId={`${pageSection.id}-logo-wall`}
+                />
+              ) : isContactChannels ? (
                 <ContactChannels
                   locale={locale}
                   light={tone === "paper" || tone === "white"}
@@ -160,6 +166,12 @@ export function PageSections({
                     variant="text"
                     withArrow
                     className="section-action"
+                    eventName={
+                      pageSection.action.href.endsWith(".pdf")
+                        ? "file_download"
+                        : undefined
+                    }
+                    eventParameters={{ location: "section-action", format: "pdf" }}
                   >
                     {pageSection.action.label}
                   </ActionLink>

@@ -428,6 +428,7 @@
           "description": "Poznaj historię, metodę pracy i doświadczenie Dawida Gacka, trenera Bum Bum Rurek, edukatora muzycznego i trenera komunikacji DISC."
         },
         "title": "Dawid Gacek",
+        "titleLines": ["Dawid", "Gacek"],
         "eyebrow": "Trener Bum Bum Rurek, edukator muzyczny i trener komunikacji DISC.",
         "intro": "Łączę muzykę, ruch i relacje, żeby uruchamiać ludzi i pomagać im lepiej współpracować.",
         "heroImage": {
@@ -438,6 +439,10 @@
         },
         "proof": "Od 2010 roku pracuję z ludźmi przez muzykę, ruch i relacje.",
         "cta": {
+          "label": "Zaproś mnie",
+          "href": "tel:"
+        },
+        "ctaSecondary": {
           "label": "Porozmawiajmy",
           "href": "/kontakt"
         },
@@ -615,6 +620,7 @@
           "description": "Meet Dawid Gacek, a boomwhackers educator and DISC communication trainer. Explore his story, approach, evidence, and the contexts in which he works today."
         },
         "title": "Dawid Gacek",
+        "titleLines": ["Dawid", "Gacek"],
         "eyebrow": "Boomwhackers educator, musician, and DISC communication trainer.",
         "intro": "I bring music, movement, and human connection together to help people act and work better as a group.",
         "heroImage": {
@@ -625,6 +631,10 @@
         },
         "proof": "Since 2010, I have worked with people through music, movement, and human connection.",
         "cta": {
+          "label": "Invite me",
+          "href": "tel:"
+        },
+        "ctaSecondary": {
           "label": "Let's talk",
           "href": "/en/contact"
         },
@@ -1356,6 +1366,12 @@
             ]
           },
           {
+            "id": "marki",
+            "heading": "Wydarzenia dla znanych marek",
+            "intro": "Prowadziłem wydarzenia i integracje dla zespołów z tych marek, bezpośrednio i przez agencje eventowe.",
+            "logos": ["Play", "T-Mobile", "EY", "British American Tobacco", "Makro Cash and Carry", "Canon", "Storck"]
+          },
+          {
             "id": "formaty",
             "heading": "Formaty wydarzeń",
             "intro": "Od krótkiego wejścia po pełny warsztat, dobieram skalę i przebieg do celu, grupy, miejsca i czasu.",
@@ -1562,6 +1578,12 @@
                 "kind": "information"
               }
             ]
+          },
+          {
+            "id": "brands",
+            "heading": "Events for well-known brands",
+            "intro": "I have led events and team integrations for teams from these brands, directly and through event agencies.",
+            "logos": ["Play", "T-Mobile", "EY", "British American Tobacco", "Makro Cash and Carry", "Canon", "Storck"]
           },
           {
             "id": "formats",
@@ -2214,6 +2236,7 @@
           "description": "Szkolenie DISC dla zespołów. Zobacz, czym jest model stylów zachowania, jak wspiera komunikację i jak wygląda bezpieczna praca z Dawidem przed decyzją."
         },
         "title": "MaxieDISC dla zespołów",
+        "titleLines": ["MaxieDISC", "dla zespołów"],
         "eyebrow": "Model stylów zachowania i komunikacji w pracy zespołu.",
         "intro": "Pomagam zespołom zobaczyć, jak działają, komunikują się i reagują na siebie w konkretnych sytuacjach.",
         "proof": "DISC jako model, nie test osobowości.",
@@ -2459,6 +2482,7 @@
           "description": "DISC team training for stronger communication. Learn what the behavioural styles model is, how it supports teams, and how Dawid works with groups in practice."
         },
         "title": "MaxieDISC for teams",
+        "titleLines": ["MaxieDISC", "for teams"],
         "eyebrow": "A model of behavioural styles and communication for team work.",
         "intro": "I help teams see how they act, communicate, and respond to one another in concrete situations.",
         "proof": "DISC as a model, not a personality test.",
@@ -2708,7 +2732,7 @@
         "title": "Realizacje Dawida Gacka",
         "eyebrow": "Dowody z wydarzeń, warsztatów i pracy z grupami.",
         "intro": "Od rekordowego wydarzenia dla 661 osób po cykliczne sceny i pracę z dużymi grupami. Każdy dowód ma publiczne źródło.",
-        "proof": "Rekord 661 osób na jednym wydarzeniu, doświadczenie od 2010 roku.",
+        "proof": "Rekord 661 osób na jednym wydarzeniu.",
         "cta": {
           "label": "Sprawdź dowody",
           "href": "#case-studies"
@@ -2801,7 +2825,7 @@
         "title": "Dawid Gacek projects",
         "eyebrow": "Proof from events, workshops, and group work.",
         "intro": "From a record event for 661 people to recurring stages and large-group work. Every project has a public source.",
-        "proof": "A 661-person event record and experience since 2010.",
+        "proof": "A 661-person event record.",
         "cta": {
           "label": "See the evidence",
           "href": "#case-studies"
@@ -3249,7 +3273,8 @@
           "title": "Kontakt | Dawid Gacek",
           "description": "Skontaktuj się z Dawidem Gackiem. Zadzwoń, napisz na WhatsAppie albo wyślij e-mail, aby ustalić termin, zakres, logistykę i warunki współpracy bez formularza."
         },
-        "title": "Kontakt z Dawidem",
+        "title": "Kontakt ze mną",
+        "titleLines": ["Kontakt", "ze mną"],
         "eyebrow": "Porozmawiajmy o terminie, zakresie i warunkach współpracy.",
         "intro": "Nie musisz mieć gotowego briefu. Wystarczy pomysł, grupa i to, co chcesz osiągnąć.",
         "proof": "Odbieram w dni robocze 9-17.",
@@ -3417,7 +3442,8 @@
           "title": "Contact | Dawid Gacek",
           "description": "Contact Dawid Gacek by phone, WhatsApp, or email to discuss timing, scope, logistics, and practical details before you invite him to your event without a form."
         },
-        "title": "Contact Dawid",
+        "title": "Contact me",
+        "titleLines": ["Contact", "me"],
         "eyebrow": "Let's talk about timing, scope, and practical details.",
         "intro": "You do not need a finished brief. An idea, a group, and a goal are enough to begin.",
         "proof": "I answer calls on working days, 9 am-5 pm.",
