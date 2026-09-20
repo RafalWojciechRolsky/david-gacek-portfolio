@@ -49,7 +49,6 @@ export function Footer({ locale, currentPage }: FooterProps) {
             <a href={siteConfig.externalLinks.linkedin.href}>{siteConfig.externalLinks.linkedin.label}</a>
             <a href={siteConfig.externalLinks.instagram.href}>{siteConfig.externalLinks.instagram.label}</a>
             <a href={siteConfig.externalLinks.facebook.href}>{siteConfig.externalLinks.facebook.label}</a>
-            <a href={siteConfig.externalLinks.patronite.href}>{siteConfig.externalLinks.patronite.label}</a>
             <a
               href={preferredSourceUrl()}
               target="_blank"

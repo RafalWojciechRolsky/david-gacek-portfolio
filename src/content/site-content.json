@@ -50,7 +50,7 @@
           "body": "Historyczny rekord Guinnessa w grze na Bum Bum Rurkach, 2016. Byłem głównym dyrygentem i autorem koncepcji wykonawczej wydarzenia dla P&G Europe Planning Service Centre w Polsce, 19 kwietnia 2016 roku.",
           "status": "confirmed",
           "source": {
-            "label": "Źródło: materiał o rekordzie GWR",
+            "label": "Źródło: materiał o rekordzie Guinnessa",
             "href": "https://youtu.be/Z5yKnlzKECg",
             "external": true
           }
@@ -258,7 +258,7 @@
           "body": "A 2016 Guinness World Record in group boomwhacker playing. I was the lead conductor and creator of the performance concept for an event held for P&G Europe Planning Service Centre in Poland on 19 April 2016.",
           "status": "confirmed",
           "source": {
-            "label": "Source: GWR event video",
+            "label": "Source: Guinness World Record event video",
             "href": "https://youtu.be/Z5yKnlzKECg",
             "external": true
           }
@@ -1348,7 +1348,7 @@
               },
               {
                 "id": "gwr",
-                "title": "Historyczny GWR z 661 osobami",
+                "title": "Rekord Guinnessa z 661 osobami",
                 "body": "W 2016 roku współtworzyłem wydarzenie z 661 osobami. To historyczny dowód skali, nie bieżącej współpracy z marką.",
                 "status": "confirmed",
                 "kind": "information"
@@ -1556,7 +1556,7 @@
               },
               {
                 "id": "gwr",
-                "title": "Historical GWR event with 661 people",
+                "title": "Guinness World Record event with 661 people",
                 "body": "In 2016, I co-created an event with 661 people. It is historical evidence of scale, not current cooperation with a brand.",
                 "status": "confirmed",
                 "kind": "information"
@@ -2722,7 +2722,7 @@
               {
                 "id": "gwr-event",
                 "label": "Wydarzenie, 2016",
-                "title": "Rekord GWR 661 osób",
+                "title": "Rekord Guinnessa: 661 osób",
                 "body": "Wydarzenie dla P&G Europe Planning Service Centre, 19 kwietnia 2016. Dawid jako główny dyrygent i autor koncepcji wykonawczej.",
                 "status": "confirmed",
                 "href": "https://youtu.be/Z5yKnlzKECg",
@@ -2815,7 +2815,7 @@
               {
                 "id": "gwr-event",
                 "label": "Event, 2016",
-                "title": "GWR record of 661 people",
+                "title": "Guinness World Record: 661 people",
                 "body": "An event for P&G Europe Planning Service Centre, 19 April 2016. Dawid as lead conductor and creator of the performance concept.",
                 "status": "confirmed",
                 "href": "https://youtu.be/Z5yKnlzKECg",

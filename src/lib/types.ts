@@ -517,7 +517,6 @@ export interface SiteConfig {
     linkedin: LinkItem;
     instagram: LinkItem;
     facebook: LinkItem;
-    patronite: LinkItem;
   };
   /** Linki creditu wykonawcy projektu. */
   creatorLinks: {

@@ -4,7 +4,7 @@ Serwis marki osobistej Dawida Gacka - trenera, muzyka i pioniera edukacyjnego wy
 
 Nadrzędną zasadą serwisu jest:
 
-> Zapraszasz Dawida, nie kupujesz pakietu.
+> Zanim poznasz ofertę, poznajmy się.
 
 Strona najpierw pokazuje człowieka, jego historię i dowody, a dopiero potem pomaga wybrać właściwy kontekst współpracy.
 

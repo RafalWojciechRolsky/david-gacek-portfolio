@@ -918,6 +918,9 @@ img {
 }
 
 .proof-heading h2 {
+  /* Najdłuższy wyraz "Doświadczenie," musi zmieścić się w wąskiej kolumnie sticky,
+     inaczej przelewa ją w stronę listy dowodów. */
+  font-size: clamp(2.15rem, 3.6vw, 3.5rem);
   hyphens: none;
   word-break: normal;
   overflow-wrap: normal;

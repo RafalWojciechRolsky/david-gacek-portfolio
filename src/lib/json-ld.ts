@@ -71,7 +71,6 @@ export function buildIdentityJsonLd(locale: Locale): JsonLdObject[] {
         siteConfig.externalLinks.linkedin.href,
         siteConfig.externalLinks.instagram.href,
         siteConfig.externalLinks.facebook.href,
-        siteConfig.externalLinks.patronite.href,
       ],
     },
     {
