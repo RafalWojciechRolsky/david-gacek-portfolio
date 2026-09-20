@@ -7,6 +7,7 @@
   --surface-ochre: #f4dfb8;
   --surface-coral: #f1d7d0;
   --surface-green: #dceee4;
+  --surface-cobalt: #e3e8f5;
   --surface-ink: #1f2023;
   --surface-ink-soft: #47484a;
   --signal-cobalt: #1d3b8c;
@@ -204,7 +205,6 @@ img {
 .page-hero--insights :focus-visible,
 .page-hero--contact :focus-visible,
 .site-header--theme-cobalt.site-header--at-top :focus-visible,
-.site-header--theme-dark-cobalt.site-header--at-top :focus-visible,
 .site-header--theme-ink.site-header--at-top :focus-visible {
   outline-color: var(--page-on-dark);
 }
@@ -387,10 +387,10 @@ img {
   color: var(--surface-white);
 }
 
-.site-header--theme-dark-cobalt.site-header--at-top {
-  background: var(--signal-cobalt-dark);
-  border-bottom: 1px solid var(--on-dark-border-soft);
-  color: var(--surface-white);
+.site-header--theme-cobalt-light.site-header--at-top {
+  background: var(--surface-cobalt);
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--surface-ink);
 }
 
 .site-header--theme-coral.site-header--at-top {
@@ -419,62 +419,51 @@ img {
 
 /* Dark header contrast overrides when at top */
 .site-header--theme-cobalt.site-header--at-top .brand,
-.site-header--theme-dark-cobalt.site-header--at-top .brand,
 .site-header--theme-ink.site-header--at-top .brand {
   color: var(--surface-white);
 }
 
 .site-header--theme-cobalt.site-header--at-top .desktop-nav > a,
-.site-header--theme-dark-cobalt.site-header--at-top .desktop-nav > a,
 .site-header--theme-ink.site-header--at-top .desktop-nav > a,
 .site-header--theme-cobalt.site-header--at-top .nav-dropdown > summary,
-.site-header--theme-dark-cobalt.site-header--at-top .nav-dropdown > summary,
 .site-header--theme-ink.site-header--at-top .nav-dropdown > summary {
   color: var(--on-cobalt-muted);
 }
 
 .site-header--theme-cobalt.site-header--at-top .desktop-nav > a:hover,
-.site-header--theme-dark-cobalt.site-header--at-top .desktop-nav > a:hover,
 .site-header--theme-ink.site-header--at-top .desktop-nav > a:hover,
 .site-header--theme-cobalt.site-header--at-top .nav-dropdown > summary:hover,
-.site-header--theme-dark-cobalt.site-header--at-top .nav-dropdown > summary:hover,
 .site-header--theme-ink.site-header--at-top .nav-dropdown > summary:hover {
   color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .desktop-nav > a[aria-current="page"],
-.site-header--theme-dark-cobalt.site-header--at-top .desktop-nav > a[aria-current="page"],
 .site-header--theme-ink.site-header--at-top .desktop-nav > a[aria-current="page"] {
   color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .nav-dropdown[data-current] > summary,
-.site-header--theme-dark-cobalt.site-header--at-top .nav-dropdown[data-current] > summary,
 .site-header--theme-ink.site-header--at-top .nav-dropdown[data-current] > summary {
   color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .header-call,
-.site-header--theme-dark-cobalt.site-header--at-top .header-call,
 .site-header--theme-ink.site-header--at-top .header-call {
   color: var(--surface-white);
   border-left-color: var(--on-dark-border-soft);
 }
 
 .site-header--theme-cobalt.site-header--at-top .language-switcher a,
-.site-header--theme-dark-cobalt.site-header--at-top .language-switcher a,
 .site-header--theme-ink.site-header--at-top .language-switcher a {
   color: var(--on-cobalt-muted);
 }
 
 .site-header--theme-cobalt.site-header--at-top .language-switcher a[aria-current="page"],
-.site-header--theme-dark-cobalt.site-header--at-top .language-switcher a[aria-current="page"],
 .site-header--theme-ink.site-header--at-top .language-switcher a[aria-current="page"] {
   color: var(--page-on-dark);
 }
 
 .site-header--theme-cobalt.site-header--at-top .mobile-nav > summary,
-.site-header--theme-dark-cobalt.site-header--at-top .mobile-nav > summary,
 .site-header--theme-ink.site-header--at-top .mobile-nav > summary {
   color: var(--surface-white);
 }
@@ -1087,7 +1076,7 @@ img {
   margin-top: auto;
   padding-top: 14px;
 }
-.environment-footer {
+.proof-heading-link {
   margin-top: 18px;
 }
 
@@ -2292,13 +2281,12 @@ img {
 }
 
 .page-hero--contact {
-  background: var(--signal-cobalt);
-  color: var(--surface-white);
+  background: var(--surface-cobalt);
+  color: var(--surface-ink);
 }
 
 .page-hero--teacher .eyebrow,
-.page-hero--insights .eyebrow,
-.page-hero--contact .eyebrow {
+.page-hero--insights .eyebrow {
   color: var(--signal-ochre-bright);
 }
 
@@ -2311,12 +2299,15 @@ img {
   color: var(--signal-coral-ink);
 }
 
+.page-hero--contact .eyebrow {
+  color: var(--signal-cobalt-dark);
+}
+
 .page-hero--disc .eyebrow {
   color: var(--signal-green-ink);
 }
 
-.page-hero--teacher .page-hero-intro,
-.page-hero--contact .page-hero-intro {
+.page-hero--teacher .page-hero-intro {
   color: var(--on-cobalt-muted);
 }
 
@@ -2325,8 +2316,7 @@ img {
   color: var(--on-ink-intro);
 }
 
-.page-hero--teacher .page-hero-proof,
-.page-hero--contact .page-hero-proof {
+.page-hero--teacher .page-hero-proof {
   border-color: var(--on-dark-border);
   color: var(--signal-ochre-bright);
 }
@@ -2344,6 +2334,11 @@ img {
 
 .page-hero--corporate .page-hero-proof {
   border-color: var(--signal-coral);
+  color: var(--surface-ink);
+}
+
+.page-hero--contact .page-hero-proof {
+  border-color: var(--signal-cobalt);
   color: var(--surface-ink);
 }
 
@@ -2389,21 +2384,32 @@ img {
 }
 
 /* Cobalt hero: primary CTA jako biały box z tekstem cobalt-dark, hover w ochre-bright.
-   Stały kobalt zlewałby się z tłem hero. Wzór spójny z contact hero. */
-.page-hero--teacher .action-link--primary,
-.page-hero--contact .action-link--primary {
+   Stały kobalt zlewałby się z tłem hero. */
+.page-hero--teacher .action-link--primary {
   background: var(--surface-white);
   color: var(--signal-cobalt-dark);
   border: 1px solid var(--surface-white);
 }
 
 .page-hero--teacher .action-link--primary:hover,
-.page-hero--teacher .action-link--primary:focus-visible,
-.page-hero--contact .action-link--primary:hover,
-.page-hero--contact .action-link--primary:focus-visible {
+.page-hero--teacher .action-link--primary:focus-visible {
   background: var(--signal-ochre-bright);
   color: var(--surface-ink);
   border-color: var(--signal-ochre-bright);
+  transform: translateY(-2px);
+}
+
+/* Jasne hero: CTA w rodzinie sygnału strony, hover w ink. */
+.page-hero--contact .action-link--primary {
+  background: var(--signal-cobalt-dark);
+  color: var(--surface-white);
+  border: 1px solid var(--signal-cobalt-dark);
+}
+
+.page-hero--contact .action-link--primary:hover,
+.page-hero--contact .action-link--primary:focus-visible {
+  background: var(--surface-ink);
+  border-color: var(--surface-ink);
   transform: translateY(-2px);
 }
 
@@ -2469,15 +2475,12 @@ img {
 
 /* Ciemne hero: link Preferred Sources czytelny na ciemnym tle, hover w ochre-bright */
 .page-hero--teacher .hero-preferred-source,
-.page-hero--contact .hero-preferred-source,
 .page-hero--insights .hero-preferred-source {
   color: var(--surface-paper);
 }
 
 .page-hero--teacher .hero-preferred-source:hover,
 .page-hero--teacher .hero-preferred-source:focus-visible,
-.page-hero--contact .hero-preferred-source:hover,
-.page-hero--contact .hero-preferred-source:focus-visible,
 .page-hero--insights .hero-preferred-source:hover,
 .page-hero--insights .hero-preferred-source:focus-visible {
   color: var(--signal-ochre-bright);

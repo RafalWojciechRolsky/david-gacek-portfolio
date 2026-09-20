@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import { PageShell } from "@/components/chrome/PageShell";
 import { StructuredData } from "@/components/seo/StructuredData";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { DisclosureFaq } from "@/components/ui/DisclosureFaq";
 import { RhythmicMarker } from "@/components/ui/RhythmicMarker";
 import { ResourceItem } from "@/components/ui/ResourceItem";
 import { getPage } from "@/lib/content";
@@ -9,11 +11,11 @@ import { buildUtilityJsonLd } from "@/lib/json-ld";
 import { pathFor } from "@/lib/routes";
 import { getMessages } from "@/messages/ui";
 
-const messages = getMessages("en");
+const page = getPage("materials", "en");
 
 export const metadata: Metadata = {
-  title: `${messages.materials.title} | ${messages.brandName}`,
-  description: messages.materials.description,
+  title: page.seo.title,
+  description: page.seo.description,
   robots: { index: false, follow: false },
 };
 
@@ -21,14 +23,17 @@ export const metadata: Metadata = {
  * Renderuje angielską ścieżkę materiałów po szkoleniu poza indeksem.
  */
 export default function EnglishMaterialsPage() {
-  const page = getPage("teacherTraining", "en");
+  const messages = getMessages("en");
+  const section = page.sections.find(
+    (item) => item.id === "post-training-materials",
+  );
 
   return (
     <PageShell locale="en" currentPage="materials">
       <StructuredData
         data={buildUtilityJsonLd(
-          messages.materials.title,
-          messages.materials.description,
+          page.seo.title,
+          page.seo.description,
           "en",
           pathFor("materials", "en"),
         )}
@@ -36,19 +41,32 @@ export default function EnglishMaterialsPage() {
       <section className="utility-page">
         <div className="container utility-page-inner">
           <RhythmicMarker />
-          <h1 className="section-heading">{messages.materials.title}</h1>
-          <p className="section-intro">
-            {messages.materials.intro}
-          </p>
+          <h1 className="section-heading">{page.title}</h1>
+          <p className="section-intro">{page.intro}</p>
           <div className="resource-list">
-            {page.sections
-              .find((item) => item.id === "director-materials" || item.id === "leadership-materials")
-              ?.items?.map((resource) =>
-                "title" in resource ? (
-                  <ResourceItem key={resource.id} resource={resource} locale="en" headingLevel="h2" />
-                ) : null,
-              )}
+            {section?.items?.map((resource) =>
+              "title" in resource ? (
+                <ResourceItem
+                  key={resource.id}
+                  resource={resource}
+                  locale="en"
+                  headingLevel="h2"
+                />
+              ) : null,
+            )}
           </div>
+        </div>
+      </section>
+      <section className="faq-section" aria-labelledby="materials-faq-heading">
+        <div className="container faq-layout">
+          <div className="faq-heading">
+            <SectionHeader
+              heading={messages.page.faqHeading}
+              headingId="materials-faq-heading"
+              signal="cobalt"
+            />
+          </div>
+          <DisclosureFaq items={page.faq} objectId="materials-faq-list" />
         </div>
       </section>
     </PageShell>

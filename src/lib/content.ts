@@ -6,14 +6,14 @@ import type {
   PageKey,
 } from "@/lib/types";
 
-type PublicPageKey = Exclude<PageKey, "home" | "materials">;
+type ContentPageKey = Exclude<PageKey, "home">;
 type RoutablePageKey = Exclude<PageKey, "materials">;
 
 interface ContentDocument {
   /** Dane homepage dla obu lokalizacji. */
   homepageContent: Record<Locale, HomepageData>;
-  /** Dane podstron dla obu lokalizacji. */
-  pageContent: Record<PublicPageKey, Record<Locale, PageData>>;
+  /** Dane podstron (także noindex materials) dla obu lokalizacji. */
+  pageContent: Record<ContentPageKey, Record<Locale, PageData>>;
 }
 
 const typedContentData = contentData as ContentDocument;
@@ -28,7 +28,7 @@ export function getHomepage(locale: Locale): HomepageData {
 /**
  * Zwraca dane podstrony dla klucza i lokalizacji.
  */
-export function getPage(pageKey: PublicPageKey, locale: Locale): PageData {
+export function getPage(pageKey: ContentPageKey, locale: Locale): PageData {
   return typedContentData.pageContent[pageKey][locale];
 }
 

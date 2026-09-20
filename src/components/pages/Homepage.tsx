@@ -101,6 +101,19 @@ export function Homepage({ page }: HomepageProps) {
               intro={messages.homepage.proofIntro}
               headingId="proof-heading"
             />
+            <ActionLink
+              href={pathWithAnchor(
+                "profile",
+                page.locale,
+                isPolish ? "srodowiska" : "contexts",
+              )}
+              variant="text"
+              withArrow
+              objectId="homepage-environments-profile-link"
+              className="proof-heading-link"
+            >
+              {messages.homepage.environmentsAllLabel}
+            </ActionLink>
           </div>
           <ol className="proof-list" data-object-id="homepage-proof-passage-evidence-sequence">
             {page.evidence.map((evidence) => (
@@ -137,20 +150,6 @@ export function Homepage({ page }: HomepageProps) {
                       ) : null}
                     </div>
                   ))}
-                </div>
-                <div className="environment-footer">
-                  <ActionLink
-                    href={pathWithAnchor(
-                      "profile",
-                      page.locale,
-                      isPolish ? "srodowiska" : "contexts",
-                    )}
-                    variant="text"
-                    withArrow
-                    objectId="homepage-environments-profile-link"
-                  >
-                    {messages.homepage.environmentsAllLabel}
-                  </ActionLink>
                 </div>
               </div>
             </li>

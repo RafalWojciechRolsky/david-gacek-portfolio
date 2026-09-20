@@ -48,24 +48,14 @@
           "label": "02",
           "title": "661 pracowników korporacyjnych",
           "body": "Historyczny rekord Guinnessa w grze na Bum Bum Rurkach, 2016. Byłem głównym dyrygentem i autorem koncepcji wykonawczej wydarzenia dla P&G Europe Planning Service Centre w Polsce, 19 kwietnia 2016 roku.",
-          "status": "confirmed",
-          "source": {
-            "label": "Źródło: materiał o rekordzie Guinnessa",
-            "href": "https://youtu.be/Z5yKnlzKECg",
-            "external": true
-          }
+          "status": "confirmed"
         },
         {
           "id": "droga-lwa",
           "label": "03",
           "title": "Droga Lwa",
           "body": "Jako mówca cyklicznego wydarzenia dla mężczyzn łączę Bum Bum Rurki i DISC. To praktyczna praca z grupą, która pozwala zobaczyć komunikację w działaniu.",
-          "status": "confirmed",
-          "source": {
-            "label": "Źródło: oficjalna strona Drogi Lwa",
-            "href": "https://drogalwa.pl/",
-            "external": true
-          }
+          "status": "confirmed"
         },
         {
           "id": "maxidisc",
@@ -164,25 +154,19 @@
           "id": "droga-lwa",
           "title": "Droga Lwa",
           "body": "Mówca wydarzenia, łączenie Bum Bum Rurek i DISC.",
-          "href": "https://drogalwa.pl/",
-          "actionLabel": "Droga Lwa",
-          "kind": "navigation"
+          "kind": "information"
         },
         {
           "id": "gls",
-          "title": "Global Leadership Summit Polska",
+          "title": "GLS Polska",
           "body": "Zespół organizacyjny i współorganizacja.",
-          "href": "https://gls.org.pl/",
-          "actionLabel": "GLS Polska",
-          "kind": "navigation"
+          "kind": "information"
         },
         {
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Obszar Komunikacja i DISC.",
-          "href": "https://akademiaprzywodztwa.pl/",
-          "actionLabel": "Akademia Przywództwa",
-          "kind": "navigation"
+          "kind": "information"
         }
       ],
       "sections": [],
@@ -257,24 +241,14 @@
           "label": "02",
           "title": "661 corporate employees",
           "body": "A 2016 Guinness World Record in group boomwhacker playing. I was the lead conductor and creator of the performance concept for an event held for P&G Europe Planning Service Centre in Poland on 19 April 2016.",
-          "status": "confirmed",
-          "source": {
-            "label": "Source: Guinness World Record event video",
-            "href": "https://youtu.be/Z5yKnlzKECg",
-            "external": true
-          }
+          "status": "confirmed"
         },
         {
           "id": "droga-lwa",
           "label": "03",
           "title": "Droga Lwa",
           "body": "As a speaker at this recurring event for men, I combine boomwhackers and DISC in practical group work.",
-          "status": "confirmed",
-          "source": {
-            "label": "Source: Droga Lwa website",
-            "href": "https://drogalwa.pl/",
-            "external": true
-          }
+          "status": "confirmed"
         },
         {
           "id": "maxidisc",
@@ -373,25 +347,19 @@
           "id": "droga-lwa",
           "title": "Droga Lwa",
           "body": "Speaker at the event, combining boomwhackers and DISC.",
-          "href": "https://drogalwa.pl/",
-          "actionLabel": "Droga Lwa",
-          "kind": "navigation"
+          "kind": "information"
         },
         {
           "id": "gls",
-          "title": "Global Leadership Summit Polska",
+          "title": "GLS Poland",
           "body": "Part of the organizing team and co-organizers.",
-          "href": "https://gls.org.pl/",
-          "actionLabel": "GLS Polska",
-          "kind": "navigation"
+          "kind": "information"
         },
         {
           "id": "akademia",
           "title": "Akademia Przywództwa",
           "body": "Communication and DISC area.",
-          "href": "https://akademiaprzywodztwa.pl/",
-          "actionLabel": "Akademia Przywództwa",
-          "kind": "navigation"
+          "kind": "information"
         }
       ],
       "sections": [],
@@ -540,6 +508,14 @@
                 "kind": "navigation"
               },
               {
+                "id": "2019",
+                "label": "Drugi rekord Guinnessa",
+                "title": "2019",
+                "body": "Drugi rekord Guinnessa, ustanowiony w grze na telefonach komórkowych zamiast na rurkach.",
+                "status": "pending",
+                "kind": "information"
+              },
+              {
                 "id": "2023",
                 "label": "Model MaxieDISC",
                 "title": "2023",
@@ -571,7 +547,7 @@
                 "id": "dobedu",
                 "label": "Edukacja nauczycieli",
                 "title": "DobEdu",
-                "body": "Akredytowana placówka doskonalenia nauczycieli. Działam w niej jako edukator i prowadzący szkolenia z Bum Bum Rurek.",
+                "body": "Akredytowana przez MEN placówka doskonalenia nauczycieli. Działam w niej jako edukator i prowadzący szkolenia z Bum Bum Rurek.",
                 "href": "https://www.dobedu.pl/team/dawid-gacek",
                 "actionLabel": "Profil w DobEdu",
                 "kind": "navigation"
@@ -624,7 +600,7 @@
           {
             "id": "profile-evidence",
             "question": "Jakie mam doświadczenie i dowody?",
-            "answer": "Ponad 4000 przeszkolonych nauczycieli od 2010 roku, historyczny rekord Guinnessa z udziałem 661 osób w 2016 roku oraz certyfikat konsultanta MaxieDISC z 2023 roku."
+            "answer": "Ponad 4000 przeszkolonych nauczycieli od 2010 roku, historyczny rekord Guinnessa z udziałem 661 osób w 2016 roku, drugi rekord Guinnessa w 2019 roku oraz certyfikat konsultanta MaxieDISC z 2023 roku."
           },
           {
             "id": "profile-audience",
@@ -772,6 +748,14 @@
                 "kind": "navigation"
               },
               {
+                "id": "2019",
+                "label": "Second Guinness World Record",
+                "title": "2019",
+                "body": "A second Guinness World Record, set while playing on mobile phones instead of tubes.",
+                "status": "pending",
+                "kind": "information"
+              },
+              {
                 "id": "2023",
                 "label": "MaxieDISC model",
                 "title": "2023",
@@ -803,7 +787,7 @@
                 "id": "dobedu",
                 "label": "Teacher education",
                 "title": "DobEdu",
-                "body": "An accredited teacher development institution. I work there as an educator and a boomwhackers training facilitator.",
+                "body": "A teacher development institution accredited by the Polish Ministry of Education. I work there as an educator and a boomwhackers training facilitator.",
                 "href": "https://www.dobedu.pl/team/dawid-gacek",
                 "actionLabel": "DobEdu profile",
                 "kind": "navigation"
@@ -856,7 +840,7 @@
           {
             "id": "profile-evidence",
             "question": "What experience and evidence do I have?",
-            "answer": "More than 4,000 teachers trained since 2010, a historic Guinness World Record with 661 people in 2016, and the MaxieDISC consultant certificate from 2023."
+            "answer": "More than 4,000 teachers trained since 2010, a historic Guinness World Record with 661 people in 2016, a second Guinness World Record in 2019, and the MaxieDISC consultant certificate from 2023."
           },
           {
             "id": "profile-audience",
@@ -1135,6 +1119,11 @@
             "id": "teacher-room",
             "question": "Jakie warunki musi mieć sala?",
             "answer": "Wystarczy sala, w której uczestnicy mogą stanąć w kole. Sprzęt, logistykę i szczegóły techniczne ustalamy telefonicznie przed spotkaniem."
+          },
+          {
+            "id": "teacher-accreditation",
+            "question": "Czy szkolenie jest akredytowane i zwalidowane?",
+            "answer": "Prowadzę szkolenia jako edukator w DobEdu, akredytowanej przez MEN placówce doskonalenia nauczycieli. Moje zajęcia przechodzą walidację na Eventpadzie, gdzie utrzymuję wysokie noty."
           }
         ]
       },
@@ -1386,6 +1375,11 @@
             "id": "teacher-room",
             "question": "What does the room need?",
             "answer": "Any room where participants can stand in a circle is enough. Equipment, logistics, and technical details are agreed by phone before the session."
+          },
+          {
+            "id": "teacher-accreditation",
+            "question": "Is the training accredited and validated?",
+            "answer": "I run trainings as an educator at DobEdu, a teacher development institution accredited by the Polish Ministry of Education. My sessions go through validation on Eventpad, where I keep high ratings."
           }
         ]
       }
@@ -1564,7 +1558,7 @@
                 "id": "projects-link",
                 "title": "Realizacje do pokazania klientowi",
                 "body": "Zobacz realizacje z kontekstem, datą, moją rolą i źródłem.",
-                "href": "/realizacje",
+                "href": "/dawid-gacek#srodowiska",
                 "actionLabel": "Przejdź do realizacji",
                 "kind": "navigation"
               }
@@ -1809,7 +1803,7 @@
                 "id": "projects-link",
                 "title": "Projects to show your client",
                 "body": "See projects with context, date, my role, and a source.",
-                "href": "/en/projects",
+                "href": "/en/dawid-gacek#contexts",
                 "actionLabel": "Explore projects",
                 "kind": "navigation"
               }
@@ -2522,7 +2516,7 @@
                 "id": "case-studies",
                 "title": "Potwierdzone realizacje",
                 "body": "Realizacje z kontekstem, rolą i publicznym źródłem, w tym wydarzenia, gdzie DISC spotyka się z muzyką.",
-                "href": "/realizacje",
+                "href": "/dawid-gacek#srodowiska",
                 "actionLabel": "Zobacz realizacje",
                 "kind": "navigation"
               }
@@ -2768,7 +2762,7 @@
                 "id": "case-studies",
                 "title": "Confirmed projects",
                 "body": "Projects with context, role, and public source, including events where DISC and music met in practice.",
-                "href": "/en/projects",
+                "href": "/en/dawid-gacek#contexts",
                 "actionLabel": "See projects",
                 "kind": "navigation"
               }
@@ -2911,13 +2905,6 @@
                 "body": "Struktury, które pomagają zacząć. Kompletne przebiegi zajęć z celami, listą rurek i wskazówkami, jak dostosować je do wieku grupy.",
                 "href": "#artykuly",
                 "kind": "navigation"
-              },
-              {
-                "id": "materialy",
-                "title": "Materiały do pobrania",
-                "body": "Karty, nuty i pliki ze statusem praw. Każdy materiał ma opisane warunki użycia, żebyś wiedział, co wolno wydrukować i pokazać.",
-                "href": "#materialy",
-                "kind": "navigation"
               }
             ]
           },
@@ -2998,29 +2985,6 @@
                 "id": "insight-music-cooperation"
               }
             ]
-          },
-          {
-            "id": "materialy",
-            "heading": "Piosenki i materiały do pobrania",
-            "intro": "Pliki pojawiają się dopiero po potwierdzeniu licencji i praw.",
-            "items": [
-              {
-                "id": "song-sheet",
-                "type": "Nuty i karty",
-                "title": "Karty i nuty",
-                "body": "W przygotowaniu.",
-                "status": "preparing",
-                "kind": "information"
-              },
-              {
-                "id": "session-plan",
-                "type": "Konspekt PDF",
-                "title": "Scenariusze do użycia",
-                "body": "Dostępność i zakres użycia zostaną opisane przy pliku.",
-                "status": "preparing",
-                "kind": "information"
-              }
-            ]
           }
         ],
         "faq": [
@@ -3087,13 +3051,6 @@
                 "title": "Session plans",
                 "body": "Structures that help you begin. Complete session outlines with goals, a boomwhacker list, and tips for adapting them to the age of the group.",
                 "href": "#articles",
-                "kind": "navigation"
-              },
-              {
-                "id": "resources",
-                "title": "Downloadable resources",
-                "body": "Cards, notes, and files with a clear rights status. Every resource states its terms of use, so you know what you may print and share.",
-                "href": "#resources",
                 "kind": "navigation"
               }
             ]
@@ -3173,29 +3130,6 @@
               },
               {
                 "id": "insight-music-cooperation"
-              }
-            ]
-          },
-          {
-            "id": "resources",
-            "heading": "Songs and downloadable resources",
-            "intro": "Files appear only after licences and rights are confirmed.",
-            "items": [
-              {
-                "id": "song-sheet",
-                "type": "Sheet music",
-                "title": "Cards and notes",
-                "body": "In preparation.",
-                "status": "preparing",
-                "kind": "information"
-              },
-              {
-                "id": "session-plan",
-                "type": "PDF Outline",
-                "title": "Session plans to use",
-                "body": "Availability and scope will be stated with the file.",
-                "status": "preparing",
-                "kind": "information"
               }
             ]
           }
@@ -3560,6 +3494,114 @@
             "id": "contact-talk",
             "question": "Can we talk about the need first?",
             "answer": "Yes. The conversation is there to check the fit, without a fixed package or contact form."
+          }
+        ]
+      }
+    },
+    "materials": {
+      "pl": {
+        "contentKey": "materials",
+        "locale": "pl",
+        "slug": "materialy",
+        "seo": {
+          "title": "Materiały po szkoleniu | Dawid Gacek",
+          "description": "Konspekt zajęć, muzyczne menu i narzędzia dla nauczycieli i prowadzących. Materiały po warsztatach z Bum Bum Rurkami."
+        },
+        "noindex": true,
+        "title": "Materiały po szkoleniu",
+        "intro": "Konspekt, narzędzia i muzyka z warsztatów z Bum Bum Rurkami. Link do tej ścieżki trafia do uczestników po szkoleniu.",
+        "sections": [
+          {
+            "id": "materialy-po-szkoleniu",
+            "heading": "Do pobrania",
+            "intro": "Te same materiały, które omawiam na szkoleniu.",
+            "items": [
+              {
+                "id": "konspekt",
+                "title": "Konspekt zajęć - Rurowa Petarda",
+                "body": "Kompletne scenariusze zajęć: zasady pracy z grupą, nauka odliczania, karty rytmów WHACK, TAP i BOOM, wystukiwanie rytmów, kolorowy groove oraz zabawy wyobraźni i ruchu.",
+                "status": "available",
+                "href": "/documents/rurowa-petarda-konspekt-zajec.pdf",
+                "actionLabel": "Pobierz konspekt (PDF)",
+                "download": true,
+                "kind": "navigation"
+              },
+              {
+                "id": "muzyczne-menu",
+                "title": "Muzyczne menu",
+                "body": "Repertuar do wspólnego grania: od rozgrzewki SANTO DOMINGO po KOLOROWY GROOVE, z krótką wskazówką, kiedy po który utwór sięgnąć.",
+                "status": "available",
+                "href": "/documents/rurowa-petarda-muzyczne-menu.pdf",
+                "actionLabel": "Pobierz muzyczne menu (PDF)",
+                "download": true,
+                "kind": "navigation"
+              }
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "id": "materials-source",
+            "question": "Skąd pochodzą te materiały?",
+            "answer": "Z mojej codziennej praktyki z Bum Bum Rurkami. To ten sam zestaw, który dostają uczestnicy po szkoleniu."
+          },
+          {
+            "id": "materials-sharing",
+            "question": "Czy mogę przekazać je dalej?",
+            "answer": "Materiały służą pracy z grupą po szkoleniu. Bez mojej zgody nie publikuj ich w sieci ani ich nie odsprzedawaj."
+          }
+        ]
+      },
+      "en": {
+        "contentKey": "materials",
+        "locale": "en",
+        "slug": "materials",
+        "seo": {
+          "title": "Post-training materials | Dawid Gacek",
+          "description": "Session outline, musical menu, and tools for teachers and group leaders. Materials shared after Dawid Gacek's boomwhacker trainings."
+        },
+        "noindex": true,
+        "title": "Post-training materials",
+        "intro": "The outline, tools, and music from my boomwhacker workshops. The link to this path goes to participants after the training. The files are in Polish.",
+        "sections": [
+          {
+            "id": "post-training-materials",
+            "heading": "Downloads",
+            "intro": "The same materials I cover during the training.",
+            "items": [
+              {
+                "id": "konspekt",
+                "title": "Session outline - Rurowa Petarda",
+                "body": "Complete session scenarios: group rules, counting in, WHACK, TAP, and BOOM rhythm cards, rhythm patterns, the colourful groove, plus imagination and movement games.",
+                "status": "available",
+                "href": "/documents/rurowa-petarda-konspekt-zajec.pdf",
+                "actionLabel": "Download the outline (PDF)",
+                "download": true,
+                "kind": "navigation"
+              },
+              {
+                "id": "muzyczne-menu",
+                "title": "Musical menu",
+                "body": "Repertoire for playing together: from the SANTO DOMINGO warm-up to KOLOROWY GROOVE, with a short note on when to reach for each song.",
+                "status": "available",
+                "href": "/documents/rurowa-petarda-muzyczne-menu.pdf",
+                "actionLabel": "Download the musical menu (PDF)",
+                "download": true,
+                "kind": "navigation"
+              }
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "id": "materials-source",
+            "question": "Where do these materials come from?",
+            "answer": "From my everyday practice with boomwhackers. It is the same set that participants receive after the training."
+          },
+          {
+            "id": "materials-sharing",
+            "question": "Can I share them further?",
+            "answer": "The materials serve group work after the training. Without my permission, do not publish them online or resell them."
           }
         ]
       }

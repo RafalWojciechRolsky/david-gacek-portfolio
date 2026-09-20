@@ -129,11 +129,6 @@
       "homeAction": "Wróć na stronę główną",
       "contactAction": "Kontakt"
     },
-    "materials": {
-      "title": "Materiały po szkoleniu",
-      "intro": "Ta ścieżka jest przeznaczona dla uczestników szkolenia.",
-      "description": "Materiały po szkoleniu dla uczestników warsztatów Dawida Gacka."
-    },
     "legal": {
       "privacyTitle": "Polityka prywatności",
       "termsTitle": "Regulamin",
@@ -273,11 +268,6 @@
       "intro": "The address may have changed or this material is no longer available.",
       "homeAction": "Back to home",
       "contactAction": "Contact"
-    },
-    "materials": {
-      "title": "Post-training materials",
-      "intro": "This path is intended for training participants.",
-      "description": "Post-training materials for Dawid Gacek workshop participants."
     },
     "legal": {
       "privacyTitle": "Privacy policy",

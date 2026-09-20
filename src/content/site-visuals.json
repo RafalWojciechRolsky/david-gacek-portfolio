@@ -274,14 +274,12 @@
       "pl": {
         "szybki-start": "white",
         "kategorie": "paper-deep",
-        "artykuly": "ink",
-        "materialy": "white"
+        "artykuly": "ink"
       },
       "en": {
         "quick-start": "white",
         "categories": "paper-deep",
-        "articles": "ink",
-        "resources": "white"
+        "articles": "ink"
       }
     }
   },

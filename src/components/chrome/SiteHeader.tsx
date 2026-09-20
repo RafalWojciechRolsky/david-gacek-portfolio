@@ -19,7 +19,7 @@ const HERO_THEMES: Record<PageKey, string> = {
   childrenWorkshops: "ochre",
   disc: "green",
   insights: "ink",
-  contact: "dark-cobalt",
+  contact: "cobalt-light",
   materials: "paper",
 };
 
@@ -79,7 +79,7 @@ export type HeaderTheme =
   | "paper-deep"
   | "white"
   | "cobalt"
-  | "dark-cobalt"
+  | "cobalt-light"
   | "coral"
   | "ochre"
   | "green"
