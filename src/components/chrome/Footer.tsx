@@ -38,7 +38,6 @@ export function Footer({ locale, currentPage }: FooterProps) {
           </nav>
           <nav className="footer-column" aria-label={messages.footer.materials}>
             <h2>{messages.footer.materials}</h2>
-            <a href={pathFor("projects", locale)}>{messages.footer.projects}</a>
             <a href={pathFor("insights", locale)}>{messages.footer.insights}</a>
             <a href={pathFor("insights", locale)}>{messages.footer.blog}</a>
             <a href={pathFor("materials", locale)}>{messages.footer.postTraining}</a>

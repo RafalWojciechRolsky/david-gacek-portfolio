@@ -13,7 +13,6 @@ export type PageKey =
   | "corporateEvents"
   | "childrenWorkshops"
   | "disc"
-  | "projects"
   | "insights"
   | "contact"
   | "materials";
@@ -388,6 +387,8 @@ export interface VideoData {
   videoId: string;
   /** Tytuł materiału. */
   title: string;
+  /** Opis treści filmu widoczny w sekcji osadzenia. */
+  description: string;
   /** Tekst alternatywny kadru. */
   alt: string;
   /** Statyczny, zatwierdzony kadr zastępczy przed aktywacją. */

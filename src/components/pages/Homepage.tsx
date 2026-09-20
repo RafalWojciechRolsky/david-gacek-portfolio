@@ -44,7 +44,7 @@ export function Homepage({ page }: HomepageProps) {
         </div>
         <div className="hero-copy">
           <h1 id="hero-heading">
-            <span>{messages.brandFirstName}</span>
+            <span>{messages.brandFirstName}</span>{" "}
             <span>{messages.brandLastName}</span>
           </h1>
           <p className="hero-idea">{page.intro}</p>
@@ -163,7 +163,7 @@ export function Homepage({ page }: HomepageProps) {
           <div>
             <SectionHeader
               heading={messages.homepage.videoHeading}
-              intro={messages.homepage.videoIntro}
+              intro={page.video.description}
               headingId="video-heading"
               signal="ochre"
             />

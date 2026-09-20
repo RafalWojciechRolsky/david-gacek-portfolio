@@ -18,7 +18,6 @@ const HERO_THEMES: Record<PageKey, string> = {
   corporateEvents: "coral",
   childrenWorkshops: "ochre",
   disc: "green",
-  projects: "paper-deep",
   insights: "ink",
   contact: "dark-cobalt",
   materials: "paper",
@@ -151,9 +150,6 @@ export function SiteHeader({
           <DesktopCollaborationMenu locale={locale} currentPage={currentPage} />
           <a href={pathFor("insights", locale)} aria-current={currentPage === "insights" ? "page" : undefined}>
             {messages.header.insights}
-          </a>
-          <a href={pathFor("projects", locale)} aria-current={currentPage === "projects" ? "page" : undefined}>
-            {messages.header.projects}
           </a>
           <a href={pathFor("profile", locale)} aria-current={currentPage === "profile" ? "page" : undefined}>
             {messages.header.dawid}

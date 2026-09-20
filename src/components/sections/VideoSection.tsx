@@ -27,7 +27,7 @@ export function VideoSection({ locale, video, signal }: VideoSectionProps) {
         <div>
           <SectionHeader
             heading={messages.page.videoHeading}
-            intro={messages.page.videoIntro}
+            intro={video.description}
             headingId="page-video-heading"
             signal={signal}
           />

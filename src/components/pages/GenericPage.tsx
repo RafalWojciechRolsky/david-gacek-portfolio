@@ -25,17 +25,21 @@ interface GenericPageProps {
 const VIDEO_AFTER_SECTION: Partial<
   Record<PageKey, Record<Locale, string>>
 > = {
+  profile: {
+    pl: "srodowiska",
+    en: "contexts",
+  },
   teacherTraining: {
-    pl: "sposob-pracy",
-    en: "how",
+    pl: "oferta",
+    en: "offer",
   },
   corporateEvents: {
     pl: "sposob",
     en: "how",
   },
   childrenWorkshops: {
-    pl: "sposob-pracy",
-    en: "how",
+    pl: "oferta",
+    en: "offer",
   },
 };
 
@@ -51,6 +55,7 @@ export function GenericPage({
   const messages = getMessages(locale);
   const visual = getPageVisual(pageKey, locale);
   const hasVideo =
+    pageKey === "profile" ||
     pageKey === "teacherTraining" ||
     pageKey === "corporateEvents" ||
     pageKey === "childrenWorkshops";

@@ -78,6 +78,7 @@
       "video": {
         "videoId": "fqVVmwXLuoY",
         "title": "Warsztaty dla nauczycieli",
+        "description": "Zobacz, jak prowadzę warsztaty dla nauczycieli z wykorzystaniem Bum Bum Rurek.",
         "alt": "Dawid Gacek podczas pracy, podgląd materiału wideo",
         "placeholderImage": {
           "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -286,6 +287,7 @@
       "video": {
         "videoId": "fqVVmwXLuoY",
         "title": "Teacher training workshop",
+        "description": "See how I lead teacher training with boomwhackers.",
         "alt": "Dawid Gacek at work, video preview",
         "placeholderImage": {
           "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -437,14 +439,32 @@
           "width": 1024,
           "height": 683
         },
-        "proof": "Od 2010 roku pracuję z ludźmi przez muzykę, ruch i relacje.",
+        "proof": "Basista i trener, od 2010 roku pracuję z ludźmi przez muzykę, ruch i relacje.",
         "cta": {
           "label": "Zaproś mnie",
           "href": "tel:"
         },
         "ctaSecondary": {
-          "label": "Porozmawiajmy",
-          "href": "/kontakt"
+          "label": "Poznaj drogę i dowody",
+          "href": "#os-czasu"
+        },
+        "video": {
+          "videoId": "Z5yKnlzKECg",
+          "title": "Rekord Guinnessa: 661 osób na Bum Bum Rurkach",
+          "description": "Nagranie z wydarzenia z 2016 roku: 661 osób gra razem na Bum Bum Rurkach podczas ustanawiania rekordu Guinnessa.",
+          "alt": "Dawid Gacek z historycznym certyfikatem Guinness World Records",
+          "placeholderImage": {
+            "src": "/images/guiness.jpg",
+            "alt": "Dawid Gacek trzymający historyczny certyfikat Guinness World Records z 2016 roku",
+            "width": 1536,
+            "height": 2048
+          },
+          "fallback": {
+            "label": "Otwórz film w YouTube",
+            "href": "https://youtu.be/Z5yKnlzKECg",
+            "external": true
+          },
+          "status": "confirmed"
         },
         "sections": [
           {
@@ -455,13 +475,13 @@
               {
                 "id": "profile-bio",
                 "title": "Od 2010 roku z ludźmi przez muzykę",
-                "body": "Jestem trenerem Bum Bum Rurek, edukatorem muzycznym i trenerem komunikacji DISC. Zaczynałem, kiedy nikt w Polsce nie pracował z rurkami na taką skalę. Współtworzyłem polską nazwę Bum Bum Rurki, zaakceptowaną przez amerykańskiego producenta jako oficjalna nazwa obok Boomwhackers. Dziś pokazuję, jak prosty instrument otwiera grupę, uruchamia współpracę i zamienia zabawę w wartościową rozmowę.",
+                "body": "Jestem basistą, edukatorem muzycznym, trenerem Bum Bum Rurek i trenerem komunikacji DISC. Bas ukształtował mój sposób pracy z grupą: słuchać całego zespołu, trzymać puls i zostawiać przestrzeń innym. Zaczynałem, kiedy nikt w Polsce nie pracował z rurkami na taką skalę. Współtworzyłem polską nazwę Bum Bum Rurki, zaakceptowaną przez amerykańskiego producenta jako oficjalna nazwa obok Boomwhackers. Dziś pokazuję, jak prosty instrument otwiera grupę, uruchamia współpracę i zamienia zabawę w wartościową rozmowę.",
                 "kind": "information"
               },
               {
                 "id": "profile-bio-life",
                 "title": "Poza szkoleniami",
-                "body": "Najważniejszą rolą jest dla mnie bycie szczęśliwym mężczyzną i tatą. Poza tym jestem basistą, z wykształcenia inżynierem dźwięku, miłośnikiem życia i smakoszem kawy. W pracy z grupami jestem też kolekcjonerem uśmiechów, bo nawet najsmutniejsze oczy rozbłyskują, kiedy wszyscy zaczynają grać razem. Hobbystycznie prowadzę zajęcia kulinarne dla dzieci. Wszystko spina jedna zasada: smakowanie życia, komunikacja i ludzie.",
+                "body": "Najważniejszą rolą jest dla mnie bycie szczęśliwym mężczyzną i tatą. Z wykształcenia jestem inżynierem dźwięku, na co dzień miłośnikiem życia i smakoszem kawy. W pracy z grupami jestem też kolekcjonerem uśmiechów, bo nawet najsmutniejsze oczy rozbłyskują, kiedy wszyscy zaczynają grać razem. Hobbystycznie prowadzę zajęcia kulinarne dla dzieci. Wszystko spina jedna zasada: smakowanie życia, komunikacja i ludzie.",
                 "kind": "information"
               }
             ]
@@ -504,12 +524,14 @@
             "items": [
               {
                 "id": "2010",
+                "label": "Początek drogi",
                 "title": "2010",
                 "body": "Pierwsze szkolenia nauczycieli z Bum Bum Rurkami. Jako basista i edukator muzyczny zaczynam pokazywać, jak proste rurki porządkują pracę z grupą, i robię to jako pierwszy na taką skalę w Polsce. Od tego czasu przez moje szkolenia przeszło około 4000 nauczycieli z całej Polski.",
                 "kind": "information"
               },
               {
                 "id": "2016",
+                "label": "Rekord Guinnessa",
                 "title": "2016",
                 "body": "661 osób grało razem na Bum Bum Rurkach podczas wydarzenia dla P&G Europe Planning Service Centre w Polsce, 19 kwietnia 2016 roku. Byłem jego głównym dyrygentem i autorem koncepcji wykonawczej.",
                 "status": "confirmed",
@@ -519,6 +541,7 @@
               },
               {
                 "id": "2023",
+                "label": "Model MaxieDISC",
                 "title": "2023",
                 "body": "Certyfikat konsultanta MaxieDISC po szkoleniu, sesji mentorskiej i egzaminie. Pracuję modelem DISC, który opisuje style zachowań, a nie typy osobowości.",
                 "status": "confirmed",
@@ -529,19 +552,24 @@
               },
               {
                 "id": "dzis",
+                "label": "Cztery konteksty",
                 "title": "Dziś",
                 "body": "Cztery powiązane ścieżki pracy: szkolenia nauczycieli, warsztaty dla dzieci i młodzieży, eventy dla firm oraz sesje i szkolenia DISC.",
-                "kind": "information"
+                "status": "confirmed",
+                "href": "#srodowiska",
+                "actionLabel": "Środowiska i realizacje",
+                "kind": "navigation"
               }
             ]
           },
           {
             "id": "srodowiska",
-            "heading": "Środowiska, w których działam",
-            "intro": "Organizacje i wydarzenia, przy których działam, z linkami do oficjalnych źródeł.",
+            "heading": "Środowiska i realizacje",
+            "intro": "Organizacje, wydarzenia i sceny, przy których regularnie działam, z linkami do oficjalnych źródeł.",
             "items": [
               {
                 "id": "dobedu",
+                "label": "Edukacja nauczycieli",
                 "title": "DobEdu",
                 "body": "Akredytowana placówka doskonalenia nauczycieli. Działam w niej jako edukator i prowadzący szkolenia z Bum Bum Rurek.",
                 "href": "https://www.dobedu.pl/team/dawid-gacek",
@@ -550,6 +578,7 @@
               },
               {
                 "id": "droga-odwaznych",
+                "label": "Mentoring i rozwój",
                 "title": "Droga Odważnych",
                 "body": "Fundacja i środowisko rozwojowe dla mężczyzn, w którym działam jako prowadzący i mentor.",
                 "href": "https://drogaodwaznych.pl/",
@@ -558,6 +587,7 @@
               },
               {
                 "id": "droga-lwa",
+                "label": "Mówca i warsztaty",
                 "title": "Droga Lwa",
                 "body": "Cykliczne wydarzenie dla mężczyzn. Występuję na nim jako mówca i łączę na scenie Bum Bum Rurki z modelem DISC.",
                 "href": "https://drogalwa.pl/",
@@ -566,6 +596,7 @@
               },
               {
                 "id": "akademia",
+                "label": "Komunikacja i DISC",
                 "title": "Akademia Przywództwa",
                 "body": "Program rozwojowy dla liderów. Działam w zespole Akademii, w obszarze komunikacji i modelu DISC.",
                 "href": "https://akademiaprzywodztwa.pl/",
@@ -574,6 +605,7 @@
               },
               {
                 "id": "gls",
+                "label": "Współorganizator",
                 "title": "Global Leadership Summit Polska",
                 "body": "Polska edycja globalnej konferencji przywództwa. Oficjalna strona wymienia mnie w zespole organizacyjnym i wśród współorganizatorów.",
                 "href": "https://gls.org.pl/",
@@ -605,6 +637,16 @@
             "answer": "Rurki pomagają uruchomić grupę i zobaczyć zachowania w działaniu. Później można nazwać to, co wydarzyło się podczas ćwiczeń, i przełożyć obserwacje na rozmowę o komunikacji oraz stylach zachowania."
           },
           {
+            "id": "profile-group-size",
+            "question": "Jak dużą grupę można objąć jednym wydarzeniem?",
+            "answer": "Rekordowa realizacja połączyła 661 osób jednocześnie. Liczbę uczestników, salę i czas ustalamy przy pierwszej rozmowie o wydarzeniu."
+          },
+          {
+            "id": "profile-client-proof",
+            "question": "Czy mogę pokazać te materiały swojemu klientowi albo zespołowi?",
+            "answer": "Tak, wszystkie źródła i nagrania są publiczne i prowadzą do oryginałów. Jeśli potrzebujesz materiałów pod konkretne wydarzenie, zadzwoń i omówimy szczegóły."
+          },
+          {
             "id": "profile-contact",
             "question": "Jak wygląda zaproszenie do współpracy?",
             "answer": "Najlepiej zadzwonić albo napisać na WhatsApp. Opowiesz, dla kogo ma być spotkanie, czego potrzebujesz i kiedy może się odbyć. Wspólnie ustalimy format, termin i warunki."
@@ -629,14 +671,32 @@
           "width": 1024,
           "height": 683
         },
-        "proof": "Since 2010, I have worked with people through music, movement, and human connection.",
+        "proof": "A bass player and trainer. Since 2010, I have worked with people through music, movement, and human connection.",
         "cta": {
           "label": "Invite me",
           "href": "tel:"
         },
         "ctaSecondary": {
-          "label": "Let's talk",
-          "href": "/en/contact"
+          "label": "See my journey and evidence",
+          "href": "#timeline"
+        },
+        "video": {
+          "videoId": "Z5yKnlzKECg",
+          "title": "Guinness World Record: 661 people playing boomwhackers",
+          "description": "Footage from the 2016 event: 661 people play boomwhackers together while setting the Guinness World Record.",
+          "alt": "Dawid Gacek with the historic Guinness World Records certificate",
+          "placeholderImage": {
+            "src": "/images/guiness.jpg",
+            "alt": "Dawid Gacek holding a historic Guinness World Records certificate from 2016",
+            "width": 1536,
+            "height": 2048
+          },
+          "fallback": {
+            "label": "Open the video on YouTube",
+            "href": "https://youtu.be/Z5yKnlzKECg",
+            "external": true
+          },
+          "status": "confirmed"
         },
         "sections": [
           {
@@ -647,13 +707,13 @@
               {
                 "id": "profile-bio",
                 "title": "Since 2010, with people through music",
-                "body": "I am a boomwhackers trainer, a music educator, and a DISC communication trainer. I started when nobody in Poland worked with boomwhackers on such a scale. I helped create the Polish name Bum Bum Rurki, accepted by the American manufacturer as an official name alongside Boomwhackers. Today I show how a simple instrument opens up a group, activates collaboration, and turns play into a meaningful conversation.",
+                "body": "I am a bass player, a music educator, a boomwhackers trainer, and a DISC communication trainer. The bass shaped how I work with groups: listen to the whole band, hold the pulse, and leave space for others. I started when nobody in Poland worked with boomwhackers on such a scale. I helped create the Polish name Bum Bum Rurki, accepted by the American manufacturer as an official name alongside Boomwhackers. Today I show how a simple instrument opens up a group, activates collaboration, and turns play into a meaningful conversation.",
                 "kind": "information"
               },
               {
                 "id": "profile-bio-life",
                 "title": "Beyond training",
-                "body": "My most important role is being a happy man and a dad. Beyond that, I am a bass player, a sound engineer by education, a lover of life, and a coffee enthusiast. In my work with groups, I also call myself a smile collector, because even the saddest eyes light up when everyone starts playing together. I also run cooking classes for children as a hobby. One idea ties it all together: savouring life, communication, and people.",
+                "body": "My most important role is being a happy man and a dad. I am a sound engineer by education, and day to day a lover of life and a coffee enthusiast. In my work with groups, I also call myself a smile collector, because even the saddest eyes light up when everyone starts playing together. I also run cooking classes for children as a hobby. One idea ties it all together: savouring life, communication, and people.",
                 "kind": "information"
               }
             ]
@@ -696,12 +756,14 @@
             "items": [
               {
                 "id": "2010",
+                "label": "The beginning",
                 "title": "2010",
                 "body": "The first boomwhackers trainings for teachers. As a bass player and music educator, I start showing how simple tubes bring order to group work, as the first one to do it on such a scale in Poland. Since then, around 4,000 teachers from all over Poland have taken part in my training.",
                 "kind": "information"
               },
               {
                 "id": "2016",
+                "label": "Guinness World Record",
                 "title": "2016",
                 "body": "661 people played boomwhackers together at an event for P&G Europe Planning Service Centre in Poland on 19 April 2016. I led it as the main conductor and the creator of the performance concept.",
                 "status": "confirmed",
@@ -711,6 +773,7 @@
               },
               {
                 "id": "2023",
+                "label": "MaxieDISC model",
                 "title": "2023",
                 "body": "MaxieDISC consultant certificate after training, a mentoring session, and an exam. I work with the DISC model, which describes behavioural styles, not personality types.",
                 "status": "confirmed",
@@ -721,19 +784,24 @@
               },
               {
                 "id": "today",
+                "label": "Four contexts",
                 "title": "Today",
                 "body": "Four connected paths of work: teacher training, workshops for children and young people, corporate events, and DISC sessions and trainings.",
-                "kind": "information"
+                "status": "confirmed",
+                "href": "#contexts",
+                "actionLabel": "Environments and projects",
+                "kind": "navigation"
               }
             ]
           },
           {
             "id": "contexts",
-            "heading": "Where I work",
-            "intro": "Organizations and events I am part of, with links to official sources.",
+            "heading": "Environments and projects",
+            "intro": "Organizations, events, and stages where I regularly work, with links to official sources.",
             "items": [
               {
                 "id": "dobedu",
+                "label": "Teacher education",
                 "title": "DobEdu",
                 "body": "An accredited teacher development institution. I work there as an educator and a boomwhackers training facilitator.",
                 "href": "https://www.dobedu.pl/team/dawid-gacek",
@@ -742,6 +810,7 @@
               },
               {
                 "id": "droga-odwaznych",
+                "label": "Mentorship and growth",
                 "title": "Droga Odważnych",
                 "body": "A foundation and development community for men, where I work as a facilitator and mentor.",
                 "href": "https://drogaodwaznych.pl/",
@@ -750,6 +819,7 @@
               },
               {
                 "id": "droga-lwa",
+                "label": "Speaker and workshops",
                 "title": "Droga Lwa",
                 "body": "A recurring event for men. I speak there, combining boomwhackers with the DISC model on stage.",
                 "href": "https://drogalwa.pl/",
@@ -758,6 +828,7 @@
               },
               {
                 "id": "akademia",
+                "label": "Communication and DISC",
                 "title": "Akademia Przywództwa",
                 "body": "A leadership development program. I am part of the Academy team in the communication and DISC area.",
                 "href": "https://akademiaprzywodztwa.pl/",
@@ -766,6 +837,7 @@
               },
               {
                 "id": "gls",
+                "label": "Co-organiser",
                 "title": "Global Leadership Summit Polska",
                 "body": "The Polish edition of a global leadership conference. The official website lists me in the organizing team and among the co-organizers.",
                 "href": "https://gls.org.pl/",
@@ -795,6 +867,16 @@
             "id": "profile-disc",
             "question": "How do boomwhackers connect with DISC?",
             "answer": "Boomwhackers activate the group and make behaviour visible in action. Afterwards, we can name what happened during the exercises and turn those observations into a conversation about communication and behavioural styles."
+          },
+          {
+            "id": "profile-group-size",
+            "question": "How large a group can a single event cover?",
+            "answer": "The record project brought 661 people together at once. We settle the group size, venue, and timing in the first conversation about the event."
+          },
+          {
+            "id": "profile-client-proof",
+            "question": "Can I show these materials to my client or team?",
+            "answer": "Yes, all sources and footage are public and link to the originals. If you need materials for a specific event, call me and we will discuss the details."
           },
           {
             "id": "profile-contact",
@@ -828,6 +910,7 @@
         "video": {
           "videoId": "fqVVmwXLuoY",
           "title": "Szkolenie w praktyce",
+          "description": "Fragment szkolenia dla nauczycieli: rytm, proste zasady i wspólna gra na rurkach.",
           "alt": "Dawid Gacek podczas pracy, podgląd materiału wideo",
           "placeholderImage": {
             "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -1078,6 +1161,7 @@
         "video": {
           "videoId": "fqVVmwXLuoY",
           "title": "The training in practice",
+          "description": "A clip from a teacher training: rhythm, simple rules, and making music together on tubes.",
           "alt": "Dawid Gacek at work, video preview",
           "placeholderImage": {
             "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -1330,6 +1414,7 @@
         "video": {
           "videoId": "goTqiC2tf3M",
           "title": "Muzyczny team building w akcji",
+          "description": "Nagranie z integracji muzycznej dla GLS: zespół od pierwszego rytmu dochodzi do wspólnego wykonania na rurkach.",
           "alt": "Dawid Gacek podczas integracji muzycznej z firmą, podgląd materiału wideo",
           "placeholderImage": {
             "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -1416,7 +1501,32 @@
               {
                 "id": "final",
                 "title": "Finał we właściwym składzie",
-                "body": "Prowadzę samodzielnie albo z dodatkowym składem. Finał może być z dyrygentem operowym lub zespołem, zależnie od formatu i skali.",
+                "body": "Wspólne wykonanie domyka wydarzenie, a jego obsada wynika z wariantów opisanych niżej.",
+                "kind": "information"
+              }
+            ]
+          },
+          {
+            "id": "obsada",
+            "heading": "Warianty obsady",
+            "intro": "Ten sam materiał poprowadzę w trzech składach, dobieram wariant do skali wydarzenia, miejsca i budżetu.",
+            "items": [
+              {
+                "id": "solo",
+                "title": "Solo",
+                "body": "Prowadzę samodzielnie, jako dyrygent i animator energii. Najprostsza logistyka, format sprawdzi się na icebreakerach konferencyjnych, warsztatach i spotkaniach zespołów.",
+                "kind": "information"
+              },
+              {
+                "id": "instrumentalista",
+                "title": "Z instrumentalistą",
+                "body": "Dołączam klawisze albo perkusję na żywo, co pogłębia brzmienie i trzyma energię sali. Złoty środek dla wydarzeń, które chcą mocniejszej oprawy muzycznej.",
+                "kind": "information"
+              },
+              {
+                "id": "zespol",
+                "title": "Z zespołem",
+                "body": "Pełny skład na żywo albo dyrygent operowy w finale. Format dla gal, jubileuszy i dużych konferencji, gdzie finał ma brzmieć jak koncert.",
                 "kind": "information"
               }
             ]
@@ -1515,6 +1625,11 @@
             "answer": "Tak, najczęściej działam jako podwykonawca agencji. Ustalamy zakres, rolę w programie i warunki tak, żeby dało się to czysto wpiąć w ofertę dla klienta."
           },
           {
+            "id": "corporate-lineup",
+            "question": "Jakie są warianty obsady wydarzenia?",
+            "answer": "Prowadzę solo, z dodatkowym instrumentalistą albo z pełnym zespołem lub dyrygentem w finale. Obsadę dobieramy do formatu, skali i budżetu, a agencje eventowe mogą wykorzystać warianty w swojej ofercie dla klienta."
+          },
+          {
             "id": "corporate-embarrassment",
             "question": "Czy uczestnicy muszą się wstydzić albo śpiewać?",
             "answer": "Nie. Nikogo nie zmuszam do śpiewu i występów solo. Rurki są proste, a zasady i rytm sprawiają, że grupa szybko działa razem, nawet bez zaplecza muzycznego."
@@ -1544,6 +1659,7 @@
         "video": {
           "videoId": "goTqiC2tf3M",
           "title": "Corporate music team building in action",
+          "description": "Footage from a musical integration for GLS: the team moves from the first rhythm to a shared boomwhackers performance.",
           "alt": "Dawid Gacek leading a corporate music session, video preview",
           "placeholderImage": {
             "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -1630,7 +1746,32 @@
               {
                 "id": "final",
                 "title": "A finale with the right line-up",
-                "body": "I lead independently or with an additional line-up. The finale can include an opera conductor or a band, depending on format and scale.",
+                "body": "A shared performance closes the event, and its line-up follows the variants described below.",
+                "kind": "information"
+              }
+            ]
+          },
+          {
+            "id": "lineup",
+            "heading": "Line-up variants",
+            "intro": "I lead the same material in three line-ups, matching the variant to the event scale, venue, and budget.",
+            "items": [
+              {
+                "id": "solo",
+                "title": "Solo",
+                "body": "I lead on my own, as the conductor and energy facilitator. The simplest logistics, a format that works for conference icebreakers, workshops, and team sessions.",
+                "kind": "information"
+              },
+              {
+                "id": "instrumentalista",
+                "title": "With an instrumentalist",
+                "body": "A live keyboard or percussion player joins in, deepening the sound and holding the room's energy. A middle ground for events that want stronger live music.",
+                "kind": "information"
+              },
+              {
+                "id": "zespol",
+                "title": "With a live band",
+                "body": "A full live line-up or an opera conductor in the finale. A format for galas, anniversaries, and large conferences, where the finale should sound like a concert.",
                 "kind": "information"
               }
             ]
@@ -1729,6 +1870,11 @@
             "answer": "Yes, I most often work as an agency subcontractor. We agree on the scope, role in the programme, and terms so it fits cleanly into the client offer."
           },
           {
+            "id": "corporate-lineup",
+            "question": "What are the line-up variants for the event?",
+            "answer": "I lead solo, with an additional instrumentalist, or with a full band or a conductor in the finale. We match the line-up to the format, scale, and budget, and event agencies can use these variants in their client offers."
+          },
+          {
             "id": "corporate-embarrassment",
             "question": "Do participants have to sing or feel embarrassed?",
             "answer": "No. Nobody is forced to sing or perform solo. The tubes are simple, and the rules and rhythm make the group work together quickly, even without a musical background."
@@ -1760,6 +1906,7 @@
         "video": {
           "videoId": "U0f4uQje2NE",
           "title": "Warsztaty muzyczne dla dzieci",
+          "description": "Fragment warsztatów dla dzieci: zabawa, rytm i wspólna gra na rurkach.",
           "alt": "Dawid Gacek prowadzący warsztat muzyczny z dziećmi, podgląd materiału wideo",
           "placeholderImage": {
             "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -2004,6 +2151,7 @@
         "video": {
           "videoId": "U0f4uQje2NE",
           "title": "Music workshops for children",
+          "description": "A clip from a children's workshop: play, rhythm, and making music together on tubes.",
           "alt": "Dawid Gacek leading a music workshop with children, video preview",
           "placeholderImage": {
             "src": "/images/dawid-gacek-portret-czarne-polo.jpeg",
@@ -2716,194 +2864,6 @@
             "id": "disc-certificate",
             "question": "What prepares me to lead DISC?",
             "answer": "The MaxieDISC consultant certificate from 2023, after training, a mentoring session, and an exam, plus years of practice in leading groups."
-          }
-        ]
-      }
-    },
-    "projects": {
-      "pl": {
-        "contentKey": "projects",
-        "locale": "pl",
-        "slug": "realizacje",
-        "seo": {
-          "title": "Realizacje | Dawid Gacek",
-          "description": "Wybrane realizacje Dawida Gacka: kontekst wydarzenia, data, rola i źródło. Dowody, które można bezpiecznie pokazać klientowi."
-        },
-        "title": "Realizacje Dawida Gacka",
-        "eyebrow": "Dowody z wydarzeń, warsztatów i pracy z grupami.",
-        "intro": "Od rekordowego wydarzenia dla 661 osób po cykliczne sceny i pracę z dużymi grupami. Każdy dowód ma publiczne źródło.",
-        "proof": "Rekord 661 osób na jednym wydarzeniu.",
-        "cta": {
-          "label": "Sprawdź dowody",
-          "href": "#case-studies"
-        },
-        "sections": [
-          {
-            "id": "case-studies",
-            "heading": "Wybrane realizacje",
-            "intro": "Każdy dowód prowadzi do źródła: materiału z wydarzenia albo oficjalnej strony organizatora.",
-            "items": [
-              {
-                "id": "gwr-event",
-                "label": "Wydarzenie, 2016",
-                "title": "Rekord Guinnessa: 661 osób",
-                "body": "Wydarzenie dla P&G Europe Planning Service Centre, 19 kwietnia 2016. Dawid jako główny dyrygent i autor koncepcji wykonawczej.",
-                "status": "confirmed",
-                "href": "https://youtu.be/Z5yKnlzKECg",
-                "actionLabel": "Materiał z wydarzenia",
-                "kind": "navigation"
-              },
-              {
-                "id": "droga-lwa",
-                "label": "Wydarzenie cykliczne",
-                "title": "Droga Lwa",
-                "body": "Cykliczne wydarzenie dla mężczyzn, na którym Dawid jako mówca łączy Bum Bum Rurki i DISC.",
-                "status": "confirmed",
-                "href": "https://drogalwa.pl/",
-                "actionLabel": "Oficjalna strona Drogi Lwa",
-                "kind": "navigation"
-              },
-              {
-                "id": "gls-polska",
-                "label": "Współpraca organizacyjna",
-                "title": "Global Leadership Summit Polska",
-                "body": "Dawid w zespole organizacyjnym i wśród współorganizatorów summitu, przy wydarzeniach dużej skali.",
-                "status": "confirmed",
-                "href": "https://gls.org.pl/",
-                "actionLabel": "Oficjalna strona GLS Polska",
-                "kind": "navigation"
-              },
-              {
-                "id": "akademia-przywodztwa",
-                "label": "Współpraca merytoryczna",
-                "title": "Akademia Przywództwa",
-                "body": "Dawid w zespole Akademii w obszarze komunikacji i DISC, w pracy z grupami dorosłych.",
-                "status": "confirmed",
-                "href": "https://akademiaprzywodztwa.pl/",
-                "actionLabel": "Oficjalna strona Akademii Przywództwa",
-                "kind": "navigation"
-              }
-            ]
-          },
-          {
-            "id": "oferta",
-            "heading": "Te zasady pracują też na Twoim wydarzeniu",
-            "intro": "Wspólny rytm, jasne zasady i praca z całą salą, które widać w realizacjach, budują muzyczne integracje dla firm i wydarzenia specjalne.",
-            "items": [],
-            "action": {
-              "label": "Zobacz formaty dla firm i eventów",
-              "href": "/muzyczny-team-building"
-            }
-          }
-        ],
-        "faq": [
-          {
-            "id": "projects-size",
-            "question": "Jak dużą grupę można objąć jednym wydarzeniem?",
-            "answer": "Rekordowa realizacja połączyła 661 osób jednocześnie. Liczbę gości, salę i czas ustalamy przy pierwszej rozmowie o wydarzeniu."
-          },
-          {
-            "id": "projects-verify",
-            "question": "Czy da się sprawdzić, że te realizacje się wydarzyły?",
-            "answer": "Tak. Przy każdym dowodzie podaję datę, opis roli i link do źródła: materiału z wydarzenia albo oficjalnej strony organizatora."
-          },
-          {
-            "id": "projects-use",
-            "question": "Czy mogę pokazać te realizacje swojemu klientowi?",
-            "answer": "Tak, wszystkie źródła są publiczne i link prowadzi do oryginału. Jeśli potrzebujesz dowodu pod konkretne wydarzenie, zadzwoń i omówimy szczegóły."
-          }
-        ]
-      },
-      "en": {
-        "contentKey": "projects",
-        "locale": "en",
-        "slug": "projects",
-        "seo": {
-          "title": "Projects | Dawid Gacek",
-          "description": "Selected projects by Dawid Gacek: event context, date, role, and source. Proofs you can safely show a client."
-        },
-        "title": "Dawid Gacek projects",
-        "eyebrow": "Proof from events, workshops, and group work.",
-        "intro": "From a record event for 661 people to recurring stages and large-group work. Every project has a public source.",
-        "proof": "A 661-person event record.",
-        "cta": {
-          "label": "See the evidence",
-          "href": "#case-studies"
-        },
-        "sections": [
-          {
-            "id": "case-studies",
-            "heading": "Selected projects",
-            "intro": "Every proof leads to a source: event footage or the organiser's official website.",
-            "items": [
-              {
-                "id": "gwr-event",
-                "label": "Event, 2016",
-                "title": "Guinness World Record: 661 people",
-                "body": "An event for P&G Europe Planning Service Centre, 19 April 2016. Dawid as lead conductor and creator of the performance concept.",
-                "status": "confirmed",
-                "href": "https://youtu.be/Z5yKnlzKECg",
-                "actionLabel": "Event footage",
-                "kind": "navigation"
-              },
-              {
-                "id": "droga-lwa",
-                "label": "Recurring event",
-                "title": "Droga Lwa",
-                "body": "A recurring event for men where Dawid combines boomwhackers and DISC as a speaker.",
-                "status": "confirmed",
-                "href": "https://drogalwa.pl/",
-                "actionLabel": "Droga Lwa website",
-                "kind": "navigation"
-              },
-              {
-                "id": "gls-polska",
-                "label": "Organisational collaboration",
-                "title": "Global Leadership Summit Polska",
-                "body": "Dawid in the organisational team and among the co-organisers of the summit, at large-scale events.",
-                "status": "confirmed",
-                "href": "https://gls.org.pl/",
-                "actionLabel": "GLS Polska website",
-                "kind": "navigation"
-              },
-              {
-                "id": "akademia-przywodztwa",
-                "label": "Subject-matter collaboration",
-                "title": "Akademia Przywództwa",
-                "body": "Dawid in the Academy team in the area of communication and DISC, working with adult groups.",
-                "status": "confirmed",
-                "href": "https://akademiaprzywodztwa.pl/",
-                "actionLabel": "Akademia Przywództwa website",
-                "kind": "navigation"
-              }
-            ]
-          },
-          {
-            "id": "offer",
-            "heading": "These principles work at your event too",
-            "intro": "The shared rhythm, clear ground rules, and whole-room engagement visible in these projects also drive musical team events and special occasions.",
-            "items": [],
-            "action": {
-              "label": "Explore corporate event formats",
-              "href": "/en/music-team-building"
-            }
-          }
-        ],
-        "faq": [
-          {
-            "id": "projects-size",
-            "question": "How large a group can a single event cover?",
-            "answer": "The record project brought 661 people together at once. We settle the group size, venue, and timing in the first conversation about the event."
-          },
-          {
-            "id": "projects-verify",
-            "question": "Can these projects be verified?",
-            "answer": "Yes. Every proof comes with a date, a description of the role, and a link to the source: event footage or the organiser's official website."
-          },
-          {
-            "id": "projects-use",
-            "question": "Can I show these projects to my client?",
-            "answer": "Yes, all sources are public and each link leads to the original. If you need proof for a specific event, call me and we will discuss the details."
           }
         ]
       }

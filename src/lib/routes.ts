@@ -19,7 +19,6 @@ export const routeMap: Record<PageKey, Record<Locale, string>> = {
     en: "music-workshops-for-children",
   },
   disc: { pl: "szkolenia-disc-dla-zespolow", en: "disc-team-training" },
-  projects: { pl: "realizacje", en: "projects" },
   insights: { pl: "wiedza", en: "insights" },
   contact: { pl: "kontakt", en: "contact" },
   materials: { pl: "materialy", en: "materials" },
@@ -30,7 +29,6 @@ export const routeMap: Record<PageKey, Record<Locale, string>> = {
  */
 export const legacyRouteAliases = {
   "/en/knowledge": "/en/insights",
-  "/en/works": "/en/projects",
 } as const;
 
 /**

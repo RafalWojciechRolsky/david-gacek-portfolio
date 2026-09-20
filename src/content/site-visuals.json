@@ -20,18 +20,32 @@
       "pl": "Dawid Gacek podczas prowadzenia wydarzenia.",
       "en": "Dawid Gacek during an event."
     },
-    "toneBySection": {
+    "mediaImage": {
       "pl": {
-        "kim-jestem": "paper",
-        "jak-pracuje": "white",
-        "os-czasu": "ink",
-        "srodowiska": "paper"
+        "src": "/images/guiness.jpg",
+        "alt": "Dawid Gacek trzymający historyczny certyfikat Guinness World Records z 2016 roku",
+        "width": 1536,
+        "height": 2048
       },
       "en": {
-        "who-i-am": "paper",
+        "src": "/images/guiness.jpg",
+        "alt": "Dawid Gacek holding a historic Guinness World Records certificate from 2016",
+        "width": 1536,
+        "height": 2048
+      }
+    },
+    "toneBySection": {
+      "pl": {
+        "kim-jestem": "paper-deep",
+        "jak-pracuje": "white",
+        "os-czasu": "ink",
+        "srodowiska": "paper-deep"
+      },
+      "en": {
+        "who-i-am": "paper-deep",
         "how-i-work": "white",
         "timeline": "ink",
-        "contexts": "paper"
+        "contexts": "paper-deep"
       }
     }
   },
@@ -72,18 +86,18 @@
     },
     "toneBySection": {
       "pl": {
-        "dla-kogo": "paper",
+        "dla-kogo": "paper-deep",
         "program": "white",
         "sposob-pracy": "ink",
         "oferta": "white",
-        "artykuly": "paper"
+        "artykuly": "paper-deep"
       },
       "en": {
-        "who-for": "paper",
+        "who-for": "paper-deep",
         "programme": "white",
         "how": "ink",
         "offer": "white",
-        "articles": "paper"
+        "articles": "paper-deep"
       }
     }
   },
@@ -124,20 +138,22 @@
     },
     "toneBySection": {
       "pl": {
-        "triaż": "paper",
+        "triaż": "paper-deep",
         "marki": "white",
-        "formaty": "paper",
+        "formaty": "paper-deep",
         "sposob": "white",
-        "oferta": "paper",
-        "artykuly": "white"
+        "obsada": "paper-deep",
+        "oferta": "white",
+        "artykuly": "paper-deep"
       },
       "en": {
-        "triage": "paper",
+        "triage": "paper-deep",
         "brands": "white",
-        "formats": "paper",
+        "formats": "paper-deep",
         "how": "white",
-        "offer": "paper",
-        "articles": "white"
+        "lineup": "paper-deep",
+        "offer": "white",
+        "articles": "paper-deep"
       }
     }
   },
@@ -178,18 +194,18 @@
     },
     "toneBySection": {
       "pl": {
-        "wiek": "paper",
+        "wiek": "paper-deep",
         "program": "white",
         "sposob-pracy": "ink",
         "oferta": "ochre",
-        "artykuly": "paper"
+        "artykuly": "paper-deep"
       },
       "en": {
-        "age": "paper",
+        "age": "paper-deep",
         "programme": "white",
         "how": "ink",
         "offer": "ochre",
-        "articles": "paper"
+        "articles": "paper-deep"
       }
     }
   },
@@ -216,7 +232,7 @@
     },
     "toneBySection": {
       "pl": {
-        "definicja-disc": "paper",
+        "definicja-disc": "paper-deep",
         "dla-kogo": "white",
         "przebieg": "green",
         "kwalifikacje": "white",
@@ -224,44 +240,12 @@
         "artykuly": "white"
       },
       "en": {
-        "disc-definition": "paper",
+        "disc-definition": "paper-deep",
         "who-for": "white",
         "process": "green",
         "qualifications": "white",
         "offer": "green",
         "articles": "white"
-      }
-    }
-  },
-  "projects": {
-    "variant": "projects",
-    "signal": "cobalt",
-    "heroImage": {
-      "pl": {
-        "src": "/images/guiness.jpg",
-        "alt": "Dawid Gacek trzymający historyczny certyfikat Guinness World Records",
-        "width": 1536,
-        "height": 2048
-      },
-      "en": {
-        "src": "/images/guiness.jpg",
-        "alt": "Dawid Gacek holding a historic Guinness World Records certificate",
-        "width": 1536,
-        "height": 2048
-      }
-    },
-    "heroCaption": {
-      "pl": "Historyczny rekord Guinnessa z 2016 roku.",
-      "en": "A historic Guinness World Record from 2016."
-    },
-    "toneBySection": {
-      "pl": {
-        "case-studies": "ink",
-        "oferta": "paper-deep"
-      },
-      "en": {
-        "case-studies": "ink",
-        "offer": "paper-deep"
       }
     }
   },
@@ -326,13 +310,13 @@
       "pl": {
         "kanaly": "cobalt",
         "zanim-zadzwonisz": "white",
-        "rozmowa": "paper",
+        "rozmowa": "paper-deep",
         "konteksty": "ink"
       },
       "en": {
         "channels": "cobalt",
         "before-call": "white",
-        "conversation": "paper",
+        "conversation": "paper-deep",
         "contexts": "ink"
       }
     }

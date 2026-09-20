@@ -7,6 +7,22 @@ import type { ReactNode } from "react";
 /** Poniżej tej głębokości glide nie ma sensu, nowa podstrona i tak widać od góry. */
 const GLIDE_MIN_SCROLL = 300;
 
+/**
+ * Sunie na górę natywnym mechanizmem jak przy kotwicach: poniżej progu bez animacji,
+ * z głębokości płynnie, a przy preferencji redukcji ruchu zawsze natychmiast.
+ */
+function glideToTop(depth: number): void {
+  if (
+    depth < GLIDE_MIN_SCROLL ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    window.scrollTo(0, 0);
+    return;
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 const useIsomorphicLayoutEffect =
   typeof window === "undefined" ? useEffect : useLayoutEffect;
 
@@ -44,6 +60,19 @@ export function PageTransition({ children }: PageTransitionProps) {
         return;
       }
 
+      // Link do bieżącej strony nie zmienia pathname, więc glide po montażu
+      // nie ma kiedy się odpalić - przewijam na górę od razu.
+      const url = new URL(href, window.location.href);
+      if (url.pathname === window.location.pathname) {
+        event.preventDefault();
+        pendingDepthRef.current = null;
+        if (window.location.hash) {
+          history.replaceState(null, "", url.pathname);
+        }
+        glideToTop(window.scrollY);
+        return;
+      }
+
       event.preventDefault();
       // Głębokość czeka w refie; glide odpali się dopiero po montażu nowej trasy.
       pendingDepthRef.current = window.scrollY;
@@ -70,16 +99,8 @@ export function PageTransition({ children }: PageTransitionProps) {
       return;
     }
 
-    if (
-      depth < GLIDE_MIN_SCROLL ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      window.scrollTo(0, 0);
-      return;
-    }
-
     // Montaż zakończony: natywny smooth scroll z zachowanej głębokości na górę.
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    glideToTop(depth);
   }, [pathname]);
 
   return <>{children}</>;

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/chrome/Footer";
+import { KeyboardScroll } from "@/components/chrome/KeyboardScroll";
 import { SiteHeader } from "@/components/chrome/SiteHeader";
 import type { HeaderTheme } from "@/components/chrome/SiteHeader";
 import { SkipLink } from "@/components/chrome/SkipLink";
@@ -36,6 +37,7 @@ export function PageShell({
     <>
       <SkipLink label={getMessages(locale).accessibility.skipContent} />
       <AnalyticsScripts measurementId={process.env.NEXT_PUBLIC_GA_ID} />
+      <KeyboardScroll />
       <SiteHeader
         locale={locale}
         currentPage={currentPage}

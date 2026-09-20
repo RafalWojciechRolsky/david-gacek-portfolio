@@ -43,7 +43,6 @@ export function getPublicPageKeys(): RoutablePageKey[] {
     "corporateEvents",
     "childrenWorkshops",
     "disc",
-    "projects",
     "insights",
     "contact",
   ];

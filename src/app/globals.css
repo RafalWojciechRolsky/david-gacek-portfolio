@@ -68,7 +68,6 @@
   .site-header--page-home,
   .site-header--page-profile,
   .site-header--page-teacherTraining,
-  .site-header--page-projects,
   .site-header--page-contact,
   .site-header--page-materials
 ) {
@@ -1309,6 +1308,10 @@ img {
   opacity: 0.66;
 }
 
+.media-facade-image[src*="guiness"] {
+  object-position: 50% 18%;
+}
+
 .media-facade-placeholder::after {
   position: absolute;
   inset: 8% 12% 8% 52%;
@@ -2288,12 +2291,8 @@ img {
   background: var(--surface-green);
 }
 
-.page-hero--projects {
-  background: var(--surface-paper-deep);
-}
-
 .page-hero--contact {
-  background: var(--signal-cobalt-dark);
+  background: var(--signal-cobalt);
   color: var(--surface-white);
 }
 
@@ -2561,10 +2560,6 @@ img {
   border: 1px solid var(--on-dark-border-strong);
 }
 
-.page-hero--projects .page-hero-media img {
-  object-position: 50% 30%;
-}
-
 .page-hero-caption {
   position: absolute;
   right: 16px;
@@ -2579,8 +2574,7 @@ img {
 
 .page-hero--teacher .page-hero-caption,
 .page-hero--children .page-hero-caption,
-.page-hero--disc .page-hero-caption,
-.page-hero--projects .page-hero-caption {
+.page-hero--disc .page-hero-caption {
   background: var(--surface-white);
   color: var(--surface-ink);
 }
@@ -2597,14 +2591,12 @@ img {
 
 .page-section--corporate#formaty,
 .page-section--corporate#formats,
-.page-section--projects#case-studies,
 .page-section--insights#artykuly,
 .page-section--insights#articles {
   padding-block: clamp(72px, 8vw, 120px);
 }
 
-.page-section--corporate .content-grid--3,
-.page-section--projects .content-grid--3 {
+.page-section--corporate .content-grid--3 {
   grid-template-columns: 1.3fr 1fr 1fr;
 }
 
@@ -3729,8 +3721,7 @@ img {
   .page-section--children .content-grid--4,
   .page-section--disc .content-grid--4,
   .page-section--insights .content-grid--5,
-  .page-section--corporate .content-grid--3,
-  .page-section--projects .content-grid--3 {
+  .page-section--corporate .content-grid--3 {
     grid-template-columns: 1fr;
   }
 

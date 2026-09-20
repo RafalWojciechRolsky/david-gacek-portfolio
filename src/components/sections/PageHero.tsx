@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import Image from "next/image";
 
 import { preferredSourceUrl, siteConfig } from "@/lib/site-config";
@@ -36,10 +38,11 @@ export function PageHero({ page, visual, proof, ctaLabel, locale }: PageHeroProp
           {page.eyebrow ? <p className="eyebrow">{page.eyebrow}</p> : null}
           <h1 id="page-hero-heading">
             {page.titleLines ? (
-              page.titleLines.map((line) => (
-                <span className="page-hero-title-line" key={line}>
-                  {line}
-                </span>
+              page.titleLines.map((line, index) => (
+                <Fragment key={line}>
+                  {index > 0 ? " " : null}
+                  <span className="page-hero-title-line">{line}</span>
+                </Fragment>
               ))
             ) : (
               page.title
