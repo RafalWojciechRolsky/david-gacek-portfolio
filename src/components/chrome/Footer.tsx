@@ -30,15 +30,14 @@ export function Footer({ locale, currentPage }: FooterProps) {
           </div>
           <nav className="footer-column" aria-label={messages.footer.workWith}>
             <h2>{messages.footer.workWith}</h2>
-            <a href={pathFor("profile", locale)}>{messages.header.dawid}</a>
             <a href={pathFor("teacherTraining", locale)}>{messages.header.teacherTraining}</a>
             <a href={pathFor("childrenWorkshops", locale)}>{messages.header.childrenWorkshops}</a>
             <a href={pathFor("corporateEvents", locale)}>{messages.header.corporateEvents}</a>
             <a href={pathFor("disc", locale)}>{messages.header.disc}</a>
           </nav>
-          <nav className="footer-column" aria-label={messages.footer.materials}>
-            <h2>{messages.footer.materials}</h2>
-            <a href={pathFor("insights", locale)}>{messages.footer.insights}</a>
+          <nav className="footer-column" aria-label={messages.footer.information}>
+            <h2>{messages.footer.information}</h2>
+            <a href={pathFor("profile", locale)}>{messages.footer.profile}</a>
             <a href={pathFor("insights", locale)}>{messages.footer.blog}</a>
             <a href={pathFor("materials", locale)}>{messages.footer.postTraining}</a>
             <a href={pathFor("contact", locale)}>{messages.footer.contact}</a>

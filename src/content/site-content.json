@@ -1124,6 +1124,11 @@
             "id": "teacher-accreditation",
             "question": "Czy szkolenie jest akredytowane i zwalidowane?",
             "answer": "Prowadzę szkolenia jako edukator w DobEdu, akredytowanej przez MEN placówce doskonalenia nauczycieli. Moje zajęcia przechodzą walidację na Eventpadzie, gdzie utrzymuję wysokie noty."
+          },
+          {
+            "id": "teacher-invoice",
+            "question": "Jak wygląda rozliczenie ze szkołą lub przedszkolem?",
+            "answer": "Wystawiam fakturę z terminem płatności przelewem (standardowo 14 dni), dopasowaną do procedur jednostek budżetowych i samorządowych (dane nabywcy: gmina lub miasto, odbiorca: szkoła lub przedszkole). Wszystkie formalności ustalamy spokojnie przed szkoleniem."
           }
         ]
       },
@@ -1380,6 +1385,11 @@
             "id": "teacher-accreditation",
             "question": "Is the training accredited and validated?",
             "answer": "I run trainings as an educator at DobEdu, a teacher development institution accredited by the Polish Ministry of Education. My sessions go through validation on Eventpad, where I keep high ratings."
+          },
+          {
+            "id": "teacher-invoice",
+            "question": "How does invoicing and settlement work for schools?",
+            "answer": "I issue an invoice with bank transfer payment terms (typically 14 days), tailored to the formal procurement procedures of educational institutions and local authorities. All administrative details are agreed smoothly before the training."
           }
         ]
       }
@@ -1457,20 +1467,20 @@
             "items": [
               {
                 "id": "icebreaker",
-                "title": "Icebreaker konferencyjny",
-                "body": "Kilka do kilkunastu minut wspólnego rytmu, które rozgrzewa salę i ustawia ją na dalszy program. Sprawdza się na otwarciu i między blokami.",
+                "title": "Icebreaker konferencyjny (15-30 min)",
+                "body": "15 do 30 minut wspólnego rytmu, które rozgrzewa salę i ustawia uczestników na dalszy program. Idealny na otwarcie konferencji, po przerwie obiadowej lub między blokami prelekcji.",
                 "kind": "information"
               },
               {
                 "id": "team-building",
-                "title": "Muzyczny team building",
-                "body": "Wspólne działanie od pierwszego rytmu do finałowego wykonania.",
+                "title": "Muzyczny team building (45-90 min)",
+                "body": "Wspólne działanie od prostych uderzeń w dłonie i kolana po pełny, wielogłosowy finał. Uczestnicy tworzą orkiestrę z rurek, przełamując bariery i budując zaufanie.",
                 "kind": "information"
               },
               {
                 "id": "workshop",
-                "title": "Warsztat firmowy",
-                "body": "Format do celu zespołu, miejsca i czasu, np. integracja podczas szkolenia albo domknięcie dnia firmowego.",
+                "title": "Warsztat firmowy (2-3 godziny)",
+                "body": "Pogłębiony format warsztatowy łączący rytm, dynamikę grupy i współpracę. Sprawdza się podczas wyjazdów integracyjnych, dni firmowych oraz szkoleń zespołowych.",
                 "kind": "information"
               }
             ]
@@ -1553,6 +1563,16 @@
                 "title": "Współpraca z agencją",
                 "body": "Jako podwykonawca ustalam zakres, rolę i warunki, aby agencja mogła je jasno włączyć do oferty klienta.",
                 "kind": "information"
+              },
+              {
+                "id": "offer-pdf",
+                "title": "Oferta dla firm i agencji w PDF",
+                "body": "Zwięzły one-pager do wydrukowania lub włączenia do oferty klienta: warianty obsady, formaty czasowe i warunki organizacyjne.",
+                "status": "available",
+                "kind": "navigation",
+                "href": "/documents/muzyczny-team-building-oferta.pdf",
+                "actionLabel": "Otwórz PDF oferty dla firm",
+                "download": true
               },
               {
                 "id": "projects-link",
@@ -1702,20 +1722,20 @@
             "items": [
               {
                 "id": "icebreaker",
-                "title": "Conference icebreaker",
-                "body": "A few to a dozen or so minutes of shared rhythm that warms up the room and sets it up for the programme. It works at openings and between blocks.",
+                "title": "Conference icebreaker (15-30 min)",
+                "body": "15 to 30 minutes of shared rhythm that warms up the room and sets participants up for the programme. Ideal for conference openings, after lunch breaks, or between keynote blocks.",
                 "kind": "information"
               },
               {
                 "id": "team-building",
-                "title": "Musical team building",
-                "body": "A shared activity from the first rhythm to a final performance.",
+                "title": "Musical team building (45-90 min)",
+                "body": "Shared activity from simple body percussion to a full multi-part finale. Participants become a boomwhacker orchestra, breaking barriers and building trust.",
                 "kind": "information"
               },
               {
                 "id": "workshop",
-                "title": "Corporate workshop",
-                "body": "A format for the team goal, venue, and schedule, for example integration during training or closing a company day.",
+                "title": "Corporate workshop (2-3 hours)",
+                "body": "An in-depth workshop format combining rhythm, group dynamics, and collaboration. Perfect for company retreats, offsites, and team training sessions.",
                 "kind": "information"
               }
             ]
@@ -1798,6 +1818,16 @@
                 "title": "Working with an agency",
                 "body": "As a subcontractor, I agree scope, role, and terms so the agency can clearly include them in the client offer.",
                 "kind": "information"
+              },
+              {
+                "id": "offer-pdf",
+                "title": "Offer for companies and agencies (PDF)",
+                "body": "A concise one-pager to print or include in your client pitch: line-up options, formats, and event requirements.",
+                "status": "available",
+                "kind": "navigation",
+                "href": "/documents/muzyczny-team-building-oferta.pdf",
+                "actionLabel": "Open corporate offer PDF",
+                "download": true
               },
               {
                 "id": "projects-link",
@@ -1885,9 +1915,9 @@
           "title": "Warsztaty muzyczne dla dzieci | Dawid Gacek",
           "description": "Warsztaty muzyczne dla dzieci z Bum Bum Rurkami. Sprawdź grupy wiekowe, program, zasady, doświadczenie i warunki organizacji spotkania dla Twojej grupy."
         },
-        "title": "Bum Bum Rurkowe Naparzanie",
+        "title": "Zajęcia z Bum Bum Rurkami",
         "eyebrow": "Rytm, ruch i wspólne granie dopasowane do wieku oraz możliwości grupy.",
-        "intro": "Prowadzę warsztaty muzyczne, które uczą dzieci współpracy i odkrywania muzyki przez zabawę.",
+        "intro": "Prowadzę warsztaty muzyczne, które uczą dzieci współpracy i odkrywania muzyki przez zabawę. Program znany jako Bum Bum Rurkowe Naparzanie łączy energię, rytm i proste zasady grupy.",
         "proof": "Pracuję z Bum Bum Rurkami od 2010 roku.",
         "cta": {
           "label": "Zaproś mnie",
@@ -2130,7 +2160,7 @@
           "title": "Music workshops for children | Dawid Gacek",
           "description": "Music workshops for children with boomwhackers. Explore age groups, programme, facilitation, experience, and practical details for organizers in Poland."
         },
-        "title": "Bum Bum Rurkowe Naparzanie",
+        "title": "Boomwhackers sessions for children",
         "eyebrow": "Rhythm, movement, and shared playing matched to the age and abilities of the group.",
         "intro": "I lead music workshops that teach children cooperation and discovering music through play.",
         "proof": "I have worked with boomwhackers since 2010.",
@@ -2889,21 +2919,24 @@
                 "id": "piosenki",
                 "title": "Piosenki",
                 "body": "Muzyka i rytm do wykorzystania z grupą. Gotowe piosenki z tekstem i prostym akompaniamentem na rurki, które da się wprowadzić bez przygotowania muzycznego.",
-                "href": "#artykuly",
+                "href": "/wiedza/bum-bum-rurki-piosenki",
+                "actionLabel": "Zobacz piosenki na rurki",
                 "kind": "navigation"
               },
               {
                 "id": "zabawy",
                 "title": "Zabawy",
                 "body": "Proste pomysły na aktywne zajęcia. Krótkie gry rytmiczne na rozgrzewkę, na skupienie i na zamknięcie zajęcia, opisane krok po kroku.",
-                "href": "#artykuly",
+                "href": "/wiedza/bum-bum-rurki-zabawy",
+                "actionLabel": "Zobacz zabawy z rurkami",
                 "kind": "navigation"
               },
               {
                 "id": "scenariusze",
                 "title": "Scenariusze",
                 "body": "Struktury, które pomagają zacząć. Kompletne przebiegi zajęć z celami, listą rurek i wskazówkami, jak dostosować je do wieku grupy.",
-                "href": "#artykuly",
+                "href": "/wiedza/bum-bum-rurki-czym-sa",
+                "actionLabel": "Zobacz przewodnik i scenariusze",
                 "kind": "navigation"
               }
             ]
@@ -3036,21 +3069,24 @@
                 "id": "songs",
                 "title": "Songs",
                 "body": "Music and rhythm to use with a group. Ready-made songs with lyrics and simple boomwhacker accompaniment you can introduce without a music background.",
-                "href": "#articles",
+                "href": "/en/insights/boomwhackers-songs",
+                "actionLabel": "Explore boomwhackers songs",
                 "kind": "navigation"
               },
               {
                 "id": "games",
                 "title": "Games",
                 "body": "Simple ideas for active sessions. Short rhythm games for warm-ups, focus, and closing, described step by step.",
-                "href": "#articles",
+                "href": "/en/insights/boomwhackers-games",
+                "actionLabel": "Explore rhythm games",
                 "kind": "navigation"
               },
               {
                 "id": "session-plans",
                 "title": "Session plans",
                 "body": "Structures that help you begin. Complete session outlines with goals, a boomwhacker list, and tips for adapting them to the age of the group.",
-                "href": "#articles",
+                "href": "/en/insights/what-are-boomwhackers",
+                "actionLabel": "Explore guide and session plans",
                 "kind": "navigation"
               }
             ]
